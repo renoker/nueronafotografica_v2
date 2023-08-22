@@ -1,0 +1,42 @@
+@mixin __placeholder($color, $fontWeight: 400){
+  &::-webkit-input-placeholder{
+    color: $color;
+		font-weight: $fontWeight;
+  }
+		
+	&:-ms-input-placeholder{
+    color: $color;
+		font-weight: $fontWeight;
+  }
+
+	&::placeholder{
+    color: $color;
+		font-weight: $fontWeight;
+  }
+}
+
+@mixin fontSizeMobile($px, $lineHeight: 1.2) {
+	font-size: $px * 0.75;
+	line-height: $lineHeight;
+}
+
+@mixin __color($titulo, $color){
+	.bg-#{$titulo} {
+		background-color: $color !important
+	}
+	
+	.color-#{$titulo}{
+		color: $color !important
+	}
+
+	.border-#{$titulo} {
+		border-color: $color !important
+	}
+}
+
+$tablet-width: 768px;
+@mixin mobile {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}

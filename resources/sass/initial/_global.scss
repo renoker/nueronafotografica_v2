@@ -1,0 +1,55 @@
+html{
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body{
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  background: var(--primario-negro);
+  color: var(--primario-negro);
+}
+
+main{
+  padding-top: calc($header + 2rem);
+  padding-bottom: 40px;
+}
+
+a, button, img, input, span {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+a, button {
+  color: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+.py-6 {
+  padding: 5rem 0px;
+}
+
+.py-100 {
+  padding: 100px 0px;
+}
+
+@include mobile {
+  .py-6 {
+    padding: 3rem 0px;
+  }
+  
+  .py-100 {
+    padding: 3rem 0px;
+  }
+}

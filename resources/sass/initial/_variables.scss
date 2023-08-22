@@ -1,0 +1,19 @@
+$font-family: 'Poppins', sans-serif;
+
+$header: 100px;
+
+$colores: (
+  "primario-negro":  #2B272B,
+  "primario-rojo": #D72323,
+
+);
+
+:root{
+  @each $name, $value in $colores {
+      --#{$name}: #{$value};
+  }
+}
+  
+@each $name, $value in $colores {
+  @include __color('#{$name}', var(--#{$name}))
+}

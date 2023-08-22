@@ -1,0 +1,19 @@
+@import './initial/reset';
+@import './initial/functions';
+@import './initial/variables';
+@import './initial/global';
+
+
+// Glide
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// components
+@import "components/text";
+@import "components/button";
+
+// layouts
+@import "layouts/header";
+@import "layouts/footer";
+
+// pages
+@import "pages/home";
