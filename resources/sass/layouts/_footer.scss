@@ -1,0 +1,78 @@
+footer {
+    width: 100%;
+    border-radius: 20.812px;
+    background: #DFDFDF;  
+    .box_footer {
+        width: 90%;
+        margin: 0 auto;
+        .encabezado_logo {
+            width: 100%;
+            @include flex(flex, space-between, center, 0px);
+            padding: 2rem 0;
+            .encabezado {
+                color: var(--Gris);
+                font-family: $font-family;
+                font-size: 36.42px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 118%;
+            }
+        }
+        .formulario_secciones {
+            width: 100%;
+            @include flex(flex, flex-start, flex-start, 160px);
+            .form_footer {
+                width:350px;
+                form {
+                    input {
+                        width: 317px;
+                    }
+                }
+            }
+            .secciones_footer {
+                @include flex(flex, flex-start, flex-start, 90px);
+                .item_footer {
+                    .h1_encab {
+                        color: var(--Gris);
+                        font-family: $font-family;
+                        font-size: 15.609px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;       
+                        text-transform: uppercase;      
+                        padding-bottom: 7px;           
+                    }
+                    .seccion_p {
+                        color: var(--Gris);
+                        font-family: $font-family;
+                        text-align: left;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;        
+                        padding-bottom: 10px;                
+                    }
+                }
+            }
+        }
+        .redes_sociales_up_footer {
+            width: 100%;
+            @include flex(flex, space-between, center, 0px);
+            padding: 2rem 0;
+            .redes_footer {
+                @include flex(flex, flex-start, center, 20px);
+            }
+        }      
+        .aviso_priv {
+            text-align: center;
+            padding-bottom: 2rem;
+            color: var(--Gris);
+            font-family: $font-family;
+            font-size: 12.487px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 200%; /* 24.974px */
+            letter-spacing: 0.062px;            
+        }  
+    }  
+}

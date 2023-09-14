@@ -1,11 +1,41 @@
 import glide from '@glidejs/glide'
 
 
-new glide('#glide_marcas', {
+new glide('#slider_1', {
   type: 'carousel',
+  gap: 24,
   startAt: 0,
-  perView: 4,
-  peek: 100,
+  hoverpause: true,
+  autoplay: 6000,
+  animationduration: 10000,
+  direction: 'ltr',
+  breakpoints: {
+    600: { perView: 1 },
+  }
+}).mount()
+
+new glide('#slider_2', {
+  type: 'carousel',
+  gap: 24,
+  startAt: 0,
+  hoverpause: true,
+  autoplay: 6000,
+  animationduration: 10000,
+  direction: 'ltr',
+  breakpoints: {
+    600: { perView: 1 },
+  }
+}).mount()
+
+
+new glide('#empresas', {
+  type: 'carousel',
+  gap: 24,
+  startAt: 0,
+  hoverpause: true,
+  autoplay: 6000,
+  animationduration: 10000,
+  direction: 'ltr',
   breakpoints: {
     600: { perView: 1 },
   }

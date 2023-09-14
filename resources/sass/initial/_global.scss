@@ -12,8 +12,10 @@ body{
 }
 
 main{
-  padding-top: calc($header + 2rem);
-  padding-bottom: 40px;
+  width: 100%;
+  max-width: 1280px;
+  min-width: 1280px;
+  margin: 0 auto;
 }
 
 a, button, img, input, span {
@@ -52,4 +54,104 @@ a:hover{
   .py-100 {
     padding: 3rem 0px;
   }
+}
+
+input {
+  width: 100%;
+  height: 52px;
+  border-radius: 10px;
+  border: 1px solid var(--Gris-3E3636);
+  background: var(--Blanco-F5EDED);  
+  color: var(--Gris-3E3636);
+  font-family: $font-family;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%;
+  letter-spacing: 0.07px;  
+  padding: 0 15px;
+  margin-bottom: 1.3em;
+  &::placeholder {
+    color: var(--Gris-3E3636);
+  }
+}
+
+textarea {
+  display: flex;
+  width: 535px;
+  height: 95px;
+  padding: 15px 0px 0px 15px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid var(--Gris-3E3636);
+  background:  #F5EDED;  
+  color: var(--Gris-3E3636);
+  font-family: $font-family;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%; /* 28px */
+  letter-spacing: 0.07px;  
+  margin-bottom: 1.3em;
+  &::placeholder {
+    color: var(--Gris-3E3636);
+  }  
+}
+
+button {
+  width: fit-content;
+  padding: 10px 30px;  
+  border-radius: 30px;
+  border: 1px solid #3E3636;
+  color: #3E3636;
+  font-family: $font-family;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;  
+  background-color: transparent;
+}
+
+
+// Contacto
+.content_contacto_doble {
+  width: 100%;
+  @include flex(flex, space-between, flex-start, 0px);
+  margin-bottom: 25px;
+  .box_contacto {
+    display: flex;
+    width: 635px;
+    height: 609px;
+    padding: 50px 50px 0px 50px;
+    flex-direction: column;
+    border-radius: 20px;
+    background: #DFDFDF;    
+    .h1_contacto {
+      color: #3E3636;
+      font-family: $font-family;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 101.5%; /* 50.75px */      
+    } 
+    input {
+      height: 60px;
+    }
+  }
+  .glide_slider_big {
+    width: 630px;
+    height: 610px;
+    flex-shrink: 0;
+    overflow: hidden;          
+    border-radius: 20px;
+    .zoom {
+      width: 100%;
+      transform: scale(1);
+      transition: transform .2s;
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }  
 }

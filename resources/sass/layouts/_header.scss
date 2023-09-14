@@ -1,0 +1,66 @@
+header {
+    width: 100%;
+    padding-bottom: 2rem;
+    .container-header {
+        width: 90%;
+        margin: 0 auto;
+        @include flex(flex, space-between, center, 0px);
+        .logo {
+            width: 20%;
+        }
+        .side-right {
+            width: 60%;
+            .content-redes-header {
+                width: 100%;
+                padding: 15px 0;
+                @include flex(flex, flex-end, center, 28px);
+                .box_redes_header {
+                    @include flex(flex, center, center, 15px);
+                }
+                .idioma_header {
+                    @include flex(flex, center, center, 8px);
+                    .txt_idioma {
+                        color: #F5EDED;
+                        text-align: center;
+                        font-family: $font-DM;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 200%;
+                        letter-spacing: 0.07px;                        
+                    }
+                }
+            }
+            .content-menu-header {
+                width: 100%;
+                @include flex(flex, flex-end, center, 40px);
+                ul {
+                    @include flex(flex, center, center, 40px);
+                    li {
+                        list-style: none;
+                        a {
+                            p {
+                                color: #F5EDED;
+                                text-align: right;
+                                text-transform: uppercase;
+                                font-family: $font-family;
+                                font-size: 15px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                            .drop_header {
+                                @include flex(flex, center, center, 5px);
+                                .arrow_down {
+                                    width: 23px;
+                                    height: 23px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }            
+        }
+    }
+}

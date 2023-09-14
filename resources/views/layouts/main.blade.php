@@ -8,7 +8,8 @@
     <title>@yield('title')</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="{{ url('/images/favicon.png') }}" />
     <meta name="theme-color" content="#1EA24D">
@@ -21,7 +22,9 @@
 
     @include('layouts.header')
 
-    @yield('content')
+    <main class="main">
+        @yield('content')
+    </main>
 
     @include('layouts.footer')
 
