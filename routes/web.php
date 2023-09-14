@@ -24,3 +24,7 @@ Route::get('/arquitectura', function () {
 Route::get('/construccion', function () {
     return view('pages.construccion');
 });
+
+Route::get('/corporativa', function () {
+    return view('pages.corporativa');
+});

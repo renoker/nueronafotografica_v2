@@ -480,3 +480,83 @@
         flex-shrink: 0;
     }    
 }
+
+// Corporativa
+.content_slider_fq {
+    width: 100%;
+    @include flex(flex, space-between, flex-start, 0px);     
+    margin-bottom: 25px;
+    .parte_imagen {
+        width: 635px;
+        .glide_slider_full {
+            width: 630px;
+            height: 911px;
+            overflow: hidden;
+            border-radius: 20.967px;
+            background: url(<path-to-image>), lightgray 50% / cover no-repeat;            
+        }        
+    }
+    .parte_dos {
+        width: 635px;
+        height: 911px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .glide_slider {
+            display: flex;
+            width: 630px;
+            height: 445px;
+            justify-content: center;
+            align-items: center;     
+            margin-bottom: 20px;       
+        }
+        .faqs_home_content {
+            width: 630px;
+            display: flex;
+            width: 630px;
+            height: 445px;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-shrink: 2;
+            .item_faqs {
+                width: 100%;
+                display: flex;
+                min-height: 95px;
+                padding: 20px 10px 20px 20px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                flex-shrink: 0;
+                align-self: stretch;        
+                border-radius: 20px;
+                background: #2B272B;     
+                &:hover {
+                    .txt {
+                        display: block;
+                        animation: fade-in 1s;
+                    }                    
+                }
+                .h1                    {
+                    color: rgba(223, 223, 223, 0.90);
+                    font-family: $font-family;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 101.5%; /* 28.42px */                    
+                }
+
+                .txt {
+                    color: var(--Blanco-F5EDED);
+                    font-family: $font-family;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 156.5%; /* 21.91px */      
+                    padding-top: 10px;           
+                    display: none;    
+                }
+            }
+        }        
+    }
+}
