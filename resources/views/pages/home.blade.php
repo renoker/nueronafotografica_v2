@@ -283,43 +283,5 @@
                 </div>
             </div>
         </div>
-        {{-- <div class="content_slider_nosotros">
-            <div class="glide_slider_big">
-                <div class="glide" id="slider_3">
-                    <div class="glide__track" data-glide-el="track">
-                        <ul class="glide__slides">
-                            <li class="glide__slide">
-                                <img src="{{ url('assets/images/edificio.jpeg') }}" alt="">
-                            </li>
-                            <li class="glide__slide">
-                                <img src="{{ url('assets/images/edificio.jpeg') }}" alt="">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="faqs_home_content_big">
-                <div class="item_faqs">
-                    <h1 class="h1">Arquitectura e Interiorismo</h1>
-                    <p class="txt">Te ayudamos a destacar los mejores ángulos y diseño de interiores con las diferentes
-                        herramientas que te ofrecemos.</p>
-                </div>
-                <div class="item_faqs">
-                    <h1 class="h1">Recorrido virtual 360</h1>
-                    <p class="txt">Desarrollamos el proyecto acorde a tus necesidades, para incrementar tus ventas.</p>
-                </div>
-                <div class="item_faqs">
-                    <h1 class="h1">Vuelo drone en interior o exterior</h1>
-                    <p class="txt">Para los clientes las tomas captadas con drones les brindan imágenes más fidedignas
-                        de
-                        la propiedad</p>
-                </div>
-                <div class="item_faqs">
-                    <h1 class="h1">Fotográfia y video</h1>
-                    <p class="txt">Servicio orientado a proyectos habitacionales, lugares recreativos, hoteles, centros
-                        comerciales, que requieran mostrar sus espacios para promoción, venta o renta y hospedaje.</p>
-                </div>
-            </div>
-        </div> --}}
     </div>
 @endsection
