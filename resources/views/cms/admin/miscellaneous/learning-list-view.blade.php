@@ -2,7 +2,7 @@
 
 @section('title')
     Learning List
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

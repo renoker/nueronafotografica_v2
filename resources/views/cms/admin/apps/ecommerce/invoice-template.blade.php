@@ -2,7 +2,7 @@
 
 @section('title')
     Invoice
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

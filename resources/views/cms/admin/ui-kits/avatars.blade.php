@@ -1,7 +1,7 @@
 @extends('cms.layouts.admin.master')
 
 @section('title')
-    Avatars {{ $title }}
+    Avatars Nuerona
 @endsection
 
 @push('css')

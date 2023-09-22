@@ -2,7 +2,7 @@
 
 @section('title')
     Helper Classes
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

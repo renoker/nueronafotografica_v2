@@ -2,7 +2,7 @@
 
 @section('title')
     Edit Profile
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

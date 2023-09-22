@@ -2,7 +2,7 @@
 
 @section('title')
     Dropzone
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

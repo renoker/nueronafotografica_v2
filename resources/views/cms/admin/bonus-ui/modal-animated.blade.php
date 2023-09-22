@@ -2,7 +2,7 @@
 
 @section('title')
     Animated Modal
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

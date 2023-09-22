@@ -2,7 +2,7 @@
 
 @section('title')
     Tag & Pills
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

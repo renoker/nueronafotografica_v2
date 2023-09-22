@@ -1,7 +1,7 @@
 @extends('cms.layouts.admin.master')
 
 @section('title')
-    State Color {{ $title }}
+    State Color Nuerona
 @endsection
 
 @push('css')

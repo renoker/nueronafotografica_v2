@@ -2,7 +2,7 @@
 
 @section('title')
     File Manager
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

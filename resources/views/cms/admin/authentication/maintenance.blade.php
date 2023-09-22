@@ -2,7 +2,7 @@
 
 @section('title')
     Maintenance
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

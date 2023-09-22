@@ -2,7 +2,7 @@
 
 @section('title')
     Ribbons
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

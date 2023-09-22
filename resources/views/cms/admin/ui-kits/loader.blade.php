@@ -2,7 +2,7 @@
 
 @section('title')
     Spinners
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

@@ -2,7 +2,7 @@
 
 @section('title')
     Navs
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

@@ -2,7 +2,7 @@
 
 @section('title')
     Sticky
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

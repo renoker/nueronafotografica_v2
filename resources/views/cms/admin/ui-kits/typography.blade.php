@@ -1,7 +1,7 @@
 @extends('cms.layouts.admin.master')
 
 @section('title')
-    Typography {{ $title }}
+    Typography Nuerona
 @endsection
 
 @push('css')

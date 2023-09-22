@@ -2,7 +2,7 @@
 
 @section('title')
     Wishlist
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

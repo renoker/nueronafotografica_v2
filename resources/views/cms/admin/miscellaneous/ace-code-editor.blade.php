@@ -2,7 +2,7 @@
 
 @section('title')
     ACE Code Editor
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

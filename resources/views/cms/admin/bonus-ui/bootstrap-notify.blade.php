@@ -2,7 +2,7 @@
 
 @section('title')
     Bootstrap Notify
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

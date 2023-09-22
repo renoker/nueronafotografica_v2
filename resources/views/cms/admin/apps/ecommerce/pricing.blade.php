@@ -2,7 +2,7 @@
 
 @section('title')
     Pricing
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

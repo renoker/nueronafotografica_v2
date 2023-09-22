@@ -3,7 +3,7 @@
 @section('title')
     Email Compose
 
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

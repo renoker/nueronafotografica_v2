@@ -2,7 +2,7 @@
 
 @section('title')
     Progress
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

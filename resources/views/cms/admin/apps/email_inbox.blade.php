@@ -2,7 +2,7 @@
 
 @section('title')
     Email App
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

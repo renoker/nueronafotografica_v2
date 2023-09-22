@@ -2,7 +2,7 @@
 
 @section('title')
     Contacts
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

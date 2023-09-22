@@ -2,7 +2,7 @@
 
 @section('title')
     Tour
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

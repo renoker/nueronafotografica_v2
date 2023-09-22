@@ -2,7 +2,7 @@
 
 @section('title')
     Owl Carousel
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

@@ -2,7 +2,7 @@
 
 @section('title')
     Chat App
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

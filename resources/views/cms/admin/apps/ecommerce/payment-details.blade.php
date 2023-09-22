@@ -2,7 +2,7 @@
 
 @section('title')
     Payment Details
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

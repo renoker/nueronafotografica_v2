@@ -2,7 +2,7 @@
 
 @section('title')
     To-Do
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

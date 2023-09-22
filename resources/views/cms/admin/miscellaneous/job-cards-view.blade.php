@@ -2,7 +2,7 @@
 
 @section('title')
     Cards View
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

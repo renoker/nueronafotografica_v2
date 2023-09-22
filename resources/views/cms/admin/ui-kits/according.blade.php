@@ -2,7 +2,7 @@
 
 @section('title')
     Accordion
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

@@ -2,7 +2,7 @@
 
 @section('title')
     Order History
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

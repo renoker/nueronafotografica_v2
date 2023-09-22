@@ -2,7 +2,7 @@
 
 @section('title')
     Steps
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

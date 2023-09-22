@@ -2,7 +2,7 @@
 
 @section('title')
     Checkout
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

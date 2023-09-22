@@ -2,7 +2,7 @@
 
 @section('title')
     Tabbed card
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

@@ -2,7 +2,7 @@
 
 @section('title')
     Video Chat
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

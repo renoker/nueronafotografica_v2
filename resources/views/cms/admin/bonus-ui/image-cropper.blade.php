@@ -2,7 +2,7 @@
 
 @section('title')
     Image Cropper
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

@@ -2,7 +2,7 @@
 
 @section('title')
     Error
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

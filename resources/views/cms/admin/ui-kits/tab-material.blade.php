@@ -2,7 +2,7 @@
 
 @section('title')
     Line Tabs
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

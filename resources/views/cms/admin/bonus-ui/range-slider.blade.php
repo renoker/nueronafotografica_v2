@@ -2,7 +2,7 @@
 
 @section('title')
     Range Slider
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

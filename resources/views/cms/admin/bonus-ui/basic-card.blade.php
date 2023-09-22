@@ -2,7 +2,7 @@
 
 @section('title')
     Basic Card
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

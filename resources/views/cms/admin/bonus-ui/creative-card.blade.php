@@ -2,7 +2,7 @@
 
 @section('title')
     Creative Card
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

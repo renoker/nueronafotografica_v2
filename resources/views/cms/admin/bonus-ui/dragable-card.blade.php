@@ -2,7 +2,7 @@
 
 @section('title')
     Draggable Card
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

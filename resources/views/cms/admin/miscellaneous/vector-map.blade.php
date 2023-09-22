@@ -2,7 +2,7 @@
 
 @section('title')
     Vector Maps
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

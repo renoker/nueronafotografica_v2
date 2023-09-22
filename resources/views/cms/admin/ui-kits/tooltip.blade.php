@@ -2,7 +2,7 @@
 
 @section('title')
     Tooltip
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

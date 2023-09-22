@@ -2,7 +2,7 @@
 
 @section('title')
     Project Create
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

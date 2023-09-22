@@ -2,7 +2,7 @@
 
 @section('title')
     Product Page
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

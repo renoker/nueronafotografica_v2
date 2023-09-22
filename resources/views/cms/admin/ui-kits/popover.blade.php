@@ -2,7 +2,7 @@
 
 @section('title')
     Popover
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

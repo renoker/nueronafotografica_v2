@@ -3,7 +3,7 @@
 @section('title')
     Email Read
 
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

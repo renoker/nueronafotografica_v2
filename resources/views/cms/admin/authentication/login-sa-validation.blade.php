@@ -1,7 +1,7 @@
 @extends('admin.authentication.master')
 
 @section('title')login
- {{ $title }}
+ Nuerona
 @endsection
 
 @push('css')

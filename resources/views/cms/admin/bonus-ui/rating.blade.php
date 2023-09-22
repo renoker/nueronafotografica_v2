@@ -2,7 +2,7 @@
 
 @section('title')
     Rating
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

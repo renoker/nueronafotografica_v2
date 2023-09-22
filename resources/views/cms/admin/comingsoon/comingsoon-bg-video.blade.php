@@ -2,7 +2,7 @@
 
 @section('title')
     Comingsoon
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

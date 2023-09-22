@@ -2,7 +2,7 @@
 
 @section('title')
     Kanban Board
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

@@ -2,7 +2,7 @@
 
 @section('title')
     Knowledgebase
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

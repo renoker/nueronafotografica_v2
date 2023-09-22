@@ -2,7 +2,7 @@
 
 @section('title')
     Timeline 1
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

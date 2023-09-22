@@ -2,7 +2,7 @@
 
 @section('title')
     Ck Editor
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

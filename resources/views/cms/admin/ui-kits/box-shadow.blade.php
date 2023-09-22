@@ -2,7 +2,7 @@
 
 @section('title')
     Box Shadow
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

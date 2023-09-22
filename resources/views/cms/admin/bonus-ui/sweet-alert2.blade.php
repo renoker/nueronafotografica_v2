@@ -2,7 +2,7 @@
 
 @section('title')
     Sweet Alert
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

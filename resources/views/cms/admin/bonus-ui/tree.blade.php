@@ -2,7 +2,7 @@
 
 @section('title')
     Tree View
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

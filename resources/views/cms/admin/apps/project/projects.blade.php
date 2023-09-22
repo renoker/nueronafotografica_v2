@@ -2,7 +2,7 @@
 
 @section('title')
     Project List
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

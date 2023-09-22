@@ -2,7 +2,7 @@
 
 @section('title')
     Blog Details
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

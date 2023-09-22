@@ -2,7 +2,7 @@
 
 @section('title')
     Pagination
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

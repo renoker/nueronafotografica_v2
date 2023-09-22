@@ -2,7 +2,7 @@
 
 @section('title')
     Calender Basic
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

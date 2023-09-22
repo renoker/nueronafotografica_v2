@@ -2,7 +2,7 @@
 
 @section('title')
     User Cards
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')
@@ -203,8 +203,8 @@
                 <div class="card custom-card">
                     <div class="card-header"><img class="img-fluid" src="{{ asset('assets/images/user-card/5.jpg') }}"
                             alt="" /></div>
-                    <div class="card-profile"><img class="rounded-circle"
-                            src="{{ asset('assets/images/avtar/11.jpg') }}" alt="" /></div>
+                    <div class="card-profile"><img class="rounded-circle" src="{{ asset('assets/images/avtar/11.jpg') }}"
+                            alt="" /></div>
                     <ul class="card-social">
                         <li>
                             <a href="javascript:void(0)"><i class="fa fa-facebook"></i></a>

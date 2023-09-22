@@ -2,7 +2,7 @@
 
 @section('title')
     Tasks
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

@@ -2,7 +2,7 @@
 
 @section('title')
     Dropdown
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

@@ -2,7 +2,7 @@
 
 @section('title')
     Breadcrumb
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')
