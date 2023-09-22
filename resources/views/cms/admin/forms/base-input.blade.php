@@ -170,7 +170,7 @@
                                         <label class="col-sm-3 col-form-label pt-0">Color picker</label>
                                         <div class="col-sm-9">
                                             <input class="form-control form-control-color" type="color"
-                                                value="#24695c" />
+                                                value="#D72323" />
                                         </div>
                                     </div>
                                     <div class="mb-3 row">

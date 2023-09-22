@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
@@ -61,9 +62,15 @@ Route::get('/galeria', function () {
 Route::post('/contactanos/store',  [ContactController::class, 'store'])->name('contact.store');
 
 
+// ------------------------------ CSM PRODUCTIVO ---------------------------
+Route::get('/backoffice', [AdminController::class, 'index'])->name('admin.index');
+Route::post('/backoffice/login', [AdminController::class, 'login'])->name('admin.login');
+
+// Route::prefix('backoffice')->group(['middleware' => ['auth:admin']], function () {
+// });
 
 
-// ------------------------------ CSM ---------------------------
+// ------------------------------ CSM PLANTILLA ---------------------------
 
 Route::prefix('dashboard')->group(function () {
     Route::view('/', 'cms.admin.dashboard.default')->name('index');
@@ -292,7 +299,6 @@ Route::view('error-page2', 'cms.admin.errors.error-page2')->name('error-page2');
 Route::view('error-page3', 'cms.admin.errors.error-page3')->name('error-page3');
 Route::view('error-page4', 'cms.admin.errors.error-page4')->name('error-page4');
 
-Route::view('login', 'cms.admin.authentication.login')->name('login');
 Route::view('login_one', 'cms.admin.authentication.login_one')->name('login_one');
 Route::view('login_two', 'cms.admin.authentication.login_two')->name('login_two');
 Route::view('login-bs-validation', 'cms.admin.authentication.login-bs-validation')->name('login-bs-validation');

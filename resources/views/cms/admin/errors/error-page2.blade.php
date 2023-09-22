@@ -42,7 +42,7 @@
 
                                 .shp6 {
                                     opacity: 0.2;
-                                    fill: #24695c;
+                                    fill: #D72323;
                                 }
 
                                 .shp7 {

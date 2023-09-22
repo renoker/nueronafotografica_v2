@@ -114,9 +114,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #24695c;
+            color: #D72323;
             //- padding:10px;
-            background-color: #24695c3d;
+            background-color: #D723233d;
             transition: all 0.5s ease;
         }
 
@@ -154,7 +154,7 @@
             left: 0;
             width: 100%;
             height: 5px;
-            background-color: #24695c;
+            background-color: #D72323;
         }
 
         .deliver-status li:first-child::before,
@@ -194,7 +194,7 @@
         }
 
         .deliver-status li .order-icon.active {
-            background-color: #24695c;
+            background-color: #D72323;
         }
 
         .deliver-status li .order-icon.active i {
@@ -323,7 +323,8 @@
                                     Products:</td>
                                 <td class="price" colspan="3"
                                     style="line-height: 49px; text-align: right; padding-right: 28px; font-size: 13px; color: #000000; text-align: right; border-left: unset;">
-                                    <b>$2600.00</b></td>
+                                    <b>$2600.00</b>
+                                </td>
                             </tr>
                             <tr>
                                 <td colspan="2"
@@ -331,7 +332,8 @@
                                     Discount :</td>
                                 <td class="price" colspan="3"
                                     style="line-height: 49px; text-align: right; padding-right: 28px; font-size: 13px; color: #000000; text-align: right; border-left: unset;">
-                                    <b>$10</b></td>
+                                    <b>$10</b>
+                                </td>
                             </tr>
                             <tr>
                                 <td colspan="2"
@@ -339,7 +341,8 @@
                                     Gift Wripping:</td>
                                 <td class="price" colspan="3"
                                     style="line-height: 49px; text-align: right; padding-right: 28px; font-size: 13px; color: #000000; text-align: right; border-left: unset;">
-                                    <b>$2600</b></td>
+                                    <b>$2600</b>
+                                </td>
                             </tr>
                             <tr>
                                 <td colspan="2"
@@ -347,7 +350,8 @@
                                     Shipping :</td>
                                 <td class="price" colspan="3"
                                     style="line-height: 49px; text-align: right; padding-right: 28px; font-size: 13px; color: #000000; text-align: right; border-left: unset;">
-                                    <b>$30</b></td>
+                                    <b>$30</b>
+                                </td>
                             </tr>
                             <tr>
                                 <td colspan="2"
@@ -355,7 +359,8 @@
                                     TOTAL PAID :</td>
                                 <td class="price" colspan="3"
                                     style="line-height: 49px; text-align: right; padding-right: 28px; font-size: 13px; color: #000000; text-align: right; border-left: unset;">
-                                    <b>$2600</b></td>
+                                    <b>$2600</b>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -432,7 +437,7 @@
                                         <tbody>
                                             <tr>
                                                 <td><a href="javascript:void(0)"
-                                                        style="color: #24695c; font-size: 14px; text-transform: capitalize; font-weight: 600;">Want
+                                                        style="color: #D72323; font-size: 14px; text-transform: capitalize; font-weight: 600;">Want
                                                         to change how you receive these emails?</a></td>
                                             </tr>
                                             <tr>
@@ -443,7 +448,7 @@
                                             </tr>
                                             <tr>
                                                 <td><a href="javascript:void(0)"
-                                                        style="color: #24695c; font-size: 14px; text-transform: capitalize; font-weight: 600; margin: 0; text-decoration: underline;">Unsubscribe</a>
+                                                        style="color: #D72323; font-size: 14px; text-transform: capitalize; font-weight: 600; margin: 0; text-decoration: underline;">Unsubscribe</a>
                                                 </td>
                                             </tr>
                                         </tbody>

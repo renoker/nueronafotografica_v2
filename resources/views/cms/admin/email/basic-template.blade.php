@@ -78,7 +78,7 @@
                                                     <p>Sometimes you just want to send a simple HTML email with a simple
                                                         design and clear call to action.</p>
                                                     <a href="javascript:void(0)"
-                                                        style="padding: 10px; background-color: #24695c; color: #ffffff; display: inline-block; border-radius: 4px; margin-bottom: 18px;">Call
+                                                        style="padding: 10px; background-color: #D72323; color: #ffffff; display: inline-block; border-radius: 4px; margin-bottom: 18px;">Call
                                                         To Action </a>
                                                     <p>This is a really simple email template. It's sole purpose is to
                                                         get the recipient to click the button with no distractions.</p>
@@ -95,7 +95,7 @@
                                                         Baldwinsville, NY 13027</p>
                                                     <p style="color: #999; margin-bottom: 0;">Don't Like These Emails?<a
                                                             href="javascript:void(0)"
-                                                            style="color: #24695c;">Unsubscribe</a></p>
+                                                            style="color: #D72323;">Unsubscribe</a></p>
                                                     <p style="color: #999; margin-bottom: 0;">Powered By viho Admin</p>
                                                 </td>
                                             </tr>

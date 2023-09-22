@@ -1,4 +1,4 @@
-@extends('admin.authentication.master')
+@extends('cms.admin.authentication.master')
 
 @section('title')
     login

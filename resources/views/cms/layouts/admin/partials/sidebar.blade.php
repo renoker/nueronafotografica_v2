@@ -524,55 +524,6 @@
                                     <div class="col mega-box">
                                         <div class="link-section">
                                             <div class="submenu-title">
-                                                <h5>Authentication</h5>
-                                            </div>
-                                            <div class="submenu-content opensubmegamenu">
-                                                <ul>
-                                                    <li><a href="{{ route('login') }}"
-                                                            class="{{ routeActive('login') }}" target="_blank">Login
-                                                            Simple</a></li>
-                                                    <li><a href="{{ route('login_one') }}"
-                                                            class="{{ routeActive('login_one') }}"
-                                                            target="_blank">Login with bg image</a></li>
-                                                    <li><a href="{{ route('login_two') }}"
-                                                            class="{{ routeActive('login_two') }}"
-                                                            target="_blank">Login with image two </a></li>
-                                                    <li><a href="{{ route('login-bs-validation') }}"
-                                                            class="{{ routeActive('login-bs-validation') }}"
-                                                            target="_blank">Login With validation</a></li>
-                                                    <li><a href="{{ route('login-bs-tt-validation') }}"
-                                                            class="{{ routeActive('login-bs-tt-validation') }}"
-                                                            target="_blank">Login with tooltip</a></li>
-                                                    <li><a href="{{ route('login-sa-validation') }}"
-                                                            class="{{ routeActive('login-sa-validation') }}"
-                                                            target="_blank">Login with sweetalert</a></li>
-                                                    <li><a href="{{ route('sign-up') }}"
-                                                            class="{{ routeActive('sign-up') }}"
-                                                            target="_blank">Register Simple</a></li>
-                                                    <li><a href="{{ route('sign-up-one') }}"
-                                                            class="{{ routeActive('sign-up-one') }}"
-                                                            target="_blank">Register with Bg Image </a></li>
-                                                    <li><a href="{{ route('sign-up-two') }}"
-                                                            class="{{ routeActive('sign-up-two') }}"
-                                                            target="_blank">Register with Bg video </a></li>
-                                                    <li><a href="{{ route('unlock') }}"
-                                                            class="{{ routeActive('unlock') }}">Unlock User</a></li>
-                                                    <li><a href="{{ route('forget-password') }}"
-                                                            class="{{ routeActive('forget-password') }}">Forget
-                                                            Password</a></li>
-                                                    <li><a href="{{ route('creat-password') }}"
-                                                            class="{{ routeActive('creat-password') }}">Creat
-                                                            Password</a></li>
-                                                    <li><a href="{{ route('maintenance') }}"
-                                                            class="{{ routeActive('maintenance') }}">Maintenance</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col mega-box">
-                                        <div class="link-section">
-                                            <div class="submenu-title">
                                                 <h5>Coming Soon</h5>
                                             </div>
                                             <div class="submenu-content opensubmegamenu">

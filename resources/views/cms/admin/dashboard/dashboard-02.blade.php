@@ -791,7 +791,7 @@
                                 <div class="round-progress knob-block text-center">
                                     <div class="progress-circle">
                                         <input class="knob1" data-width="50" data-height="70" data-thickness=".3"
-                                            data-fgcolor="#24695c" data-linecap="round" data-angleoffset="0"
+                                            data-fgcolor="#D72323" data-linecap="round" data-angleoffset="0"
                                             value="60">
                                     </div>
                                     <h5>$4,55,462</h5>

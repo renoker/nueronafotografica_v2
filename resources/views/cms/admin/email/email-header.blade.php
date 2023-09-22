@@ -90,7 +90,7 @@
                                         your password.</p>
                                     <p style="text-align: center;">
                                         <a href="javascript:void(0)"
-                                            style="padding: 10px; background-color: #24695c; color: #fff; display: inline-block; border-radius: 4px; font-weight: 600;">Reset
+                                            style="padding: 10px; background-color: #D72323; color: #fff; display: inline-block; border-radius: 4px; font-weight: 600;">Reset
                                             Password</a>
                                     </p>
                                     <p>If you have remember your password you can safely ignore his email.</p>
@@ -110,7 +110,7 @@
                                     <p style="color: #999; margin-bottom: 0;">333 Woodland Rd. Baldwinsville, NY 13027
                                     </p>
                                     <p style="color: #999; margin-bottom: 0;">Don't Like These Emails?<a
-                                            href="javascript:void(0)" style="color: #24695c;">Unsubscribe</a></p>
+                                            href="javascript:void(0)" style="color: #D72323;">Unsubscribe</a></p>
                                     <p style="color: #999; margin-bottom: 0;">Powered By viho Admin</p>
                                 </td>
                             </tr>
