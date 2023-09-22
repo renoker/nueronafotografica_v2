@@ -18,8 +18,9 @@
                         <form action="{{ route('admin.login') }}" method="POST" class="theme-form login-form">
                             @method('POST')
                             @csrf
-                            <h4>Inicio de Sesión</h4>
-                            <h6>NeuronaFotodráfica</h6>
+                            <div class="colxl-12 mb-4 text-center">
+                                <img src="{{ asset('assets/icons/Layer_1.png') }}" style="width: 150px" alt="">
+                            </div>
                             <div class="form-group">
                                 <label>Usuario</label>
                                 <div class="input-group">
