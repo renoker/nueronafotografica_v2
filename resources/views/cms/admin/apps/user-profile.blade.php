@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/photoswipe.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/photoswipe.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>User Profile</h3>
         @endslot
@@ -24,14 +24,14 @@
                 <!-- user profile header start-->
                 <div class="col-sm-12">
                     <div class="card profile-header">
-                        <img class="img-fluid bg-img-cover" src="{{ asset('assets/images/user-profile/bg-profile.jpg') }}"
-                            alt="" />
+                        <img class="img-fluid bg-img-cover"
+                            src="{{ asset('cms_assets/images/user-profile/bg-profile.jpg') }}" alt="" />
                         <div class="profile-img-wrrap"><img class="img-fluid bg-img-cover"
-                                src="{{ asset('assets/images/user-profile/bg-profile.jpg') }}" alt="" /></div>
+                                src="{{ asset('cms_assets/images/user-profile/bg-profile.jpg') }}" alt="" /></div>
                         <div class="userpro-box">
                             <div class="img-wrraper">
                                 <div class="avatar"><img class="img-fluid" alt=""
-                                        src="{{ asset('assets/images/user/7.jpg') }}" /></div>
+                                        src="{{ asset('cms_assets/images/user/7.jpg') }}" /></div>
                                 <a class="icon-wrapper" href="#"><i class="icofont icofont-pencil-alt-5"></i></a>
                             </div>
                             <div class="user-designation">
@@ -160,31 +160,31 @@
                                         <div class="card-body social-list filter-cards-view">
                                             <div class="media">
                                                 <img class="img-50 img-fluid m-r-20 rounded-circle" alt=""
-                                                    src="{{ asset('assets/images/user/2.png') }}" />
+                                                    src="{{ asset('cms_assets/images/user/2.png') }}" />
                                                 <div class="media-body"><span class="d-block">Bucky Barnes</span><a
                                                         href="javascript:void(0)">Add Friend</a></div>
                                             </div>
                                             <div class="media">
                                                 <img class="img-50 img-fluid m-r-20 rounded-circle" alt=""
-                                                    src="{{ asset('assets/images/user/3.png') }}" />
+                                                    src="{{ asset('cms_assets/images/user/3.png') }}" />
                                                 <div class="media-body"><span class="d-block">Sarah Loren</span><a
                                                         href="javascript:void(0)">Add Friend</a></div>
                                             </div>
                                             <div class="media">
                                                 <img class="img-50 img-fluid m-r-20 rounded-circle" alt=""
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" />
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" />
                                                 <div class="media-body"><span class="d-block">Jason Borne</span><a
                                                         href="javascript:void(0)">Add Friend</a></div>
                                             </div>
                                             <div class="media">
                                                 <img class="img-50 img-fluid m-r-20 rounded-circle" alt=""
-                                                    src="{{ asset('assets/images/user/10.jpg') }}" />
+                                                    src="{{ asset('cms_assets/images/user/10.jpg') }}" />
                                                 <div class="media-body"><span class="d-block">Comeren Diaz</span><a
                                                         href="javascript:void(0)">Add Friend</a></div>
                                             </div>
                                             <div class="media">
                                                 <img class="img-50 img-fluid m-r-20 rounded-circle" alt=""
-                                                    src="{{ asset('assets/images/user/11.png') }}" />
+                                                    src="{{ asset('cms_assets/images/user/11.png') }}" />
                                                 <div class="media-body"><span class="d-block">Andew Jon</span><a
                                                         href="javascript:void(0)">Add Friend</a></div>
                                             </div>
@@ -206,31 +206,31 @@
                                         <div class="card-body social-list filter-cards-view">
                                             <div class="media">
                                                 <img class="img-50 img-fluid m-r-20 rounded-circle" alt=""
-                                                    src="{{ asset('assets/images/user/3.png') }}" />
+                                                    src="{{ asset('cms_assets/images/user/3.png') }}" />
                                                 <div class="media-body"><span class="d-block">Sarah Loren</span><a
                                                         href="javascript:void(0)">Add Friend</a></div>
                                             </div>
                                             <div class="media">
                                                 <img class="img-50 img-fluid m-r-20 rounded-circle" alt=""
-                                                    src="{{ asset('assets/images/user/2.png') }}" />
+                                                    src="{{ asset('cms_assets/images/user/2.png') }}" />
                                                 <div class="media-body"><span class="d-block">Bucky Barnes</span><a
                                                         href="javascript:void(0)">Add Friend</a></div>
                                             </div>
                                             <div class="media">
                                                 <img class="img-50 img-fluid m-r-20 rounded-circle" alt=""
-                                                    src="{{ asset('assets/images/user/10.jpg') }}" />
+                                                    src="{{ asset('cms_assets/images/user/10.jpg') }}" />
                                                 <div class="media-body"><span class="d-block">Comeren Diaz</span><a
                                                         href="javascript:void(0)">Add Friend</a></div>
                                             </div>
                                             <div class="media">
                                                 <img class="img-50 img-fluid m-r-20 rounded-circle" alt=""
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" />
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" />
                                                 <div class="media-body"><span class="d-block">Jason Borne</span><a
                                                         href="javascript:void(0)">Add Friend</a></div>
                                             </div>
                                             <div class="media">
                                                 <img class="img-50 img-fluid m-r-20 rounded-circle" alt=""
-                                                    src="{{ asset('assets/images/user/11.png') }}" />
+                                                    src="{{ asset('cms_assets/images/user/11.png') }}" />
                                                 <div class="media-body"><span class="d-block">Andew Jon</span><a
                                                         href="javascript:void(0)">Add Friend</a></div>
                                             </div>
@@ -253,42 +253,42 @@
                                             <ul>
                                                 <li>
                                                     <div class="latest-post"><img class="img-fluid" alt=""
-                                                            src="{{ asset('assets/images/social-app/post-1.png') }}" />
+                                                            src="{{ asset('cms_assets/images/social-app/post-1.png') }}" />
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="latest-post"><img class="img-fluid" alt=""
-                                                            src="{{ asset('assets/images/social-app/post-2.png') }}" />
+                                                            src="{{ asset('cms_assets/images/social-app/post-2.png') }}" />
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="latest-post"><img class="img-fluid" alt=""
-                                                            src="{{ asset('assets/images/social-app/post-3.png') }}" />
+                                                            src="{{ asset('cms_assets/images/social-app/post-3.png') }}" />
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="latest-post"><img class="img-fluid" alt=""
-                                                            src="{{ asset('assets/images/social-app/post-4.png') }}" />
+                                                            src="{{ asset('cms_assets/images/social-app/post-4.png') }}" />
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="latest-post"><img class="img-fluid" alt=""
-                                                            src="{{ asset('assets/images/social-app/post-5.png') }}" />
+                                                            src="{{ asset('cms_assets/images/social-app/post-5.png') }}" />
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="latest-post"><img class="img-fluid" alt=""
-                                                            src="{{ asset('assets/images/social-app/post-6.png') }}" />
+                                                            src="{{ asset('cms_assets/images/social-app/post-6.png') }}" />
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="latest-post"><img class="img-fluid" alt=""
-                                                            src="{{ asset('assets/images/social-app/post-7.png') }}" />
+                                                            src="{{ asset('cms_assets/images/social-app/post-7.png') }}" />
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="latest-post"><img class="img-fluid" alt=""
-                                                            src="{{ asset('assets/images/social-app/post-8.png') }}" />
+                                                            src="{{ asset('cms_assets/images/social-app/post-8.png') }}" />
                                                     </div>
                                                 </li>
                                             </ul>
@@ -309,32 +309,41 @@
                                         aria-labelledby="collapseicon13">
                                         <div class="card-body avatar-showcase filter-cards-view">
                                             <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" alt="#" /></div>
-                                            <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
-                                                    src="{{ asset('assets/images/user/5.jpg') }}" alt="#" /></div>
-                                            <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
-                                                    src="{{ asset('assets/images/user/1.jpg') }}" alt="#" /></div>
-                                            <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
-                                                    src="{{ asset('assets/images/user/2.png') }}" alt="#" /></div>
-                                            <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.png') }}" alt="#" /></div>
-                                            <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
-                                                    src="{{ asset('assets/images/user/6.jpg') }}" alt="#" /></div>
-                                            <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
-                                                    src="{{ asset('assets/images/user/10.jpg') }}" alt="#" />
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" alt="#" />
                                             </div>
                                             <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
-                                                    src="{{ asset('assets/images/user/14.png') }}" alt="#" />
+                                                    src="{{ asset('cms_assets/images/user/5.jpg') }}" alt="#" />
                                             </div>
                                             <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
-                                                    src="{{ asset('assets/images/user/1.jpg') }}" alt="#" /></div>
-                                            <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
-                                                    src="{{ asset('assets/images/user/4.jpg') }}" alt="#" /></div>
-                                            <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
-                                                    src="{{ asset('assets/images/user/11.png') }}" alt="#" />
+                                                    src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#" />
                                             </div>
                                             <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
-                                                    src="{{ asset('assets/images/user/8.jpg') }}" alt="#" /></div>
+                                                    src="{{ asset('cms_assets/images/user/2.png') }}" alt="#" />
+                                            </div>
+                                            <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
+                                                    src="{{ asset('cms_assets/images/user/3.png') }}" alt="#" />
+                                            </div>
+                                            <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
+                                                    src="{{ asset('cms_assets/images/user/6.jpg') }}" alt="#" />
+                                            </div>
+                                            <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
+                                                    src="{{ asset('cms_assets/images/user/10.jpg') }}" alt="#" />
+                                            </div>
+                                            <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
+                                                    src="{{ asset('cms_assets/images/user/14.png') }}" alt="#" />
+                                            </div>
+                                            <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
+                                                    src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#" />
+                                            </div>
+                                            <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
+                                                    src="{{ asset('cms_assets/images/user/4.jpg') }}" alt="#" />
+                                            </div>
+                                            <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
+                                                    src="{{ asset('cms_assets/images/user/11.png') }}" alt="#" />
+                                            </div>
+                                            <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle"
+                                                    src="{{ asset('cms_assets/images/user/8.jpg') }}" alt="#" />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -351,7 +360,7 @@
                                     <div class="post-header">
                                         <div class="media">
                                             <img class="img-thumbnail rounded-circle me-3"
-                                                src="{{ asset('assets/images/user/7.jpg') }}"
+                                                src="{{ asset('cms_assets/images/user/7.jpg') }}"
                                                 alt="Generic placeholder image" />
                                             <div class="media-body align-self-center">
                                                 <a href="#">
@@ -366,10 +375,10 @@
                                         <div class="img-container">
                                             <div class="my-gallery" id="aniimated-thumbnials" itemscope="">
                                                 <figure itemprop="associatedMedia" itemscope="">
-                                                    <a href="{{ asset('assets/images/user-profile/post1.jpg') }}"
+                                                    <a href="{{ asset('cms_assets/images/user-profile/post1.jpg') }}"
                                                         itemprop="contentUrl" data-size="1600x950">
                                                         <img class="img-fluid rounded"
-                                                            src="{{ asset('assets/images/user-profile/post1.jpg') }}"
+                                                            src="{{ asset('cms_assets/images/user-profile/post1.jpg') }}"
                                                             itemprop="thumbnail" alt="gallery" />
                                                     </a>
                                                     <figcaption itemprop="caption description">Image caption 1</figcaption>
@@ -379,13 +388,16 @@
                                         <div class="post-react">
                                             <ul>
                                                 <li><img class="rounded-circle"
-                                                        src="{{ asset('assets/images/user/3.jpg') }}" alt="" />
+                                                        src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                        alt="" />
                                                 </li>
                                                 <li><img class="rounded-circle"
-                                                        src="{{ asset('assets/images/user/5.jpg') }}" alt="" />
+                                                        src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                        alt="" />
                                                 </li>
                                                 <li><img class="rounded-circle"
-                                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="" />
+                                                        src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                        alt="" />
                                                 </li>
                                             </ul>
                                             <h6>+5 people react this post</h6>
@@ -432,7 +444,7 @@
                                     <div class="post-header">
                                         <div class="media">
                                             <img class="img-thumbnail rounded-circle me-3"
-                                                src="{{ asset('assets/images/user/7.jpg') }}"
+                                                src="{{ asset('cms_assets/images/user/7.jpg') }}"
                                                 alt="Generic placeholder image" />
                                             <div class="media-body align-self-center">
                                                 <a href="#">
@@ -448,19 +460,19 @@
                                             <div class="row mt-4 pictures my-gallery" id="aniimated-thumbnials-2"
                                                 itemscope="">
                                                 <figure class="col-sm-6" itemprop="associatedMedia" itemscope="">
-                                                    <a href="{{ asset('assets/images/user-profile/post2.jpg') }}"
+                                                    <a href="{{ asset('cms_assets/images/user-profile/post2.jpg') }}"
                                                         itemprop="contentUrl" data-size="1600x950">
                                                         <img class="img-fluid rounded"
-                                                            src="{{ asset('assets/images/user-profile/post2.jpg') }}"
+                                                            src="{{ asset('cms_assets/images/user-profile/post2.jpg') }}"
                                                             itemprop="thumbnail" alt="gallery" />
                                                     </a>
                                                     <figcaption itemprop="caption description">Image caption 1</figcaption>
                                                 </figure>
                                                 <figure class="col-sm-6" itemprop="associatedMedia" itemscope="">
-                                                    <a href="{{ asset('assets/images/user-profile/post3.jpg') }}"
+                                                    <a href="{{ asset('cms_assets/images/user-profile/post3.jpg') }}"
                                                         itemprop="contentUrl" data-size="1600x950">
                                                         <img class="img-fluid rounded"
-                                                            src="{{ asset('assets/images/user-profile/post3.jpg') }}"
+                                                            src="{{ asset('cms_assets/images/user-profile/post3.jpg') }}"
                                                             itemprop="thumbnail" alt="gallery" />
                                                     </a>
                                                     <figcaption itemprop="caption description">Image caption 2</figcaption>
@@ -470,13 +482,16 @@
                                         <div class="post-react">
                                             <ul>
                                                 <li><img class="rounded-circle"
-                                                        src="{{ asset('assets/images/user/3.jpg') }}" alt="" />
+                                                        src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                        alt="" />
                                                 </li>
                                                 <li><img class="rounded-circle"
-                                                        src="{{ asset('assets/images/user/5.jpg') }}" alt="" />
+                                                        src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                        alt="" />
                                                 </li>
                                                 <li><img class="rounded-circle"
-                                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="" />
+                                                        src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                        alt="" />
                                                 </li>
                                             </ul>
                                             <h6>+25 people react this post</h6>
@@ -523,7 +538,7 @@
                                     <div class="post-header">
                                         <div class="media">
                                             <img class="img-thumbnail rounded-circle me-3"
-                                                src="{{ asset('assets/images/user/7.jpg') }}"
+                                                src="{{ asset('cms_assets/images/user/7.jpg') }}"
                                                 alt="Generic placeholder image" />
                                             <div class="media-body align-self-center">
                                                 <a href="#">
@@ -538,10 +553,10 @@
                                         <div class="img-container">
                                             <div class="my-gallery" id="aniimated-thumbnials" itemscope="">
                                                 <figure itemprop="associatedMedia" itemscope="">
-                                                    <a href="{{ asset('assets/images/user-profile/post4.jpg') }}"
+                                                    <a href="{{ asset('cms_assets/images/user-profile/post4.jpg') }}"
                                                         itemprop="contentUrl" data-size="1600x950">
                                                         <img class="img-fluid rounded"
-                                                            src="{{ asset('assets/images/user-profile/post4.jpg') }}"
+                                                            src="{{ asset('cms_assets/images/user-profile/post4.jpg') }}"
                                                             itemprop="thumbnail" alt="gallery" />
                                                     </a>
                                                     <figcaption itemprop="caption description">Image caption 1</figcaption>
@@ -551,13 +566,16 @@
                                         <div class="post-react">
                                             <ul>
                                                 <li><img class="rounded-circle"
-                                                        src="{{ asset('assets/images/user/3.jpg') }}" alt="" />
+                                                        src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                        alt="" />
                                                 </li>
                                                 <li><img class="rounded-circle"
-                                                        src="{{ asset('assets/images/user/5.jpg') }}" alt="" />
+                                                        src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                        alt="" />
                                                 </li>
                                                 <li><img class="rounded-circle"
-                                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="" />
+                                                        src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                        alt="" />
                                                 </li>
                                             </ul>
                                             <h6>+20 people react this post</h6>
@@ -639,11 +657,11 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/counter/jquery.waypoints.min.js') }}"></script>
-        <script src="{{ asset('assets/js/counter/jquery.counterup.min.js') }}"></script>
-        <script src="{{ asset('assets/js/counter/counter-custom.js') }}"></script>
-        <script src="{{ asset('assets/js/photoswipe/photoswipe.min.js') }}"></script>
-        <script src="{{ asset('assets/js/photoswipe/photoswipe-ui-default.min.js') }}"></script>
-        <script src="{{ asset('assets/js/photoswipe/photoswipe.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/jquery.waypoints.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/jquery.counterup.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/counter-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/photoswipe/photoswipe.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/photoswipe/photoswipe-ui-default.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/photoswipe/photoswipe.js') }}"></script>
     @endpush
 @endsection

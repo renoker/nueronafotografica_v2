@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Typeahead</h3>
         @endslot
@@ -191,8 +191,8 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/typeahead/handlebars.js') }}"></script>
-        <script src="{{ asset('assets/js/typeahead/typeahead.bundle.js') }}"></script>
-        <script src="{{ asset('assets/js/typeahead/typeahead.custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/typeahead/handlebars.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/typeahead/typeahead.bundle.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/typeahead/typeahead.custom.js') }}"></script>
     @endpush
 @endsection

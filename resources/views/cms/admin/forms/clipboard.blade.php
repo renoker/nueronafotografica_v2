@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Clipboard</h3>
         @endslot
@@ -109,7 +109,7 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/clipboard/clipboard.min.js') }}"></script>
-        <script src="{{ asset('assets/js/clipboard/clipboard-script.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/clipboard/clipboard.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/clipboard/clipboard-script.js') }}"></script>
     @endpush
 @endsection

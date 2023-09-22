@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/photoswipe.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/photoswipe.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Scroll Reveal</h3>
         @endslot
@@ -28,193 +28,193 @@
                     <div class="card-body">
                         <div class="row gallery my-gallery" id="aniimated-thumbnials" itemscope="">
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/01.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/01.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/01.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/01.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 1</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/02.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/02.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/02.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/02.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 2</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/03.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/03.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/03.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/03.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 3</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/04.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/04.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/04.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/04.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 4</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/05.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/05.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/05.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/05.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 5</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/06.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/06.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/06.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/06.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 6</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/07.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/07.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/07.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/07.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 7</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/08.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/08.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/08.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/08.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 8</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/09.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/09.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/09.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/09.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 9</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/010.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/010.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/010.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/010.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 10</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/011.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/011.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/011.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/011.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 11</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/012.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/012.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/012.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/012.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 12</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/013.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/013.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/013.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/013.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 13</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/014.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/014.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/014.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/014.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 14</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/015.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/015.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/015.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/015.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 15</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/016.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/016.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/016.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/016.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 16</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/01.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/01.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/01.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/01.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 17</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/02.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/02.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/02.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/02.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 18</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/03.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/03.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/03.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/03.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 19</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/04.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/04.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/04.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/04.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 20</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/05.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/05.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/05.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/05.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 21</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/010.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/010.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/010.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/010.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 22</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/011.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/011.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/011.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/011.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 23</figcaption>
                             </figure>
                             <figure class="reveal col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                <a href="{{ asset('assets/images/big-lightgallry/012.jpg') }}" itemprop="contentUrl"
+                                <a href="{{ asset('cms_assets/images/big-lightgallry/012.jpg') }}" itemprop="contentUrl"
                                     data-size="1600x950">
-                                    <img class="img-thumbnail" src="{{ asset('assets/images/lightgallry/012.jpg') }}"
+                                    <img class="img-thumbnail" src="{{ asset('cms_assets/images/lightgallry/012.jpg') }}"
                                         itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 24</figcaption>
@@ -223,9 +223,9 @@
                         <!-- Root element of PhotoSwipe. Must have class pswp.-->
                         <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
                             <!--
-                                          Background of PhotoSwipe.
-                                          It's a separate element, as animating opacity is faster than rgba().
-                                          -->
+                                                  Background of PhotoSwipe.
+                                                  It's a separate element, as animating opacity is faster than rgba().
+                                                  -->
                             <div class="pswp__bg"></div>
                             <!-- Slides wrapper with overflow:hidden.-->
                             <div class="pswp__scroll-wrap">
@@ -398,11 +398,11 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/photoswipe/photoswipe.min.js') }}"></script>
-        <script src="{{ asset('assets/js/photoswipe/photoswipe-ui-default.min.js') }}"></script>
-        <script src="{{ asset('assets/js/photoswipe/photoswipe.js') }}"></script>
-        <script src="{{ asset('assets/js/animation/scroll-reveal/scrollreveal.min.js') }}"></script>
-        <script src="{{ asset('assets/js/modernizr.js') }}"></script>
-        <script src="{{ asset('assets/js/animation/scroll-reveal/reveal-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/photoswipe/photoswipe.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/photoswipe/photoswipe-ui-default.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/photoswipe/photoswipe.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/animation/scroll-reveal/scrollreveal.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/modernizr.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/animation/scroll-reveal/reveal-custom.js') }}"></script>
     @endpush
 @endsection

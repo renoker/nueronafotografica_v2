@@ -5,10 +5,10 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/animate.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/chartist.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/owlcarousel.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/prism.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/animate.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/chartist.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/owlcarousel.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/prism.css') }}">
 @endpush
 @section('content')
     <div class="container-fluid">
@@ -106,7 +106,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/1.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/1.png') }}"
                                                             alt="...">
                                                         <h6>Thompson lee</h6>
                                                         <p>Malasiya</p>
@@ -118,7 +118,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/8.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/8.png') }}"
                                                             alt="...">
                                                         <h6>Johnson allon</h6>
                                                         <p>Bangladesh</p>
@@ -130,7 +130,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/3.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/3.png') }}"
                                                             alt="...">
                                                         <h6>williams reed</h6>
                                                         <p>Belgium</p>
@@ -142,7 +142,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/4.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/4.png') }}"
                                                             alt="...">
                                                         <h6> Jones king</h6>
                                                         <p>Canada</p>
@@ -158,7 +158,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/5.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/5.png') }}"
                                                             alt="...">
                                                         <h6>Brown davis</h6>
                                                         <p>China</p>
@@ -170,7 +170,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/6.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/6.png') }}"
                                                             alt="...">
                                                         <h6>Wilson Hill</h6>
                                                         <p>Denmark</p>
@@ -182,7 +182,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/7.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/7.png') }}"
                                                             alt="...">
                                                         <h6>Anderson ban</h6>
                                                         <p>Japan</p>
@@ -194,7 +194,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/8.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/8.png') }}"
                                                             alt="...">
                                                         <h6>Thompson lee</h6>
                                                         <p>Malasiya</p>
@@ -214,7 +214,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/1.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/1.png') }}"
                                                             alt="...">
                                                         <h6>Thompson lee</h6>
                                                         <p>Malasiya</p>
@@ -226,7 +226,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/8.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/8.png') }}"
                                                             alt="...">
                                                         <h6>Johnson allon</h6>
                                                         <p>Bangladesh</p>
@@ -238,7 +238,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/3.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/3.png') }}"
                                                             alt="...">
                                                         <h6>williams reed</h6>
                                                         <p>Belgium</p>
@@ -250,7 +250,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/4.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/4.png') }}"
                                                             alt="...">
                                                         <h6> Jones king</h6>
                                                         <p>Canada</p>
@@ -266,7 +266,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/5.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/5.png') }}"
                                                             alt="...">
                                                         <h6>Brown davis</h6>
                                                         <p>China</p>
@@ -278,7 +278,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/6.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/6.png') }}"
                                                             alt="...">
                                                         <h6>Wilson Hill</h6>
                                                         <p>Denmark</p>
@@ -290,7 +290,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/7.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/7.png') }}"
                                                             alt="...">
                                                         <h6>Anderson ban</h6>
                                                         <p>Japan</p>
@@ -302,7 +302,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/8.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/8.png') }}"
                                                             alt="...">
                                                         <h6>Thompson lee</h6>
                                                         <p>Malasiya</p>
@@ -322,7 +322,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/1.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/1.png') }}"
                                                             alt="...">
                                                         <h6>Thompson lee</h6>
                                                         <p>Malasiya</p>
@@ -334,7 +334,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/8.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/8.png') }}"
                                                             alt="...">
                                                         <h6>Johnson allon</h6>
                                                         <p>Bangladesh</p>
@@ -346,7 +346,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/3.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/3.png') }}"
                                                             alt="...">
                                                         <h6>williams reed</h6>
                                                         <p>Belgium</p>
@@ -358,7 +358,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/4.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/4.png') }}"
                                                             alt="...">
                                                         <h6> Jones king</h6>
                                                         <p>Canada</p>
@@ -374,7 +374,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/5.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/5.png') }}"
                                                             alt="...">
                                                         <h6>Brown davis</h6>
                                                         <p>China</p>
@@ -386,7 +386,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/6.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/6.png') }}"
                                                             alt="...">
                                                         <h6>Wilson Hill</h6>
                                                         <p>Denmark</p>
@@ -398,7 +398,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/7.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/7.png') }}"
                                                             alt="...">
                                                         <h6>Anderson ban</h6>
                                                         <p>Japan</p>
@@ -410,7 +410,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/8.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/8.png') }}"
                                                             alt="...">
                                                         <h6>Thompson lee</h6>
                                                         <p>Malasiya</p>
@@ -430,7 +430,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/1.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/1.png') }}"
                                                             alt="...">
                                                         <h6>Thompson lee</h6>
                                                         <p>Malasiya</p>
@@ -442,7 +442,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/8.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/8.png') }}"
                                                             alt="...">
                                                         <h6>Johnson allon</h6>
                                                         <p>Bangladesh</p>
@@ -454,7 +454,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/3.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/3.png') }}"
                                                             alt="...">
                                                         <h6>williams reed</h6>
                                                         <p>Belgium</p>
@@ -466,7 +466,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/4.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/4.png') }}"
                                                             alt="...">
                                                         <h6> Jones king</h6>
                                                         <p>Canada</p>
@@ -482,7 +482,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/5.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/5.png') }}"
                                                             alt="...">
                                                         <h6>Brown davis</h6>
                                                         <p>China</p>
@@ -494,7 +494,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/6.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/6.png') }}"
                                                             alt="...">
                                                         <h6>Wilson Hill</h6>
                                                         <p>Denmark</p>
@@ -506,7 +506,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/7.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/7.png') }}"
                                                             alt="...">
                                                         <h6>Anderson ban</h6>
                                                         <p>Japan</p>
@@ -518,7 +518,7 @@
                                                 <div class="card">
                                                     <div class="top-dealerbox text-center">
                                                         <img class="card-img-top"
-                                                            src="{{ asset('assets/images/dashboard-2/8.png') }}"
+                                                            src="{{ asset('cms_assets/images/dashboard-2/8.png') }}"
                                                             alt="...">
                                                         <h6>Thompson lee</h6>
                                                         <p>Malasiya</p>
@@ -561,7 +561,7 @@
              &lt;div class="row"&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/1.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/1.png') }}" alt="..."&gt;
                        &lt;h6&gt;Thompson lee&lt;/h6&gt;
                        &lt;p&gt;Malasiya&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -569,7 +569,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/8.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/8.png') }}" alt="..."&gt;
                        &lt;h6&gt;johnson allon&lt;/h6&gt;
                        &lt;p&gt;bangladeshlt&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -577,7 +577,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/3.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/3.png') }}" alt="..."&gt;
                        &lt;h6&gt;williams reed&lt;/h6&gt;
                        &lt;p&gt;Belgium&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -585,7 +585,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/3.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/3.png') }}" alt="..."&gt;
                        &lt;h6&gt; Jones king&lt;/h6&gt;
                        &lt;p&gt;Canada&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -593,7 +593,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/5.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/5.png') }}" alt="..."&gt;
                        &lt;h6&gt;Brown davis&lt;/h6&gt;
                        &lt;p&gt;China&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -601,7 +601,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/6.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/6.png') }}" alt="..."&gt;
                        &lt;h6&gt;Wilson Hill&lt;/h6&gt;
                        &lt;p&gt;Denmark&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -609,7 +609,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/7.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/7.png') }}" alt="..."&gt;
                        &lt;h6&gt;Anderson ban&lt;/h6&gt;
                        &lt;p&gt;Japan&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -617,7 +617,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/8.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/8.png') }}" alt="..."&gt;
                        &lt;h6&gt;Thompson lee&lt;/h6&gt;
                        &lt;p&gt;Malasiya&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -629,7 +629,7 @@
              &lt;div class="row"&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/1.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/1.png') }}" alt="..."&gt;
                        &lt;h6&gt;Thompson lee&lt;/h6&gt;
                        &lt;p&gt;Malasiya&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -637,7 +637,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/8.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/8.png') }}" alt="..."&gt;
                        &lt;h6&gt;johnson allon&lt;/h6&gt;
                        &lt;p&gt;bangladeshlt&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -645,7 +645,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/3.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/3.png') }}" alt="..."&gt;
                        &lt;h6&gt;williams reed&lt;/h6&gt;
                        &lt;p&gt;Belgium&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -653,7 +653,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/3.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/3.png') }}" alt="..."&gt;
                        &lt;h6&gt; Jones king&lt;/h6&gt;
                        &lt;p&gt;Canada&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -661,7 +661,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/5.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/5.png') }}" alt="..."&gt;
                        &lt;h6&gt;Brown davis&lt;/h6&gt;
                        &lt;p&gt;China&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -669,7 +669,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/6.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/6.png') }}" alt="..."&gt;
                        &lt;h6&gt;Wilson Hill&lt;/h6&gt;
                        &lt;p&gt;Denmark&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -677,7 +677,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/7.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/7.png') }}" alt="..."&gt;
                        &lt;h6&gt;Anderson ban&lt;/h6&gt;
                        &lt;p&gt;Japan&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -685,7 +685,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/8.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/8.png') }}" alt="..."&gt;
                        &lt;h6&gt;Thompson lee&lt;/h6&gt;
                        &lt;p&gt;Malasiya&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -697,7 +697,7 @@
              &lt;div class="row"&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/1.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/1.png') }}" alt="..."&gt;
                        &lt;h6&gt;Thompson lee&lt;/h6&gt;
                        &lt;p&gt;Malasiya&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -705,7 +705,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/8.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/8.png') }}" alt="..."&gt;
                        &lt;h6&gt;johnson allon&lt;/h6&gt;
                        &lt;p&gt;bangladeshlt&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -713,7 +713,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/3.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/3.png') }}" alt="..."&gt;
                        &lt;h6&gt;williams reed&lt;/h6&gt;
                        &lt;p&gt;Belgium&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -721,7 +721,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/3.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/3.png') }}" alt="..."&gt;
                        &lt;h6&gt; Jones king&lt;/h6&gt;
                        &lt;p&gt;Canada&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -729,7 +729,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/5.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/5.png') }}" alt="..."&gt;
                        &lt;h6&gt;Brown davis&lt;/h6&gt;
                        &lt;p&gt;China&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -737,7 +737,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/6.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/6.png') }}" alt="..."&gt;
                        &lt;h6&gt;Wilson Hill&lt;/h6&gt;
                        &lt;p&gt;Denmark&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -745,7 +745,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/7.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/7.png') }}" alt="..."&gt;
                        &lt;h6&gt;Anderson ban&lt;/h6&gt;
                        &lt;p&gt;Japan&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -753,7 +753,7 @@
                &lt;/div&gt;
                &lt;div class="col-sm-3"&gt;
                    &lt;div class="card"&gt;
-                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('assets/images/dashboard-2/8.png') }}" alt="..."&gt;
+                     &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="{{ asset('cms_assets/images/dashboard-2/8.png') }}" alt="..."&gt;
                        &lt;h6&gt;Thompson lee&lt;/h6&gt;
                        &lt;p&gt;Malasiya&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
                      &lt;/div&gt;
@@ -827,7 +827,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="media">
-                                    <img class="img-fluid" src="{{ asset('assets/images/dashboard-2/9.png') }}"
+                                    <img class="img-fluid" src="{{ asset('cms_assets/images/dashboard-2/9.png') }}"
                                         alt="">
                                     <div class="media-body">
                                         <a href="product-page.html">
@@ -873,7 +873,7 @@
        &lt;/div&gt;
        &lt;/div&gt;
        &lt;div class="card-body"&gt;
-         &lt;div class="media"&gt;&lt;img class="img-fluid" alt="" src="{{ asset('assets/images/dashboard-2/9.png') }}"&gt;
+         &lt;div class="media"&gt;&lt;img class="img-fluid" alt="" src="{{ asset('cms_assets/images/dashboard-2/9.png') }}"&gt;
            &lt;div class="media-body"&gt;
              &lt;h6&gt;Trending Nike shoes&lt;/h6&gt;
              &lt;p&gt;New Offer Only $126.00&lt;/p&gt;
@@ -1028,9 +1028,11 @@
                                             class="fa fa-circle circle-dot-primary pull-right"></i></h5>
                                     <p>Quisque a consequat ante Sit amet magna at volutapt.</p>
                                     <ul class="timeline-pro">
-                                        <li> <img class="img-fluid" src="{{ asset('assets/images/dashboard-2/11.png') }}"
+                                        <li> <img class="img-fluid"
+                                                src="{{ asset('cms_assets/images/dashboard-2/11.png') }}"
                                                 alt="Product-1"></li>
-                                        <li> <img class="img-fluid" src="{{ asset('assets/images/dashboard-2/10.png') }}"
+                                        <li> <img class="img-fluid"
+                                                src="{{ asset('cms_assets/images/dashboard-2/10.png') }}"
                                                 alt="Product-2"></li>
                                     </ul>
                                 </div>
@@ -1110,8 +1112,8 @@
                &lt;h5&gt;James just like your product &lt;i class="fa fa-circle circle-dot-primary pull-right"&gt;&lt;/i&gt;&lt;/h5&gt;
                &lt;p&gt;Quisque a consequat ante Sit amet magna at volutapt.&lt;/p&gt;
                &lt;ul class="timeline-pro"&gt;
-                 &lt;li&gt; &lt;img class="img-fluid" src="{{ asset('assets/images/dashboard-2/11.png') }}" alt="Product-1"&gt;&lt;/li&gt;
-                 &lt;li&gt; &lt;img class="img-fluid" src="{{ asset('assets/images/dashboard-2/10.png') }}" alt="Product-2"&gt;&lt;/li&gt;
+                 &lt;li&gt; &lt;img class="img-fluid" src="{{ asset('cms_assets/images/dashboard-2/11.png') }}" alt="Product-1"&gt;&lt;/li&gt;
+                 &lt;li&gt; &lt;img class="img-fluid" src="{{ asset('cms_assets/images/dashboard-2/10.png') }}" alt="Product-2"&gt;&lt;/li&gt;
                &lt;/ul&gt;
              &lt;/div&gt;
          &lt;/div&gt;
@@ -1220,20 +1222,20 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/chart/chartjs/chart.min.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/chartist/chartist.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/chartist/chartist-plugin-tooltip.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/knob/knob.min.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/apex-chart/apex-chart.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/apex-chart/stock-prices.js') }}"></script>
-        <script src="{{ asset('assets/js/prism/prism.min.js') }}"></script>
-        <script src="{{ asset('assets/js/clipboard/clipboard.min.js') }}"></script>
-        <script src="{{ asset('assets/js/counter/jquery.waypoints.min.js') }}"></script>
-        <script src="{{ asset('assets/js/counter/jquery.counterup.min.js') }}"></script>
-        <script src="{{ asset('assets/js/counter/counter-custom.js') }}"></script>
-        <script src="{{ asset('assets/js/custom-card/custom-card.js') }}"></script>
-        <script src="{{ asset('assets/js/owlcarousel/owl.carousel.js') }}"></script>
-        <script src="{{ asset('assets/js/owlcarousel/owl-custom.js') }}"></script>
-        <script src="{{ asset('assets/js/dashboard/dashboard_2.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/chartjs/chart.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/chartist/chartist.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/chartist/chartist-plugin-tooltip.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/knob/knob.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/apex-chart/apex-chart.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/apex-chart/stock-prices.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/prism/prism.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/clipboard/clipboard.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/jquery.waypoints.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/jquery.counterup.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/counter-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/custom-card/custom-card.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/owlcarousel/owl.carousel.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/owlcarousel/owl-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/dashboard/dashboard_2.js') }}"></script>
     @endpush
 @endsection

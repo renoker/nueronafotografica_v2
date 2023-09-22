@@ -13,7 +13,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl-7 order-1"><img class="bg-img-cover bg-center"
-                        src="{{ asset('assets/images/login/1.jpg') }}" alt="looginpage" /></div>
+                        src="{{ asset('cms_assets/images/login/1.jpg') }}" alt="looginpage" /></div>
                 <div class="col-xl-5 p-0">
                     <div class="login-card">
                         <form class="theme-form login-form needs-validation" novalidate="">

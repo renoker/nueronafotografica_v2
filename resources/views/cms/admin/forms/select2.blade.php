@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/select2.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/select2.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Select2</h3>
         @endslot
@@ -331,7 +331,7 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/select2/select2.full.min.js') }}"></script>
-        <script src="{{ asset('assets/js/select2/select2-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/select2/select2.full.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/select2/select2-custom.js') }}"></script>
     @endpush
 @endsection

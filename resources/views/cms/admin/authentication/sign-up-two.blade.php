@@ -6,15 +6,15 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/sweetalert2.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/sweetalert2.css') }}">
 @endpush
 
 @section('content')
     <section>
         <div class="container-fluid p-0">
             <div class="row m-0">
-                <div class="col-xl-7 p-0"><img class="bg-img-cover bg-center" src="{{ asset('assets/images/login/1.jpg') }}"
-                        alt="looginpage" /></div>
+                <div class="col-xl-7 p-0"><img class="bg-img-cover bg-center"
+                        src="{{ asset('cms_assets/images/login/1.jpg') }}" alt="looginpage" /></div>
                 <div class="col-xl-5 p-0">
                     <div class="login-card">
                         <form class="theme-form login-form">
@@ -94,6 +94,6 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/sweet-alert/sweetalert.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/sweet-alert/sweetalert.min.js') }}"></script>
     @endpush
 @endsection

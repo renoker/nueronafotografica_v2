@@ -5,10 +5,10 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/date-picker.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/owlcarousel.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/prism.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/whether-icon.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/date-picker.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/owlcarousel.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/prism.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/whether-icon.css') }}">
 @endpush
 @section('content')
     @component('cms.components.breadcrumb')
@@ -489,7 +489,7 @@
                                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
                                     piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
                                     McClintock.</p>
-                                <img class="img-80" src="{{ asset('assets/images/dashboard/boy-2.png') }}"
+                                <img class="img-80" src="{{ asset('cms_assets/images/dashboard/boy-2.png') }}"
                                     alt="">
                                 <h5 class="font-primary">Poio klot</h5>
                                 <span>Developer</span>
@@ -690,9 +690,9 @@
             <div class="col-xl-4 col-md-6 box-col-6">
                 <div class="card custom-card">
                     <div class="card-header pb-0"><img class="img-fluid"
-                            src="{{ asset('assets/images/user-card/3.jpg') }}" alt=""></div>
-                    <div class="card-profile"><img class="rounded-circle" src="{{ asset('assets/images/avtar/3.jpg') }}"
-                            alt=""></div>
+                            src="{{ asset('cms_assets/images/user-card/3.jpg') }}" alt=""></div>
+                    <div class="card-profile"><img class="rounded-circle"
+                            src="{{ asset('cms_assets/images/avtar/3.jpg') }}" alt=""></div>
                     <ul class="card-social">
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
@@ -799,7 +799,7 @@
             <div class="col-xl-4 col-md-6 col-sm-12">
                 <div class="card browser-widget">
                     <div class="media card-body">
-                        <div class="media-img"><img src="{{ asset('assets/images/dashboard/chrome.png') }}"
+                        <div class="media-img"><img src="{{ asset('cms_assets/images/dashboard/chrome.png') }}"
                                 alt=""></div>
                         <div class="media-body align-self-center">
                             <div>
@@ -821,7 +821,7 @@
             <div class="col-xl-4 col-md-6 col-sm-12">
                 <div class="card browser-widget">
                     <div class="media card-body">
-                        <div class="media-img"><img src="{{ asset('assets/images/dashboard/firefox.png') }}"
+                        <div class="media-img"><img src="{{ asset('cms_assets/images/dashboard/firefox.png') }}"
                                 alt=""></div>
                         <div class="media-body align-self-center">
                             <div>
@@ -843,7 +843,7 @@
             <div class="col-xl-4 col-md-12 col-sm-12">
                 <div class="card browser-widget">
                     <div class="media card-body">
-                        <div class="media-img"><img src="{{ asset('assets/images/dashboard/safari.png') }}"
+                        <div class="media-img"><img src="{{ asset('cms_assets/images/dashboard/safari.png') }}"
                                 alt=""></div>
                         <div class="media-body align-self-center">
                             <div>
@@ -1079,7 +1079,7 @@
                                         <td class="bd-t-none u-s-tb">
                                             <div class="align-middle image-sm-size">
                                                 <img class="img-radius align-top m-r-15 rounded-circle"
-                                                    src="{{ asset('assets/images/user/4.jpg') }}" alt="">
+                                                    src="{{ asset('cms_assets/images/user/4.jpg') }}" alt="">
                                                 <div class="d-inline-block">
                                                     <h6>John Deo <span class="text-muted">(14+ Online)</span></h6>
                                                 </div>
@@ -1101,7 +1101,7 @@
                                         <td class="bd-t-none u-s-tb">
                                             <div class="align-middle image-sm-size d-flex align-items-center">
                                                 <img class="img-radius align-top m-r-15 rounded-circle"
-                                                    src="{{ asset('assets/images/user/1.jpg') }}" alt="">
+                                                    src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="">
                                                 <div class="d-inline-block">
                                                     <h6>Holio Mako <span class="text-muted">(250+ Online)</span></h6>
                                                 </div>
@@ -1123,7 +1123,7 @@
                                         <td class="bd-t-none u-s-tb">
                                             <div class="align-middle image-sm-size">
                                                 <img class="img-radius align-top m-r-15 rounded-circle"
-                                                    src="{{ asset('assets/images/user/5.jpg') }}" alt="">
+                                                    src="{{ asset('cms_assets/images/user/5.jpg') }}" alt="">
                                                 <div class="d-inline-block">
                                                     <h6>Mohsib lara<span class="text-muted">(99+ Online)</span></h6>
                                                 </div>
@@ -1145,7 +1145,7 @@
                                         <td class="bd-t-none u-s-tb">
                                             <div class="align-middle image-sm-size">
                                                 <img class="img-radius align-top m-r-15 rounded-circle"
-                                                    src="{{ asset('assets/images/user/6.jpg') }}" alt="">
+                                                    src="{{ asset('cms_assets/images/user/6.jpg') }}" alt="">
                                                 <div class="d-inline-block">
                                                     <h6>Hileri Soli <span class="text-muted">(150+ Online)</span></h6>
                                                 </div>
@@ -1167,7 +1167,7 @@
                                         <td class="bd-t-none u-s-tb">
                                             <div class="align-middle image-sm-size">
                                                 <img class="img-radius align-top m-r-15 rounded-circle"
-                                                    src="{{ asset('assets/images/user/7.jpg') }}" alt="">
+                                                    src="{{ asset('cms_assets/images/user/7.jpg') }}" alt="">
                                                 <div class="d-inline-block">
                                                     <h6>Pusiz bia <span class="text-muted">(14+ Online)</span></h6>
                                                 </div>
@@ -1221,7 +1221,7 @@
                &lt;tbody&gt;
                  &lt;tr&gt;
                    &lt;td class="bd-t-none u-s-tb"&gt;
-                     &lt;div class="align-middle image-sm-size"&gt;&lt;img class="img-radius align-top m-r-15 rounded-circle" src="{{ asset('assets/images/user/4.jpg') }}" alt=""&gt;
+                     &lt;div class="align-middle image-sm-size"&gt;&lt;img class="img-radius align-top m-r-15 rounded-circle" src="{{ asset('cms_assets/images/user/4.jpg') }}" alt=""&gt;
                        &lt;div class="d-inline-block"&gt;
                          &lt;h6&gt;John Deo &lt;span class="text-muted"&gt;(14+ Online)&lt;/span&gt;&lt;/h6&gt;
                        &lt;/div&gt;
@@ -1239,7 +1239,7 @@
                  &lt;/tr&gt;
                  &lt;tr&gt;
                    &lt;td class="bd-t-none u-s-tb"&gt;
-                     &lt;div class="align-middle image-sm-size d-flex align-items-center"&gt;&lt;img class="img-radius align-top m-r-15 rounded-circle" src="{{ asset('assets/images/user/1.jpg') }}" alt=""&gt;
+                     &lt;div class="align-middle image-sm-size d-flex align-items-center"&gt;&lt;img class="img-radius align-top m-r-15 rounded-circle" src="{{ asset('cms_assets/images/user/1.jpg') }}" alt=""&gt;
                        &lt;div class="d-inline-block"&gt;
                          &lt;h6&gt;Holio Mako &lt;span class="text-muted"&gt;(250+ Online)&lt;/span&gt;&lt;/h6&gt;
                        &lt;/div&gt;
@@ -1257,7 +1257,7 @@
                 &lt;/tr&gt;
                 &lt;tr&gt;
                   &lt;td class="bd-t-none u-s-tb"&gt;
-                    &lt;div class="align-middle image-sm-size"&gt;&lt;img class="img-radius align-top m-r-15 rounded-circle" src="{{ asset('assets/images/user/5.jpg') }}" alt=""&gt;
+                    &lt;div class="align-middle image-sm-size"&gt;&lt;img class="img-radius align-top m-r-15 rounded-circle" src="{{ asset('cms_assets/images/user/5.jpg') }}" alt=""&gt;
                         &lt;div class="d-inline-block"&gt;
                           &lt;h6&gt;Mohsib lara&lt;span class="text-muted"&gt;(99+ Online)&lt;/span&gt;&lt;/h6&gt;
                         &lt;/div&gt;
@@ -1275,7 +1275,7 @@
                  &lt;/tr&gt;
                  &lt;tr&gt;
                    &lt;td class="bd-t-none u-s-tb"&gt;
-                     &lt;div class="align-middle image-sm-size"&gt;&lt;img class="img-radius align-top m-r-15 rounded-circle" src="{{ asset('assets/images/user/6.jpg') }}" alt=""&gt;
+                     &lt;div class="align-middle image-sm-size"&gt;&lt;img class="img-radius align-top m-r-15 rounded-circle" src="{{ asset('cms_assets/images/user/6.jpg') }}" alt=""&gt;
                        &lt;div class="d-inline-block"&gt;
                          &lt;h6&gt;Hileri Soli &lt;span class="text-muted"&gt;(150+ Online)&lt;/span&gt;&lt;/h6&gt;
                        &lt;/div&gt;
@@ -1293,7 +1293,7 @@
                  &lt;/tr&gt;
                  &lt;tr&gt;
                    &lt;td class="bd-t-none u-s-tb"&gt;
-                     &lt;div class="align-middle image-sm-size"&gt;&lt;img class="img-radius align-top m-r-15 rounded-circle" src="{{ asset('assets/images/user/7.jpg') }}" alt=""&gt;
+                     &lt;div class="align-middle image-sm-size"&gt;&lt;img class="img-radius align-top m-r-15 rounded-circle" src="{{ asset('cms_assets/images/user/7.jpg') }}" alt=""&gt;
                        &lt;div class="d-inline-block"&gt;
                           &lt;h6&gt;Pusiz bia &lt;span class="text-muted"&gt;(14+ Online)&lt;/span&gt;&lt;/h6&gt;
                        &lt;/div&gt;
@@ -1419,18 +1419,18 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/prism/prism.min.js') }}"></script>
-        <script src="{{ asset('assets/js/clipboard/clipboard.min.js') }}"></script>
-        <script src="{{ asset('assets/js/counter/jquery.waypoints.min.js') }}"></script>
-        <script src="{{ asset('assets/js/counter/jquery.counterup.min.js') }}"></script>
-        <script src="{{ asset('assets/js/counter/counter-custom.js') }}"></script>
-        <script src="{{ asset('assets/js/custom-card/custom-card.js') }}"></script>
-        <script src="{{ asset('assets/js/datepicker/date-picker/datepicker.js') }}"></script>
-        <script src="{{ asset('assets/js/datepicker/date-picker/datepicker.en.js') }}"></script>
-        <script src="{{ asset('assets/js/datepicker/date-picker/datepicker.custom.js') }}"></script>
-        <script src="{{ asset('assets/js/owlcarousel/owl.carousel.js') }}"></script>
-        <script src="{{ asset('assets/js/general-widget.js') }}"></script>
-        <script src="{{ asset('assets/js/height-equal.js') }}"></script>
-        <script src="{{ asset('assets/js/tooltip-init.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/prism/prism.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/clipboard/clipboard.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/jquery.waypoints.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/jquery.counterup.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/counter-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/custom-card/custom-card.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datepicker/date-picker/datepicker.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datepicker/date-picker/datepicker.en.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datepicker/date-picker/datepicker.custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/owlcarousel/owl.carousel.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/general-widget.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/height-equal.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/tooltip-init.js') }}"></script>
     @endpush
 @endsection

@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/page-builder.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/page-builder.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Page Builder</h3>
         @endslot
@@ -117,10 +117,10 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/editor/ckeditor/ckeditor.js') }}"></script>
-        <script src="{{ asset('assets/js/editor/ckeditor/adapters/jquery.js') }}"></script>
-        <script src="{{ asset('assets/js/jquery.ui.min.js') }}"></script>
-        <script src="{{ asset('assets/js/page-builder/jquery.grideditor.min.js') }}"></script>
-        <script src="{{ asset('assets/js/page-builder/page-builder-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ckeditor/ckeditor.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ckeditor/adapters/jquery.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/jquery.ui.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/page-builder/jquery.grideditor.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/page-builder/page-builder-custom.js') }}"></script>
     @endpush
 @endsection

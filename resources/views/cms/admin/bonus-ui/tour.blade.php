@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/tour.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/tour.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Tour</h3>
         @endslot
@@ -26,7 +26,7 @@
                     <div class="card hovercard text-center">
                         <div class="cardheader"></div>
                         <div class="user-image">
-                            <div class="avatar"><img alt="" src="{{ asset('assets/images/user/7.jpg') }}"
+                            <div class="avatar"><img alt="" src="{{ asset('cms_assets/images/user/7.jpg') }}"
                                     data-intro="This is Profile image" /></div>
                             <div class="icon-wrapper"><i class="icofont icofont-pencil-alt-5"
                                     data-intro="Change Profile image here"></i></div>
@@ -116,7 +116,8 @@
                                 <div class="col-sm-8">
                                     <div class="media">
                                         <img class="img-thumbnail rounded-circle me-3"
-                                            src="{{ asset('assets/images/user/7.jpg') }}" alt="Generic placeholder image" />
+                                            src="{{ asset('cms_assets/images/user/7.jpg') }}"
+                                            alt="Generic placeholder image" />
                                         <div class="media-body align-self-center">
                                             <a href="#">
                                                 <h5 class="mt-0 user-name">JOHAN DIO</h5>
@@ -137,9 +138,9 @@
                             </p>
                             <div class="img-container">
                                 <div id="aniimated-thumbnials">
-                                    <a href="{{ asset('assets/images/other-images/profile-style-img3.png') }}"><img
+                                    <a href="{{ asset('cms_assets/images/other-images/profile-style-img3.png') }}"><img
                                             class="img-fluid rounded"
-                                            src="{{ asset('assets/images/other-images/profile-style-img3.png') }}"
+                                            src="{{ asset('cms_assets/images/other-images/profile-style-img3.png') }}"
                                             alt="gallery" /></a>
                                 </div>
                             </div>
@@ -171,7 +172,7 @@
                                 <div class="col-sm-8">
                                     <div class="media">
                                         <img class="img-thumbnail rounded-circle me-3"
-                                            src="{{ asset('assets/images/user/7.jpg') }}"
+                                            src="{{ asset('cms_assets/images/user/7.jpg') }}"
                                             alt="Generic placeholder image" />
                                         <div class="media-body align-self-center"></div>
                                         <a href="#">
@@ -192,14 +193,14 @@
                             </p>
                             <div class="row mt-4 pictures" id="aniimated-thumbnials-2">
                                 <a class="col-sm-6"
-                                    href="{{ asset('assets/images/other-images/profile-style-img3.png') }}"><img
+                                    href="{{ asset('cms_assets/images/other-images/profile-style-img3.png') }}"><img
                                         class="img-fluid rounded"
-                                        src="{{ asset('assets/images/other-images/profile-style-img.png') }}"
+                                        src="{{ asset('cms_assets/images/other-images/profile-style-img.png') }}"
                                         alt="gallery" /></a>
                                 <a class="col-sm-6"
-                                    href="{{ asset('assets/images/other-images/profile-style-img3.png') }}"><img
+                                    href="{{ asset('cms_assets/images/other-images/profile-style-img3.png') }}"><img
                                         class="img-fluid rounded"
-                                        src="{{ asset('assets/images/other-images/profile-style-img.png') }}"
+                                        src="{{ asset('cms_assets/images/other-images/profile-style-img.png') }}"
                                         alt="gallery" /></a>
                             </div>
                             <div class="like-comment mt-4">
@@ -230,7 +231,7 @@
                                 <div class="col-sm-8">
                                     <div class="media">
                                         <img class="img-thumbnail rounded-circle me-3"
-                                            src="{{ asset('assets/images/user/7.jpg') }}"
+                                            src="{{ asset('cms_assets/images/user/7.jpg') }}"
                                             alt="Generic placeholder image" />
                                         <div class="media-body align-self-center">
                                             <a href="#">
@@ -287,7 +288,7 @@
                                 <div class="col-sm-8">
                                     <div class="media">
                                         <img class="img-thumbnail rounded-circle me-3"
-                                            src="{{ asset('assets/images/user/7.jpg') }}"
+                                            src="{{ asset('cms_assets/images/user/7.jpg') }}"
                                             alt="Generic placeholder image" />
                                         <div class="media-body align-self-center">
                                             <a href="#">
@@ -304,9 +305,9 @@
                             <div class="row">
                                 <div class="col-lg-12 col-xl-4">
                                     <div id="aniimated-thumbnials-3">
-                                        <a href="{{ asset('assets/images/blog/img.png') }}"><img
-                                                class="img-fluid rounded" src="{{ asset('assets/images/blog/img.png') }}"
-                                                alt="gallery" /></a>
+                                        <a href="{{ asset('cms_assets/images/blog/img.png') }}"><img
+                                                class="img-fluid rounded"
+                                                src="{{ asset('cms_assets/images/blog/img.png') }}" alt="gallery" /></a>
                                     </div>
                                     <div class="like-comment mt-4 like-comment-lg-mb">
                                         <ul class="list-inline">
@@ -349,7 +350,7 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/tour/intro.js') }}"></script>
-        <script src="{{ asset('assets/js/tour/intro-init.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/tour/intro.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/tour/intro-init.js') }}"></script>
     @endpush
 @endsection

@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Date Time Picker</h3>
         @endslot
@@ -121,8 +121,8 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/datepicker/date-time-picker/moment.min.js') }}"></script>
-        <script src="{{ asset('assets/js/datepicker/date-time-picker/tempusdominus-bootstrap-4.min.js') }}"></script>
-        <script src="{{ asset('assets/js/datepicker/date-time-picker/datetimepicker.custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datepicker/date-time-picker/moment.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datepicker/date-time-picker/tempusdominus-bootstrap-4.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datepicker/date-time-picker/datetimepicker.custom.js') }}"></script>
     @endpush
 @endsection

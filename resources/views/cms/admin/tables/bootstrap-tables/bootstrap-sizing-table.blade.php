@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Bootstrap Table Sizes</h3>
         @endslot

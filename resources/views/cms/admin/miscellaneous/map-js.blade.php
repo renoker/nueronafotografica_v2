@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/mapsjs-ui.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/mapsjs-ui.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Map JS</h3>
         @endslot
@@ -201,10 +201,10 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/map-js/mapsjs-core.js') }}"></script>
-        <script src="{{ asset('assets/js/map-js/mapsjs-service.js') }}"></script>
-        <script src="{{ asset('assets/js/map-js/mapsjs-ui.js') }}"></script>
-        <script src="{{ asset('assets/js/map-js/mapsjs-mapevents.js') }}"></script>
-        <script src="{{ asset('assets/js/map-js/custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/map-js/mapsjs-core.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/map-js/mapsjs-service.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/map-js/mapsjs-ui.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/map-js/mapsjs-mapevents.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/map-js/custom.js') }}"></script>
     @endpush
 @endsection

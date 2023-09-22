@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Pricing</h3>
         @endslot
@@ -226,8 +226,8 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/counter/jquery.waypoints.min.js') }}"></script>
-        <script src="{{ asset('assets/js/counter/jquery.counterup.min.js') }}"></script>
-        <script src="{{ asset('assets/js/counter/counter-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/jquery.waypoints.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/jquery.counterup.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/counter-custom.js') }}"></script>
     @endpush
 @endsection

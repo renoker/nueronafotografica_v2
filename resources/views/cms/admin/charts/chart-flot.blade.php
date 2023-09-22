@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Flot Chart</h3>
         @endslot
@@ -216,13 +216,13 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/chart/flot-chart/excanvas.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/flot-chart/jquery.flot.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/flot-chart/jquery.flot.time.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/flot-chart/jquery.flot.categories.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/flot-chart/jquery.flot.stack.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/flot-chart/jquery.flot.pie.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/flot-chart/jquery.flot.symbol.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/flot-chart/flot-script.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/flot-chart/excanvas.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/flot-chart/jquery.flot.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/flot-chart/jquery.flot.time.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/flot-chart/jquery.flot.categories.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/flot-chart/jquery.flot.stack.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/flot-chart/jquery.flot.pie.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/flot-chart/jquery.flot.symbol.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/flot-chart/flot-script.js') }}"></script>
     @endpush
 @endsection

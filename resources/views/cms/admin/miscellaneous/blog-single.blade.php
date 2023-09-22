@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Blog Single</h3>
         @endslot
@@ -23,7 +23,7 @@
                 <div class="blog-single">
                     <div class="blog-box blog-details">
                         <div class="banner-wrraper"><img class="img-fluid w-100 bg-img-cover"
-                                src="{{ asset('assets/images/blog/blog-single.jpg') }}" alt="blog-main" /></div>
+                                src="{{ asset('cms_assets/images/blog/blog-single.jpg') }}" alt="blog-main" /></div>
                         <div class="card">
                             <div class="card-body">
                                 <div class="blog-details">
@@ -72,7 +72,8 @@
                             <ul>
                                 <li>
                                     <div class="media align-self-center">
-                                        <img class="align-self-center" src="{{ asset('assets/images/blog/comment.jpg') }}"
+                                        <img class="align-self-center"
+                                            src="{{ asset('cms_assets/images/blog/comment.jpg') }}"
                                             alt="Generic placeholder image" />
                                         <div class="media-body">
                                             <div class="row">
@@ -102,7 +103,8 @@
                                     <ul>
                                         <li>
                                             <div class="media">
-                                                <img class="align-self-center" src="{{ asset('assets/images/blog/9.jpg') }}"
+                                                <img class="align-self-center"
+                                                    src="{{ asset('cms_assets/images/blog/9.jpg') }}"
                                                     alt="Generic placeholder image" />
                                                 <div class="media-body">
                                                     <div class="row">
@@ -127,7 +129,7 @@
                                 </li>
                                 <li>
                                     <div class="media">
-                                        <img class="align-self-center" src="{{ asset('assets/images/blog/4.jpg') }}"
+                                        <img class="align-self-center" src="{{ asset('cms_assets/images/blog/4.jpg') }}"
                                             alt="Generic placeholder image" />
                                         <div class="media-body">
                                             <div class="row">
@@ -155,7 +157,7 @@
                                 </li>
                                 <li>
                                     <div class="media">
-                                        <img class="align-self-center" src="{{ asset('assets/images/blog/12.png') }}"
+                                        <img class="align-self-center" src="{{ asset('cms_assets/images/blog/12.png') }}"
                                             alt="Generic placeholder image" />
                                         <div class="media-body">
                                             <div class="row">
@@ -183,7 +185,7 @@
                                 </li>
                                 <li>
                                     <div class="media">
-                                        <img class="align-self-center" src="{{ asset('assets/images/blog/14.png') }}"
+                                        <img class="align-self-center" src="{{ asset('cms_assets/images/blog/14.png') }}"
                                             alt="Generic placeholder image" />
                                         <div class="media-body">
                                             <div class="row">

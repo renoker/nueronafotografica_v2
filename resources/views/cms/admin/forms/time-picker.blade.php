@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/timepicker.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/timepicker.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Time Picker</h3>
         @endslot
@@ -96,8 +96,8 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/time-picker/jquery-clockpicker.min.js') }}"></script>
-        <script src="{{ asset('assets/js/time-picker/highlight.min.js') }}"></script>
-        <script src="{{ asset('assets/js/time-picker/clockpicker.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/time-picker/jquery-clockpicker.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/time-picker/highlight.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/time-picker/clockpicker.js') }}"></script>
     @endpush
 @endsection

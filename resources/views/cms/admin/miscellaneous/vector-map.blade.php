@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vector-map.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/vector-map.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Vector Maps</h3>
         @endslot
@@ -113,14 +113,14 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/vector-map/jquery-jvectormap-2.0.2.min.js') }}"></script>
-        <script src="{{ asset('assets/js/vector-map/map/jquery-jvectormap-world-mill-en.js') }}"></script>
-        <script src="{{ asset('assets/js/vector-map/map/jquery-jvectormap-us-aea-en.js') }}"></script>
-        <script src="{{ asset('assets/js/vector-map/map/jquery-jvectormap-uk-mill-en.js') }}"></script>
-        <script src="{{ asset('assets/js/vector-map/map/jquery-jvectormap-au-mill.js') }}"></script>
-        <script src="{{ asset('assets/js/vector-map/map/jquery-jvectormap-chicago-mill-en.js') }}"></script>
-        <script src="{{ asset('assets/js/vector-map/map/jquery-jvectormap-in-mill.js') }}"></script>
-        <script src="{{ asset('assets/js/vector-map/map/jquery-jvectormap-asia-mill.js') }}"></script>
-        <script src="{{ asset('assets/js/vector-map/map-vector.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/vector-map/jquery-jvectormap-2.0.2.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/vector-map/map/jquery-jvectormap-world-mill-en.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/vector-map/map/jquery-jvectormap-us-aea-en.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/vector-map/map/jquery-jvectormap-uk-mill-en.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/vector-map/map/jquery-jvectormap-au-mill.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/vector-map/map/jquery-jvectormap-chicago-mill-en.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/vector-map/map/jquery-jvectormap-in-mill.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/vector-map/map/jquery-jvectormap-asia-mill.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/vector-map/map-vector.js') }}"></script>
     @endpush
 @endsection

@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Blog Details</h3>
         @endslot
@@ -22,7 +22,8 @@
             <div class="col-xxl-6 set-col-12 box-col-12 xl-40">
                 <div class="card">
                     <div class="blog-box blog-shadow">
-                        <img class="img-fluid bg-img-cover" src="{{ asset('assets/images/blog/blog.jpg') }}" alt="" />
+                        <img class="img-fluid bg-img-cover" src="{{ asset('cms_assets/images/blog/blog.jpg') }}"
+                            alt="" />
                         <div class="blog-details">
                             <p>25 July 2018</p>
                             <h4>Accusamus et iusto odio dignissimos ducimus qui blanditiis.</h4>
@@ -43,7 +44,7 @@
                                 <div class="col-xl-6 col-12">
                                     <div class="blog-wrraper">
                                         <a href="blog-single.html"><img class="img-fluid sm-100-wp p-0"
-                                                src="{{ asset('assets/images/blog/blog-2.jpg') }}" alt="" /></a>
+                                                src="{{ asset('cms_assets/images/blog/blog-2.jpg') }}" alt="" /></a>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-12">
@@ -72,7 +73,7 @@
                                 <div class="col-xl-6 col-12">
                                     <div class="blog-wrraper">
                                         <a href="blog-single.html"><img class="img-fluid sm-100-w p-0"
-                                                src="{{ asset('assets/images/blog/blog-3.jpg') }}" alt="" /></a>
+                                                src="{{ asset('cms_assets/images/blog/blog-3.jpg') }}" alt="" /></a>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-12">
@@ -102,7 +103,7 @@
                     <div class="blog-box blog-grid">
                         <div class="blog-wrraper">
                             <a href="blog-single.html"><img class="img-fluid top-radius-blog"
-                                    src="{{ asset('assets/images/blog/blog-5.jpg') }}" alt="" /></a>
+                                    src="{{ asset('cms_assets/images/blog/blog-5.jpg') }}" alt="" /></a>
                         </div>
                         <div class="blog-details-second">
                             <div class="blog-post-date"><span class="blg-month">apr</span><span class="blg-date">10</span>
@@ -128,7 +129,7 @@
                     <div class="blog-box blog-grid">
                         <div class="blog-wrraper">
                             <a href="blog-single.html"><img class="img-fluid top-radius-blog"
-                                    src="{{ asset('assets/images/blog/blog-6.jpg') }}" alt="" /></a>
+                                    src="{{ asset('cms_assets/images/blog/blog-6.jpg') }}" alt="" /></a>
                         </div>
                         <div class="blog-details-second">
                             <div class="blog-post-date"><span class="blg-month">apr</span><span class="blg-date">10</span>
@@ -154,7 +155,7 @@
                     <div class="blog-box blog-grid">
                         <div class="blog-wrraper">
                             <a href="blog-single.html"><img class="img-fluid top-radius-blog"
-                                    src="{{ asset('assets/images/blog/blog-5.jpg') }}" alt="" /></a>
+                                    src="{{ asset('cms_assets/images/blog/blog-5.jpg') }}" alt="" /></a>
                         </div>
                         <div class="blog-details-second">
                             <div class="blog-post-date"><span class="blg-month">apr</span><span class="blg-date">10</span>
@@ -180,7 +181,7 @@
                     <div class="blog-box blog-grid">
                         <div class="blog-wrraper">
                             <a href="blog-single.html"><img class="img-fluid top-radius-blog"
-                                    src="{{ asset('assets/images/blog/blog-6.jpg') }}" alt="" /></a>
+                                    src="{{ asset('cms_assets/images/blog/blog-6.jpg') }}" alt="" /></a>
                         </div>
                         <div class="blog-details-second">
                             <div class="blog-post-date"><span class="blg-month">apr</span><span

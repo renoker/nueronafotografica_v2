@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/animate.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/animate.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Timeline 1</h3>
         @endslot
@@ -55,7 +55,7 @@
                                 <div class="cd-timeline-img cd-picture bg-success"><i class="icon-image"></i></div>
                                 <div class="cd-timeline-content">
                                     <h4>Title of section<span class="digits"> 3</span></h4>
-                                    <img class="img-fluid p-t-20" src="{{ asset('assets/images/banner/1.jpg') }}"
+                                    <img class="img-fluid p-t-20" src="{{ asset('cms_assets/images/banner/1.jpg') }}"
                                         alt="" /><span class="cd-date">Jan <span
                                             class="counter digits">24</span></span>
                                 </div>
@@ -65,7 +65,7 @@
                                 <div class="cd-timeline-content">
                                     <h4>Title of section<span class="digits"> 4</span></h4>
                                     <audio class="m-t-20" controls="">
-                                        <source src="{{ asset('assets/audio/horse.ogg') }}" type="audio/ogg" />
+                                        <source src="{{ asset('cms_assets/audio/horse.ogg') }}" type="audio/ogg" />
                                         Your browser does not support the audio element.
                                     </audio>
                                     <span class="cd-date">Feb <span class="counter digits">14</span></span>
@@ -75,7 +75,7 @@
                                 <div class="cd-timeline-img cd-location bg-warning"><i class="icon-image"></i></div>
                                 <div class="cd-timeline-content">
                                     <h4>Title of section<span class="digits"> 5</span></h4>
-                                    <img class="img-fluid p-t-20" src="{{ asset('assets/images/banner/3.jpg') }}"
+                                    <img class="img-fluid p-t-20" src="{{ asset('cms_assets/images/banner/3.jpg') }}"
                                         alt="" /><span class="cd-date">Feb <span
                                             class="counter digits">18</span></span>
                                 </div>
@@ -98,7 +98,7 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/timeline/timeline-v-1/main.js') }}"></script>
-        <script src="{{ asset('assets/js/modernizr.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/timeline/timeline-v-1/main.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/modernizr.js') }}"></script>
     @endpush
 @endsection

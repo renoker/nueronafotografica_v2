@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Email Application</h3>
         @endslot
@@ -30,7 +30,8 @@
                                     <div class="email-app-sidebar">
                                         <div class="media">
                                             <div class="media-size-email"><img class="me-3 rounded-circle"
-                                                    src="{{ asset('assets/images/user/user.png') }}" alt="" /></div>
+                                                    src="{{ asset('cms_assets/images/user/user.png') }}" alt="" />
+                                            </div>
                                             <div class="media-body">
                                                 <h6 class="f-w-600">MARKJENCO</h6>
                                                 <p>Markjecno@gmail.com</p>
@@ -171,7 +172,7 @@
                                                 </label>
                                                 <i class="like" data-feather="star"></i><img
                                                     class="me-3 rounded-circle"
-                                                    src="{{ asset('assets/images/user/user.png') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/user.png') }}" alt="" />
                                             </div>
                                             <div class="media-body">
                                                 <h6>Pork Lorn</h6>
@@ -187,7 +188,7 @@
                                                         checked="" />
                                                 </label>
                                                 <i data-feather="star"></i><img class="me-3 rounded-circle"
-                                                    src="{{ asset('assets/images/user/user.png') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/user.png') }}" alt="" />
                                             </div>
                                             <div class="media-body">
                                                 <h6>Dee Deo</h6>
@@ -204,7 +205,7 @@
                                                 </label>
                                                 <i class="like" data-feather="star"></i><img
                                                     class="me-3 rounded-circle"
-                                                    src="{{ asset('assets/images/user/user.png') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/user.png') }}" alt="" />
                                             </div>
                                             <div class="media-body">
                                                 <h6>Peg Legge</h6>
@@ -219,7 +220,7 @@
                                                     <input class="checkbox_animated" id="chk-ani" type="checkbox" />
                                                 </label>
                                                 <i data-feather="star"></i><img class="me-3 rounded-circle"
-                                                    src="{{ asset('assets/images/user/user.png') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/user.png') }}" alt="" />
                                             </div>
                                             <div class="media-body">
                                                 <h6>Olive Yew</h6>
@@ -236,7 +237,7 @@
                                                 </label>
                                                 <i class="like" data-feather="star"></i><img
                                                     class="me-3 rounded-circle"
-                                                    src="{{ asset('assets/images/user/user.png') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/user.png') }}" alt="" />
                                             </div>
                                             <div class="media-body">
                                                 <h6>Abby Normal</h6>
@@ -251,7 +252,7 @@
                                                 </label>
                                                 <i class="like" data-feather="star"></i><img
                                                     class="me-3 rounded-circle"
-                                                    src="{{ asset('assets/images/user/user.png') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/user.png') }}" alt="" />
                                             </div>
                                             <div class="media-body">
                                                 <h6>Clyde Stale</h6>
@@ -266,7 +267,7 @@
                                                     <input class="checkbox_animated" id="chk-ani" type="checkbox" />
                                                 </label>
                                                 <i data-feather="star"></i><img class="me-3 rounded-circle"
-                                                    src="{{ asset('assets/images/user/user.png') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/user.png') }}" alt="" />
                                             </div>
                                             <div class="media-body">
                                                 <h6>Art Decco</h6>
@@ -282,7 +283,7 @@
                                                         checked="" />
                                                 </label>
                                                 <i data-feather="star"></i><img class="me-3 rounded-circle"
-                                                    src="{{ asset('assets/images/user/user.png') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/user.png') }}" alt="" />
                                             </div>
                                             <div class="media-body">
                                                 <h6>Hugo First</h6>
@@ -298,7 +299,7 @@
                                                         checked="" />
                                                 </label>
                                                 <i data-feather="star"></i><img class="me-3 rounded-circle"
-                                                    src="{{ asset('assets/images/user/user.png') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/user.png') }}" alt="" />
                                             </div>
                                             <div class="media-body">
                                                 <h6>Col Fays</h6>
@@ -315,7 +316,8 @@
                                                 </label>
                                                 <i class="like" data-feather="star"></i><img
                                                     class="me-3 rounded-circle"
-                                                    src="{{ asset('assets/images/user/user.png') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/user.png') }}"
+                                                    alt="" />
                                             </div>
                                             <div class="media-body">
                                                 <h6>Toi Story</h6>
@@ -335,7 +337,8 @@
                                                 </label>
                                                 <i class="like" data-feather="star"></i><img
                                                     class="me-3 rounded-circle"
-                                                    src="{{ asset('assets/images/user/user.png') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/user.png') }}"
+                                                    alt="" />
                                             </div>
                                             <div class="media-body">
                                                 <h6>Jen Tile</h6>
@@ -352,7 +355,8 @@
                                                 </label>
                                                 <i class="like" data-feather="star"></i><img
                                                     class="me-3 rounded-circle"
-                                                    src="{{ asset('assets/images/user/user.png') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/user.png') }}"
+                                                    alt="" />
                                             </div>
                                             <div class="media-body">
                                                 <h6>C. Yasoon</h6>
@@ -368,7 +372,8 @@
                                                         checked="" />
                                                 </label>
                                                 <i data-feather="star"></i><img class="me-3 rounded-circle"
-                                                    src="{{ asset('assets/images/user/user.png') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/user.png') }}"
+                                                    alt="" />
                                             </div>
                                             <div class="media-body">
                                                 <h6>Anne Teak</h6>

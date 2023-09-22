@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Learning List</h3>
         @endslot
@@ -25,7 +25,7 @@
                         <div class="card">
                             <div class="blog-box blog-list row">
                                 <div class="col-xl-5 col-12"><img class="img-fluid sm-100-w"
-                                        src="{{ asset('assets/images/faq/1.jpg') }}" alt="" /></div>
+                                        src="{{ asset('cms_assets/images/faq/1.jpg') }}" alt="" /></div>
                                 <div class="col-xl-7 col-12">
                                     <div class="blog-details">
                                         <div class="blog-date"><span>05</span> January 2021</div>
@@ -55,7 +55,7 @@
                         <div class="card">
                             <div class="blog-box blog-list row">
                                 <div class="col-xl-5 col-12"><img class="img-fluid sm-100-w"
-                                        src="{{ asset('assets/images/faq/2.jpg') }}" alt="" /></div>
+                                        src="{{ asset('cms_assets/images/faq/2.jpg') }}" alt="" /></div>
                                 <div class="col-xl-7 col-12">
                                     <div class="blog-details">
                                         <div class="blog-date"><span>10</span> March 2019</div>
@@ -85,7 +85,7 @@
                         <div class="card">
                             <div class="product-box learning-box">
                                 <div class="product-img">
-                                    <img class="img-fluid top-radius-blog" src="{{ asset('assets/images/faq/3.jpg') }}"
+                                    <img class="img-fluid top-radius-blog" src="{{ asset('cms_assets/images/faq/3.jpg') }}"
                                         alt="" />
                                     <div class="product-hover">
                                         <ul>
@@ -114,7 +114,7 @@
                         <div class="card">
                             <div class="product-box learning-box">
                                 <div class="product-img">
-                                    <img class="img-fluid top-radius-blog" src="{{ asset('assets/images/faq/1.jpg') }}"
+                                    <img class="img-fluid top-radius-blog" src="{{ asset('cms_assets/images/faq/1.jpg') }}"
                                         alt="" />
                                     <div class="product-hover">
                                         <ul>
@@ -143,7 +143,7 @@
                         <div class="card">
                             <div class="product-box learning-box">
                                 <div class="product-img">
-                                    <img class="img-fluid top-radius-blog" src="{{ asset('assets/images/faq/4.jpg') }}"
+                                    <img class="img-fluid top-radius-blog" src="{{ asset('cms_assets/images/faq/4.jpg') }}"
                                         alt="" />
                                     <div class="product-hover">
                                         <ul>
@@ -172,7 +172,7 @@
                         <div class="card">
                             <div class="product-box learning-box">
                                 <div class="product-img">
-                                    <img class="img-fluid top-radius-blog" src="{{ asset('assets/images/faq/2.jpg') }}"
+                                    <img class="img-fluid top-radius-blog" src="{{ asset('cms_assets/images/faq/2.jpg') }}"
                                         alt="" />
                                     <div class="product-hover">
                                         <ul>
@@ -201,7 +201,7 @@
                         <div class="card">
                             <div class="product-box learning-box">
                                 <div class="product-img">
-                                    <img class="img-fluid top-radius-blog" src="{{ asset('assets/images/faq/4.jpg') }}"
+                                    <img class="img-fluid top-radius-blog" src="{{ asset('cms_assets/images/faq/4.jpg') }}"
                                         alt="" />
                                     <div class="product-hover">
                                         <ul>
@@ -230,8 +230,8 @@
                         <div class="card">
                             <div class="product-box learning-box">
                                 <div class="product-img">
-                                    <img class="img-fluid top-radius-blog" src="{{ asset('assets/images/faq/3.jpg') }}"
-                                        alt="" />
+                                    <img class="img-fluid top-radius-blog"
+                                        src="{{ asset('cms_assets/images/faq/3.jpg') }}" alt="" />
                                     <div class="product-hover">
                                         <ul>
                                             <li>

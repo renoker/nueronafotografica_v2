@@ -6,12 +6,12 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/select2.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/sweetalert2.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/select2.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/sweetalert2.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Contacts</h3>
         @endslot
@@ -31,7 +31,8 @@
                                     <div class="email-app-sidebar left-bookmark">
                                         <div class="media">
                                             <div class="media-size-email"><img class="me-3 rounded-circle"
-                                                    src="{{ asset('assets/images/user/user.png') }}" alt="" /></div>
+                                                    src="{{ asset('cms_assets/images/user/user.png') }}" alt="" />
+                                            </div>
                                             <div class="media-body">
                                                 <a href="#">
                                                     <h6 class="f-w-700">MARK JENCO</h6>
@@ -208,7 +209,7 @@
                                                                 aria-controls="v-pills-user" aria-selected="true">
                                                                 <div class="media">
                                                                     <img class="img-50 img-fluid m-r-20 rounded-circle update_img_0"
-                                                                        src="{{ asset('assets/images/user/2.png') }}"
+                                                                        src="{{ asset('cms_assets/images/user/2.png') }}"
                                                                         alt="" />
                                                                     <div class="media-body">
                                                                         <h6><span class="first_name_0">Bucky </span><span
@@ -223,7 +224,7 @@
                                                                 aria-controls="v-pills-profile" aria-selected="false">
                                                                 <div class="media">
                                                                     <img class="img-50 img-fluid m-r-20 rounded-circle update_img_1"
-                                                                        src="{{ asset('assets/images/user/8.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/user/8.jpg') }}"
                                                                         alt="" />
                                                                     <div class="media-body">
                                                                         <h6><span class="first_name_1">Comeren </span><span
@@ -238,7 +239,7 @@
                                                                 aria-controls="v-pills-messages" aria-selected="false">
                                                                 <div class="media">
                                                                     <img class="img-50 img-fluid m-r-20 rounded-circle update_img_2"
-                                                                        src="{{ asset('assets/images/user/1.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/user/1.jpg') }}"
                                                                         alt="" />
                                                                     <div class="media-body">
                                                                         <h6><span class="first_name_2">Issa </span><span
@@ -253,7 +254,7 @@
                                                                 aria-controls="v-pills-settings" aria-selected="false">
                                                                 <div class="media">
                                                                     <img class="img-50 img-fluid m-r-20 rounded-circle update_img_3"
-                                                                        src="{{ asset('assets/images/user/14.png') }}"
+                                                                        src="{{ asset('cms_assets/images/user/14.png') }}"
                                                                         alt="" />
                                                                     <div class="media-body">
                                                                         <h6><span class="first_name_3">Andew </span><span
@@ -268,7 +269,7 @@
                                                                 aria-controls="v-pills-settings" aria-selected="false">
                                                                 <div class="media">
                                                                     <img class="img-50 img-fluid m-r-20 rounded-circle update_img_4"
-                                                                        src="{{ asset('assets/images/user/5.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/user/5.jpg') }}"
                                                                         alt="" />
                                                                     <div class="media-body">
                                                                         <h6><span class="first_name_4">Jason </span><span
@@ -283,7 +284,7 @@
                                                                 aria-controls="v-pills-settings" aria-selected="false">
                                                                 <div class="media">
                                                                     <img class="img-50 img-fluid m-r-20 rounded-circle update_img_5"
-                                                                        src="{{ asset('assets/images/avtar/11.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/avtar/11.jpg') }}"
                                                                         alt="" />
                                                                     <div class="media-body">
                                                                         <h6><span class="first_name_5">Monty </span><span
@@ -298,7 +299,7 @@
                                                                 aria-controls="v-pills-settings" aria-selected="false">
                                                                 <div class="media">
                                                                     <img class="img-50 img-fluid m-r-20 rounded-circle update_img_6"
-                                                                        src="{{ asset('assets/images/avtar/16.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/avtar/16.jpg') }}"
                                                                         alt="" />
                                                                     <div class="media-body">
                                                                         <h6><span class="first_name_6">Brock </span><span
@@ -317,7 +318,7 @@
                                                                 <div class="profile-mail">
                                                                     <div class="media align-items-center">
                                                                         <img class="img-100 img-fluid m-r-20 rounded-circle update_img_0"
-                                                                            src="{{ asset('assets/images/user/2.png') }}"
+                                                                            src="{{ asset('cms_assets/images/user/2.png') }}"
                                                                             alt="" />
                                                                         <input class="updateimg" type="file"
                                                                             name="img" onchange="readURL(this,0)" />
@@ -386,7 +387,7 @@
                                                                 <div class="profile-mail">
                                                                     <div class="media">
                                                                         <img class="img-100 img-fluid m-r-20 rounded-circle update_img_1"
-                                                                            src="{{ asset('assets/images/user/8.jpg') }}"
+                                                                            src="{{ asset('cms_assets/images/user/8.jpg') }}"
                                                                             alt="" />
                                                                         <input class="updateimg" type="file"
                                                                             name="img" onchange="readURL(this,1)" />
@@ -455,7 +456,7 @@
                                                                 <div class="profile-mail">
                                                                     <div class="media">
                                                                         <img class="img-100 img-fluid m-r-20 rounded-circle update_img_2"
-                                                                            src="{{ asset('assets/images/user/1.jpg') }}"
+                                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
                                                                             alt="" />
                                                                         <input class="updateimg" type="file"
                                                                             name="img" onchange="readURL(this,2)" />
@@ -524,7 +525,7 @@
                                                                 <div class="profile-mail">
                                                                     <div class="media">
                                                                         <img class="img-100 img-fluid m-r-20 rounded-circle update_img_3"
-                                                                            src="{{ asset('assets/images/user/14.png') }}"
+                                                                            src="{{ asset('cms_assets/images/user/14.png') }}"
                                                                             alt="" />
                                                                         <input class="updateimg" type="file"
                                                                             name="img" onchange="readURL(this,3)" />
@@ -593,7 +594,7 @@
                                                                 <div class="profile-mail">
                                                                     <div class="media">
                                                                         <img class="img-100 img-fluid m-r-20 rounded-circle update_img_4"
-                                                                            src="{{ asset('assets/images/user/5.jpg') }}"
+                                                                            src="{{ asset('cms_assets/images/user/5.jpg') }}"
                                                                             alt="" />
                                                                         <input class="updateimg" type="file"
                                                                             name="img" onchange="readURL(this,4)" />
@@ -662,7 +663,7 @@
                                                                 <div class="profile-mail">
                                                                     <div class="media">
                                                                         <img class="img-100 img-fluid m-r-20 rounded-circle update_img_5"
-                                                                            src="{{ asset('assets/images/avtar/11.jpg') }}"
+                                                                            src="{{ asset('cms_assets/images/avtar/11.jpg') }}"
                                                                             alt="" />
                                                                         <input class="updateimg" type="file"
                                                                             name="img" onchange="readURL(this,5)" />
@@ -731,7 +732,7 @@
                                                                 <div class="profile-mail">
                                                                     <div class="media">
                                                                         <img class="img-100 img-fluid m-r-20 rounded-circle update_img_6"
-                                                                            src="{{ asset('assets/images/avtar/16.jpg') }}"
+                                                                            src="{{ asset('cms_assets/images/avtar/16.jpg') }}"
                                                                             alt="" />
                                                                         <input class="updateimg" type="file"
                                                                             name="img" onchange="readURL(this,6)" />
@@ -1028,7 +1029,7 @@
                                                                 aria-selected="true">
                                                                 <div class="media">
                                                                     <img class="img-50 img-fluid m-r-20 rounded-circle"
-                                                                        src="{{ asset('assets/images/user/user.png') }}"
+                                                                        src="{{ asset('cms_assets/images/user/user.png') }}"
                                                                         alt="" />
                                                                     <div class="media-body">
                                                                         <h6>Mark jecno</h6>
@@ -1042,7 +1043,7 @@
                                                                 aria-selected="false">
                                                                 <div class="media">
                                                                     <img class="img-50 img-fluid m-r-20 rounded-circle"
-                                                                        src="{{ asset('assets/images/user/3.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/user/3.jpg') }}"
                                                                         alt="" />
                                                                     <div class="media-body">
                                                                         <h6>Jason Borne</h6>
@@ -1056,7 +1057,7 @@
                                                                 aria-selected="false">
                                                                 <div class="media">
                                                                     <img class="img-50 img-fluid m-r-20 rounded-circle"
-                                                                        src="{{ asset('assets/images/user/4.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/user/4.jpg') }}"
                                                                         alt="" />
                                                                     <div class="media-body">
                                                                         <h6>Sarah Loren</h6>
@@ -1070,7 +1071,7 @@
                                                                 aria-selected="false">
                                                                 <div class="media">
                                                                     <img class="img-50 img-fluid m-r-20 rounded-circle"
-                                                                        src="{{ asset('assets/images/user/10.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/user/10.jpg') }}"
                                                                         alt="" />
                                                                     <div class="media-body">
                                                                         <h6>Andew Jon</h6>
@@ -1087,7 +1088,7 @@
                                                                 <div class="profile-mail">
                                                                     <div class="media">
                                                                         <img class="img-100 img-fluid m-r-20 rounded-circle update_img_5"
-                                                                            src="{{ asset('assets/images/user/user.png') }}"
+                                                                            src="{{ asset('cms_assets/images/user/user.png') }}"
                                                                             alt="" />
                                                                         <div class="media-body mt-0">
                                                                             <h5><span class="first_name_5">Mark
@@ -1120,7 +1121,7 @@
                                                                 <div class="profile-mail">
                                                                     <div class="media">
                                                                         <img class="img-100 img-fluid m-r-20 rounded-circle update_img_6"
-                                                                            src="{{ asset('assets/images/user/3.jpg') }}"
+                                                                            src="{{ asset('cms_assets/images/user/3.jpg') }}"
                                                                             alt="" />
                                                                         <div class="media-body mt-0">
                                                                             <h5><span class="first_name_6">Jason
@@ -1153,7 +1154,7 @@
                                                                 <div class="profile-mail">
                                                                     <div class="media">
                                                                         <img class="img-100 img-fluid m-r-20 rounded-circle update_img_7"
-                                                                            src="{{ asset('assets/images/user/4.jpg') }}"
+                                                                            src="{{ asset('cms_assets/images/user/4.jpg') }}"
                                                                             alt="" />
                                                                         <div class="media-body mt-0">
                                                                             <h5><span class="first_name_7">Sarah
@@ -1186,7 +1187,7 @@
                                                                 <div class="profile-mail">
                                                                     <div class="media">
                                                                         <img class="img-100 img-fluid m-r-20 rounded-circle update_img_8"
-                                                                            src="{{ asset('assets/images/user/10.jpg') }}"
+                                                                            src="{{ asset('cms_assets/images/user/10.jpg') }}"
                                                                             alt="" />
                                                                         <div class="media-body mt-0">
                                                                             <h5><span class="first_name_8">Andew
@@ -1259,7 +1260,7 @@
                                                         <div class="media">
                                                             <img class="img-100 img-fluid m-r-20 rounded-circle"
                                                                 id="updateimg"
-                                                                src="{{ asset('assets/images/user/2.png') }}"
+                                                                src="{{ asset('cms_assets/images/user/2.png') }}"
                                                                 alt="" />
                                                             <div class="media-body mt-0">
                                                                 <h5><span id="printname">Bucky </span><span
@@ -1291,12 +1292,12 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/notify/bootstrap-notify.min.js') }}"></script>
-        <script src="{{ asset('assets/js/sweet-alert/sweetalert.min.js') }}"></script>
-        <script src="{{ asset('assets/js/select2/select2.full.min.js') }}"></script>
-        <script src="{{ asset('assets/js/select2/select2-custom.js') }}"></script>
-        <script src="{{ asset('assets/js/form-validation-custom.js') }}"></script>
-        <script src="{{ asset('assets/js/bookmark/jquery.validate.min.js') }}"></script>
-        <script src="{{ asset('assets/js/contacts/custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/notify/bootstrap-notify.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/sweet-alert/sweetalert.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/select2/select2.full.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/select2/select2-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/form-validation-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/bookmark/jquery.validate.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/contacts/custom.js') }}"></script>
     @endpush
 @endsection

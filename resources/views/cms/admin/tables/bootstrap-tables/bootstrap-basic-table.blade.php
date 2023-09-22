@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Bootstrap Basic Tables</h3>
         @endslot
@@ -921,7 +921,7 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/bootstrap/popper.min.js') }}"></script>
-        <script src="{{ asset('assets/js/bootstrap/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/bootstrap/popper.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/bootstrap/bootstrap.min.js') }}"></script>
     @endpush
 @endsection

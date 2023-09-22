@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Sparkline Chart</h3>
         @endslot
@@ -95,7 +95,7 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/chart/sparkline/sparkline.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/sparkline/sparkline-script.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/sparkline/sparkline.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/sparkline/sparkline-script.js') }}"></script>
     @endpush
 @endsection

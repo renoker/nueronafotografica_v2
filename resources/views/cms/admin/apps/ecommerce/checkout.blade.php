@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Checkout</h3>
         @endslot
@@ -119,7 +119,7 @@
                                                     name="rdo-ani" checked="" data-original-title=""
                                                     title="" />PayPal
                                                 <img class="img-paypal"
-                                                    src="{{ asset('assets/images/checkout/paypal.png') }}"
+                                                    src="{{ asset('cms_assets/images/checkout/paypal.png') }}"
                                                     alt="" />
                                             </label>
                                         </div>

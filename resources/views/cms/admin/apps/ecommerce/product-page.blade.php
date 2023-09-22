@@ -6,13 +6,13 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/slick.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/slick-theme.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/rating.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/slick.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/slick-theme.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/rating.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Product Page</h3>
         @endslot
@@ -29,56 +29,64 @@
                             <div class="row">
                                 <div class="col-xl-9 product-main">
                                     <div class="pro-slide-single">
-                                        <div><img class="img-fluid" src="{{ asset('assets/images/ecommerce/01.jpg') }}"
+                                        <div><img class="img-fluid" src="{{ asset('cms_assets/images/ecommerce/01.jpg') }}"
                                                 alt="" /></div>
-                                        <div><img class="img-fluid" src="{{ asset('assets/images/ecommerce/02.jpg') }}"
+                                        <div><img class="img-fluid" src="{{ asset('cms_assets/images/ecommerce/02.jpg') }}"
                                                 alt="" /></div>
-                                        <div><img class="img-fluid" src="{{ asset('assets/images/ecommerce/03.jpg') }}"
+                                        <div><img class="img-fluid" src="{{ asset('cms_assets/images/ecommerce/03.jpg') }}"
                                                 alt="" /></div>
-                                        <div><img class="img-fluid" src="{{ asset('assets/images/ecommerce/04.jpg') }}"
+                                        <div><img class="img-fluid" src="{{ asset('cms_assets/images/ecommerce/04.jpg') }}"
                                                 alt="" /></div>
-                                        <div><img class="img-fluid" src="{{ asset('assets/images/ecommerce/05.jpg') }}"
+                                        <div><img class="img-fluid" src="{{ asset('cms_assets/images/ecommerce/05.jpg') }}"
                                                 alt="" /></div>
-                                        <div><img class="img-fluid" src="{{ asset('assets/images/ecommerce/06.jpg') }}"
+                                        <div><img class="img-fluid" src="{{ asset('cms_assets/images/ecommerce/06.jpg') }}"
                                                 alt="" /></div>
-                                        <div><img class="img-fluid" src="{{ asset('assets/images/ecommerce/07.jpg') }}"
+                                        <div><img class="img-fluid" src="{{ asset('cms_assets/images/ecommerce/07.jpg') }}"
                                                 alt="" /></div>
-                                        <div><img class="img-fluid" src="{{ asset('assets/images/ecommerce/08.jpg') }}"
+                                        <div><img class="img-fluid" src="{{ asset('cms_assets/images/ecommerce/08.jpg') }}"
                                                 alt="" /></div>
                                     </div>
                                 </div>
                                 <div class="col-xl-3 product-thumbnail">
                                     <div class="pro-slide-right">
                                         <div>
-                                            <div class="slide-box"><img src="{{ asset('assets/images/ecommerce/01.jpg') }}"
+                                            <div class="slide-box"><img
+                                                    src="{{ asset('cms_assets/images/ecommerce/01.jpg') }}"
                                                     alt="" /></div>
                                         </div>
                                         <div>
-                                            <div class="slide-box"><img src="{{ asset('assets/images/ecommerce/02.jpg') }}"
+                                            <div class="slide-box"><img
+                                                    src="{{ asset('cms_assets/images/ecommerce/02.jpg') }}"
                                                     alt="" /></div>
                                         </div>
                                         <div>
-                                            <div class="slide-box"><img src="{{ asset('assets/images/ecommerce/03.jpg') }}"
+                                            <div class="slide-box"><img
+                                                    src="{{ asset('cms_assets/images/ecommerce/03.jpg') }}"
                                                     alt="" /></div>
                                         </div>
                                         <div>
-                                            <div class="slide-box"><img src="{{ asset('assets/images/ecommerce/04.jpg') }}"
+                                            <div class="slide-box"><img
+                                                    src="{{ asset('cms_assets/images/ecommerce/04.jpg') }}"
                                                     alt="" /></div>
                                         </div>
                                         <div>
-                                            <div class="slide-box"><img src="{{ asset('assets/images/ecommerce/05.jpg') }}"
+                                            <div class="slide-box"><img
+                                                    src="{{ asset('cms_assets/images/ecommerce/05.jpg') }}"
                                                     alt="" /></div>
                                         </div>
                                         <div>
-                                            <div class="slide-box"><img src="{{ asset('assets/images/ecommerce/06.jpg') }}"
+                                            <div class="slide-box"><img
+                                                    src="{{ asset('cms_assets/images/ecommerce/06.jpg') }}"
                                                     alt="" /></div>
                                         </div>
                                         <div>
-                                            <div class="slide-box"><img src="{{ asset('assets/images/ecommerce/07.jpg') }}"
+                                            <div class="slide-box"><img
+                                                    src="{{ asset('cms_assets/images/ecommerce/07.jpg') }}"
                                                     alt="" /></div>
                                         </div>
                                         <div>
-                                            <div class="slide-box"><img src="{{ asset('assets/images/ecommerce/08.jpg') }}"
+                                            <div class="slide-box"><img
+                                                    src="{{ asset('cms_assets/images/ecommerce/08.jpg') }}"
                                                     alt="" /></div>
                                         </div>
                                     </div>
@@ -368,9 +376,9 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/rating/jquery.barrating.js') }}"></script>
-        <script src="{{ asset('assets/js/rating/rating-script.js') }}"></script>
-        <script src="{{ asset('assets/js/slick-slider/slick.min.js') }}"></script>
-        <script src="{{ asset('assets/js/slick-slider/slick-theme.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/rating/jquery.barrating.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/rating/rating-script.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/slick-slider/slick.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/slick-slider/slick-theme.js') }}"></script>
     @endpush
 @endsection

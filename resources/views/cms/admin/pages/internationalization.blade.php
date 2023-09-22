@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Internationalization</h3>
         @endslot
@@ -217,6 +217,6 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/internationalization/language-picker.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/internationalization/language-picker.js') }}"></script>
     @endpush
 @endsection

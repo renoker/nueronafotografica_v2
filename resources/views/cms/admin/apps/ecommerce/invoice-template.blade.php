@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Invoice</h3>
         @endslot
@@ -30,7 +30,7 @@
                                         <div class="media">
                                             <div class="media-left">
                                                 <a href=""><img class="media-object img-60"
-                                                        src="{{ asset('assets/images/logo/logo-1.png') }}"
+                                                        src="{{ asset('cms_assets/images/logo/logo-1.png') }}"
                                                         alt="" /></a>
                                             </div>
                                             <div class="media-body m-l-20">
@@ -60,7 +60,7 @@
                                 <div class="col-xl-4">
                                     <div class="media">
                                         <div class="media-left"><img class="media-object rounded-circle img-60"
-                                                src="{{ asset('assets/images/user/1.jpg') }}" alt="" /></div>
+                                                src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="" /></div>
                                         <div class="media-body m-l-20">
                                             <h4 class="media-heading f-w-600">Johan Deo</h4>
                                             <p>
@@ -204,7 +204,8 @@
                                     </div>
                                     <div class="col-md-4">
                                         <form class="text-end invo-pal">
-                                            <input type="image" src="{{ asset('assets/images/other-images/paypal.png') }}"
+                                            <input type="image"
+                                                src="{{ asset('cms_assets/images/other-images/paypal.png') }}"
                                                 name="submit" alt="PayPal - The safer, easier way to pay online!" />
                                         </form>
                                     </div>
@@ -225,9 +226,9 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/counter/jquery.waypoints.min.js') }}"></script>
-        <script src="{{ asset('assets/js/counter/jquery.counterup.min.js') }}"></script>
-        <script src="{{ asset('assets/js/counter/counter-custom.js') }}"></script>
-        <script src="{{ asset('assets/js/print.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/jquery.waypoints.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/jquery.counterup.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/counter-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/print.js') }}"></script>
     @endpush
 @endsection

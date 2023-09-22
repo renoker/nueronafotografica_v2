@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Video Chat</h3>
         @endslot
@@ -27,8 +27,8 @@
                             <!-- Chat left side Start-->
                             <div class="chat-left-aside">
                                 <div class="media">
-                                    <img class="rounded-circle user-image" src="{{ asset('assets/images/user/12.png') }}"
-                                        alt="" />
+                                    <img class="rounded-circle user-image"
+                                        src="{{ asset('cms_assets/images/user/12.png') }}" alt="" />
                                     <div class="about">
                                         <div class="name f-w-600">Mark Jecno</div>
                                         <div class="status">Status...</div>
@@ -45,7 +45,7 @@
                                         <li class="clearfix">
                                             <div class="media">
                                                 <img class="rounded-circle user-image"
-                                                    src="{{ asset('assets/images/user/1.jpg') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="" />
                                                 <div class="status-circle away"></div>
                                                 <div class="media-body">
                                                     <div class="about">
@@ -58,7 +58,7 @@
                                         <li class="clearfix">
                                             <div class="media">
                                                 <img class="rounded-circle user-image"
-                                                    src="{{ asset('assets/images/user/2.png') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/2.png') }}" alt="" />
                                                 <div class="status-circle online"></div>
                                                 <div class="media-body">
                                                     <div class="about">
@@ -71,7 +71,7 @@
                                         <li class="clearfix">
                                             <div class="media">
                                                 <img class="rounded-circle user-image"
-                                                    src="{{ asset('assets/images/user/8.jpg') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/8.jpg') }}" alt="" />
                                                 <div class="status-circle online"></div>
                                                 <div class="media-body">
                                                     <div class="about">
@@ -84,7 +84,7 @@
                                         <li class="clearfix">
                                             <div class="media">
                                                 <img class="rounded-circle user-image"
-                                                    src="{{ asset('assets/images/user/4.jpg') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/4.jpg') }}" alt="" />
                                                 <div class="status-circle offline"></div>
                                                 <div class="media-body">
                                                     <div class="about">
@@ -97,7 +97,7 @@
                                         <li class="clearfix">
                                             <div class="media">
                                                 <img class="rounded-circle user-image"
-                                                    src="{{ asset('assets/images/user/5.jpg') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/5.jpg') }}" alt="" />
                                                 <div class="status-circle online"></div>
                                                 <div class="media-body">
                                                     <div class="about">
@@ -110,7 +110,7 @@
                                         <li class="clearfix">
                                             <div class="media">
                                                 <img class="rounded-circle user-image"
-                                                    src="{{ asset('assets/images/user/8.jpg') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/8.jpg') }}" alt="" />
                                                 <div class="status-circle offline"></div>
                                                 <div class="media-body">
                                                     <div class="about">
@@ -123,7 +123,7 @@
                                         <li class="clearfix">
                                             <div class="media">
                                                 <img class="rounded-circle user-image"
-                                                    src="{{ asset('assets/images/user/1.jpg') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="" />
                                                 <div class="status-circle online"></div>
                                                 <div class="media-body">
                                                     <div class="about">
@@ -136,7 +136,7 @@
                                         <li class="clearfix">
                                             <div class="media">
                                                 <img class="rounded-circle user-image"
-                                                    src="{{ asset('assets/images/user/8.jpg') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/user/8.jpg') }}" alt="" />
                                                 <div class="status-circle online"></div>
                                                 <div class="media-body">
                                                     <div class="about">
@@ -164,7 +164,7 @@
                                 <div class="chat">
                                     <!-- chat-header start-->
                                     <div class="media chat-header clearfix">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/user/8.jpg') }}"
+                                        <img class="rounded-circle" src="{{ asset('cms_assets/images/user/8.jpg') }}"
                                             alt="" />
                                         <div class="media-body">
                                             <div class="about">
@@ -217,13 +217,13 @@
                                                     </div>
                                                     <button class="btn btn-danger btn-block btn-lg">END CALL</button>
                                                     <div class="receiver-img"><img
-                                                            src="{{ asset('assets/images/other-images/receiver-img.jpg') }}"
+                                                            src="{{ asset('cms_assets/images/other-images/receiver-img.jpg') }}"
                                                             alt="" /></div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 caller-img-sec">
                                                 <div class="caller-img"><img class="img-fluid bg-img-cover"
-                                                        src="{{ asset('assets/images/other-images/caller.jpg') }}"
+                                                        src="{{ asset('cms_assets/images/other-images/caller.jpg') }}"
                                                         alt="" /></div>
                                             </div>
                                         </div>
@@ -259,7 +259,7 @@
                                                 <li class="clearfix">
                                                     <div class="media">
                                                         <img class="rounded-circle user-image"
-                                                            src="{{ asset('assets/images/user/4.jpg') }}"
+                                                            src="{{ asset('cms_assets/images/user/4.jpg') }}"
                                                             alt="" />
                                                         <div class="media-body">
                                                             <div class="about">
@@ -274,7 +274,7 @@
                                                 <li class="clearfix">
                                                     <div class="media">
                                                         <img class="rounded-circle user-image mt-0"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}"
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
                                                             alt="" />
                                                         <div class="media-body">
                                                             <div class="about">
@@ -289,7 +289,7 @@
                                                 <li class="clearfix">
                                                     <div class="media">
                                                         <img class="rounded-circle user-image"
-                                                            src="{{ asset('assets/images/user/8.jpg') }}"
+                                                            src="{{ asset('cms_assets/images/user/8.jpg') }}"
                                                             alt="" />
                                                         <div class="media-body">
                                                             <div class="about">
@@ -304,7 +304,7 @@
                                                 <li class="clearfix">
                                                     <div class="media">
                                                         <img class="rounded-circle user-image"
-                                                            src="{{ asset('assets/images/user/2.png') }}"
+                                                            src="{{ asset('cms_assets/images/user/2.png') }}"
                                                             alt="" />
                                                         <div class="media-body">
                                                             <div class="about">
@@ -319,7 +319,7 @@
                                                 <li class="clearfix">
                                                     <div class="media">
                                                         <img class="rounded-circle user-image"
-                                                            src="{{ asset('assets/images/user/4.jpg') }}"
+                                                            src="{{ asset('cms_assets/images/user/4.jpg') }}"
                                                             alt="" />
                                                         <div class="media-body">
                                                             <div class="about">
@@ -334,7 +334,7 @@
                                                 <li class="clearfix">
                                                     <div class="media">
                                                         <img class="rounded-circle user-image mt-0"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}"
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
                                                             alt="" />
                                                         <div class="media-body">
                                                             <div class="about">
@@ -376,7 +376,7 @@
                                         <div class="user-profile">
                                             <div class="image">
                                                 <div class="avatar text-center"><img alt=""
-                                                        src="{{ asset('assets/images/user/2.png') }}" /></div>
+                                                        src="{{ asset('cms_assets/images/user/2.png') }}" /></div>
                                                 <div class="icon-wrapper"><i class="icofont icofont-pencil-alt-5"></i>
                                                 </div>
                                             </div>
@@ -434,6 +434,6 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/fullscreen.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/fullscreen.js') }}"></script>
     @endpush
 @endsection

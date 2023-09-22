@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Ck Editor</h3>
         @endslot
@@ -98,9 +98,9 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/editor/ckeditor/ckeditor.js') }}"></script>
-        <script src="{{ asset('assets/js/editor/ckeditor/adapters/jquery.js') }}"></script>
-        <script src="{{ asset('assets/js/editor/ckeditor/styles.js') }}"></script>
-        <script src="{{ asset('assets/js/editor/ckeditor/ckeditor.custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ckeditor/ckeditor.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ckeditor/adapters/jquery.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ckeditor/styles.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ckeditor/ckeditor.custom.js') }}"></script>
     @endpush
 @endsection

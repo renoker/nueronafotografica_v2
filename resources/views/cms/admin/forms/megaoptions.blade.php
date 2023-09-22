@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Mega options</h3>
         @endslot
@@ -524,6 +524,6 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/height-equal.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/height-equal.js') }}"></script>
     @endpush
 @endsection

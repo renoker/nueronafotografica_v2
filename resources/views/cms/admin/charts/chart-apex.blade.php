@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Apex Chart</h3>
         @endslot
@@ -156,8 +156,8 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/chart/apex-chart/apex-chart.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/apex-chart/stock-prices.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/apex-chart/chart-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/apex-chart/apex-chart.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/apex-chart/stock-prices.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/apex-chart/chart-custom.js') }}"></script>
     @endpush
 @endsection

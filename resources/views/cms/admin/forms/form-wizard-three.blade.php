@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Form Wizard With Icon</h3>
         @endslot
@@ -109,7 +109,7 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/form-wizard/form-wizard-three.js') }}"></script>
-        <script src="{{ asset('assets/js/form-wizard/jquery.backstretch.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/form-wizard/form-wizard-three.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/form-wizard/jquery.backstretch.min.js') }}"></script>
     @endpush
 @endsection

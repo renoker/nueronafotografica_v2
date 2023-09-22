@@ -12,7 +12,7 @@
     <section>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-5"><img class="bg-img-cover bg-center" src="{{ asset('assets/images/login/3.jpg') }}"
+                <div class="col-xl-5"><img class="bg-img-cover bg-center" src="{{ asset('cms_assets/images/login/3.jpg') }}"
                         alt="looginpage" /></div>
                 <div class="col-xl-7 p-0">
                     <div class="login-card">

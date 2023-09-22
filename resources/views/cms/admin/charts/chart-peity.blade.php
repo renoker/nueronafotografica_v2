@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Peity Chart</h3>
         @endslot
@@ -147,7 +147,7 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/chart/peity-chart/peity.jquery.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/peity-chart/peity-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/peity-chart/peity.jquery.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/peity-chart/peity-custom.js') }}"></script>
     @endpush
 @endsection

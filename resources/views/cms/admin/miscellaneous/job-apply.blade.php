@@ -6,12 +6,12 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/select2.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/date-picker.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/select2.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/date-picker.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Apply</h3>
         @endslot
@@ -201,8 +201,8 @@
                     <div class="job-search">
                         <div class="card-body pb-0">
                             <div class="media">
-                                <img class="img-40 img-fluid m-r-20" src="{{ asset('assets/images/job-search/1.jpg') }}"
-                                    alt="" />
+                                <img class="img-40 img-fluid m-r-20"
+                                    src="{{ asset('cms_assets/images/job-search/1.jpg') }}" alt="" />
                                 <div class="media-body">
                                     <h5 class="f-w-700 mb-0"><a href="javascript:void(0)">UI Designer </a></h5>
                                     <p>Endless Telecom & Technologies , NY</p>
@@ -532,10 +532,10 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/datepicker/date-picker/datepicker.js') }}"></script>
-        <script src="{{ asset('assets/js/datepicker/date-picker/datepicker.en.js') }}"></script>
-        <script src="{{ asset('assets/js/datepicker/date-picker/datepicker.custom.js') }}"></script>
-        <script src="{{ asset('assets/js/select2/select2.full.min.js') }}"></script>
-        <script src="{{ asset('assets/js/select2/select2-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datepicker/date-picker/datepicker.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datepicker/date-picker/datepicker.en.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datepicker/date-picker/datepicker.custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/select2/select2.full.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/select2/select2-custom.js') }}"></script>
     @endpush
 @endsection

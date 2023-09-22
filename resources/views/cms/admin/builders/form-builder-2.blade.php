@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Form Builder 2</h3>
         @endslot
@@ -282,8 +282,8 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/jquery.ui.min.js') }}"></script>
-        <script src="{{ asset('assets/js/form-builder/form-builder-2/beautifyhtml.js') }}"></script>
-        <script src="{{ asset('assets/js/form-builder/form-builder-2/form-builder-2.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/jquery.ui.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/form-builder/form-builder-2/beautifyhtml.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/form-builder/form-builder-2/form-builder-2.js') }}"></script>
     @endpush
 @endsection

@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/animate.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/animate.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Animate</h3>
         @endslot
@@ -28,7 +28,7 @@
                                 <div id="animation-box">
                                     <div class="card">
                                         <div class="animate-widget">
-                                            <div><img class="img-fluid" src="{{ asset('assets/images/banner/3.jpg') }}"
+                                            <div><img class="img-fluid" src="{{ asset('cms_assets/images/banner/3.jpg') }}"
                                                     alt="" /></div>
                                             <div class="text-center p-25">
                                                 <p class="text-muted mb-0">Denouncing pleasure and praising pain was born
@@ -241,6 +241,6 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/animation/animate-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/animation/animate-custom.js') }}"></script>
     @endpush
 @endsection

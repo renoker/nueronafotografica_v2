@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/datatables.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/datatables.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Wishlist</h3>
         @endslot
@@ -32,7 +32,8 @@
                                 <div class="prooduct-details-box">
                                     <div class="media">
                                         <a href="#"><img class="align-self-center img-fluid"
-                                                src="{{ asset('assets/images/ecommerce/01.jpg') }}" alt="#" /></a>
+                                                src="{{ asset('cms_assets/images/ecommerce/01.jpg') }}"
+                                                alt="#" /></a>
                                         <div class="media-body">
                                             <div class="product-name">
                                                 <a href="#">
@@ -59,7 +60,8 @@
                                 <div class="prooduct-details-box">
                                     <div class="media">
                                         <a href="#"><img class="align-self-center img-fluid"
-                                                src="{{ asset('assets/images/ecommerce/02.jpg') }}" alt="#" /></a>
+                                                src="{{ asset('cms_assets/images/ecommerce/02.jpg') }}"
+                                                alt="#" /></a>
                                         <div class="media-body">
                                             <div class="product-name">
                                                 <a href="#">
@@ -86,7 +88,8 @@
                                 <div class="prooduct-details-box">
                                     <div class="media">
                                         <a href="#"><img class="align-self-center img-fluid"
-                                                src="{{ asset('assets/images/ecommerce/03.jpg') }}" alt="#" /></a>
+                                                src="{{ asset('cms_assets/images/ecommerce/03.jpg') }}"
+                                                alt="#" /></a>
                                         <div class="media-body">
                                             <div class="product-name">
                                                 <a href="#">
@@ -113,7 +116,8 @@
                                 <div class="prooduct-details-box">
                                     <div class="media">
                                         <a href="#"><img class="align-self-center img-fluid"
-                                                src="{{ asset('assets/images/ecommerce/04.jpg') }}" alt="#" /></a>
+                                                src="{{ asset('cms_assets/images/ecommerce/04.jpg') }}"
+                                                alt="#" /></a>
                                         <div class="media-body">
                                             <div class="product-name">
                                                 <a href="#">
@@ -140,7 +144,8 @@
                                 <div class="prooduct-details-box">
                                     <div class="media">
                                         <a href="#"><img class="align-self-center img-fluid"
-                                                src="{{ asset('assets/images/ecommerce/05.jpg') }}" alt="#" /></a>
+                                                src="{{ asset('cms_assets/images/ecommerce/05.jpg') }}"
+                                                alt="#" /></a>
                                         <div class="media-body">
                                             <div class="product-name">
                                                 <a href="#">
@@ -167,7 +172,8 @@
                                 <div class="prooduct-details-box">
                                     <div class="media">
                                         <a href="#"><img class="align-self-center img-fluid"
-                                                src="{{ asset('assets/images/ecommerce/06.jpg') }}" alt="#" /></a>
+                                                src="{{ asset('cms_assets/images/ecommerce/06.jpg') }}"
+                                                alt="#" /></a>
                                         <div class="media-body">
                                             <div class="product-name">
                                                 <a href="#">
@@ -194,7 +200,8 @@
                                 <div class="prooduct-details-box">
                                     <div class="media">
                                         <a href="#"><img class="align-self-center img-fluid"
-                                                src="{{ asset('assets/images/ecommerce/05.jpg') }}" alt="#" /></a>
+                                                src="{{ asset('cms_assets/images/ecommerce/05.jpg') }}"
+                                                alt="#" /></a>
                                         <div class="media-body">
                                             <div class="product-name">
                                                 <a href="#">
@@ -221,7 +228,8 @@
                                 <div class="prooduct-details-box">
                                     <div class="media">
                                         <a href="#"><img class="align-self-center img-fluid"
-                                                src="{{ asset('assets/images/ecommerce/07.jpg') }}" alt="#" /></a>
+                                                src="{{ asset('cms_assets/images/ecommerce/07.jpg') }}"
+                                                alt="#" /></a>
                                         <div class="media-body">
                                             <div class="product-name">
                                                 <a href="#">
@@ -248,7 +256,8 @@
                                 <div class="prooduct-details-box">
                                     <div class="media">
                                         <a href="#"><img class="align-self-center img-fluid"
-                                                src="{{ asset('assets/images/ecommerce/08.jpg') }}" alt="#" /></a>
+                                                src="{{ asset('cms_assets/images/ecommerce/08.jpg') }}"
+                                                alt="#" /></a>
                                         <div class="media-body">
                                             <div class="product-name">
                                                 <a href="#">
@@ -275,7 +284,8 @@
                                 <div class="prooduct-details-box">
                                     <div class="media">
                                         <a href="#"><img class="align-self-center img-fluid"
-                                                src="{{ asset('assets/images/ecommerce/01.jpg') }}" alt="#" /></a>
+                                                src="{{ asset('cms_assets/images/ecommerce/01.jpg') }}"
+                                                alt="#" /></a>
                                         <div class="media-body">
                                             <div class="product-name">
                                                 <a href="#">
@@ -302,7 +312,8 @@
                                 <div class="prooduct-details-box">
                                     <div class="media">
                                         <a href="#"><img class="align-self-center img-fluid"
-                                                src="{{ asset('assets/images/ecommerce/02.jpg') }}" alt="#" /></a>
+                                                src="{{ asset('cms_assets/images/ecommerce/02.jpg') }}"
+                                                alt="#" /></a>
                                         <div class="media-body">
                                             <div class="product-name">
                                                 <a href="#">
@@ -329,7 +340,8 @@
                                 <div class="prooduct-details-box">
                                     <div class="media">
                                         <a href="#"><img class="align-self-center img-fluid"
-                                                src="{{ asset('assets/images/ecommerce/03.jpg') }}" alt="#" /></a>
+                                                src="{{ asset('cms_assets/images/ecommerce/03.jpg') }}"
+                                                alt="#" /></a>
                                         <div class="media-body">
                                             <div class="product-name">
                                                 <a href="#">
@@ -361,7 +373,7 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/datatable/datatables/jquery.dataTables.min.js') }}"></script>
-        <script src="{{ asset('assets/js/datatable/datatables/datatable.custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datatable/datatables/jquery.dataTables.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datatable/datatables/datatable.custom.js') }}"></script>
     @endpush
 @endsection

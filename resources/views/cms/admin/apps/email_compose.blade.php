@@ -7,11 +7,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/dropzone.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/dropzone.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Email Compose</h3>
         @endslot
@@ -32,7 +32,8 @@
                                     <div class="email-app-sidebar">
                                         <div class="media">
                                             <div class="media-size-email"><img class="me-3 rounded-circle"
-                                                    src="{{ asset('assets/images/user/user.png') }}" alt="" /></div>
+                                                    src="{{ asset('cms_assets/images/user/user.png') }}" alt="" />
+                                            </div>
                                             <div class="media-body">
                                                 <h6 class="f-w-600">MARKJENCO</h6>
                                                 <p>Markjecno@gmail.com</p>
@@ -191,10 +192,10 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/editor/ckeditor/ckeditor.js') }}"></script>
-        <script src="{{ asset('assets/js/editor/ckeditor/adapters/jquery.js') }}"></script>
-        <script src="{{ asset('assets/js/dropzone/dropzone.js') }}"></script>
-        <script src="{{ asset('assets/js/dropzone/dropzone-script.js') }}"></script>
-        <script src="{{ asset('assets/js/email-app.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ckeditor/ckeditor.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ckeditor/adapters/jquery.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/dropzone/dropzone.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/dropzone/dropzone-script.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/email-app.js') }}"></script>
     @endpush
 @endsection

@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Form Builder 1</h3>
         @endslot
@@ -56,11 +56,11 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/counter/jquery.waypoints.min.js') }}"></script>
-        <script src="{{ asset('assets/js/counter/jquery.counterup.min.js') }}"></script>
-        <script src="{{ asset('assets/js/counter/counter-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/jquery.waypoints.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/jquery.counterup.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/counter-custom.js') }}"></script>
 
-        <script src="{{ asset('assets/js/form-builder/form-builder-1/require.js') }}"></script>
-        <script src="{{ asset('assets/js/form-builder/form-builder-1/main-built.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/form-builder/form-builder-1/require.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/form-builder/form-builder-1/main-built.js') }}"></script>
     @endpush
 @endsection

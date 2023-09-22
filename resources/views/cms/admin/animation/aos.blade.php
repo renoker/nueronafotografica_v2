@@ -6,12 +6,12 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/aos.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/photoswipe.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/aos.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/photoswipe.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>AOS Animation</h3>
         @endslot
@@ -29,200 +29,200 @@
                     <div class="card-body">
                         <div class="row gallery grid my-gallery" id="aniimated-thumbnials">
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="fade-down">
-                                <a href="{{ asset('assets/images/big-masonry/1.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/1.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/1.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/1.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 1</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="zoom-out-down">
-                                <a href="{{ asset('assets/images/big-masonry/2.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/2.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/2.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/2.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 2</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="flip-down">
-                                <a href="{{ asset('assets/images/big-masonry/3.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/3.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/3.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/3.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 3</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="fade-up">
-                                <a href="{{ asset('assets/images/big-masonry/4.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/4.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/4.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/4.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 4</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="flip-down">
-                                <a href="{{ asset('assets/images/big-masonry/5.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/5.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/5.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/5.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 5</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="fade-up">
-                                <a href="{{ asset('assets/images/big-masonry/6.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/6.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/6.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/6.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 6</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="flip-down">
-                                <a href="{{ asset('assets/images/big-masonry/7.jpg') }}" data-size="11600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/7.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/7.jpg') }}" data-size="11600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/7.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 7</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="fade-up">
-                                <a href="{{ asset('assets/images/big-masonry/8.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/8.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/8.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/8.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 8</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="flip-down">
-                                <a href="{{ asset('assets/images/big-masonry/9.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/9.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/9.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/9.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 9</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="fade-up">
-                                <a href="{{ asset('assets/images/big-masonry/10.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/10.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/10.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/10.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 10</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="flip-down">
-                                <a href="{{ asset('assets/images/big-masonry/11.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/11.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/11.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/11.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 11</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="fade-up">
-                                <a href="{{ asset('assets/images/big-masonry/12.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/12.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/12.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/12.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 12</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="flip-down">
-                                <a href="{{ asset('assets/images/big-masonry/14.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/14.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/14.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/14.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 13</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="flip-left">
-                                <a href="{{ asset('assets/images/big-masonry/15.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/15.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/15.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/15.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 14</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="flip-down">
-                                <a href="{{ asset('assets/images/big-masonry/13.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/13.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/13.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/13.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 15</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="zoom-out">
-                                <a href="{{ asset('assets/images/big-masonry/4.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/4.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/4.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/4.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 16</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="flip-right">
-                                <a href="{{ asset('assets/images/big-masonry/5.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/5.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/5.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/5.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 17</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="zoom-out">
-                                <a href="{{ asset('assets/images/big-masonry/6.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/6.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/6.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/6.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 18</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="zoom-out-up">
-                                <a href="{{ asset('assets/images/big-masonry/7.jpg') }}" data-size="11600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/7.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/7.jpg') }}" data-size="11600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/7.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 19</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="zoom-out-down">
-                                <a href="{{ asset('assets/images/big-masonry/8.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/8.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/8.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/8.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 20</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="flip-down">
-                                <a href="{{ asset('assets/images/big-masonry/9.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/9.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/9.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/9.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 21</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="slide-up">
-                                <a href="{{ asset('assets/images/big-masonry/10.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/10.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/10.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/10.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 22</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="flip-down">
-                                <a href="{{ asset('assets/images/big-masonry/9.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/9.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/9.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/9.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 23</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="fade-up">
-                                <a href="{{ asset('assets/images/big-masonry/10.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/10.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/10.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/10.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 24</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="flip-down">
-                                <a href="{{ asset('assets/images/big-masonry/11.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/11.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/11.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/11.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 25</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="fade-up">
-                                <a href="{{ asset('assets/images/big-masonry/12.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/12.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/12.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/12.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 26</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="flip-down">
-                                <a href="{{ asset('assets/images/big-masonry/14.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/14.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/14.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/14.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 27</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="flip-left">
-                                <a href="{{ asset('assets/images/big-masonry/15.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/15.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/15.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/15.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 28</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="flip-down">
-                                <a href="{{ asset('assets/images/big-masonry/13.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/13.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/13.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/13.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 29</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="zoom-out">
-                                <a href="{{ asset('assets/images/big-masonry/4.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/4.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/4.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/4.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 30</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="flip-right">
-                                <a href="{{ asset('assets/images/big-masonry/5.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/5.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/5.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/5.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 31</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="zoom-out">
-                                <a href="{{ asset('assets/images/big-masonry/6.jpg') }}" data-size="1600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/6.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/6.jpg') }}" data-size="1600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/6.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 32</figcaption>
                             </figure>
                             <figure class="grid-item col-sm-4 col-md-3" data-aos="zoom-out-up">
-                                <a href="{{ asset('assets/images/big-masonry/7.jpg') }}" data-size="11600x950"><img
-                                        class="img-thumbnail" src="{{ asset('assets/images/masonry/7.jpg') }}"
+                                <a href="{{ asset('cms_assets/images/big-masonry/7.jpg') }}" data-size="11600x950"><img
+                                        class="img-thumbnail" src="{{ asset('cms_assets/images/masonry/7.jpg') }}"
                                         alt="Image description" /></a>
                                 <figcaption>Image caption 33</figcaption>
                             </figure>
@@ -230,9 +230,9 @@
                         <!-- Root element of PhotoSwipe. Must have class pswp.-->
                         <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
                             <!--
-                                          Background of PhotoSwipe.
-                                          It's a separate element, as animating opacity is faster than rgba().
-                                          -->
+                                                  Background of PhotoSwipe.
+                                                  It's a separate element, as animating opacity is faster than rgba().
+                                                  -->
                             <div class="pswp__bg"></div>
                             <!-- Slides wrapper with overflow:hidden.-->
                             <div class="pswp__scroll-wrap">
@@ -490,11 +490,11 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/isotope.pkgd.js') }}"></script>
-        <script src="{{ asset('assets/js/animation/aos/aos.js') }}"></script>
-        <script src="{{ asset('assets/js/animation/aos/aos-init.js') }}"></script>
-        <script src="{{ asset('assets/js/photoswipe/photoswipe.min.js') }}"></script>
-        <script src="{{ asset('assets/js/photoswipe/photoswipe-ui-default.min.js') }}"></script>
-        <script src="{{ asset('assets/js/photoswipe/photoswipe.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/isotope.pkgd.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/animation/aos/aos.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/animation/aos/aos-init.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/photoswipe/photoswipe.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/photoswipe/photoswipe-ui-default.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/photoswipe/photoswipe.js') }}"></script>
     @endpush
 @endsection

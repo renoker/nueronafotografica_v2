@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Lists</h3>
         @endslot
@@ -262,14 +262,16 @@
                     <div class="card-body">
                         <div class="list-group">
                             <a class="list-group-item list-group-item-action" href="javascript:void(0)"><img
-                                    src="{{ asset('assets/images/user/1.jpg') }}" alt="" />Cras justo odio</a>
+                                    src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="" />Cras justo odio</a>
                             <a class="list-group-item list-group-item-action" href="javascript:void(0)"><img
-                                    src="{{ asset('assets/images/user/1.jpg') }}" alt="" />Dapibus ac facilisis
+                                    src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="" />Dapibus ac
+                                facilisis
                                 in</a>
                             <a class="list-group-item list-group-item-action" href="javascript:void(0)"><img
-                                    src="{{ asset('assets/images/user/1.jpg') }}" alt="" />Morbi leo risus</a>
+                                    src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="" />Morbi leo risus</a>
                             <a class="list-group-item list-group-item-action disabled" href="javascript:void(0)"><img
-                                    src="{{ asset('assets/images/user/1.jpg') }}" alt="" />Vestibulum at eros</a>
+                                    src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="" />Vestibulum at
+                                eros</a>
                         </div>
                     </div>
                 </div>
@@ -282,16 +284,16 @@
                     <div class="card-body">
                         <div class="list-group">
                             <a class="list-group-item list-group-item-action" href="javascript:void(0)"><img
-                                    class="rounded-circle" src="{{ asset('assets/images/user/1.jpg') }}"
+                                    class="rounded-circle" src="{{ asset('cms_assets/images/user/1.jpg') }}"
                                     alt="" />Cras justo odio</a>
                             <a class="list-group-item list-group-item-action" href="javascript:void(0)"><img
-                                    class="rounded-circle" src="{{ asset('assets/images/user/1.jpg') }}"
+                                    class="rounded-circle" src="{{ asset('cms_assets/images/user/1.jpg') }}"
                                     alt="" />Dapibus ac facilisis in</a>
                             <a class="list-group-item list-group-item-action" href="javascript:void(0)"><img
-                                    class="rounded-circle" src="{{ asset('assets/images/user/1.jpg') }}"
+                                    class="rounded-circle" src="{{ asset('cms_assets/images/user/1.jpg') }}"
                                     alt="" />Morbi leo risus</a>
                             <a class="list-group-item list-group-item-action disabled" href="javascript:void(0)"><img
-                                    class="rounded-circle" src="{{ asset('assets/images/user/1.jpg') }}"
+                                    class="rounded-circle" src="{{ asset('cms_assets/images/user/1.jpg') }}"
                                     alt="" />Vestibulum at eros</a>
                         </div>
                     </div>
@@ -301,9 +303,9 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/counter/jquery.waypoints.min.js') }}"></script>
-        <script src="{{ asset('assets/js/counter/jquery.counterup.min.js') }}"></script>
-        <script src="{{ asset('assets/js/counter/counter-custom.js') }}"></script>
-        <script src="{{ asset('assets/js/tooltip-init.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/jquery.waypoints.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/jquery.counterup.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/counter-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/tooltip-init.js') }}"></script>
     @endpush
 @endsection

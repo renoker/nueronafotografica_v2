@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/scrollable.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/scrollable.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Scrollable</h3>
         @endslot
@@ -28,7 +28,7 @@
                     <div class="card-body">
                         <div class="scroll-bar-wrap">
                             <div class="click-drag-handler scroll-demo p-0"><img
-                                    src="{{ asset('assets/images/banner/2.jpg') }}" alt="" width="800"
+                                    src="{{ asset('cms_assets/images/banner/2.jpg') }}" alt="" width="800"
                                     height="600" /></div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                     <div class="card-body">
                         <div class="scroll-bar-wrap">
                             <div class="scrollbar-margins large-margin scroll-demo p-0"><img
-                                    src="{{ asset('assets/images/banner/3.jpg') }}" alt="girl" width="800"
+                                    src="{{ asset('cms_assets/images/banner/3.jpg') }}" alt="girl" width="800"
                                     height="600" /></div>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                     <div class="card-body">
                         <div class="scroll-bar-wrap">
                             <div class="both-side-scroll scroll-demo p-0"><img
-                                    src="{{ asset('assets/images/banner/1.jpg') }}" alt="girl" width="800"
+                                    src="{{ asset('cms_assets/images/banner/1.jpg') }}" alt="girl" width="800"
                                     height="600" /></div>
                         </div>
                     </div>
@@ -286,8 +286,8 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/scrollable/perfect-scrollbar.min.js') }}"></script>
-        <script src="{{ asset('assets/js/scrollable/scrollable-custom.js') }}"></script>
-        <script src="{{ asset('assets/js/tooltip-init.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/scrollable/perfect-scrollbar.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/scrollable/scrollable-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/tooltip-init.js') }}"></script>
     @endpush
 @endsection

@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/prism.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/prism.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Project List</h3>
         @endslot
@@ -63,7 +63,7 @@
                                             <h6>Viho admin Design</h6>
                                             <div class="media">
                                                 <img class="img-20 me-2 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" alt=""
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""
                                                     data-original-title="" title="" />
                                                 <div class="media-body">
                                                     <p>Themeforest, australia</p>
@@ -82,13 +82,13 @@
                                             <div class="customers">
                                                 <ul>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""
+                                                            src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""
                                                             data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""
+                                                            src="{{ asset('cms_assets/images/user/5.jpg') }}" alt=""
                                                             data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}" alt=""
                                                             data-original-title="" title="" /></li>
                                                     <li class="d-inline-block ms-2">
                                                         <p class="f-12">+10 More</p>
@@ -114,7 +114,7 @@
                                             <h6>Universal admin Design</h6>
                                             <div class="media">
                                                 <img class="img-20 me-2 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" alt=""
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""
                                                     data-original-title="" title="" />
                                                 <div class="media-body">
                                                     <p>Envato, australia</p>
@@ -133,14 +133,14 @@
                                             <div class="customers">
                                                 <ul>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block ms-2">
                                                         <p class="f-12">+3 More</p>
                                                     </li>
@@ -165,7 +165,7 @@
                                             <h6>Poco admin Design</h6>
                                             <div class="media">
                                                 <img class="img-20 me-2 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" alt=""
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""
                                                     data-original-title="" title="" />
                                                 <div class="media-body">
                                                     <p>Envato, australia</p>
@@ -184,14 +184,14 @@
                                             <div class="customers">
                                                 <ul>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block ms-2">
                                                         <p class="f-12">+2 More</p>
                                                     </li>
@@ -216,7 +216,7 @@
                                             <h6>Universal admin Design</h6>
                                             <div class="media">
                                                 <img class="img-20 me-2 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" alt=""
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""
                                                     data-original-title="" title="" />
                                                 <div class="media-body">
                                                     <p>Envato, australia</p>
@@ -235,14 +235,14 @@
                                             <div class="customers">
                                                 <ul>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block ms-2">
                                                         <p class="f-12">+3 More</p>
                                                     </li>
@@ -267,7 +267,7 @@
                                             <h6>Viho admin Design</h6>
                                             <div class="media">
                                                 <img class="img-20 me-2 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" alt=""
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""
                                                     data-original-title="" title="" />
                                                 <div class="media-body">
                                                     <p>Themeforest, australia</p>
@@ -286,14 +286,14 @@
                                             <div class="customers">
                                                 <ul>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block ms-2">
                                                         <p class="f-12">+10 More</p>
                                                     </li>
@@ -318,7 +318,7 @@
                                             <h6>Poco admin Design</h6>
                                             <div class="media">
                                                 <img class="img-20 me-2 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" alt=""
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""
                                                     data-original-title="" title="" />
                                                 <div class="media-body">
                                                     <p>Envato, australia</p>
@@ -337,14 +337,14 @@
                                             <div class="customers">
                                                 <ul>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block ms-2">
                                                         <p class="f-12">+2 More</p>
                                                     </li>
@@ -374,7 +374,7 @@
                                             <h6>Viho admin Design</h6>
                                             <div class="media">
                                                 <img class="img-20 me-2 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" alt=""
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""
                                                     data-original-title="" title="" />
                                                 <div class="media-body">
                                                     <p>Themeforest, australia</p>
@@ -393,14 +393,14 @@
                                             <div class="customers">
                                                 <ul>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block ms-2">
                                                         <p class="f-12">+10 More</p>
                                                     </li>
@@ -425,7 +425,7 @@
                                             <h6>Universal admin Design</h6>
                                             <div class="media">
                                                 <img class="img-20 me-2 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" alt=""
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""
                                                     data-original-title="" title="" />
                                                 <div class="media-body">
                                                     <p>Envato, australia</p>
@@ -444,14 +444,14 @@
                                             <div class="customers">
                                                 <ul>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block ms-2">
                                                         <p class="f-12">+3 More</p>
                                                     </li>
@@ -476,7 +476,7 @@
                                             <h6>Poco admin Design</h6>
                                             <div class="media">
                                                 <img class="img-20 me-2 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" alt=""
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""
                                                     data-original-title="" title="" />
                                                 <div class="media-body">
                                                     <p>Envato, australia</p>
@@ -495,14 +495,14 @@
                                             <div class="customers">
                                                 <ul>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block ms-2">
                                                         <p class="f-12">+2 More</p>
                                                     </li>
@@ -527,7 +527,7 @@
                                             <h6>Universal admin Design</h6>
                                             <div class="media">
                                                 <img class="img-20 me-2 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" alt=""
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""
                                                     data-original-title="" title="" />
                                                 <div class="media-body">
                                                     <p>Envato, australia</p>
@@ -546,14 +546,14 @@
                                             <div class="customers">
                                                 <ul>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block ms-2">
                                                         <p class="f-12">+3 More</p>
                                                     </li>
@@ -578,7 +578,7 @@
                                             <h6>Viho admin Design</h6>
                                             <div class="media">
                                                 <img class="img-20 me-2 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" alt=""
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""
                                                     data-original-title="" title="" />
                                                 <div class="media-body">
                                                     <p>Themeforest, australia</p>
@@ -597,14 +597,14 @@
                                             <div class="customers">
                                                 <ul>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block ms-2">
                                                         <p class="f-12">+10 More</p>
                                                     </li>
@@ -629,7 +629,7 @@
                                             <h6>Poco admin Design</h6>
                                             <div class="media">
                                                 <img class="img-20 me-2 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" alt=""
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""
                                                     data-original-title="" title="" />
                                                 <div class="media-body">
                                                     <p>Envato, australia</p>
@@ -648,14 +648,14 @@
                                             <div class="customers">
                                                 <ul>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block ms-2">
                                                         <p class="f-12">+2 More</p>
                                                     </li>
@@ -685,7 +685,7 @@
                                             <h6>Viho admin Design</h6>
                                             <div class="media">
                                                 <img class="img-20 me-2 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" alt=""
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""
                                                     data-original-title="" title="" />
                                                 <div class="media-body">
                                                     <p>Themeforest, australia</p>
@@ -704,14 +704,14 @@
                                             <div class="customers">
                                                 <ul>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block ms-2">
                                                         <p class="f-12">+10 More</p>
                                                     </li>
@@ -736,7 +736,7 @@
                                             <h6>Universal admin Design</h6>
                                             <div class="media">
                                                 <img class="img-20 me-2 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" alt=""
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""
                                                     data-original-title="" title="" />
                                                 <div class="media-body">
                                                     <p>Envato, australia</p>
@@ -755,14 +755,14 @@
                                             <div class="customers">
                                                 <ul>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block ms-2">
                                                         <p class="f-12">+3 More</p>
                                                     </li>
@@ -787,7 +787,7 @@
                                             <h6>Poco admin Design</h6>
                                             <div class="media">
                                                 <img class="img-20 me-2 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" alt=""
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""
                                                     data-original-title="" title="" />
                                                 <div class="media-body">
                                                     <p>Envato, australia</p>
@@ -806,14 +806,14 @@
                                             <div class="customers">
                                                 <ul>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block ms-2">
                                                         <p class="f-12">+2 More</p>
                                                     </li>
@@ -838,7 +838,7 @@
                                             <h6>Universal admin Design</h6>
                                             <div class="media">
                                                 <img class="img-20 me-2 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" alt=""
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""
                                                     data-original-title="" title="" />
                                                 <div class="media-body">
                                                     <p>Envato, australia</p>
@@ -857,14 +857,14 @@
                                             <div class="customers">
                                                 <ul>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block ms-2">
                                                         <p class="f-12">+3 More</p>
                                                     </li>
@@ -889,7 +889,7 @@
                                             <h6>Viho admin Design</h6>
                                             <div class="media">
                                                 <img class="img-20 me-2 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" alt=""
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""
                                                     data-original-title="" title="" />
                                                 <div class="media-body">
                                                     <p>Themeforest, australia</p>
@@ -908,14 +908,14 @@
                                             <div class="customers">
                                                 <ul>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block ms-2">
                                                         <p class="f-12">+10 More</p>
                                                     </li>
@@ -940,7 +940,7 @@
                                             <h6>Poco admin Design</h6>
                                             <div class="media">
                                                 <img class="img-20 me-2 rounded-circle"
-                                                    src="{{ asset('assets/images/user/3.jpg') }}" alt=""
+                                                    src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""
                                                     data-original-title="" title="" />
                                                 <div class="media-body">
                                                     <p>Envato, australia</p>
@@ -959,14 +959,14 @@
                                             <div class="customers">
                                                 <ul>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/3.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/5.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block"><img class="img-30 rounded-circle"
-                                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""
-                                                            data-original-title="" title="" /></li>
+                                                            src="{{ asset('cms_assets/images/user/1.jpg') }}"
+                                                            alt="" data-original-title="" title="" /></li>
                                                     <li class="d-inline-block ms-2">
                                                         <p class="f-12">+2 More</p>
                                                     </li>
@@ -996,9 +996,9 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/prism/prism.min.js') }}"></script>
-        <script src="{{ asset('assets/js/clipboard/clipboard.min.js') }}"></script>
-        <script src="{{ asset('assets/js/custom-card/custom-card.js') }}"></script>
-        <script src="{{ asset('assets/js/height-equal.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/prism/prism.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/clipboard/clipboard.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/custom-card/custom-card.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/height-equal.js') }}"></script>
     @endpush
 @endsection

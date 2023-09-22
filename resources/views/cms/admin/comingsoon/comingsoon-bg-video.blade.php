@@ -22,12 +22,12 @@
         <div class="container-fluid p-0">
             <div class="comingsoon auth-bg-video">
                 <video class="bgvideo-comingsoon" id="bgvid"
-                    poster="{{ asset('assets/images/other-images/coming-soon-bg.jpg') }}" playsinline="" autoplay=""
+                    poster="{{ asset('cms_assets/images/other-images/coming-soon-bg.jpg') }}" playsinline="" autoplay=""
                     muted="" loop="">
-                    <source src="{{ asset('assets/video/auth-bg.mp4') }}" type="video/mp4" />
+                    <source src="{{ asset('cms_assets/video/auth-bg.mp4') }}" type="video/mp4" />
                 </video>
                 <div class="comingsoon-inner text-center">
-                    <a href=""><img src="{{ asset('assets/images/logo/logo-1.png') }}" alt="" /></a>
+                    <a href=""><img src="{{ asset('cms_assets/images/logo/logo-1.png') }}" alt="" /></a>
                     <h5>WE ARE COMING SOON</h5>
                     <div class="countdown" id="clockdiv">
                         <ul>
@@ -43,6 +43,6 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/countdown.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/countdown.js') }}"></script>
     @endpush
 @endsection

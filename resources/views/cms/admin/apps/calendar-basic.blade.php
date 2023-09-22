@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/calendar.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/calendar.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Calender Basic</h3>
         @endslot
@@ -123,14 +123,14 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/calendar/tui-code-snippet.min.js') }}"></script>
-        <script src="{{ asset('assets/js/calendar/tui-time-picker.min.js') }}"></script>
-        <script src="{{ asset('assets/js/calendar/tui-date-picker.min.js') }}"></script>
-        <script src="{{ asset('assets/js/calendar/moment.min.js') }}"></script>
-        <script src="{{ asset('assets/js/calendar/chance.min.js') }}"></script>
-        <script src="{{ asset('assets/js/calendar/tui-calendar.js') }}"></script>
-        <script src="{{ asset('assets/js/calendar/calendars.js') }}"></script>
-        <script src="{{ asset('assets/js/calendar/schedules.js') }}"></script>
-        <script src="{{ asset('assets/js/calendar/app.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/calendar/tui-code-snippet.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/calendar/tui-time-picker.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/calendar/tui-date-picker.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/calendar/moment.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/calendar/chance.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/calendar/tui-calendar.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/calendar/calendars.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/calendar/schedules.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/calendar/app.js') }}"></script>
     @endpush
 @endsection

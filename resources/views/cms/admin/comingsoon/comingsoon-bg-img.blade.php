@@ -22,7 +22,7 @@
         <div class="container-fluid p-0 m-0">
             <div class="comingsoon comingsoon-bgimg">
                 <div class="comingsoon-inner text-center">
-                    <a href=""><img src="{{ asset('assets/images/logo/logo-1.png') }}" alt="" /></a>
+                    <a href=""><img src="{{ asset('cms_assets/images/logo/logo-1.png') }}" alt="" /></a>
                     <h5>WE ARE COMING SOON</h5>
                     <div class="countdown" id="clockdiv">
                         <ul>
@@ -38,6 +38,6 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/countdown.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/countdown.js') }}"></script>
     @endpush
 @endsection

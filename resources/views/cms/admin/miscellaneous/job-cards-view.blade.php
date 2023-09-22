@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Cards View</h3>
         @endslot
@@ -202,7 +202,7 @@
                                 <div class="card-body">
                                     <div class="media">
                                         <img class="img-40 img-fluid m-r-20"
-                                            src="{{ asset('assets/images/job-search/1.jpg') }}" alt="" />
+                                            src="{{ asset('cms_assets/images/job-search/1.jpg') }}" alt="" />
                                         <div class="media-body">
                                             <h6 class="f-w-600"><a href="{{ route('job-details') }}">UI/UX IT Frontend
                                                     Developer</a><span class="badge badge-primary pull-right">New</span>
@@ -232,7 +232,7 @@
                                 <div class="card-body">
                                     <div class="media">
                                         <img class="img-40 img-fluid m-r-20"
-                                            src="{{ asset('assets/images/job-search/2.jpg') }}" alt="" />
+                                            src="{{ asset('cms_assets/images/job-search/2.jpg') }}" alt="" />
                                         <div class="media-body">
                                             <h6 class="f-w-600"><a href="{{ route('job-details') }}">React/React Native
                                                     Developer </a><span class="badge badge-primary pull-right">New</span>
@@ -266,7 +266,7 @@
                                 <div class="card-body">
                                     <div class="media">
                                         <img class="img-40 img-fluid m-r-20"
-                                            src="{{ asset('assets/images/job-search/3.jpg') }}" alt="" />
+                                            src="{{ asset('cms_assets/images/job-search/3.jpg') }}" alt="" />
                                         <div class="media-body">
                                             <h6 class="f-w-600"><a href="{{ route('job-details') }}">Senior UX
                                                     designer</a><span class="pull-right">2 days ago</span></h6>
@@ -296,7 +296,7 @@
                                 <div class="card-body">
                                     <div class="media">
                                         <img class="img-40 img-fluid m-r-20"
-                                            src="{{ asset('assets/images/job-search/4.jpg') }}" alt="" />
+                                            src="{{ asset('cms_assets/images/job-search/4.jpg') }}" alt="" />
                                         <div class="media-body">
                                             <h6 class="f-w-600"><a href="{{ route('job-details') }}">Front end web
                                                     developer</a><span class="pull-right">3 days ago</span></h6>
@@ -327,7 +327,7 @@
                                 <div class="card-body">
                                     <div class="media">
                                         <img class="img-40 img-fluid m-r-20"
-                                            src="{{ asset('assets/images/job-search/5.jpg') }}" alt="" />
+                                            src="{{ asset('cms_assets/images/job-search/5.jpg') }}" alt="" />
                                         <div class="media-body">
                                             <h6 class="f-w-600"><a href="{{ route('job-details') }}">Graphic
                                                     designer</a><span class="pull-right">3 days ago</span></h6>
@@ -357,7 +357,7 @@
                                 <div class="card-body">
                                     <div class="media">
                                         <img class="img-40 img-fluid m-r-20"
-                                            src="{{ asset('assets/images/job-search/6.jpg') }}" alt="" />
+                                            src="{{ asset('cms_assets/images/job-search/6.jpg') }}" alt="" />
                                         <div class="media-body">
                                             <h6 class="f-w-600"><a href="{{ route('job-details') }}">Designer,
                                                     CRM</a><span class="pull-right">3 days ago</span></h6>
@@ -390,7 +390,7 @@
                                 <div class="card-body">
                                     <div class="media">
                                         <img class="img-40 img-fluid m-r-20"
-                                            src="{{ asset('assets/images/job-search/2.jpg') }}" alt="" />
+                                            src="{{ asset('cms_assets/images/job-search/2.jpg') }}" alt="" />
                                         <div class="media-body">
                                             <h6 class="f-w-600"><a href="{{ route('job-details') }}">React/React Native
                                                     Developer </a><span class="pull-right">5 days ago</span></h6>
@@ -420,7 +420,7 @@
                                 <div class="card-body">
                                     <div class="media">
                                         <img class="img-40 img-fluid m-r-20"
-                                            src="{{ asset('assets/images/job-search/3.jpg') }}" alt="" />
+                                            src="{{ asset('cms_assets/images/job-search/3.jpg') }}" alt="" />
                                         <div class="media-body">
                                             <h6 class="f-w-600"><a href="{{ route('job-details') }}">Senior UX
                                                     designer</a><span class="pull-right">5 days ago</span></h6>
@@ -450,7 +450,7 @@
                                 <div class="card-body">
                                     <div class="media">
                                         <img class="img-40 img-fluid m-r-20"
-                                            src="{{ asset('assets/images/job-search/5.jpg') }}" alt="" />
+                                            src="{{ asset('cms_assets/images/job-search/5.jpg') }}" alt="" />
                                         <div class="media-body">
                                             <h6 class="f-w-600"><a href="{{ route('job-details') }}">Graphic
                                                     designer</a><span class="pull-right">3 days ago</span></h6>
@@ -480,7 +480,7 @@
                                 <div class="card-body">
                                     <div class="media">
                                         <img class="img-40 img-fluid m-r-20"
-                                            src="{{ asset('assets/images/job-search/6.jpg') }}" alt="" />
+                                            src="{{ asset('cms_assets/images/job-search/6.jpg') }}" alt="" />
                                         <div class="media-body">
                                             <h6 class="f-w-600"><a href="{{ route('job-details') }}">Designer,
                                                     CRM</a><span class="pull-right">3 days ago</span></h6>
@@ -511,7 +511,7 @@
                                 <div class="card-body">
                                     <div class="media">
                                         <img class="img-40 img-fluid m-r-20"
-                                            src="{{ asset('assets/images/job-search/1.jpg') }}" alt="" />
+                                            src="{{ asset('cms_assets/images/job-search/1.jpg') }}" alt="" />
                                         <div class="media-body">
                                             <h6 class="f-w-600"><a href="{{ route('job-details') }}">UI/UX IT Frontend
                                                     Developer</a><span class="badge badge-primary pull-right">New</span>
@@ -542,7 +542,7 @@
                                 <div class="card-body">
                                     <div class="media">
                                         <img class="img-40 img-fluid m-r-20"
-                                            src="{{ asset('assets/images/job-search/2.jpg') }}" alt="" />
+                                            src="{{ asset('cms_assets/images/job-search/2.jpg') }}" alt="" />
                                         <div class="media-body">
                                             <h6 class="f-w-600"><a href="{{ route('job-details') }}">React/React Native
                                                     Developer </a><span class="badge badge-primary pull-right">New</span>
@@ -574,7 +574,7 @@
                                 <div class="card-body">
                                     <div class="media">
                                         <img class="img-40 img-fluid m-r-20"
-                                            src="{{ asset('assets/images/job-search/4.jpg') }}" alt="" />
+                                            src="{{ asset('cms_assets/images/job-search/4.jpg') }}" alt="" />
                                         <div class="media-body">
                                             <h6 class="f-w-600"><a href="{{ route('job-details') }}">Front end web
                                                     developer</a><span class="pull-right">3 days ago</span></h6>
@@ -607,7 +607,7 @@
                                 <div class="card-body">
                                     <div class="media">
                                         <img class="img-40 img-fluid m-r-20"
-                                            src="{{ asset('assets/images/job-search/3.jpg') }}" alt="" />
+                                            src="{{ asset('cms_assets/images/job-search/3.jpg') }}" alt="" />
                                         <div class="media-body">
                                             <h6 class="f-w-600"><a href="{{ route('job-details') }}">Senior UX
                                                     designer</a><span class="pull-right">2 days ago</span></h6>

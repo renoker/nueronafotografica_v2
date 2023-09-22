@@ -6,13 +6,13 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/datatables.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/owlcarousel.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/rating.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/datatables.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/owlcarousel.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/rating.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Product list</h3>
         @endslot
@@ -52,7 +52,7 @@
                                     <tr>
                                         <td>
                                             <a href="#"><img
-                                                    src="{{ asset('assets/images/ecommerce/product-table-1.png') }}"
+                                                    src="{{ asset('cms_assets/images/ecommerce/product-table-1.png') }}"
                                                     alt="" /></a>
                                         </td>
                                         <td>
@@ -73,7 +73,7 @@
                                     <tr>
                                         <td>
                                             <a href="#"><img
-                                                    src="{{ asset('assets/images/ecommerce/product-table-2.png') }}"
+                                                    src="{{ asset('cms_assets/images/ecommerce/product-table-2.png') }}"
                                                     alt="" /></a>
                                         </td>
                                         <td>
@@ -95,7 +95,7 @@
                                     <tr>
                                         <td>
                                             <a href="#"><img
-                                                    src="{{ asset('assets/images/ecommerce/product-table-3.png') }}"
+                                                    src="{{ asset('cms_assets/images/ecommerce/product-table-3.png') }}"
                                                     alt="" /></a>
                                         </td>
                                         <td>
@@ -117,7 +117,7 @@
                                     <tr>
                                         <td>
                                             <a href="#"><img
-                                                    src="{{ asset('assets/images/ecommerce/product-table-4.png') }}"
+                                                    src="{{ asset('cms_assets/images/ecommerce/product-table-4.png') }}"
                                                     alt="" /></a>
                                         </td>
                                         <td>
@@ -139,7 +139,7 @@
                                     <tr>
                                         <td>
                                             <a href="#"><img
-                                                    src="{{ asset('assets/images/ecommerce/product-table-5.png') }}"
+                                                    src="{{ asset('cms_assets/images/ecommerce/product-table-5.png') }}"
                                                     alt="" /></a>
                                         </td>
                                         <td>
@@ -161,7 +161,7 @@
                                     <tr>
                                         <td>
                                             <a href="#"><img
-                                                    src="{{ asset('assets/images/ecommerce/product-table-6.png') }}"
+                                                    src="{{ asset('cms_assets/images/ecommerce/product-table-6.png') }}"
                                                     alt="" /></a>
                                         </td>
                                         <td>
@@ -183,7 +183,7 @@
                                     <tr>
                                         <td>
                                             <a href="#"><img
-                                                    src="{{ asset('assets/images/ecommerce/product-table-1.png') }}"
+                                                    src="{{ asset('cms_assets/images/ecommerce/product-table-1.png') }}"
                                                     alt="" /></a>
                                         </td>
                                         <td>
@@ -205,7 +205,7 @@
                                     <tr>
                                         <td>
                                             <a href="#"><img
-                                                    src="{{ asset('assets/images/ecommerce/product-table-2.png') }}"
+                                                    src="{{ asset('cms_assets/images/ecommerce/product-table-2.png') }}"
                                                     alt="" /></a>
                                         </td>
                                         <td>
@@ -227,7 +227,7 @@
                                     <tr>
                                         <td>
                                             <a href="#"><img
-                                                    src="{{ asset('assets/images/ecommerce/product-table-3.png') }}"
+                                                    src="{{ asset('cms_assets/images/ecommerce/product-table-3.png') }}"
                                                     alt="" /></a>
                                         </td>
                                         <td>
@@ -249,7 +249,7 @@
                                     <tr>
                                         <td>
                                             <a href="#"><img
-                                                    src="{{ asset('assets/images/ecommerce/product-table-4.png') }}"
+                                                    src="{{ asset('cms_assets/images/ecommerce/product-table-4.png') }}"
                                                     alt="" /></a>
                                         </td>
                                         <td>
@@ -279,11 +279,11 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/datatable/datatables/jquery.dataTables.min.js') }}"></script>
-        <script src="{{ asset('assets/js/rating/jquery.barrating.js') }}"></script>
-        <script src="{{ asset('assets/js/rating/rating-script.js') }}"></script>
-        <script src="{{ asset('assets/js/owlcarousel/owl.carousel.js') }}"></script>
-        <script src="{{ asset('assets/js/ecommerce.js') }}"></script>
-        <script src="{{ asset('assets/js/product-list-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datatable/datatables/jquery.dataTables.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/rating/jquery.barrating.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/rating/rating-script.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/owlcarousel/owl.carousel.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/ecommerce.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/product-list-custom.js') }}"></script>
     @endpush
 @endsection

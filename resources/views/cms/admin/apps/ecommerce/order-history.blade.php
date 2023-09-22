@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/datatables.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/datatables.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Order History</h3>
         @endslot
@@ -45,7 +45,8 @@
                                     <tr>
                                         <td>
                                             <a href="#"><img class="img-fluid img-30"
-                                                    src="{{ asset('assets/images/product/1.png') }}" alt="#" /></a>
+                                                    src="{{ asset('cms_assets/images/product/1.png') }}"
+                                                    alt="#" /></a>
                                         </td>
                                         <td>
                                             <div class="product-name">
@@ -64,7 +65,8 @@
                                     <tr>
                                         <td>
                                             <a href="#"><img class="img-fluid img-30"
-                                                    src="{{ asset('assets/images/product/13.png') }}" alt="#" /></a>
+                                                    src="{{ asset('cms_assets/images/product/13.png') }}"
+                                                    alt="#" /></a>
                                         </td>
                                         <td>
                                             <div class="product-name">
@@ -81,8 +83,8 @@
                                         <td><i data-feather="more-vertical"></i></td>
                                     </tr>
                                     <tr>
-                                        <td><img class="img-fluid img-30" src="{{ asset('assets/images/product/4.png') }}"
-                                                alt="#" /></td>
+                                        <td><img class="img-fluid img-30"
+                                                src="{{ asset('cms_assets/images/product/4.png') }}" alt="#" /></td>
                                         <td>
                                             <div class="product-name">
                                                 <a href="#">Man shoes</a>
@@ -100,7 +102,8 @@
                                     <tr>
                                         <td>
                                             <a href="#"><img class="img-fluid img-30"
-                                                    src="{{ asset('assets/images/product/10.png') }}" alt="#" /></a>
+                                                    src="{{ asset('cms_assets/images/product/10.png') }}"
+                                                    alt="#" /></a>
                                         </td>
                                         <td>
                                             <div class="product-name">
@@ -119,7 +122,8 @@
                                     <tr>
                                         <td>
                                             <a href="#"><img class="img-fluid img-30"
-                                                    src="{{ asset('assets/images/product/12.png') }}" alt="#" /></a>
+                                                    src="{{ asset('cms_assets/images/product/12.png') }}"
+                                                    alt="#" /></a>
                                         </td>
                                         <td>
                                             <div class="product-name">
@@ -138,7 +142,8 @@
                                     <tr>
                                         <td>
                                             <a href="#"><img class="img-fluid img-30"
-                                                    src="{{ asset('assets/images/product/3.png') }}" alt="#" /></a>
+                                                    src="{{ asset('cms_assets/images/product/3.png') }}"
+                                                    alt="#" /></a>
                                         </td>
                                         <td>
                                             <div class="product-name">
@@ -157,7 +162,8 @@
                                     <tr>
                                         <td>
                                             <a href="#"><img class="img-fluid img-30"
-                                                    src="{{ asset('assets/images/product/2.png') }}" alt="#" /></a>
+                                                    src="{{ asset('cms_assets/images/product/2.png') }}"
+                                                    alt="#" /></a>
                                         </td>
                                         <td>
                                             <div class="product-name">
@@ -176,7 +182,8 @@
                                     <tr>
                                         <td>
                                             <a href="#"><img class="img-fluid img-30"
-                                                    src="{{ asset('assets/images/product/15.png') }}" alt="#" /></a>
+                                                    src="{{ asset('cms_assets/images/product/15.png') }}"
+                                                    alt="#" /></a>
                                         </td>
                                         <td>
                                             <div class="product-name">
@@ -195,7 +202,8 @@
                                     <tr>
                                         <td>
                                             <a href="#"><img class="img-fluid img-30"
-                                                    src="{{ asset('assets/images/product/14.png') }}" alt="#" /></a>
+                                                    src="{{ asset('cms_assets/images/product/14.png') }}"
+                                                    alt="#" /></a>
                                         </td>
                                         <td>
                                             <div class="product-name">
@@ -214,7 +222,7 @@
                                     <tr>
                                         <td>
                                             <a href="#"><img class="img-fluid img-30"
-                                                    src="{{ asset('assets/images/product/11.png') }}"
+                                                    src="{{ asset('cms_assets/images/product/11.png') }}"
                                                     alt="#" /></a>
                                         </td>
                                         <td>
@@ -241,7 +249,7 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/datatable/datatables/jquery.dataTables.min.js') }}"></script>
-        <script src="{{ asset('assets/js/datatable/datatables/datatable.custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datatable/datatables/jquery.dataTables.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datatable/datatables/datatable.custom.js') }}"></script>
     @endpush
 @endsection

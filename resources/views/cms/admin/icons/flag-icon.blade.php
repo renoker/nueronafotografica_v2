@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Flag Icons</h3>
         @endslot
@@ -2002,8 +2002,8 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/notify/bootstrap-notify.min.js') }}"></script>
-        <script src="{{ asset('assets/js/icons/icons-notify.js') }}"></script>
-        <script src="{{ asset('assets/js/icons/flag-icon-clipart.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/notify/bootstrap-notify.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/icons/icons-notify.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/icons/flag-icon-clipart.js') }}"></script>
     @endpush
 @endsection

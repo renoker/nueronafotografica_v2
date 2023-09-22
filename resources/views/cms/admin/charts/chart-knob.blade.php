@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Knob Chart</h3>
         @endslot
@@ -143,7 +143,7 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/chart/knob/knob.min.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/knob/knob-chart.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/knob/knob.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/knob/knob-chart.js') }}"></script>
     @endpush
 @endsection

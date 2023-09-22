@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/daterange-picker.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/daterange-picker.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Date Range Picker</h3>
         @endslot
@@ -106,8 +106,8 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/datepicker/daterange-picker/moment.min.js') }}"></script>
-        <script src="{{ asset('assets/js/datepicker/daterange-picker/daterangepicker.js') }}"></script>
-        <script src="{{ asset('assets/js/datepicker/daterange-picker/daterange-picker.custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datepicker/daterange-picker/moment.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datepicker/daterange-picker/daterangepicker.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datepicker/daterange-picker/daterange-picker.custom.js') }}"></script>
     @endpush
 @endsection

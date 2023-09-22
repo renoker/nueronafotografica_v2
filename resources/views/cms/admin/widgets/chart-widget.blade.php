@@ -5,10 +5,10 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/prism.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/prism.css') }}">
 @endpush
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Chart</h3>
         @endslot
@@ -354,16 +354,16 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/chart/apex-chart/moment.min.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/apex-chart/apex-chart.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/apex-chart/stock-prices.js') }}"></script>
-        <script src="{{ asset('assets/js/prism/prism.min.js') }}"></script>
-        <script src="{{ asset('assets/js/clipboard/clipboard.min.js') }}"></script>
-        <script src="{{ asset('assets/js/counter/jquery.waypoints.min.js') }}"></script>
-        <script src="{{ asset('assets/js/counter/jquery.counterup.min.js') }}"></script>
-        <script src="{{ asset('assets/js/counter/counter-custom.js') }}"></script>
-        <script src="{{ asset('assets/js/custom-card/custom-card.js') }}"></script>
-        <script src="{{ asset('assets/js/chart-widget.js') }}"></script>
-        <script src="{{ asset('assets/js/tooltip-init.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/apex-chart/moment.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/apex-chart/apex-chart.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/apex-chart/stock-prices.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/prism/prism.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/clipboard/clipboard.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/jquery.waypoints.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/jquery.counterup.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/counter/counter-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/custom-card/custom-card.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart-widget.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/tooltip-init.js') }}"></script>
     @endpush
 @endsection

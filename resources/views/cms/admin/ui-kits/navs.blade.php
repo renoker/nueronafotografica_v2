@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Navs</h3>
         @endslot
@@ -426,7 +426,7 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/height-equal.js') }}"></script>
-        <script src="{{ asset('assets/js/tooltip-init.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/height-equal.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/tooltip-init.js') }}"></script>
     @endpush
 @endsection

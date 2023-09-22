@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>ACE Code Editor</h3>
         @endslot
@@ -154,16 +154,16 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/editor/ace-editor/ace.js') }}"></script>
-        <script src="{{ asset('assets/js/editor/ace-editor/ace-custom.js') }}"></script>
-        <script src="{{ asset('assets/js/editor/ace-editor/mode-css.js') }}"></script>
-        <script src="{{ asset('assets/js/editor/ace-editor/mode-html.js') }}"></script>
-        <script src="{{ asset('assets/js/editor/ace-editor/mode-javascript.js') }}"></script>
-        <script src="{{ asset('assets/js/editor/ace-editor/mode-php.js') }}"></script>
-        <script src="{{ asset('assets/js/editor/ace-editor/theme-monokai.js') }}"></script>
-        <script src="{{ asset('assets/js/editor/ace-editor/worker-css.js') }}"></script>
-        <script src="{{ asset('assets/js/editor/ace-editor/worker-html.js') }}"></script>
-        <script src="{{ asset('assets/js/editor/ace-editor/worker-javascript.js') }}"></script>
-        <script src="{{ asset('assets/js/editor/ace-editor/worker-php.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ace-editor/ace.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ace-editor/ace-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ace-editor/mode-css.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ace-editor/mode-html.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ace-editor/mode-javascript.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ace-editor/mode-php.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ace-editor/theme-monokai.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ace-editor/worker-css.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ace-editor/worker-html.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ace-editor/worker-javascript.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ace-editor/worker-php.js') }}"></script>
     @endpush
 @endsection

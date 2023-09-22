@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/sweetalert2.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/sweetalert2.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Sweet Alert</h3>
         @endslot
@@ -77,7 +77,7 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/sweet-alert/sweetalert.min.js') }}"></script>
-        <script src="{{ asset('assets/js/sweet-alert/app.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/sweet-alert/sweetalert.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/sweet-alert/app.js') }}"></script>
     @endpush
 @endsection

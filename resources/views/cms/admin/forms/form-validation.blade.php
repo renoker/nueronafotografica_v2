@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Validation Forms</h3>
         @endslot
@@ -284,6 +284,6 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/form-validation-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/form-validation-custom.js') }}"></script>
     @endpush
 @endsection

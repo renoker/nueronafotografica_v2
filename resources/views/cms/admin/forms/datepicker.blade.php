@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/date-picker.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/date-picker.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Date Picker</h3>
         @endslot
@@ -114,8 +114,8 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/datepicker/date-picker/datepicker.js') }}"></script>
-        <script src="{{ asset('assets/js/datepicker/date-picker/datepicker.en.js') }}"></script>
-        <script src="{{ asset('assets/js/datepicker/date-picker/datepicker.custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datepicker/date-picker/datepicker.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datepicker/date-picker/datepicker.en.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/datepicker/date-picker/datepicker.custom.js') }}"></script>
     @endpush
 @endsection

@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Knowledgebase</h3>
         @endslot
@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="knowledgebase-bg"><img class="bg-img-cover bg-center"
-                        src="{{ asset('assets/images/knowledgebase/bg_1.jpg') }}" alt="looginpage" /></div>
+                        src="{{ asset('cms_assets/images/knowledgebase/bg_1.jpg') }}" alt="looginpage" /></div>
                 <div class="knowledgebase-search">
                     <div>
                         <h3>How Can I help you?</h3>
@@ -448,7 +448,7 @@
                     <div class="col-xl-3 xl-50 col-sm-6 box-col-6">
                         <div class="card features-faq product-box">
                             <div class="faq-image product-img">
-                                <img class="img-fluid" src="{{ asset('assets/images/faq/1.jpg') }}" alt="" />
+                                <img class="img-fluid" src="{{ asset('cms_assets/images/faq/1.jpg') }}" alt="" />
                                 <div class="product-hover">
                                     <ul>
                                         <li>
@@ -482,7 +482,7 @@
                     <div class="col-xl-3 xl-50 col-sm-6 box-col-6">
                         <div class="card features-faq product-box">
                             <div class="faq-image product-img">
-                                <img class="img-fluid" src="{{ asset('assets/images/faq/2.jpg') }}" alt="" />
+                                <img class="img-fluid" src="{{ asset('cms_assets/images/faq/2.jpg') }}" alt="" />
                                 <div class="product-hover">
                                     <ul>
                                         <li>
@@ -516,7 +516,7 @@
                     <div class="col-xl-3 xl-50 col-sm-6 box-col-6">
                         <div class="card features-faq product-box">
                             <div class="faq-image product-img">
-                                <img class="img-fluid" src="{{ asset('assets/images/faq/3.jpg') }}" alt="" />
+                                <img class="img-fluid" src="{{ asset('cms_assets/images/faq/3.jpg') }}" alt="" />
                                 <div class="product-hover">
                                     <ul>
                                         <li>
@@ -550,7 +550,7 @@
                     <div class="col-xl-3 xl-50 col-sm-6 box-col-6">
                         <div class="card features-faq product-box">
                             <div class="faq-image product-img">
-                                <img class="img-fluid" src="{{ asset('assets/images/faq/4.jpg') }}" alt="" />
+                                <img class="img-fluid" src="{{ asset('cms_assets/images/faq/4.jpg') }}" alt="" />
                                 <div class="product-hover">
                                     <ul>
                                         <li>

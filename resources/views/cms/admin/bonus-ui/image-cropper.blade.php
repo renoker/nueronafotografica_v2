@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/image-cropper.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/image-cropper.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Image Cropper</h3>
         @endslot
@@ -30,7 +30,8 @@
                             <div class="row">
                                 <div class="col-xl-9 col-md-12">
                                     <div class="img-container"><img id="image"
-                                            src="{{ asset('assets/images/other-images/img-cropper.jpg') }}" alt="Picture">
+                                            src="{{ asset('cms_assets/images/other-images/img-cropper.jpg') }}"
+                                            alt="Picture">
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-md-12">
@@ -490,7 +491,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="img-container"><img class="crop-zoomable img-fluid"
-                                            src="{{ asset('assets/images/other-images/img-cropper.jpg') }}"
+                                            src="{{ asset('cms_assets/images/other-images/img-cropper.jpg') }}"
                                             alt=""></div>
                                 </div>
                             </div>
@@ -502,7 +503,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="img-container"><img class="crop-auto img-fluid"
-                                            src="{{ asset('assets/images/other-images/img-cropper.jpg') }}"
+                                            src="{{ asset('cms_assets/images/other-images/img-cropper.jpg') }}"
                                             alt=""></div>
                                 </div>
                             </div>
@@ -514,7 +515,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="img-container"><img class="crop-drag img-fluid"
-                                            src="{{ asset('assets/images/other-images/img-cropper.jpg') }}"
+                                            src="{{ asset('cms_assets/images/other-images/img-cropper.jpg') }}"
                                             alt=""></div>
                                 </div>
                             </div>
@@ -526,7 +527,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="img-container"><img class="crop-min img-fluid"
-                                            src="{{ asset('assets/images/other-images/img-cropper.jpg') }}"
+                                            src="{{ asset('cms_assets/images/other-images/img-cropper.jpg') }}"
                                             alt=""></div>
                                 </div>
                             </div>
@@ -538,7 +539,7 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/image-cropper/cropper.js') }}"></script>
-        <script src="{{ asset('assets/js/image-cropper/cropper-main.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/image-cropper/cropper.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/image-cropper/cropper-main.js') }}"></script>
     @endpush
 @endsection

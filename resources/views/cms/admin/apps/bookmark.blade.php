@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/select2.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/select2.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Bookmarks</h3>
         @endslot
@@ -30,7 +30,8 @@
                                     <div class="email-app-sidebar left-bookmark">
                                         <div class="media">
                                             <div class="media-size-email"><img class="me-3 rounded-circle"
-                                                    src="{{ asset('assets/images/user/user.png') }}" alt=""></div>
+                                                    src="{{ asset('cms_assets/images/user/user.png') }}" alt="">
+                                            </div>
                                             <div class="media-body">
                                                 <h6 class="f-w-600">MARK JENCO</h6>
                                                 <p>Markjecno@gmail.com</p>
@@ -163,7 +164,7 @@
                                                         <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 xl-50 box-col-6">
                                                             <div class="card bookmark-card o-hidden">
                                                                 <div class="details-website"><img class="img-fluid"
-                                                                        src="{{ asset('assets/images/lightgallry/01.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/lightgallry/01.jpg') }}"
                                                                         alt="">
                                                                     <div class="favourite-icon favourite_0"
                                                                         onclick="setFavourite(0)"><a
@@ -213,7 +214,7 @@
                                                         <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 xl-50 box-col-6">
                                                             <div class="card bookmark-card o-hidden">
                                                                 <div class="details-website"><img class="img-fluid"
-                                                                        src="{{ asset('assets/images/lightgallry/02.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/lightgallry/02.jpg') }}"
                                                                         alt="">
                                                                     <div class="favourite-icon favourite_1"
                                                                         onclick="setFavourite(1)"><a
@@ -262,7 +263,7 @@
                                                         <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 xl-50 box-col-6">
                                                             <div class="card bookmark-card o-hidden">
                                                                 <div class="details-website"><img class="img-fluid"
-                                                                        src="{{ asset('assets/images/lightgallry/03.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/lightgallry/03.jpg') }}"
                                                                         alt="">
                                                                     <div class="favourite-icon favourite_2"
                                                                         onclick="setFavourite(2)"><a
@@ -311,7 +312,7 @@
                                                         <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 xl-50 box-col-6">
                                                             <div class="card bookmark-card o-hidden">
                                                                 <div class="details-website"><img class="img-fluid"
-                                                                        src="{{ asset('assets/images/lightgallry/04.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/lightgallry/04.jpg') }}"
                                                                         alt="">
                                                                     <div class="favourite-icon favourite_3"
                                                                         onclick="setFavourite(3)"><a
@@ -359,7 +360,7 @@
                                                         <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 xl-50 box-col-6">
                                                             <div class="card bookmark-card o-hidden">
                                                                 <div class="details-website"><img class="img-fluid"
-                                                                        src="{{ asset('assets/images/lightgallry/05.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/lightgallry/05.jpg') }}"
                                                                         alt="">
                                                                     <div class="favourite-icon favourite_4"
                                                                         onclick="setFavourite(4)"><a
@@ -409,7 +410,7 @@
                                                         <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 xl-50 box-col-6">
                                                             <div class="card bookmark-card o-hidden">
                                                                 <div class="details-website"><img class="img-fluid"
-                                                                        src="{{ asset('assets/images/lightgallry/06.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/lightgallry/06.jpg') }}"
                                                                         alt="">
                                                                     <div class="favourite-icon favourite_5"
                                                                         onclick="setFavourite(5)"><a
@@ -514,7 +515,7 @@
                                                         <div class="col-xl-3 col-md-4 xl-50">
                                                             <div class="card bookmark-card o-hidden">
                                                                 <div class="details-website"><img class="img-fluid"
-                                                                        src="{{ asset('assets/images/lightgallry/07.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/lightgallry/07.jpg') }}"
                                                                         alt="">
                                                                     <div class="favourite-icon favourite_0"
                                                                         onclick="setFavourite(0)"><a
@@ -564,7 +565,7 @@
                                                         <div class="col-xl-3 col-md-4 xl-50">
                                                             <div class="card bookmark-card o-hidden">
                                                                 <div class="details-website"><img class="img-fluid"
-                                                                        src="{{ asset('assets/images/lightgallry/07.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/lightgallry/07.jpg') }}"
                                                                         alt="">
                                                                     <div class="favourite-icon favourite_1"
                                                                         onclick="setFavourite(1)"><a
@@ -613,7 +614,7 @@
                                                         <div class="col-xl-3 col-md-4 xl-50">
                                                             <div class="card bookmark-card o-hidden">
                                                                 <div class="details-website"><img class="img-fluid"
-                                                                        src="{{ asset('assets/images/lightgallry/01.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/lightgallry/01.jpg') }}"
                                                                         alt="">
                                                                     <div class="favourite-icon favourite_2"
                                                                         onclick="setFavourite(2)"><a
@@ -662,7 +663,7 @@
                                                         <div class="col-xl-3 col-md-4 xl-50">
                                                             <div class="card bookmark-card o-hidden">
                                                                 <div class="details-website"><img class="img-fluid"
-                                                                        src="{{ asset('assets/images/lightgallry/07.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/lightgallry/07.jpg') }}"
                                                                         alt="">
                                                                     <div class="favourite-icon favourite_3"
                                                                         onclick="setFavourite(3)"><a
@@ -710,7 +711,7 @@
                                                         <div class="col-xl-3 col-md-4 xl-50">
                                                             <div class="card bookmark-card o-hidden">
                                                                 <div class="details-website"><img class="img-fluid"
-                                                                        src="{{ asset('assets/images/lightgallry/07.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/lightgallry/07.jpg') }}"
                                                                         alt="">
                                                                     <div class="favourite-icon favourite_4"
                                                                         onclick="setFavourite(4)"><a
@@ -760,7 +761,7 @@
                                                         <div class="col-xl-3 col-md-4 xl-50">
                                                             <div class="card bookmark-card o-hidden">
                                                                 <div class="details-website"><img class="img-fluid"
-                                                                        src="{{ asset('assets/images/lightgallry/07.jpg') }}"
+                                                                        src="{{ asset('cms_assets/images/lightgallry/07.jpg') }}"
                                                                         alt="">
                                                                     <div class="favourite-icon favourite_5"
                                                                         onclick="setFavourite(5)"><a
@@ -938,10 +939,10 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/bookmark/jquery.validate.min.js') }}"></script>
-        <script src="{{ asset('assets/js/bookmark/custom.js') }}"></script>
-        <script src="{{ asset('assets/js/select2/select2.full.min.js') }}"></script>
-        <script src="{{ asset('assets/js/select2/select2-custom.js') }}"></script>
-        <script src="{{ asset('assets/js/form-validation-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/bookmark/jquery.validate.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/bookmark/custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/select2/select2.full.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/select2/select2-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/form-validation-custom.js') }}"></script>
     @endpush
 @endsection

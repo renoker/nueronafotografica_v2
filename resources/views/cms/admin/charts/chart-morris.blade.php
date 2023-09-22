@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Morris Chart</h3>
         @endslot
@@ -144,10 +144,10 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/chart/morris-chart/raphael.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/morris-chart/morris.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/morris-chart/prettify.min.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/morris-chart/morris.min.js') }}"></script>
-        <script src="{{ asset('assets/js/chart/morris-chart/morris-script.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/morris-chart/raphael.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/morris-chart/morris.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/morris-chart/prettify.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/morris-chart/morris.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/chart/morris-chart/morris-script.js') }}"></script>
     @endpush
 @endsection

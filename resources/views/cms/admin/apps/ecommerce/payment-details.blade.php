@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Payment Details</h3>
         @endslot
@@ -52,7 +52,7 @@
                                 </form>
                             </div>
                             <div class="col-md-5 text-center"><img class="img-fluid"
-                                    src="{{ asset('assets/images/ecommerce/card.png') }}" alt="" /></div>
+                                    src="{{ asset('cms_assets/images/ecommerce/card.png') }}" alt="" /></div>
                         </div>
                     </div>
                 </div>
@@ -191,10 +191,12 @@
                             </div>
                             <div class="mb-3 col-12">
                                 <ul class="payment-opt">
-                                    <li><img src="{{ asset('assets/images/ecommerce/mastercard.png') }}" alt="" />
+                                    <li><img src="{{ asset('cms_assets/images/ecommerce/mastercard.png') }}"
+                                            alt="" />
                                     </li>
-                                    <li><img src="{{ asset('assets/images/ecommerce/visa.png') }}" alt="" /></li>
-                                    <li><img src="{{ asset('assets/images/ecommerce/paypal.png') }}" alt="" />
+                                    <li><img src="{{ asset('cms_assets/images/ecommerce/visa.png') }}" alt="" />
+                                    </li>
+                                    <li><img src="{{ asset('cms_assets/images/ecommerce/paypal.png') }}" alt="" />
                                     </li>
                                 </ul>
                             </div>

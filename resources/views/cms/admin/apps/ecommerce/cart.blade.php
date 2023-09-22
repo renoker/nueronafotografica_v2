@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Cart</h3>
         @endslot
@@ -42,7 +42,8 @@
                                     <tbody>
                                         <tr>
                                             <td><img class="img-fluid img-40"
-                                                    src="{{ asset('assets/images/product/1.png') }}" alt="#" /></td>
+                                                    src="{{ asset('cms_assets/images/product/1.png') }}" alt="#" />
+                                            </td>
                                             <td>
                                                 <div class="product-name">
                                                     <a href="#">
@@ -64,7 +65,8 @@
                                         </tr>
                                         <tr>
                                             <td><img class="img-fluid img-40"
-                                                    src="{{ asset('assets/images/product/13.png') }}" alt="#" /></td>
+                                                    src="{{ asset('cms_assets/images/product/13.png') }}" alt="#" />
+                                            </td>
                                             <td>
                                                 <div class="product-name">
                                                     <a href="#">
@@ -86,7 +88,8 @@
                                         </tr>
                                         <tr>
                                             <td><img class="img-fluid img-40"
-                                                    src="{{ asset('assets/images/product/4.png') }}" alt="#" /></td>
+                                                    src="{{ asset('cms_assets/images/product/4.png') }}" alt="#" />
+                                            </td>
                                             <td>
                                                 <div class="product-name">
                                                     <a href="#">
@@ -135,8 +138,8 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/touchspin/vendors.min.js') }}"></script>
-        <script src="{{ asset('assets/js/touchspin/touchspin.js') }}"></script>
-        <script src="{{ asset('assets/js/touchspin/input-groups.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/touchspin/vendors.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/touchspin/touchspin.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/touchspin/input-groups.min.js') }}"></script>
     @endpush
 @endsection

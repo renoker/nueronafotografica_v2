@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/range-slider.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/range-slider.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Range Slider</h3>
         @endslot
@@ -83,7 +83,7 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/range-slider/ion.rangeSlider.min.js') }}"></script>
-        <script src="{{ asset('assets/js/range-slider/rangeslider-script.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/range-slider/ion.rangeSlider.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/range-slider/rangeslider-script.js') }}"></script>
     @endpush
 @endsection

@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/dropzone.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/dropzone.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Dropzone</h3>
         @endslot
@@ -76,7 +76,7 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/dropzone/dropzone.js') }}"></script>
-        <script src="{{ asset('assets/js/dropzone/dropzone-script.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/dropzone/dropzone.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/dropzone/dropzone-script.js') }}"></script>
     @endpush
 @endsection

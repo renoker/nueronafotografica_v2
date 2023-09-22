@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Timeline 2</h3>
         @endslot
@@ -43,7 +43,7 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/timeline/timeline-v-2/jquery.timeliny.min.js') }}"></script>
-        <script src="{{ asset('assets/js/timeline/timeline-v-2/timeline-v-2-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/timeline/timeline-v-2/jquery.timeliny.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/timeline/timeline-v-2/timeline-v-2-custom.js') }}"></script>
     @endpush
 @endsection

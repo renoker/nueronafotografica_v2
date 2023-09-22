@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Tilt Animation</h3>
         @endslot
@@ -28,8 +28,9 @@
                         <div class="row">
                             <div class="col-md-6 offset-md-3">
                                 <div><img class="img-fluid img-thumbnail js-tilt"
-                                        src="{{ asset('assets/images/lightgallry/02.jpg') }}" data-tilt-perspective="300"
-                                        data-tilt-speed="400" data-tilt-max="5" alt="" /></div>
+                                        src="{{ asset('cms_assets/images/lightgallry/02.jpg') }}"
+                                        data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="5"
+                                        alt="" /></div>
                                 <div>
                                     <h6 class="sub-title mt-4 mb-0">The most basic usage:</h6>
                                     <ul>
@@ -59,7 +60,7 @@
                     </div>
                     <div class="card-body">
                         <div class="tilt-image"><img class="img-fluid img-thumbnail js-tilt"
-                                src="{{ asset('assets/images/lightgallry/03.jpg') }}" data-tilt-perspective="300"
+                                src="{{ asset('cms_assets/images/lightgallry/03.jpg') }}" data-tilt-perspective="300"
                                 data-tilt-speed="400" data-tilt-max="5" alt="" /></div>
                         <div>
                             <h6 class="sub-title mt-4">How to Use:</h6>
@@ -89,7 +90,7 @@
                     <div class="card-body">
                         <div class="tilt-image">
                             <img class="img-fluid img-thumbnail js-tilt"
-                                src="{{ asset('assets/images/lightgallry/04.jpg') }}" data-tilt-glare="true"
+                                src="{{ asset('cms_assets/images/lightgallry/04.jpg') }}" data-tilt-glare="true"
                                 data-tilt-maxglare=".5" data-tilt-perspective="200" data-tilt-speed="300" data-tilt-max="10"
                                 alt="" />
                         </div>
@@ -113,7 +114,7 @@
                     </div>
                     <div class="card-body">
                         <div class="tilt-image"><img class="img-fluid img-thumbnail js-tilt"
-                                src="{{ asset('assets/images/lightgallry/05.jpg') }}" data-tilt-reset="false"
+                                src="{{ asset('cms_assets/images/lightgallry/05.jpg') }}" data-tilt-reset="false"
                                 data-tilt-speed="200" data-tilt-max="5" data-tilt-perspective="150" alt="" /></div>
                         <div>
                             <h6 class="sub-title mt-4">How to Use:</h6>
@@ -135,7 +136,7 @@
                     </div>
                     <div class="card-body o-hidden">
                         <div class="tilt-image"><img class="img-fluid img-thumbnail js-tilt"
-                                src="{{ asset('assets/images/lightgallry/06.jpg') }}" data-tilt-speed="1000"
+                                src="{{ asset('cms_assets/images/lightgallry/06.jpg') }}" data-tilt-speed="1000"
                                 data-tilt-max="20" data-tilt-scale="1.01" data-tilt-perspective="250" alt="" />
                         </div>
                         <div>
@@ -155,7 +156,7 @@
                     </div>
                     <div class="card-body">
                         <div class="tilt-image"><img class="img-fluid img-thumbnail js-tilt"
-                                src="{{ asset('assets/images/lightgallry/07.jpg') }}" data-tilt-speed="100"
+                                src="{{ asset('cms_assets/images/lightgallry/07.jpg') }}" data-tilt-speed="100"
                                 data-tilt-max="10" data-tilt-axis="x" data-tilt-perspective="250" alt="" /></div>
                         <div>
                             <h6 class="sub-title mt-4">The most basic usage:</h6>
@@ -174,7 +175,7 @@
                     </div>
                     <div class="card-body">
                         <div class="tilt-image"><img class="img-fluid img-thumbnail js-tilt"
-                                src="{{ asset('assets/images/lightgallry/08.jpg') }}" data-tilt-speed="250"
+                                src="{{ asset('cms_assets/images/lightgallry/08.jpg') }}" data-tilt-speed="250"
                                 data-tilt-max="10" data-tilt-axis="y" data-tilt-perspective="250" alt="" />
                         </div>
                         <div>
@@ -192,8 +193,8 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/animation/tilt/tilt.jquery.js') }}"></script>
-        <script src="{{ asset('assets/js/animation/tilt/tilt-custom.js') }}"></script>
-        <script src="{{ asset('assets/js/height-equal.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/animation/tilt/tilt.jquery.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/animation/tilt/tilt-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/height-equal.js') }}"></script>
     @endpush
 @endsection

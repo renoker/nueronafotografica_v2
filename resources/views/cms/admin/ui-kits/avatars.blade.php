@@ -5,11 +5,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/prism.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/prism.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Avatars</h3>
         @endslot
@@ -27,23 +27,23 @@
                         <div class="card-body avatar-showcase">
                             <div class="avatars">
                                 <div class="avatar"><img class="img-100 rounded-circle"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-90 rounded-circle"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-80 rounded-circle"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-70 rounded-circle"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-60 rounded-circle"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-50 rounded-circle"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-40 rounded-circle"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-30 rounded-circle"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-20 rounded-circle"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#"></div>
                             </div>
                         </div>
                     </div>
@@ -56,35 +56,35 @@
                         <div class="card-body avatar-showcase">
                             <div class="avatars">
                                 <div class="avatar"><img class="img-100 rounded-circle"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#">
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#">
                                     <div class="status status-100 bg-primary"> </div>
                                 </div>
                                 <div class="avatar"><img class="img-90 rounded-circle"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#">
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#">
                                     <div class="status status-90 bg-primary"></div>
                                 </div>
                                 <div class="avatar"><img class="img-80 rounded-circle"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#">
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#">
                                     <div class="status status-80 bg-primary"></div>
                                 </div>
                                 <div class="avatar"><img class="img-70 rounded-circle"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#">
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#">
                                     <div class="status status-70 bg-primary"></div>
                                 </div>
                                 <div class="avatar"><img class="img-60 rounded-circle"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#">
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#">
                                     <div class="status status-60 bg-primary"></div>
                                 </div>
                                 <div class="avatar"><img class="img-50 rounded-circle"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#">
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#">
                                     <div class="status status-50 bg-primary"> </div>
                                 </div>
                                 <div class="avatar"><img class="img-40 rounded-circle"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#">
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#">
                                     <div class="status status-40 bg-primary"></div>
                                 </div>
                                 <div class="avatar"><img class="img-30 rounded-circle"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#">
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#">
                                     <div class="status status-30 bg-primary"></div>
                                 </div>
                             </div>
@@ -99,25 +99,25 @@
                         <div class="card-body avatar-showcase">
                             <div class="avatars">
                                 <div class="avatar"><img class="img-100 rounded-circle"
-                                        src="{{ asset('assets/images/user/16.png') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/16.png') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-90 rounded-circle"
-                                        src="{{ asset('assets/images/user/16.png') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/16.png') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-80 rounded-circle"
-                                        src="{{ asset('assets/images/user/16.png') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/16.png') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-70 rounded-circle"
-                                        src="{{ asset('assets/images/user/16.png') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/16.png') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-60 rounded-circle"
-                                        src="{{ asset('assets/images/user/16.png') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/16.png') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-50 rounded-circle"
-                                        src="{{ asset('assets/images/user/16.png') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/16.png') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-40 rounded-circle"
-                                        src="{{ asset('assets/images/user/16.png') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/16.png') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-30 rounded-circle"
-                                        src="{{ asset('assets/images/user/16.png') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/16.png') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-20 rounded-circle"
-                                        src="{{ asset('assets/images/user/16.png') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/16.png') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-10 rounded-circle"
-                                        src="{{ asset('assets/images/user/16.png') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/16.png') }}" alt="#"></div>
                             </div>
                         </div>
                     </div>
@@ -130,17 +130,17 @@
                         <div class="card-body avatar-showcase">
                             <div class="avatars">
                                 <div class="avatar"><img class="img-100 b-r-8"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-90 b-r-30"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-80 b-r-35"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-70 rounded-circle"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-60 b-r-25"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#"></div>
                                 <div class="avatar"><img class="img-50 b-r-15"
-                                        src="{{ asset('assets/images/user/1.jpg') }}" alt="#"></div>
+                                        src="{{ asset('cms_assets/images/user/1.jpg') }}" alt="#"></div>
                             </div>
                         </div>
                     </div>
@@ -154,31 +154,31 @@
                             <div class="customers d-inline-block avatar-group">
                                 <ul>
                                     <li class="d-inline-block"><img class="img-70 rounded-circle"
-                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""></li>
+                                            src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""></li>
                                     <li class="d-inline-block"><img class="img-70 rounded-circle"
-                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""></li>
+                                            src="{{ asset('cms_assets/images/user/5.jpg') }}" alt=""></li>
                                     <li class="d-inline-block"><img class="img-70 rounded-circle"
-                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""></li>
+                                            src="{{ asset('cms_assets/images/user/1.jpg') }}" alt=""></li>
                                 </ul>
                             </div>
                             <div class="customers d-inline-block avatar-group">
                                 <ul>
                                     <li class="d-inline-block"><img class="img-50 rounded-circle"
-                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""></li>
+                                            src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""></li>
                                     <li class="d-inline-block"><img class="img-50 rounded-circle"
-                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""></li>
+                                            src="{{ asset('cms_assets/images/user/5.jpg') }}" alt=""></li>
                                     <li class="d-inline-block"><img class="img-50 rounded-circle"
-                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""></li>
+                                            src="{{ asset('cms_assets/images/user/1.jpg') }}" alt=""></li>
                                 </ul>
                             </div>
                             <div class="customers d-inline-block avatar-group">
                                 <ul>
                                     <li class="d-inline-block"><img class="img-40 rounded-circle"
-                                            src="{{ asset('assets/images/user/3.jpg') }}" alt=""></li>
+                                            src="{{ asset('cms_assets/images/user/3.jpg') }}" alt=""></li>
                                     <li class="d-inline-block"><img class="img-40 rounded-circle"
-                                            src="{{ asset('assets/images/user/5.jpg') }}" alt=""></li>
+                                            src="{{ asset('cms_assets/images/user/5.jpg') }}" alt=""></li>
                                     <li class="d-inline-block"><img class="img-40 rounded-circle"
-                                            src="{{ asset('assets/images/user/1.jpg') }}" alt=""></li>
+                                            src="{{ asset('cms_assets/images/user/1.jpg') }}" alt=""></li>
                                 </ul>
                             </div>
                         </div>
@@ -190,5 +190,5 @@
 @endsection
 
 @push('scripts')
-    <script src="{{ asset('assets/js/tooltip-init.js') }}"></script>
+    <script src="{{ asset('cms_assets/js/tooltip-init.js') }}"></script>
 @endpush

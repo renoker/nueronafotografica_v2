@@ -6,7 +6,7 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/sweetalert2.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/sweetalert2.css') }}">
 @endpush
 
 @section('content')
@@ -90,6 +90,6 @@
     </section>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/sweet-alert/sweetalert.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/sweet-alert/sweetalert.min.js') }}"></script>
     @endpush
 @endsection

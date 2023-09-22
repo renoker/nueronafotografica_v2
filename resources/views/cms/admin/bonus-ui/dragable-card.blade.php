@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Draggable Card</h3>
         @endslot
@@ -127,8 +127,8 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/jquery.ui.min.js') }}"></script>
-        <script src="{{ asset('assets/js/dragable/sortable.js') }}"></script>
-        <script src="{{ asset('assets/js/dragable/sortable-custom.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/jquery.ui.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/dragable/sortable.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/dragable/sortable-custom.js') }}"></script>
     @endpush
 @endsection

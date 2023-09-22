@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>FAQ</h3>
         @endslot
@@ -497,7 +497,8 @@
                         <div class="col-xl-3 xl-50 col-sm-6 box-col-6">
                             <div class="card features-faq product-box">
                                 <div class="faq-image product-img">
-                                    <img class="img-fluid" src="{{ asset('assets/images/faq/1.jpg') }}" alt="" />
+                                    <img class="img-fluid" src="{{ asset('cms_assets/images/faq/1.jpg') }}"
+                                        alt="" />
                                     <div class="product-hover">
                                         <ul>
                                             <li><i class="icon-link"></i></li>
@@ -528,7 +529,8 @@
                         <div class="col-xl-3 xl-50 col-sm-6 box-col-6">
                             <div class="card features-faq product-box">
                                 <div class="faq-image product-img">
-                                    <img class="img-fluid" src="{{ asset('assets/images/faq/2.jpg') }}" alt="" />
+                                    <img class="img-fluid" src="{{ asset('cms_assets/images/faq/2.jpg') }}"
+                                        alt="" />
                                     <div class="product-hover">
                                         <ul>
                                             <li><i class="icon-link"></i></li>
@@ -559,7 +561,8 @@
                         <div class="col-xl-3 xl-50 col-sm-6 box-col-6">
                             <div class="card features-faq product-box">
                                 <div class="faq-image product-img">
-                                    <img class="img-fluid" src="{{ asset('assets/images/faq/3.jpg') }}" alt="" />
+                                    <img class="img-fluid" src="{{ asset('cms_assets/images/faq/3.jpg') }}"
+                                        alt="" />
                                     <div class="product-hover">
                                         <ul>
                                             <li><i class="icon-link"></i></li>
@@ -590,7 +593,8 @@
                         <div class="col-xl-3 xl-50 col-sm-6 box-col-6">
                             <div class="card features-faq product-box">
                                 <div class="faq-image product-img">
-                                    <img class="img-fluid" src="{{ asset('assets/images/faq/4.jpg') }}" alt="" />
+                                    <img class="img-fluid" src="{{ asset('cms_assets/images/faq/4.jpg') }}"
+                                        alt="" />
                                     <div class="product-hover">
                                         <ul>
                                             <li><i class="icon-link"></i></li>
@@ -771,6 +775,6 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/height-equal.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/height-equal.js') }}"></script>
     @endpush
 @endsection

@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/photoswipe.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/photoswipe.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Search Website</h3>
         @endslot
@@ -185,7 +185,7 @@
                                         <div class="card">
                                             <div class="blog-box blog-shadow">
                                                 <img class="img-fluid bg-img-cover"
-                                                    src="{{ asset('assets/images/blog/blog.jpg') }}" alt="" />
+                                                    src="{{ asset('cms_assets/images/blog/blog.jpg') }}" alt="" />
                                                 <div class="blog-details">
                                                     <p class="digits">25 July 2018</p>
                                                     <h4>Accusamus et iusto odio dignissimos ducimus qui blanditiis.</h4>
@@ -205,9 +205,9 @@
                                     <div class="my-gallery row gallery-with-description" id="aniimated-thumbnials"
                                         itemscope="">
                                         <figure class="col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                            <a href="{{ asset('assets/images/big-lightgallry/01.jpg') }}"
+                                            <a href="{{ asset('cms_assets/images/big-lightgallry/01.jpg') }}"
                                                 itemprop="contentUrl" data-size="1600x950">
-                                                <img src="{{ asset('assets/images/lightgallry/01.jpg') }}"
+                                                <img src="{{ asset('cms_assets/images/lightgallry/01.jpg') }}"
                                                     itemprop="thumbnail" alt="Image description" />
                                                 <div class="caption">
                                                     <h4>Portfolio Title</h4>
@@ -222,9 +222,9 @@
                                             </figcaption>
                                         </figure>
                                         <figure class="col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                            <a href="{{ asset('assets/images/big-lightgallry/02.jpg') }}"
+                                            <a href="{{ asset('cms_assets/images/big-lightgallry/02.jpg') }}"
                                                 itemprop="contentUrl" data-size="1600x950">
-                                                <img src="{{ asset('assets/images/lightgallry/02.jpg') }}"
+                                                <img src="{{ asset('cms_assets/images/lightgallry/02.jpg') }}"
                                                     itemprop="thumbnail" alt="Image description" />
                                                 <div class="caption">
                                                     <h4>Portfolio Title</h4>
@@ -239,9 +239,9 @@
                                             </figcaption>
                                         </figure>
                                         <figure class="col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                            <a href="{{ asset('assets/images/big-lightgallry/03.jpg') }}"
+                                            <a href="{{ asset('cms_assets/images/big-lightgallry/03.jpg') }}"
                                                 itemprop="contentUrl" data-size="1600x950">
-                                                <img src="{{ asset('assets/images/lightgallry/03.jpg') }}"
+                                                <img src="{{ asset('cms_assets/images/lightgallry/03.jpg') }}"
                                                     itemprop="thumbnail" alt="Image description" />
                                                 <div class="caption">
                                                     <h4>Portfolio Title</h4>
@@ -256,9 +256,9 @@
                                             </figcaption>
                                         </figure>
                                         <figure class="col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                            <a href="{{ asset('assets/images/big-lightgallry/04.jpg') }}"
+                                            <a href="{{ asset('cms_assets/images/big-lightgallry/04.jpg') }}"
                                                 itemprop="contentUrl" data-size="1600x950">
-                                                <img src="{{ asset('assets/images/lightgallry/04.jpg') }}"
+                                                <img src="{{ asset('cms_assets/images/lightgallry/04.jpg') }}"
                                                     itemprop="thumbnail" alt="Image description" />
                                                 <div class="caption">
                                                     <h4>Portfolio Title</h4>
@@ -273,9 +273,9 @@
                                             </figcaption>
                                         </figure>
                                         <figure class="col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                            <a href="{{ asset('assets/images/big-lightgallry/05.jpg') }}"
+                                            <a href="{{ asset('cms_assets/images/big-lightgallry/05.jpg') }}"
                                                 itemprop="contentUrl" data-size="1600x950">
-                                                <img src="{{ asset('assets/images/lightgallry/05.jpg') }}"
+                                                <img src="{{ asset('cms_assets/images/lightgallry/05.jpg') }}"
                                                     itemprop="thumbnail" alt="Image description" />
                                                 <div class="caption">
                                                     <h4>Portfolio Title</h4>
@@ -290,9 +290,9 @@
                                             </figcaption>
                                         </figure>
                                         <figure class="col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                            <a href="{{ asset('assets/images/big-lightgallry/011.jpg') }}"
+                                            <a href="{{ asset('cms_assets/images/big-lightgallry/011.jpg') }}"
                                                 itemprop="contentUrl" data-size="1600x950">
-                                                <img src="{{ asset('assets/images/lightgallry/011.jpg') }}"
+                                                <img src="{{ asset('cms_assets/images/lightgallry/011.jpg') }}"
                                                     itemprop="thumbnail" alt="Image description" />
                                                 <div class="caption">
                                                     <h4>Portfolio Title</h4>
@@ -307,9 +307,9 @@
                                             </figcaption>
                                         </figure>
                                         <figure class="col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                            <a href="{{ asset('assets/images/big-lightgallry/010.jpg') }}"
+                                            <a href="{{ asset('cms_assets/images/big-lightgallry/010.jpg') }}"
                                                 itemprop="contentUrl" data-size="1600x950">
-                                                <img src="{{ asset('assets/images/lightgallry/010.jpg') }}"
+                                                <img src="{{ asset('cms_assets/images/lightgallry/010.jpg') }}"
                                                     itemprop="thumbnail" alt="Image description" />
                                                 <div class="caption">
                                                     <h4>Portfolio Title</h4>
@@ -324,9 +324,9 @@
                                             </figcaption>
                                         </figure>
                                         <figure class="col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope="">
-                                            <a href="{{ asset('assets/images/big-lightgallry/08.jpg') }}"
+                                            <a href="{{ asset('cms_assets/images/big-lightgallry/08.jpg') }}"
                                                 itemprop="contentUrl" data-size="1600x950">
-                                                <img src="{{ asset('assets/images/lightgallry/08.jpg') }}"
+                                                <img src="{{ asset('cms_assets/images/lightgallry/08.jpg') }}"
                                                     itemprop="thumbnail" alt="Image description" />
                                                 <div class="caption">
                                                     <h4>Portfolio Title</h4>
@@ -344,9 +344,9 @@
                                     <!-- Root element of PhotoSwipe. Must have class pswp.-->
                                     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
                                         <!--
-                 Background of PhotoSwipe.
-                 It's a separate element, as animating opacity is faster than rgba().
-                 -->
+                         Background of PhotoSwipe.
+                         It's a separate element, as animating opacity is faster than rgba().
+                         -->
                                         <div class="pswp__bg"></div>
                                         <!-- Slides wrapper with overflow:hidden.-->
                                         <div class="pswp__scroll-wrap">
@@ -534,8 +534,8 @@
 
 
     @push('scripts')
-        <script src="{{ asset('assets/js/photoswipe/photoswipe.min.js') }}"></script>
-        <script src="{{ asset('assets/js/photoswipe/photoswipe-ui-default.min.js') }}"></script>
-        <script src="{{ asset('assets/js/photoswipe/photoswipe.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/photoswipe/photoswipe.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/photoswipe/photoswipe-ui-default.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/photoswipe/photoswipe.js') }}"></script>
     @endpush
 @endsection

@@ -6,11 +6,11 @@
 @endsection
 
 @push('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/button-builder.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cms_assets/css/button-builder.css') }}">
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Button Builder</h3>
         @endslot
@@ -4100,9 +4100,9 @@
             var body = document.body;
             body.classList.add("button-builder");
         </script>
-        <script src="{{ asset('assets/js/button-builder/colorpicker.js') }}"></script>
-        <script src="{{ asset('assets/js/button-builder/clipboard.min.js') }}"></script>
-        <script src="{{ asset('assets/js/button-builder/generator.js') }}"></script>
-        <script src="{{ asset('assets/js/button-builder/extend-1.0.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/button-builder/colorpicker.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/button-builder/clipboard.min.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/button-builder/generator.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/button-builder/extend-1.0.js') }}"></script>
     @endpush
 @endsection

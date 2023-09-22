@@ -10,7 +10,7 @@
 @endpush
 
 @section('content')
-    @component('components.breadcrumb')
+    @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
             <h3>Email Read</h3>
         @endslot
@@ -31,7 +31,8 @@
                                     <div class="email-app-sidebar">
                                         <div class="media">
                                             <div class="media-size-email"><img class="me-3 rounded-circle"
-                                                    src="{{ asset('assets/images/user/user.png') }}" alt="" /></div>
+                                                    src="{{ asset('cms_assets/images/user/user.png') }}" alt="" />
+                                            </div>
                                             <div class="media-body">
                                                 <h6 class="f-w-600">MARKJENCO</h6>
                                                 <p>Markjecno@gmail.com</p>
@@ -139,7 +140,7 @@
                                                     <div class="col-xl-12">
                                                         <div class="media">
                                                             <img class="me-3 rounded-circle"
-                                                                src="{{ asset('assets/images/user/user.png') }}"
+                                                                src="{{ asset('cms_assets/images/user/user.png') }}"
                                                                 alt="" />
                                                             <div class="media-body">
                                                                 <h6 class="d-block">Lorm lpsa</h6>
@@ -187,13 +188,13 @@
                                                     <div class="attachment">
                                                         <ul>
                                                             <li><img class="img-fluid"
-                                                                    src="{{ asset('assets/images/email/1.jpg') }}"
+                                                                    src="{{ asset('cms_assets/images/email/1.jpg') }}"
                                                                     alt="" /></li>
                                                             <li><img class="img-fluid"
-                                                                    src="{{ asset('assets/images/email/2.jpg') }}"
+                                                                    src="{{ asset('cms_assets/images/email/2.jpg') }}"
                                                                     alt="" /></li>
                                                             <li><img class="img-fluid"
-                                                                    src="{{ asset('assets/images/email/3.jpg') }}"
+                                                                    src="{{ asset('cms_assets/images/email/3.jpg') }}"
                                                                     alt="" /></li>
                                                         </ul>
                                                     </div>
@@ -230,8 +231,8 @@
     </div>
 
     @push('scripts')
-        <script src="{{ asset('assets/js/editor/ckeditor/ckeditor.js') }}"></script>
-        <script src="{{ asset('assets/js/editor/ckeditor/adapters/jquery.js') }}"></script>
-        <script src="{{ asset('assets/js/email-app.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ckeditor/ckeditor.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/editor/ckeditor/adapters/jquery.js') }}"></script>
+        <script src="{{ asset('cms_assets/js/email-app.js') }}"></script>
     @endpush
 @endsection
