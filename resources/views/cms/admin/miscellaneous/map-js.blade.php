@@ -2,7 +2,7 @@
 
 @section('title')
     Map JS
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

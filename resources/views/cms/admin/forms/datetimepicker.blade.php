@@ -2,7 +2,7 @@
 
 @section('title')
     Date Time Picker
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

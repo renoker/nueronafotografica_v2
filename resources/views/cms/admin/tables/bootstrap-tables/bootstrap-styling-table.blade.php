@@ -2,7 +2,7 @@
 
 @section('title')
     Styling Tables
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

@@ -2,7 +2,7 @@
 
 @section('title')
     Base inputs
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

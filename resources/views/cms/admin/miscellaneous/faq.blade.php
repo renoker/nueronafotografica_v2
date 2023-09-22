@@ -2,7 +2,7 @@
 
 @section('title')
     FAQ
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

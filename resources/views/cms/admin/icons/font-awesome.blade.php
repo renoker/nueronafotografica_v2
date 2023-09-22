@@ -2,7 +2,7 @@
 
 @section('title')
     Font Awesome Icon
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

@@ -2,7 +2,7 @@
 
 @section('title')
     Raised Buttons
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

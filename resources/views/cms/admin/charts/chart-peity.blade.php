@@ -2,7 +2,7 @@
 
 @section('title')
     Peity Chart
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

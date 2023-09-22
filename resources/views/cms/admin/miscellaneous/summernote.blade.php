@@ -2,7 +2,7 @@
 
 @section('title')
     Summer Note
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

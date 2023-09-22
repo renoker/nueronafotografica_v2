@@ -2,7 +2,7 @@
 
 @section('title')
     Gallery Grid
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

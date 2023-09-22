@@ -2,7 +2,7 @@
 
 @section('title')
     Step Form Wizard
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

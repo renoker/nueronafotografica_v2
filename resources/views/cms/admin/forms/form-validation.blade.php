@@ -2,7 +2,7 @@
 
 @section('title')
     Validation Forms
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

@@ -2,7 +2,7 @@
 
 @section('title')
     Google Chart
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

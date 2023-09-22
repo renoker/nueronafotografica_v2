@@ -2,7 +2,7 @@
 
 @section('title')
     Knob Chart
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

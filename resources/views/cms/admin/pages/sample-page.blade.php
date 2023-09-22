@@ -2,7 +2,7 @@
 
 @section('title')
     Sample Page
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

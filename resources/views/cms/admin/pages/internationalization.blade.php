@@ -2,7 +2,7 @@
 
 @section('title')
     Internationalization
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

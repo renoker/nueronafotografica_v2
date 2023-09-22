@@ -2,7 +2,7 @@
 
 @section('title')
     Edge Style
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

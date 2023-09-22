@@ -2,7 +2,7 @@
 
 @section('title')
     Basic Tables
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

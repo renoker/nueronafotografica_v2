@@ -2,7 +2,7 @@
 
 @section('title')
     MDE Editor
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

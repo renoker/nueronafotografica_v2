@@ -2,7 +2,7 @@
 
 @section('title')
     Sparkline Chart
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

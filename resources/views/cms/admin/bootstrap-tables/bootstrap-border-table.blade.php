@@ -2,7 +2,7 @@
 
 @section('title')
     Border Tables
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

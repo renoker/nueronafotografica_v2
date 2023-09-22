@@ -2,7 +2,7 @@
 
 @section('title')
     Ajax
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

@@ -2,7 +2,7 @@
 
 @section('title')
     Form Wizard 1
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

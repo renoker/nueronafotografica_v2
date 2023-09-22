@@ -2,7 +2,7 @@
 
 @section('title')
     Themify icon
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

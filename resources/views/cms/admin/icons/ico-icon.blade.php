@@ -2,7 +2,7 @@
 
 @section('title')
     Ico Icon
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

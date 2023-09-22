@@ -2,7 +2,7 @@
 
 @section('title')
     Select2
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

@@ -2,7 +2,7 @@
 
 @section('title')
     Page Builder
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

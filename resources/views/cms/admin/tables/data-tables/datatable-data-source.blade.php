@@ -2,7 +2,7 @@
 
 @section('title')
     Base
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

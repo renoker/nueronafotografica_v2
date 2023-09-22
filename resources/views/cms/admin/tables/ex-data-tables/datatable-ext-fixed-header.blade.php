@@ -2,7 +2,7 @@
 
 @section('title')
     Fixed Header
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

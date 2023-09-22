@@ -2,7 +2,7 @@
 
 @section('title')
     JS Grid Tables
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

@@ -2,7 +2,7 @@
 
 @section('title')
     Whether Icon
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

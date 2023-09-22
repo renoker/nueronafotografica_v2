@@ -1,7 +1,7 @@
 @extends('cms.layouts.admin.master')
 
 @section('title')
-    Ecommerce {{ $title }}
+    Ecommerce
 @endsection
 
 @push('css')

@@ -2,7 +2,7 @@
 
 @section('title')
     Apex Chart
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

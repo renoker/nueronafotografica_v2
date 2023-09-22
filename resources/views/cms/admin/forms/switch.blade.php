@@ -2,7 +2,7 @@
 
 @section('title')
     Switch
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

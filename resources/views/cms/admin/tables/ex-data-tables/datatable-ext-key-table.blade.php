@@ -2,7 +2,7 @@
 
 @section('title')
     Key Table
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

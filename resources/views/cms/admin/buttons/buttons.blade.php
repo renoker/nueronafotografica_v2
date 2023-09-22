@@ -2,7 +2,7 @@
 
 @section('title')
     Default Style
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

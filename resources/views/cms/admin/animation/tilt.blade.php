@@ -2,7 +2,7 @@
 
 @section('title')
     Tilt Animation
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

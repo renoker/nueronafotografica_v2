@@ -2,7 +2,7 @@
 
 @section('title')
     Columns Reorder
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

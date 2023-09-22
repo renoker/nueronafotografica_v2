@@ -2,7 +2,7 @@
 
 @section('title')
     Form Builder 2
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

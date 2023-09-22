@@ -1,7 +1,7 @@
 @extends('cms.layouts.admin.master')
 
 @section('title')
-    Chart {{ $title }}
+    Chart Nuerona
 @endsection
 
 @push('css')

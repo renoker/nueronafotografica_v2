@@ -2,7 +2,7 @@
 
 @section('title')
     Button Group
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

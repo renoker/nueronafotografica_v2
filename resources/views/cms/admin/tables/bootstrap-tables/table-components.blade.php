@@ -2,7 +2,7 @@
 
 @section('title')
     Table Components
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

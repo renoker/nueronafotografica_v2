@@ -2,7 +2,7 @@
 
 @section('title')
     Flat Buttons
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

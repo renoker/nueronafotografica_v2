@@ -2,7 +2,7 @@
 
 @section('title')
     Checkbox & Radio
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

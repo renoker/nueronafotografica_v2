@@ -2,7 +2,7 @@
 
 @section('title')
     Scroller
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

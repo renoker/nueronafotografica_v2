@@ -2,7 +2,7 @@
 
 @section('title')
     Morris Chart
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

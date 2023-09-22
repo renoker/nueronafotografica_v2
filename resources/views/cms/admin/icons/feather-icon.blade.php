@@ -2,7 +2,7 @@
 
 @section('title')
     Feather Icons
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

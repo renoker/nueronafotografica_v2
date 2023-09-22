@@ -2,7 +2,7 @@
 
 @section('title')
     Basic Init
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

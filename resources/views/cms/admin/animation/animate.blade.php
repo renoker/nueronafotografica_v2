@@ -2,7 +2,7 @@
 
 @section('title')
     Animate
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

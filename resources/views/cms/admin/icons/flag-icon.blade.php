@@ -2,7 +2,7 @@
 
 @section('title')
     Flag Icons
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

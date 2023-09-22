@@ -2,7 +2,7 @@
 
 @section('title')
     Add Post
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

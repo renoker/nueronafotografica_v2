@@ -2,7 +2,7 @@
 
 @section('title')
     Touchspin
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

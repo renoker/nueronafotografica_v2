@@ -2,7 +2,7 @@
 
 @section('title')
     Clipboard
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

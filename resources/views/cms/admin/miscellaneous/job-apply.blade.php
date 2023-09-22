@@ -2,7 +2,7 @@
 
 @section('title')
     Apply
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

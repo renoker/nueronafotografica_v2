@@ -2,7 +2,7 @@
 
 @section('title')
     API DataTables
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

@@ -2,7 +2,7 @@
 
 @section('title')
     Typeahead
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

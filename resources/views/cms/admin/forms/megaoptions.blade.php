@@ -2,7 +2,7 @@
 
 @section('title')
     Mega options
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

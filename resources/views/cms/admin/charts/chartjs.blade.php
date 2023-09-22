@@ -2,7 +2,7 @@
 
 @section('title')
     ChartJS Chart
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

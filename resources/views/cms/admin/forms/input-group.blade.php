@@ -2,7 +2,7 @@
 
 @section('title')
     Input groups
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

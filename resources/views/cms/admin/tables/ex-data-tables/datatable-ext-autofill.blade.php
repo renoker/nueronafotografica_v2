@@ -2,7 +2,7 @@
 
 @section('title')
     Auto fill
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

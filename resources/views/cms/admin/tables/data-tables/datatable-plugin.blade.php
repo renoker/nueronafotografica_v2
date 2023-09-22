@@ -2,7 +2,7 @@
 
 @section('title')
     Plug in
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

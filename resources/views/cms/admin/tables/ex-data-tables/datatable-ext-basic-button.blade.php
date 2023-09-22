@@ -2,7 +2,7 @@
 
 @section('title')
     Basic Button
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

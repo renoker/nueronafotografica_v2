@@ -2,7 +2,7 @@
 
 @section('title')
     Flot Chart
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

@@ -2,7 +2,7 @@
 
 @section('title')
     Default Forms
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

@@ -2,7 +2,7 @@
 
 @section('title')
     Sizing Tables
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

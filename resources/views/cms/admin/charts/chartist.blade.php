@@ -2,7 +2,7 @@
 
 @section('title')
     Chartist Chart
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')

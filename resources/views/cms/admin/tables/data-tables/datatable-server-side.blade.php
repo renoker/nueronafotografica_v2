@@ -2,7 +2,7 @@
 
 @section('title')
     Server Side
-    {{ $title }}
+    Nuerona
 @endsection
 
 @push('css')
