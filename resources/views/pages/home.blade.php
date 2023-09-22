@@ -264,12 +264,20 @@
         {{-- Contactanos --}}
         <div class="content_contacto_doble">
             <div class="box_contacto">
-                <div class="h1_contacto">Contáctanos</div>
-                <input type="text" placeholder="Nombre">
-                <input type="email" name="" id="" placeholder="Correo">
-                <input type="tel" name="" id="" placeholder="Teléfono">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <button type="submit">Enviar</button>
+                <form action="{{ route('contact.store') }}" method="post">
+                    @method('POST')
+                    @csrf
+                    <div class="h1_contacto">Contáctanos</div>
+                    <input type="text" name="name" placeholder="Nombre" value="{{ old('name') }}">
+                    <input type="email" name="email" id="" placeholder="Correo"
+                        value="{{ old('email') }}">
+                    <input type="tel" name="phone" id="" placeholder="Teléfono"
+                        value="{{ old('phone') }}">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje">
+                        {{ old('message') }}
+                    </textarea>
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
             <div class="glide_slider_big">
                 <div class="glide" id="slider_3">

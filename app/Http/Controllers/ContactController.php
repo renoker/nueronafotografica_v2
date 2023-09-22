@@ -29,7 +29,16 @@ class ContactController extends Controller
      */
     public function store(StoreContactRequest $request)
     {
-        //
+        $row = new Contact;
+        $row->name = $request->name;
+        $row->email = $request->email;
+        $row->phone = $request->phone;
+        $row->message = $request->message;
+        $row->save();
+
+        return redirect()->back()->with([
+            'message' => 'Tus datos se enviaron de forma correcta, nos pondremos en contacto contigo en un lapso no mayor a 24hrs'
+        ]);
     }
 
     /**

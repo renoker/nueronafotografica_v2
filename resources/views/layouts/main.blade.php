@@ -19,6 +19,17 @@
 </head>
 
 <body>
+    @if ($errors->any())
+        <script>
+            alert("{{ $errors->first() }}");
+        </script>
+    @endif
+
+    @if (\Session::has('message'))
+        <script>
+            alert("{!! \Session::get('message') !!}");
+        </script>
+    @endif
 
     @include('layouts.header')
 
