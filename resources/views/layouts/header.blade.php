@@ -19,9 +19,13 @@
                     </a>
                 </div>
                 <div class="idioma_header">
-                    <p class="txt_idioma">En</p>
+                    <a href="{{ route('changeLang', 'lang=en') }}">
+                        <p class="txt_idioma">En</p>
+                    </a>
                     <p class="txt_idioma">|</p>
-                    <p class="txt_idioma">Es</p>
+                    <a href="{{ route('changeLang', 'lang=es') }}">
+                        <p class="txt_idioma">Es</p>
+                    </a>
                 </div>
             </div>
             <div class="content-menu-header">
