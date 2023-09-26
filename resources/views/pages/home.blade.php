@@ -31,18 +31,20 @@
                 <div class="bullet"></div>
                 <div class="bullet"></div>
             </div>
-            <div class="item_slider" style="background-image: url({{ url('assets/images/utileria_1.png') }})">
-                <div class="contenedor_informacion_banner">
-                    <h6 class="encabezado_banner">Te ayudamos a destacar los mejores ángulos y diseño de interiores</h6>
-                    <div class="box_slider_text">
-                        <h1 class="texto_principal">Arquitectura e interiorismo</h1>
-                        <div class="conocer_mas">
-                            <p class="button_conoce_mas">Conocer más</p>
-                            <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
+            @foreach ($slider_top as $item)
+                <div class="item_slider" style="background-image: url({{ $item->image }})">
+                    <div class="contenedor_informacion_banner">
+                        <h6 class="encabezado_banner">{{ $item->title }}</h6>
+                        <div class="box_slider_text">
+                            <h1 class="texto_principal">{{ $item->description }}</h1>
+                            <div class="conocer_mas">
+                                <p class="button_conoce_mas">{{ $item->button }}</p>
+                                <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            @endforeach
         </div>
         {{-- Bloque 1 --}}
         <div class="content_slider_nosotros">

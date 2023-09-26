@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminHomeSliderController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LangController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,9 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('lang/change', [LangController::class, 'change'])->name('changeLang');
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
 Route::get('/arquitectura', function () {
     return view('pages.arquitectura');
@@ -69,8 +69,18 @@ Route::post('/contactanos/store',  [ContactController::class, 'store'])->name('c
 Route::get('/backoffice', [AdminController::class, 'index'])->name('admin.index');
 Route::post('/backoffice/login', [AdminController::class, 'login'])->name('admin.login');
 
-// Route::prefix('backoffice')->group(['middleware' => ['auth:admin']], function () {
-// });
+Route::group(['middleware' => ['auth:admin']], function () {
+    Route::get('/backoffice/logout',    [AdminController::class, 'logout'])->name('admin.logout');
+    Route::prefix('backoffice')->group(function () {
+        // HOME
+        Route::prefix('home')->group(function () {
+            Route::get('slider/create',         [AdminHomeSliderController::class, 'create'])->name('slider.create');
+            Route::get('slider/edit/{slider}',  [AdminHomeSliderController::class, 'edit'])->name('slider.edit');
+            Route::apiResource('slider',        AdminHomeSliderController::class);
+        });
+        // END HOME
+    });
+});
 
 
 // ------------------------------ CSM PLANTILLA ---------------------------
@@ -367,3 +377,5 @@ Route::prefix('editors')->group(function () {
 });
 
 Route::view('knowledgebase', 'cms.admin.miscellaneous.knowledgebase')->name('knowledgebase');
+
+// Route::apiResource('maintenance_payment', MaintenancePaymentController::class);
