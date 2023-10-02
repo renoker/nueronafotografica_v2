@@ -54,12 +54,11 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-6 footer-copyright">
-                            <p class="mb-0">Copyright {{ date('Y') }}-{{ date('y', strtotime('+1 year')) }} © viho
-                                All rights reserved.</p>
+                            <p class="mb-0">Copyright {{ date('Y') }}-{{ date('y', strtotime('+1 year')) }} ©
+                                Neurona Fotográfica All Rights Reserved - Terms & Conditions</p>
                         </div>
                         <div class="col-md-6">
-                            <p class="pull-right mb-0">Hand crafted & made with <i
-                                    class="fa fa-heart font-secondary"></i></p>
+                            <p class="pull-right mb-0">Techies&Beyond </p>
                         </div>
                     </div>
                 </div>

@@ -11,15 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('translations', function (Blueprint $table) {
+        Schema::create('admin_home_despegables', function (Blueprint $table) {
             $table->id();
-            $table->string('key')->nullable();
-            $table->string('page')->nullable();
-            $table->string('section')->nullable();
-            $table->text('translate_es')->nullable();
-            $table->text('translate_en')->nullable();
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 
@@ -28,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('translations');
+        Schema::dropIfExists('admin_home_despegables');
     }
 };

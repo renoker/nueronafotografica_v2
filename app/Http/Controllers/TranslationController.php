@@ -8,12 +8,29 @@ use App\Models\Translation;
 
 class TranslationController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
+
+    // HOME
+    public function indexHome()
     {
-        //
+        $list = Translation::where('key', 'home')->get();
+        return view('backoffice.home.traduccion.index', [
+            'list' => $list
+        ]);
+    }
+
+    public function editHome(Translation $translation)
+    {
+        return view('backoffice.home.traduccion.show', [
+            'row' => $translation
+        ]);
+    }
+
+    public function updateHome(UpdateTranslationRequest $request, Translation $translation)
+    {
+        $translation->translate_es = $request->translate_es;
+        $translation->translate_en = $request->translate_en;
+        $translation->save();
+        return back()->withInput();
     }
 
     /**
@@ -40,21 +57,6 @@ class TranslationController extends Controller
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Translation $translation)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(UpdateTranslationRequest $request, Translation $translation)
-    {
-        //
-    }
 
     /**
      * Remove the specified resource from storage.

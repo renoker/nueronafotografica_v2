@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminHomeSliderController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LangController;
+use App\Http\Controllers\TranslationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -74,9 +75,14 @@ Route::group(['middleware' => ['auth:admin']], function () {
     Route::prefix('backoffice')->group(function () {
         // HOME
         Route::prefix('home')->group(function () {
-            Route::get('slider/create',         [AdminHomeSliderController::class, 'create'])->name('slider.create');
-            Route::get('slider/edit/{slider}',  [AdminHomeSliderController::class, 'edit'])->name('slider.edit');
-            Route::apiResource('slider',        AdminHomeSliderController::class);
+            // Slider
+            Route::get('slider/create',                 [AdminHomeSliderController::class, 'create'])->name('slider.create');
+            Route::get('slider/edit/{slider}',          [AdminHomeSliderController::class, 'edit'])->name('slider.edit');
+            Route::apiResource('slider',                AdminHomeSliderController::class);
+            // Translate
+            Route::get('translate',                     [TranslationController::class, 'indexHome'])->name('translateHome.index');
+            Route::get('translate/edit/{translation}',  [TranslationController::class, 'editHome'])->name('translateHome.edit');
+            Route::put('/translate/{translation}',      [TranslationController::class, 'updateHome'])->name('translateHome.update');
         });
         // END HOME
     });

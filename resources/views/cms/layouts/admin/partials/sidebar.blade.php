@@ -21,6 +21,18 @@
                             <h6>General</h6>
                         </div>
                     </li>
+                    {{-- HOME --}}
+                    <li class="dropdown">
+                        <a class="nav-link menu-title {{ prefixActive('/home') }}" href="javascript:void(0)"><i
+                                data-feather="home"></i><span>Home</span></a>
+                        <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('/home/slider') }};">
+                            <li><a href="{{ route('slider.index') }}"
+                                    class="{{ routeActive('slider.index') }}">Slider</a></li>
+                            <li><a href="{{ route('translateHome.index') }}"
+                                    class="{{ routeActive('translateHome.index') }}">Traducción</a></li>
+                        </ul>
+                    </li>
+                    {{-- END HOME --}}
                     <li class="dropdown">
                         <a class="nav-link menu-title {{ prefixActive('/dashboard') }}" href="javascript:void(0)"><i
                                 data-feather="home"></i><span>Dashboard</span></a>
@@ -124,7 +136,8 @@
                                     Card</a></li>
                             <li><a href="{{ route('creative-card') }}"
                                     class="{{ routeActive('creative-card') }}">Creative Card</a></li>
-                            <li><a href="{{ route('tabbed-card') }}" class="{{ routeActive('tabbed-card') }}">Tabbed
+                            <li><a href="{{ route('tabbed-card') }}"
+                                    class="{{ routeActive('tabbed-card') }}">Tabbed
                                     Card</a></li>
                             <li><a href="{{ route('dragable-card') }}"
                                     class="{{ routeActive('dragable-card') }}">Draggable Card</a></li>

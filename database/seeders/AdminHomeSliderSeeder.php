@@ -22,59 +22,5 @@ class AdminHomeSliderSeeder extends Seeder
             'en_description'    => 'Architecture and interior design',
             'en_button'         => 'Learn more',
         ]);
-        AdminHomeSlider::create([
-            'image'             => "assets/home/slider/utileria_1.png",
-            'es_title'          => "Te ayudamos a destacar los mejores ángulos y diseño de interiores",
-            'es_description'    => 'Arquitectura e interiorismo',
-            'es_button'         => 'Conocer más',
-            'en_title'          => "We help you highlight the best angles and interior design",
-            'en_description'    => 'Architecture and interior design',
-            'en_button'         => 'Learn more',
-        ]);
-        AdminHomeSlider::create([
-            'image'             => "assets/home/slider/utileria_1.png",
-            'es_title'          => "Te ayudamos a destacar los mejores ángulos y diseño de interiores",
-            'es_description'    => 'Arquitectura e interiorismo',
-            'es_button'         => 'Conocer más',
-            'en_title'          => "We help you highlight the best angles and interior design",
-            'en_description'    => 'Architecture and interior design',
-            'en_button'         => 'Learn more',
-        ]);
-        AdminHomeSlider::create([
-            'image'             => "assets/home/slider/utileria_1.png",
-            'es_title'          => "Te ayudamos a destacar los mejores ángulos y diseño de interiores",
-            'es_description'    => 'Arquitectura e interiorismo',
-            'es_button'         => 'Conocer más',
-            'en_title'          => "We help you highlight the best angles and interior design",
-            'en_description'    => 'Architecture and interior design',
-            'en_button'         => 'Learn more',
-        ]);
-        AdminHomeSlider::create([
-            'image'             => "assets/home/slider/utileria_1.png",
-            'es_title'          => "Te ayudamos a destacar los mejores ángulos y diseño de interiores",
-            'es_description'    => 'Arquitectura e interiorismo',
-            'es_button'         => 'Conocer más',
-            'en_title'          => "We help you highlight the best angles and interior design",
-            'en_description'    => 'Architecture and interior design',
-            'en_button'         => 'Learn more',
-        ]);
-        AdminHomeSlider::create([
-            'image'             => "assets/home/slider/utileria_1.png",
-            'es_title'          => "Te ayudamos a destacar los mejores ángulos y diseño de interiores",
-            'es_description'    => 'Arquitectura e interiorismo',
-            'es_button'         => 'Conocer más',
-            'en_title'          => "We help you highlight the best angles and interior design",
-            'en_description'    => 'Architecture and interior design',
-            'en_button'         => 'Learn more',
-        ]);
-        AdminHomeSlider::create([
-            'image'             => "assets/home/slider/utileria_1.png",
-            'es_title'          => "Te ayudamos a destacar los mejores ángulos y diseño de interiores",
-            'es_description'    => 'Arquitectura e interiorismo',
-            'es_button'         => 'Conocer más',
-            'en_title'          => "We help you highlight the best angles and interior design",
-            'en_description'    => 'Architecture and interior design',
-            'en_button'         => 'Learn more',
-        ]);
     }
 }
