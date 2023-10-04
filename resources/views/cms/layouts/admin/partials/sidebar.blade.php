@@ -28,6 +28,8 @@
                         <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('/home/slider') }};">
                             <li><a href="{{ route('slider.index') }}"
                                     class="{{ routeActive('slider.index') }}">Slider</a></li>
+                            <li><a href="{{ route('despregable.index') }}"
+                                    class="{{ routeActive('despregable.index') }}">Banner desplegable</a></li>
                             <li><a href="{{ route('translateHome.index') }}"
                                     class="{{ routeActive('translateHome.index') }}">Traducción</a></li>
                         </ul>
@@ -96,7 +98,8 @@
                                 </ul>
                             </li>
                             <li><a href="{{ route('navs') }}" class="{{ routeActive('navs') }}">Navs</a></li>
-                            <li><a href="{{ route('box-shadow') }}" class="{{ routeActive('box-shadow') }}">Shadow</a>
+                            <li><a href="{{ route('box-shadow') }}"
+                                    class="{{ routeActive('box-shadow') }}">Shadow</a>
                             </li>
                             <li><a href="{{ route('list') }}" class="{{ routeActive('list') }}">Lists</a></li>
                         </ul>

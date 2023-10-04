@@ -13,7 +13,10 @@ class AdminHomeDespegableController extends Controller
      */
     public function index()
     {
-        //
+        $row = AdminHomeDespegable::all();
+        return view('backoffice.home.desplegable.index', [
+            'list' => $row
+        ]);
     }
 
     /**

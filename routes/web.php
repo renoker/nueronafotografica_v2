@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminHomeDespegableController;
 use App\Http\Controllers\AdminHomeSliderController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
@@ -67,6 +68,7 @@ Route::post('/contactanos/store',  [ContactController::class, 'store'])->name('c
 
 
 // ------------------------------ CSM PRODUCTIVO ---------------------------
+
 Route::get('/backoffice', [AdminController::class, 'index'])->name('admin.index');
 Route::post('/backoffice/login', [AdminController::class, 'login'])->name('admin.login');
 
@@ -76,13 +78,17 @@ Route::group(['middleware' => ['auth:admin']], function () {
         // HOME
         Route::prefix('home')->group(function () {
             // Slider
-            Route::get('slider/create',                 [AdminHomeSliderController::class, 'create'])->name('slider.create');
-            Route::get('slider/edit/{slider}',          [AdminHomeSliderController::class, 'edit'])->name('slider.edit');
-            Route::apiResource('slider',                AdminHomeSliderController::class);
+            Route::get('slider/create',                     [AdminHomeSliderController::class, 'create'])->name('slider.create');
+            Route::get('slider/edit/{slider}',              [AdminHomeSliderController::class, 'edit'])->name('slider.edit');
+            Route::apiResource('slider',                    AdminHomeSliderController::class);
+            // Despregable
+            Route::get('despregable/create',                [AdminHomeDespegableController::class, 'create'])->name('despregable.create');
+            Route::get('despregable/edit/{despregable}',    [AdminHomeDespegableController::class, 'edit'])->name('despregable.edit');
+            Route::apiResource('despregable',               AdminHomeDespegableController::class);
             // Translate
-            Route::get('translate',                     [TranslationController::class, 'indexHome'])->name('translateHome.index');
-            Route::get('translate/edit/{translation}',  [TranslationController::class, 'editHome'])->name('translateHome.edit');
-            Route::put('/translate/{translation}',      [TranslationController::class, 'updateHome'])->name('translateHome.update');
+            Route::get('translate',                         [TranslationController::class, 'indexHome'])->name('translateHome.index');
+            Route::get('translate/edit/{translation}',      [TranslationController::class, 'editHome'])->name('translateHome.edit');
+            Route::put('/translate/{translation}',          [TranslationController::class, 'updateHome'])->name('translateHome.update');
         });
         // END HOME
     });
