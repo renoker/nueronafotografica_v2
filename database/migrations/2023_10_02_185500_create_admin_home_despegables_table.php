@@ -13,7 +13,13 @@ return new class extends Migration
     {
         Schema::create('admin_home_despegables', function (Blueprint $table) {
             $table->id();
+            $table->string('image')->nullable();
+            $table->string('es_title')->nullable();
+            $table->string('es_button')->nullable();
+            $table->string('en_title')->nullable();
+            $table->string('en_button')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

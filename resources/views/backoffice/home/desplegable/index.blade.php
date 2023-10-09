@@ -1,7 +1,7 @@
 @extends('cms.layouts.admin.master')
 
 @section('title')
-    NeuronaForográfica - Slider
+    NeuronaForográfica - Banner desplegable
 @endsection
 
 @push('css')
@@ -13,12 +13,12 @@
 @section('content')
     @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
-            <h3>Slider</h3>
+            <h3>Banner desplegable</h3>
         @endslot
         <li class="breadcrumb-item"><a href="">Home</a></li>
-        <li class="breadcrumb-item active">Slider</li>
+        <li class="breadcrumb-item active">Banner desplegable</li>
         @slot('add_row')
-            <li><a href="{{ route('slider.create') }}" data-container="body" data-bs-toggle="popover" data-placement="top"
+            <li><a href="{{ route('despregable.create') }}" data-container="body" data-bs-toggle="popover" data-placement="top"
                     title="" data-original-title="Tables"><i data-feather="plus"></i></a></li>
         @endslot
     @endcomponent
@@ -29,9 +29,9 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header pb-0">
-                        <h5>Lista - Slider</h5>
+                        <h5>Lista - Banner desplegable</h5>
                         <span>
-                            Slider home
+                            Home
                         </span>
                     </div>
                     <div class="card-body">
@@ -41,7 +41,6 @@
                                     <tr>
                                         <th>Imagen</th>
                                         <th>Titulo</th>
-                                        <th>Descripción</th>
                                         <th>Titulo botón</th>
                                         <th>Fecha</th>
                                         <th>Action</th>
@@ -56,18 +55,17 @@
                                             <td>
                                                 <span>{{ $item->es_title }}</span>
                                             </td>
-                                            <td>{{ $item->es_description }}</td>
                                             <td>{{ $item->es_button }}</td>
                                             <td>{{ $item->created_at }}</td>
                                             <td class="d-flex justify-content-between">
-                                                <form action="{{ route('slider.destroy', $item) }}" method="post">
+                                                <form action="{{ route('despregable.destroy', $item) }}" method="post">
                                                     @method('DELETE')
                                                     @csrf
                                                     <button class="btn btn-danger btn-xs" type="submit"
                                                         data-original-title="btn btn-danger btn-xs"
                                                         title="">Borrar</button>
                                                 </form>
-                                                <a href="{{ route('slider.edit', $item) }}">
+                                                <a href="{{ route('despregable.edit', $item) }}">
                                                     <button class="btn btn-primary btn-xs" type="button"
                                                         data-original-title="btn btn-danger btn-xs"
                                                         title="">Editar</button>

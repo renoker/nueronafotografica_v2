@@ -11,10 +11,10 @@
 @section('content')
     @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
-            <h3>Slider - Actualizar</h3>
+            <h3>Banner desplegable - Actualizar</h3>
         @endslot
         <li class="breadcrumb-item"><a href="">Home</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('slider.index') }}">Slider</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('slider.index') }}">Banner desplegable</a></li>
         <li class="breadcrumb-item active">Actualizar</li>
     @endcomponent
 
@@ -25,7 +25,7 @@
                     <div class="card-header pb-0">
                         <h5>Imagen</h5>
                     </div>
-                    <form class="form theme-form" action="{{ route('slider.update', $row) }}" method="POST"
+                    <form class="form theme-form" action="{{ route('despregable.update', $row) }}" method="POST"
                         enctype="multipart/form-data">
                         @method('PUT')
                         @csrf
@@ -45,7 +45,7 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="mb-3 row">
-                                        <label class="col-sm-3 col-form-label">Imagen Slider</label>
+                                        <label class="col-sm-3 col-form-label">Imagen</label>
                                         <div class="col-sm-9">
                                             <input class="form-control" type="file" name="image" />
                                         </div>
@@ -79,14 +79,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <label class="col-sm-3 col-form-label">Descripción</label>
-                                <div class="col-sm-9">
-                                    <textarea class="form-control" name="es_description" rows="5" cols="5" placeholder="Descripción">
-                                        {{ $row->es_description }}
-                                    </textarea>
-                                </div>
-                            </div>
                         </div>
                         <div class="card-header pb-0 pt-0">
                             <h5>Información Ingles</h5>
@@ -112,14 +104,6 @@
                                                 placeholder="Texto botón" value="{{ $row->en_button }}" />
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <label class="col-sm-3 col-form-label">Descripción</label>
-                                <div class="col-sm-9">
-                                    <textarea class="form-control" name="en_description" rows="5" cols="5" placeholder="Descripción">
-                                        {{ $row->en_description }}
-                                    </textarea>
                                 </div>
                             </div>
                         </div>

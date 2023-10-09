@@ -15,7 +15,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             AdminSeeder::class,
             TranslationSeeder::class,
-            AdminHomeSliderSeeder::class
+            AdminHomeSliderSeeder::class,
+            AdminHomeDespegableSeeder::class,
+            AdminHomePartnersSeeder::class
         ]);
     }
 }
