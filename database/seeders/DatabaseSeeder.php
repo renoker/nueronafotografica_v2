@@ -17,7 +17,8 @@ class DatabaseSeeder extends Seeder
             TranslationSeeder::class,
             AdminHomeSliderSeeder::class,
             AdminHomeDespegableSeeder::class,
-            AdminHomePartnersSeeder::class
+            AdminHomePartnersSeeder::class,
+            AdminSliderGeneralSeeder::class
         ]);
     }
 }

@@ -26,8 +26,8 @@
                         <a class="nav-link menu-title {{ prefixActive('/home') }}" href="javascript:void(0)"><i
                                 data-feather="home"></i><span>Home</span></a>
                         <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('/home/slider') }};">
-                            <li><a href="{{ route('slider.index') }}"
-                                    class="{{ routeActive('slider.index') }}">Slider</a></li>
+                            <li><a href="{{ route('slider.index') }}" class="{{ routeActive('slider.index') }}">Banner
+                                    principal</a></li>
                             <li><a href="{{ route('despregable.index') }}"
                                     class="{{ routeActive('despregable.index') }}">Banner desplegable</a></li>
                             <li><a href="{{ route('translateHome.index') }}"
