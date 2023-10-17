@@ -3,6 +3,8 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdminHomeDespegableController;
 use App\Http\Controllers\AdminHomeSliderController;
+use App\Http\Controllers\AdminSliderGeneralController;
+use App\Http\Controllers\ArquitecturaController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LangController;
@@ -23,10 +25,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('lang/change', [LangController::class, 'change'])->name('changeLang');
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
+// Arquitectura
+Route::get('/arquitectura', [ArquitecturaController::class, 'index'])->name('arquitectura.index');
 
-Route::get('/arquitectura', function () {
-    return view('pages.arquitectura');
-});
 
 Route::get('/construccion', function () {
     return view('pages.construccion');
@@ -89,11 +90,15 @@ Route::group(['middleware' => ['auth:admin']], function () {
             Route::get('translate',                         [TranslationController::class, 'indexHome'])->name('translateHome.index');
             Route::get('translate/edit/{translation}',      [TranslationController::class, 'editHome'])->name('translateHome.edit');
             Route::put('/translate/{translation}',          [TranslationController::class, 'updateHome'])->name('translateHome.update');
+            // Sliders
+            Route::get('home_slider_general',               [AdminSliderGeneralController::class, 'indexHome'])->name('admin_slider_general.indexHome');
+            Route::get('home_slider_general/create',        [AdminSliderGeneralController::class, 'createHome'])->name('admin_slider_general.createHome');
+            Route::post('home_slider_general/store',        [AdminSliderGeneralController::class, 'storeHome'])->name('admin_slider_general.storeHome');
         });
         // END HOME
+        Route::post('move_row_slider',                      [AdminSliderGeneralController::class, 'moveRowSlider']);
     });
 });
-
 
 // ------------------------------ CSM PLANTILLA ---------------------------
 

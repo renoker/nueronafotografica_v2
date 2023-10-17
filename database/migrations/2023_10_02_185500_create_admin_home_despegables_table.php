@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('es_button')->nullable();
             $table->string('en_title')->nullable();
             $table->string('en_button')->nullable();
+            $table->string('href')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

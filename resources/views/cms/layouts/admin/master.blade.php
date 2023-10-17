@@ -13,6 +13,7 @@
     <link rel="icon" href="{{ asset('cms_assets/images/favicon.png') }}" type="image/x-icon">
     <link rel="shortcut icon" href="{{ asset('cms_assets/images/favicon.png') }}" type="image/x-icon">
     <title>@yield('title')</title>
+    @yield('meta')
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link

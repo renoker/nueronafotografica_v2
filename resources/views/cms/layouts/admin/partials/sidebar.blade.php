@@ -30,6 +30,9 @@
                                     principal</a></li>
                             <li><a href="{{ route('despregable.index') }}"
                                     class="{{ routeActive('despregable.index') }}">Banner desplegable</a></li>
+                            <li><a href="{{ route('admin_slider_general.indexHome') }}"
+                                    class="{{ routeActive('admin_slider_general.indexHome') }}">Sliders generales</a>
+                            </li>
                             <li><a href="{{ route('translateHome.index') }}"
                                     class="{{ routeActive('translateHome.index') }}">Traducción</a></li>
                         </ul>

@@ -19,6 +19,7 @@ class AdminHomeDespegableSeeder extends Seeder
             'es_button'         => 'Conocer más',
             'en_title'          => "Architecture and interior design",
             'en_button'         => 'Learn more',
+            'href'              => 'arquitectura.index'
         ]);
 
         AdminHomeDespegable::create([
@@ -27,6 +28,7 @@ class AdminHomeDespegableSeeder extends Seeder
             'es_button'         => 'Conocer más',
             'en_title'          => "Construction",
             'en_button'         => 'Learn more',
+            'href'              => 'arquitectura.index'
         ]);
 
         AdminHomeDespegable::create([
@@ -35,6 +37,7 @@ class AdminHomeDespegableSeeder extends Seeder
             'es_button'         => 'Conocer más',
             'en_title'          => "Corporate",
             'en_button'         => 'Learn more',
+            'href'              => 'arquitectura.index'
         ]);
 
         AdminHomeDespegable::create([
@@ -43,6 +46,7 @@ class AdminHomeDespegableSeeder extends Seeder
             'es_button'         => 'Conocer más',
             'en_title'          => "Advertising",
             'en_button'         => 'Learn more',
+            'href'              => 'arquitectura.index'
         ]);
     }
 }
