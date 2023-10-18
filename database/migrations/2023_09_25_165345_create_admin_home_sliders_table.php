@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('admin_home_sliders', function (Blueprint $table) {
             $table->id();
+            $table->string('key')->nullable();
             $table->string('image')->nullable();
             $table->string('es_title')->nullable();
             $table->string('es_description')->nullable();
@@ -20,6 +21,7 @@ return new class extends Migration
             $table->string('en_title')->nullable();
             $table->string('en_description')->nullable();
             $table->string('en_button')->nullable();
+            $table->string('href')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

@@ -54,5 +54,131 @@ class AdminSliderGeneralSeeder extends Seeder
             'image' => 'assets/sliders_generales/reloj.png',
             'order' => 2
         ]);
+        // Arquitectura
+        AdminSliderGeneral::create([
+            'key'   => "arquitectura",
+            'position'  => 1,
+            'image' => 'assets/sliders_generales/image_arq.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "arquitectura",
+            'position'  => 1,
+            'image' => 'assets/sliders_generales/image_arq.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "arquitectura",
+            'position'  => 1,
+            'image' => 'assets/sliders_generales/image_arq.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "arquitectura",
+            'position'  => 2,
+            'image' => 'assets/sliders_generales/image_arq_2.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "arquitectura",
+            'position'  => 2,
+            'image' => 'assets/sliders_generales/image_arq_2.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "arquitectura",
+            'position'  => 2,
+            'image' => 'assets/sliders_generales/image_arq_2.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "arquitectura",
+            'position'  => 3,
+            'image' => 'assets/sliders_generales/image_arq_3.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "arquitectura",
+            'position'  => 3,
+            'image' => 'assets/sliders_generales/image_arq_3.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "arquitectura",
+            'position'  => 3,
+            'image' => 'assets/sliders_generales/image_arq_3.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "arquitectura",
+            'position'  => 4,
+            'image' => 'assets/sliders_generales/image_arq_4.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "arquitectura",
+            'position'  => 4,
+            'image' => 'assets/sliders_generales/image_arq_4.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "arquitectura",
+            'position'  => 4,
+            'image' => 'assets/sliders_generales/image_arq_4.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "arquitectura",
+            'position'  => 5,
+            'image' => 'assets/sliders_generales/image_arq_5.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "arquitectura",
+            'position'  => 5,
+            'image' => 'assets/sliders_generales/image_arq_5.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "arquitectura",
+            'position'  => 5,
+            'image' => 'assets/sliders_generales/image_arq_5.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "arquitectura",
+            'position'  => 6,
+            'image' => 'assets/sliders_generales/image_arq_6.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "arquitectura",
+            'position'  => 6,
+            'image' => 'assets/sliders_generales/image_arq_6.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "arquitectura",
+            'position'  => 6,
+            'image' => 'assets/sliders_generales/image_arq_6.png',
+            'order' => 3
+        ]);
     }
 }

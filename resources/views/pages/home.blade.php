@@ -37,10 +37,12 @@
                         <h6 class="encabezado_banner">{{ $item->title }}</h6>
                         <div class="box_slider_text">
                             <h1 class="texto_principal">{{ $item->description }}</h1>
-                            <div class="conocer_mas">
-                                <p class="button_conoce_mas">{{ $item->button }}</p>
-                                <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
-                            </div>
+                            <a href="{{ route($item->href) }}">
+                                <div class="conocer_mas">
+                                    <p class="button_conoce_mas">{{ $item->button }}</p>
+                                    <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
