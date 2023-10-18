@@ -169,16 +169,18 @@
                 <form action="{{ route('contact.store') }}" method="post">
                     @method('POST')
                     @csrf
-                    <div class="h1_contacto">Contáctanos</div>
-                    <input type="text" name="name" placeholder="Nombre" value="{{ old('name') }}">
-                    <input type="email" name="email" id="" placeholder="Correo"
+                    <div class="h1_contacto">{{ $traslateContact[0]->title }}</div>
+                    <input type="text" name="name" placeholder="{{ $traslateContact[1]->title }}"
+                        value="{{ old('name') }}">
+                    <input type="email" name="email" id="" placeholder="{{ $traslateContact[2]->title }}"
                         value="{{ old('email') }}">
-                    <input type="tel" name="phone" id="" placeholder="Teléfono"
+                    <input type="tel" name="phone" id="" placeholder="{{ $traslateContact[3]->title }}"
                         value="{{ old('phone') }}">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje">
+                    <textarea name="message" id="" cols="30" rows="10"
+                        placeholder="{{ $traslateContact[4]->title }}">
                         {{ old('message') }}
                     </textarea>
-                    <button type="submit">Enviar</button>
+                    <button type="submit">{{ $traslateContact[5]->title }}</button>
                 </form>
             </div>
             <div class="glide_slider_big">

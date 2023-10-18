@@ -19,12 +19,15 @@ class ArquitecturaController extends Controller
         if ($language == 'es') {
             $slider_top = AdminHomeSlider::select(['id', 'href', 'image', 'es_title AS title', 'es_description AS description', 'es_button AS button',])->where('key', 'arquitectura')->get();
             $traslate = Translation::select(['translate_es AS title'])->where('key', 'arquitectura')->where('page', 'Arquitectura')->get();
+            $traslateContact = Translation::select(['translate_es AS title'])->where('key', 'contactanos')->get();
         } elseif ($language == 'en') {
             $slider_top = AdminHomeSlider::select(['id', 'href', 'image', 'en_title AS title', 'en_description AS description', 'en_button AS button',])->where('key', 'arquitectura')->get();
             $traslate = Translation::select(['translate_en AS title'])->where('key', 'arquitectura')->where('page', 'Arquitectura')->get();
+            $traslateContact = Translation::select(['translate_en AS title'])->where('key', 'contactanos')->get();
         } else {
             $slider_top = AdminHomeSlider::select(['id', 'href', 'image', 'es_title AS title', 'es_description AS description', 'es_button AS button',])->where('key', 'arquitectura')->get();
             $traslate = Translation::select(['translate_es AS title'])->where('key', 'arquitectura')->where('page', 'Arquitectura')->get();
+            $traslateContact = Translation::select(['translate_es AS title'])->where('key', 'contactanos')->get();
         }
 
         $slider_general_uno = AdminSliderGeneral::where('key', 'arquitectura')->where('position', 1)->orderBy('order', 'asc')->get();
@@ -43,6 +46,7 @@ class ArquitecturaController extends Controller
             'slider_general_cinco'  => $slider_general_cinco,
             'slider_general_seis'   => $slider_general_seis,
             'traslate'              => $traslate,
+            'traslateContact'       => $traslateContact,
         ]);
     }
 }

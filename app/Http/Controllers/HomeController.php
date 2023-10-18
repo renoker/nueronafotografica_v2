@@ -22,14 +22,17 @@ class HomeController extends Controller
             $slider_top = AdminHomeSlider::select(['id', 'href', 'image', 'es_title AS title', 'es_description AS description', 'es_button AS button',])->where('key', 'home')->get();
             $traslate = Translation::select(['translate_es AS title'])->where('key', 'home')->where('page', 'Home')->get();
             $desplegable = AdminHomeDespegable::select(['id', 'href', 'image', 'es_title AS title', 'es_button AS button',])->get();
+            $traslateContact = Translation::select(['translate_es AS title'])->where('key', 'contactanos')->get();
         } elseif ($language == 'en') {
             $slider_top = AdminHomeSlider::select(['id', 'href', 'image', 'en_title AS title', 'en_description AS description', 'en_button AS button',])->where('key', 'home')->get();
             $traslate = Translation::select(['translate_en AS title'])->where('key', 'home')->where('page', 'Home')->get();
             $desplegable = AdminHomeDespegable::select(['id', 'href', 'image', 'en_title AS title', 'en_button AS button',])->get();
+            $traslateContact = Translation::select(['translate_en AS title'])->where('key', 'contactanos')->get();
         } else {
             $slider_top = AdminHomeSlider::select(['id', 'href', 'image', 'es_title AS title', 'es_description AS description', 'es_button AS button',])->where('key', 'home')->get();
             $traslate = Translation::select(['translate_es AS title'])->where('key', 'home')->where('page', 'Home')->get();
             $desplegable = AdminHomeDespegable::select(['id', 'href', 'image', 'es_title AS title', 'es_button AS button',])->get();
+            $traslateContact = Translation::select(['translate_es AS title'])->where('key', 'contactanos')->get();
         }
 
 
@@ -51,6 +54,7 @@ class HomeController extends Controller
             'traslate'              => $traslate,
             'partners'              => $partners,
             'p'                     => $p,
+            'traslateContact'       => $traslateContact,
         ]);
     }
 }

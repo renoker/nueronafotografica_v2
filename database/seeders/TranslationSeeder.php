@@ -49,6 +49,14 @@ class TranslationSeeder extends Seeder
         Translation::create([
             'key'           => "contactanos",
             'page'          => null,
+            'section'       => 'Input',
+            'translate_es'   => 'Mensaje',
+            'translate_en'   => 'Message',
+        ]);
+
+        Translation::create([
+            'key'           => "contactanos",
+            'page'          => null,
             'section'       => 'Button',
             'translate_es'   => 'Enviar',
             'translate_en'   => 'Send',

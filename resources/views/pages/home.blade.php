@@ -133,10 +133,8 @@
         {{-- Bloque 3 --}}
         <div class="content_slider_nosotros_small">
             <div class="small_nosotros">
-                <h1 class="h1">Nuestros colaboradores</h1>
-                <h6 class="p">Impactamos a tus clientes con la innovación y calidad de Neurona Fotográfica, a través
-                    de imágenes únicas que quedaran grabadas en su mente y te ayudaran a lograr tus objetivos de negocio.
-                </h6>
+                <h1 class="h1">{{ $traslate[12]->title }}</h1>
+                <h6 class="p">{{ $traslate[13]->title }}</h6>
             </div>
             <div class="slider_bullets">
                 <div class="box_slider">
@@ -190,16 +188,18 @@
                 <form action="{{ route('contact.store') }}" method="post">
                     @method('POST')
                     @csrf
-                    <div class="h1_contacto">Contáctanos</div>
-                    <input type="text" name="name" placeholder="Nombre" value="{{ old('name') }}">
-                    <input type="email" name="email" id="" placeholder="Correo"
+                    <div class="h1_contacto">{{ $traslateContact[0]->title }}</div>
+                    <input type="text" name="name" placeholder="{{ $traslateContact[1]->title }}"
+                        value="{{ old('name') }}">
+                    <input type="email" name="email" id="" placeholder="{{ $traslateContact[2]->title }}"
                         value="{{ old('email') }}">
-                    <input type="tel" name="phone" id="" placeholder="Teléfono"
+                    <input type="tel" name="phone" id="" placeholder="{{ $traslateContact[3]->title }}"
                         value="{{ old('phone') }}">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje">
+                    <textarea name="message" id="" cols="30" rows="10"
+                        placeholder="{{ $traslateContact[4]->title }}">
                         {{ old('message') }}
                     </textarea>
-                    <button type="submit">Enviar</button>
+                    <button type="submit">{{ $traslateContact[5]->title }}</button>
                 </form>
             </div>
             <div class="glide_slider_big">
