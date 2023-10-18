@@ -411,5 +411,110 @@ class AdminSliderGeneralSeeder extends Seeder
             'image' => 'assets/sliders_generales/corporativa_5.png',
             'order' => 3
         ]);
+        // Publicitaria
+        AdminSliderGeneral::create([
+            'key'   => "publicitaria",
+            'position'  => 1,
+            'image' => 'assets/sliders_generales/publicitaria_1.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "publicitaria",
+            'position'  => 1,
+            'image' => 'assets/sliders_generales/publicitaria_1.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "publicitaria",
+            'position'  => 1,
+            'image' => 'assets/sliders_generales/publicitaria_1.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "publicitaria",
+            'position'  => 2,
+            'image' => 'assets/sliders_generales/publicitaria_2.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "publicitaria",
+            'position'  => 2,
+            'image' => 'assets/sliders_generales/publicitaria_2.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "publicitaria",
+            'position'  => 2,
+            'image' => 'assets/sliders_generales/publicitaria_2.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "publicitaria",
+            'position'  => 3,
+            'image' => 'assets/sliders_generales/publicitaria_3.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "publicitaria",
+            'position'  => 3,
+            'image' => 'assets/sliders_generales/publicitaria_3.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "publicitaria",
+            'position'  => 3,
+            'image' => 'assets/sliders_generales/publicitaria_3.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "publicitaria",
+            'position'  => 4,
+            'image' => 'assets/sliders_generales/publicitaria_4.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "publicitaria",
+            'position'  => 4,
+            'image' => 'assets/sliders_generales/publicitaria_4.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "publicitaria",
+            'position'  => 4,
+            'image' => 'assets/sliders_generales/publicitaria_4.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "publicitaria",
+            'position'  => 5,
+            'image' => 'assets/sliders_generales/publicitaria_5.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "publicitaria",
+            'position'  => 5,
+            'image' => 'assets/sliders_generales/publicitaria_5.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "publicitaria",
+            'position'  => 5,
+            'image' => 'assets/sliders_generales/publicitaria_5.png',
+            'order' => 3
+        ]);
     }
 }

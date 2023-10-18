@@ -60,5 +60,17 @@ class AdminHomeSliderSeeder extends Seeder
             'en_button'         => 'Learn more',
             'href'              => 'corporativa.index'
         ]);
+
+        AdminHomeSlider::create([
+            'key'               => 'publicitaria',
+            'image'             => "assets/home/slider/publicitaria.png",
+            'es_title'          => "Incrementamos tus ventas desarrollando la estratégia adecuada",
+            'es_description'    => 'Publicitaria',
+            'es_button'         => 'Conocer más',
+            'en_title'          => "We increase your sales by developing the appropriate strategy",
+            'en_description'    => 'Corporate',
+            'en_button'         => 'Learn more',
+            'href'              => 'publicitaria.index'
+        ]);
     }
 }
