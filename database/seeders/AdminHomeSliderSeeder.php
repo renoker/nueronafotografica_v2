@@ -48,5 +48,17 @@ class AdminHomeSliderSeeder extends Seeder
             'en_button'         => 'Learn more',
             'href'              => 'construccion.index'
         ]);
+
+        AdminHomeSlider::create([
+            'key'               => 'corporativa',
+            'image'             => "assets/home/slider/corporativa.png",
+            'es_title'          => "Podemos acompañarte en tus convenciones dentro o fuera de México",
+            'es_description'    => 'Corporativa',
+            'es_button'         => 'Conocer más',
+            'en_title'          => "We can accompany you at your conventions inside or outside of Mexico",
+            'en_description'    => 'Corporate',
+            'en_button'         => 'Learn more',
+            'href'              => 'corporativa.index'
+        ]);
     }
 }

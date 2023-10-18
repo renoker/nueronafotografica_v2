@@ -306,5 +306,110 @@ class AdminSliderGeneralSeeder extends Seeder
             'image' => 'assets/sliders_generales/construccion_6.png',
             'order' => 3
         ]);
+        // Corporativa
+        AdminSliderGeneral::create([
+            'key'   => "corporativa",
+            'position'  => 1,
+            'image' => 'assets/sliders_generales/corporativa_1.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "corporativa",
+            'position'  => 1,
+            'image' => 'assets/sliders_generales/corporativa_1.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "corporativa",
+            'position'  => 1,
+            'image' => 'assets/sliders_generales/corporativa_1.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "corporativa",
+            'position'  => 2,
+            'image' => 'assets/sliders_generales/corporativa_2.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "corporativa",
+            'position'  => 2,
+            'image' => 'assets/sliders_generales/corporativa_2.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "corporativa",
+            'position'  => 2,
+            'image' => 'assets/sliders_generales/corporativa_2.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "corporativa",
+            'position'  => 3,
+            'image' => 'assets/sliders_generales/corporativa_3.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "corporativa",
+            'position'  => 3,
+            'image' => 'assets/sliders_generales/corporativa_3.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "corporativa",
+            'position'  => 3,
+            'image' => 'assets/sliders_generales/corporativa_3.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "corporativa",
+            'position'  => 4,
+            'image' => 'assets/sliders_generales/corporativa_4.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "corporativa",
+            'position'  => 4,
+            'image' => 'assets/sliders_generales/corporativa_4.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "corporativa",
+            'position'  => 4,
+            'image' => 'assets/sliders_generales/corporativa_4.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "corporativa",
+            'position'  => 5,
+            'image' => 'assets/sliders_generales/corporativa_5.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "corporativa",
+            'position'  => 5,
+            'image' => 'assets/sliders_generales/corporativa_5.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "corporativa",
+            'position'  => 5,
+            'image' => 'assets/sliders_generales/corporativa_5.png',
+            'order' => 3
+        ]);
     }
 }

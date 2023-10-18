@@ -7,8 +7,10 @@ use App\Http\Controllers\AdminSliderGeneralController;
 use App\Http\Controllers\ArquitecturaController;
 use App\Http\Controllers\ConstruccionController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CorporativaController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LangController;
+use App\Http\Controllers\PublicitariaController;
 use App\Http\Controllers\TranslationController;
 use Illuminate\Support\Facades\Route;
 
@@ -30,15 +32,10 @@ Route::get('/', [HomeController::class, 'index'])->name('home.index');
 Route::get('/arquitectura', [ArquitecturaController::class, 'index'])->name('arquitectura.index');
 // Construccion
 Route::get('/construccion', [ConstruccionController::class, 'index'])->name('construccion.index');
-
-
-Route::get('/corporativa', function () {
-    return view('pages.corporativa');
-});
-
-Route::get('/publicitaria', function () {
-    return view('pages.publicitaria');
-});
+// Corporativa
+Route::get('/corporativa', [CorporativaController::class, 'index'])->name('corporativa.index');
+// Corporativa
+Route::get('/publicitaria', [PublicitariaController::class, 'index'])->name('publicitaria.index');
 
 
 Route::get('/acerca_de', function () {
