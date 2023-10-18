@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminHomeDespegableController;
 use App\Http\Controllers\AdminHomeSliderController;
 use App\Http\Controllers\AdminSliderGeneralController;
 use App\Http\Controllers\ArquitecturaController;
+use App\Http\Controllers\ConstruccionController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LangController;
@@ -27,11 +28,9 @@ Route::get('lang/change', [LangController::class, 'change'])->name('changeLang')
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 // Arquitectura
 Route::get('/arquitectura', [ArquitecturaController::class, 'index'])->name('arquitectura.index');
+// Construccion
+Route::get('/construccion', [ConstruccionController::class, 'index'])->name('construccion.index');
 
-
-Route::get('/construccion', function () {
-    return view('pages.construccion');
-});
 
 Route::get('/corporativa', function () {
     return view('pages.corporativa');

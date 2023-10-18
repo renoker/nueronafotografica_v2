@@ -28,7 +28,7 @@ class AdminHomeDespegableSeeder extends Seeder
             'es_button'         => 'Conocer más',
             'en_title'          => "Construction",
             'en_button'         => 'Learn more',
-            'href'              => 'arquitectura.index'
+            'href'              => 'construccion.index'
         ]);
 
         AdminHomeDespegable::create([

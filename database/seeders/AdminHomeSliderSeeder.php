@@ -36,5 +36,17 @@ class AdminHomeSliderSeeder extends Seeder
             'en_button'         => 'Learn more',
             'href'              => 'arquitectura.index'
         ]);
+
+        AdminHomeSlider::create([
+            'key'               => 'construccion',
+            'image'             => "assets/home/slider/construccion.png",
+            'es_title'          => "Mejoramos tu pocisionamiento en el sector de la Construcción a través de herramientas audivisuales de alto impacto",
+            'es_description'    => 'Construcción',
+            'es_button'         => 'Conocer más',
+            'en_title'          => "We improve your positioning in the Construction sector through high-impact audiovisual tools",
+            'en_description'    => 'Construction',
+            'en_button'         => 'Learn more',
+            'href'              => 'construccion.index'
+        ]);
     }
 }
