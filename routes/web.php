@@ -39,10 +39,9 @@ Route::get('/corporativa', [CorporativaController::class, 'index'])->name('corpo
 Route::get('/publicitaria', [PublicitariaController::class, 'index'])->name('publicitaria.index');
 // Acerca de
 Route::get('/acerca_de', [AcercaDeController::class, 'index'])->name('acerca_de.index');
+// Contacto
+Route::get('/contacto', [ContactController::class, 'index'])->name('contact.index');
 
-Route::get('/contacto', function () {
-    return view('pages.contacto');
-});
 
 
 Route::get('/blog', function () {

@@ -928,5 +928,101 @@ class TranslationSeeder extends Seeder
             'translate_es'   => 'Estará en función de tu proyecto considerando pre-producción, producción y post-producción. Será un “traje a la medida” para tí o tu empresa.',
             'translate_en'   => 'It will depend on your project considering pre-production, production and post-production. It will be a “tailored suit” for you or your company.',
         ]);
+        // ------------------------------------------------------------------------------------------ CONTACTO ------------------------------------------------------------------------------------------ 
+        Translation::create([
+            'key'           => "contacto",
+            'page'          => "Contacto",
+            'section'       => "Banner",
+            'translate_es'   => 'Nosotros',
+            'translate_en'   => 'Us',
+        ]);
+
+        Translation::create([
+            'key'           => "contacto",
+            'page'          => "Contacto",
+            'section'       => "Banner",
+            'translate_es'   => 'Neurona Fotográfica',
+            'translate_en'   => 'Neurona Fotográfica',
+        ]);
+
+        Translation::create([
+            'key'           => "contacto",
+            'page'          => "Contacto",
+            'section'       => "Banner",
+            'translate_es'   => 'Es una empresa enfocada en medios audiovisuales profesionales con más de 7 años de experiencia en el mercado Mexicano, Canadá y Estados Unidos. Impactamos a tus clientes con la innovación y calidad, a través de imágenes únicas que quedarán guardadas en su mente ayudándote a lograr tus objetivos personales, de negocio, Corporativos o Empresariales.',
+            'translate_en'   => 'It is a company focused on professional audiovisual media with more than 7 years of experience in the Mexican market, Canada and the United States. We impact your clients with innovation and quality, through unique images that will remain stored in your mind helping you achieve your personal, business, corporate or Business.',
+        ]);
+
+        Translation::create([
+            'key'           => "contacto",
+            'page'          => "Contacto",
+            'section'       => "Banner",
+            'translate_es'   => 'Conocer más',
+            'translate_en'   => 'Learn more',
+        ]);
+
+        Translation::create([
+            'key'           => "contacto",
+            'page'          => "Contacto",
+            'section'       => "Tab",
+            'translate_es'   => 'Misión',
+            'translate_en'   => 'Mission',
+        ]);
+
+        Translation::create([
+            'key'           => "contacto",
+            'page'          => "Contacto",
+            'section'       => "Tab",
+            'translate_es'   => 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.',
+            'translate_en'   => 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.',
+        ]);
+
+        Translation::create([
+            'key'           => "contacto",
+            'page'          => "Contacto",
+            'section'       => "Tab",
+            'translate_es'   => 'Valores',
+            'translate_en'   => 'Values',
+        ]);
+
+        Translation::create([
+            'key'           => "contacto",
+            'page'          => "Contacto",
+            'section'       => "Tab",
+            'translate_es'   => 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.',
+            'translate_en'   => 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.',
+        ]);
+
+        Translation::create([
+            'key'           => "contacto",
+            'page'          => "Contacto",
+            'section'       => "Tab",
+            'translate_es'   => 'Visión',
+            'translate_en'   => 'Vision',
+        ]);
+
+        Translation::create([
+            'key'           => "contacto",
+            'page'          => "Contacto",
+            'section'       => "Tab",
+            'translate_es'   => 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.',
+            'translate_en'   => 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.',
+        ]);
+
+        Translation::create([
+            'key'           => "contacto",
+            'page'          => "Contacto",
+            'section'       => "Tab",
+            'translate_es'   => '¿Qué significa nuestro nombre Neurona Fotográfica?',
+            'translate_en'   => 'What does our name Photographic Neuron mean?',
+        ]);
+
+        Translation::create([
+            'key'           => "contacto",
+            'page'          => "Contacto",
+            'section'       => "Tab",
+            'translate_es'   => 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.',
+            'translate_en'   => 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.',
+        ]);
     }
 }

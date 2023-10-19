@@ -54,7 +54,7 @@ class AdminSliderGeneralSeeder extends Seeder
             'image' => 'assets/sliders_generales/reloj.png',
             'order' => 2
         ]);
-        // Arquitectura
+        // ------------------------------------------------------------------------------------ Arquitectura ------------------------------------------------------------------------------------
         AdminSliderGeneral::create([
             'key'   => "arquitectura",
             'position'  => 1,
@@ -180,7 +180,7 @@ class AdminSliderGeneralSeeder extends Seeder
             'image' => 'assets/sliders_generales/image_arq_6.png',
             'order' => 3
         ]);
-        // Construcción
+        // ------------------------------------------------------------------------------------ Construcción ------------------------------------------------------------------------------------
         AdminSliderGeneral::create([
             'key'   => "construccion",
             'position'  => 1,
@@ -306,7 +306,7 @@ class AdminSliderGeneralSeeder extends Seeder
             'image' => 'assets/sliders_generales/construccion_6.png',
             'order' => 3
         ]);
-        // Corporativa
+        // ------------------------------------------------------------------------------------ Corporativa ------------------------------------------------------------------------------------
         AdminSliderGeneral::create([
             'key'   => "corporativa",
             'position'  => 1,
@@ -411,7 +411,7 @@ class AdminSliderGeneralSeeder extends Seeder
             'image' => 'assets/sliders_generales/corporativa_5.png',
             'order' => 3
         ]);
-        // Publicitaria
+        // ------------------------------------------------------------------------------------ Publicitaria ------------------------------------------------------------------------------------
         AdminSliderGeneral::create([
             'key'   => "publicitaria",
             'position'  => 1,
@@ -516,7 +516,7 @@ class AdminSliderGeneralSeeder extends Seeder
             'image' => 'assets/sliders_generales/publicitaria_5.png',
             'order' => 3
         ]);
-        // Acerca de
+        // ------------------------------------------------------------------------------------ Acerca de ------------------------------------------------------------------------------------
         AdminSliderGeneral::create([
             'key'   => "acerca_de",
             'position'  => 1,
@@ -661,6 +661,91 @@ class AdminSliderGeneralSeeder extends Seeder
             'key'   => "acerca_de",
             'position'  => 7,
             'image' => 'assets/sliders_generales/acerca_de_7.png',
+            'order' => 3
+        ]);
+
+        // ------------------------------------------------------------------------------------ Contacto ------------------------------------------------------------------------------------
+        AdminSliderGeneral::create([
+            'key'   => "contacto",
+            'position'  => 1,
+            'image' => 'assets/sliders_generales/contacto_1.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "contacto",
+            'position'  => 1,
+            'image' => 'assets/sliders_generales/contacto_1.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "contacto",
+            'position'  => 1,
+            'image' => 'assets/sliders_generales/contacto_1.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "contacto",
+            'position'  => 2,
+            'image' => 'assets/sliders_generales/contacto_2.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "contacto",
+            'position'  => 2,
+            'image' => 'assets/sliders_generales/contacto_2.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "contacto",
+            'position'  => 2,
+            'image' => 'assets/sliders_generales/contacto_2.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "contacto",
+            'position'  => 3,
+            'image' => 'assets/sliders_generales/contacto_3.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "contacto",
+            'position'  => 3,
+            'image' => 'assets/sliders_generales/contacto_3.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "contacto",
+            'position'  => 3,
+            'image' => 'assets/sliders_generales/contacto_3.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "contacto",
+            'position'  => 4,
+            'image' => 'assets/sliders_generales/contacto_4.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "contacto",
+            'position'  => 4,
+            'image' => 'assets/sliders_generales/contacto_4.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "contacto",
+            'position'  => 4,
+            'image' => 'assets/sliders_generales/contacto_4.png',
             'order' => 3
         ]);
     }

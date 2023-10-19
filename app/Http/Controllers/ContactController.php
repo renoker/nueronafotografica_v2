@@ -4,15 +4,44 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreContactRequest;
 use App\Http\Requests\UpdateContactRequest;
+use App\Models\AdminSliderGeneral;
 use App\Models\Contact;
+use App\Models\Translation;
+use Illuminate\Support\Facades\App;
 
 class ContactController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
+
+    public function index($language = null)
     {
+        if ($language == null) {
+            $language = App::getLocale();
+        }
+
+        if ($language == 'es') {
+            $traslate = Translation::select(['translate_es AS title'])->where('key', 'contacto')->where('page', 'Contacto')->get();
+            $traslateContact = Translation::select(['translate_es AS title'])->where('key', 'contactanos')->get();
+        } elseif ($language == 'en') {
+            $traslate = Translation::select(['translate_en AS title'])->where('key', 'contacto')->where('page', 'Contacto')->get();
+            $traslateContact = Translation::select(['translate_en AS title'])->where('key', 'contactanos')->get();
+        } else {
+            $traslate = Translation::select(['translate_es AS title'])->where('key', 'contacto')->where('page', 'Contacto')->get();
+            $traslateContact = Translation::select(['translate_es AS title'])->where('key', 'contactanos')->get();
+        }
+
+        $slider_general_uno = AdminSliderGeneral::where('key', 'contacto')->where('position', 1)->orderBy('order', 'asc')->get();
+        $slider_general_dos = AdminSliderGeneral::where('key', 'contacto')->where('position', 2)->orderBy('order', 'asc')->get();
+        $slider_general_tres = AdminSliderGeneral::where('key', 'contacto')->where('position', 3)->orderBy('order', 'asc')->get();
+        $slider_general_cuatro = AdminSliderGeneral::where('key', 'contacto')->where('position', 4)->orderBy('order', 'asc')->get();
+
+        return view('pages.contacto', [
+            'slider_general_uno'    => $slider_general_uno,
+            'slider_general_dos'    => $slider_general_dos,
+            'slider_general_tres'   => $slider_general_tres,
+            'slider_general_cuatro' => $slider_general_cuatro,
+            'traslate'              => $traslate,
+            'traslateContact'       => $traslateContact,
+        ]);
     }
 
     /**
