@@ -50,7 +50,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="{{ route('acerca_de.index') }}">
                             <p>acerca de</p>
                         </a>
                     </li>

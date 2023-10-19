@@ -516,5 +516,152 @@ class AdminSliderGeneralSeeder extends Seeder
             'image' => 'assets/sliders_generales/publicitaria_5.png',
             'order' => 3
         ]);
+        // Acerca de
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 1,
+            'image' => 'assets/sliders_generales/acerca_de_1.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 1,
+            'image' => 'assets/sliders_generales/acerca_de_1.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 1,
+            'image' => 'assets/sliders_generales/acerca_de_1.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 2,
+            'image' => 'assets/sliders_generales/acerca_de_2.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 2,
+            'image' => 'assets/sliders_generales/acerca_de_2.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 2,
+            'image' => 'assets/sliders_generales/acerca_de_2.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 3,
+            'image' => 'assets/sliders_generales/acerca_de_3.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 3,
+            'image' => 'assets/sliders_generales/acerca_de_3.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 3,
+            'image' => 'assets/sliders_generales/acerca_de_3.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 4,
+            'image' => 'assets/sliders_generales/acerca_de_4.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 4,
+            'image' => 'assets/sliders_generales/acerca_de_4.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 4,
+            'image' => 'assets/sliders_generales/acerca_de_4.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 5,
+            'image' => 'assets/sliders_generales/acerca_de_5.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 5,
+            'image' => 'assets/sliders_generales/acerca_de_5.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 5,
+            'image' => 'assets/sliders_generales/acerca_de_5.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 6,
+            'image' => 'assets/sliders_generales/acerca_de_6.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 6,
+            'image' => 'assets/sliders_generales/acerca_de_6.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 6,
+            'image' => 'assets/sliders_generales/acerca_de_6.png',
+            'order' => 3
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 7,
+            'image' => 'assets/sliders_generales/acerca_de_7.png',
+            'order' => 1
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 7,
+            'image' => 'assets/sliders_generales/acerca_de_7.png',
+            'order' => 2
+        ]);
+
+        AdminSliderGeneral::create([
+            'key'   => "acerca_de",
+            'position'  => 7,
+            'image' => 'assets/sliders_generales/acerca_de_7.png',
+            'order' => 3
+        ]);
     }
 }

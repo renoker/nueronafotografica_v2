@@ -13,14 +13,16 @@
                 <div class="bullet"></div>
                 <div class="bullet"></div>
             </div>
-            <div class="item_slider" style="background-image: url({{ url('assets/images/utileria_1.png') }})">
-                <div class="contenedor_informacion_banner">
-                    <h6 class="encabezado_banner">Frase o línea de impacto</h6>
-                    <div class="box_slider_text">
-                        <h1 class="texto_principal">Nosotros</h1>
+            @foreach ($slider_top as $item)
+                <div class="item_slider" style="background-image: url({{ $item->image }})">
+                    <div class="contenedor_informacion_banner">
+                        <h6 class="encabezado_banner">{{ $item->title }}</h6>
+                        <div class="box_slider_text">
+                            <h1 class="texto_principal">{{ $item->description }}</h1>
+                        </div>
                     </div>
                 </div>
-            </div>
+            @endforeach
         </div>
         {{-- Bloque 1 --}}
         <div class="content_slider_nosotros">
@@ -50,32 +52,60 @@
             </div>
         </div>
 
-        {{-- Dos imagenes grandes --}}
-        <div class="content_imagenes_grandes_slider">
-            <div class="glide_slider_full">
+        {{-- Slider Doble --}}
+        <div class="contente_slider_doble">
+            <div class="glide_slider">
                 <div class="glide" id="slider_1">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
-                            <li class="glide__slide">
-                                <img src="{{ url('assets/images/utileria_11.jpeg') }}" alt="">
-                            </li>
-                            <li class="glide__slide">
-                                <img src="{{ url('assets/images/utileria_11.jpeg') }}" alt="">
-                            </li>
+                            @foreach ($slider_general_uno as $item)
+                                <li class="glide__slide">
+                                    <img src="{{ url($item->image) }}" alt="">
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="glide_slider">
+                <div class="glide" id="slider_2">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            @foreach ($slider_general_dos as $item)
+                                <li class="glide__slide">
+                                    <img src="{{ url($item->image) }}" alt="">
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{-- Dos imagenes grandes --}}
+        <div class="content_imagenes_grandes_slider">
+            <div class="glide_slider_full">
+                <div class="glide" id="slider_3">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            @foreach ($slider_general_tres as $item)
+                                <li class="glide__slide">
+                                    <img src="{{ url($item->image) }}" alt="">
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="glide_slider_full">
-                <div class="glide" id="slider_2">
+                <div class="glide" id="slider_4">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
-                            <li class="glide__slide">
-                                <img src="{{ url('assets/images/utileria_12.png') }}" alt="">
-                            </li>
-                            <li class="glide__slide">
-                                <img src="{{ url('assets/images/utileria_12.png') }}" alt="">
-                            </li>
+                            @foreach ($slider_general_cuatro as $item)
+                                <li class="glide__slide">
+                                    <img src="{{ url($item->image) }}" alt="">
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -85,15 +115,14 @@
         {{-- Preguntas y Slider --}}
         <div class="content_slider_nosotros">
             <div class="glide_slider_big">
-                <div class="glide" id="slider_3">
+                <div class="glide" id="slider_5">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
-                            <li class="glide__slide">
-                                <img src="{{ url('assets/images/utileria_13.png') }}" alt="">
-                            </li>
-                            <li class="glide__slide">
-                                <img src="{{ url('assets/images/utileria_13.png') }}" alt="">
-                            </li>
+                            @foreach ($slider_general_cinco as $item)
+                                <li class="glide__slide">
+                                    <img src="{{ url($item->image) }}" alt="">
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -183,15 +212,14 @@
                 </div>
             </div>
             <div class="glide_slider">
-                <div class="glide" id="slider_5">
+                <div class="glide" id="slider_6">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
-                            <li class="glide__slide">
-                                <img src="{{ url('assets/images/utileria_14.png') }}" alt="">
-                            </li>
-                            <li class="glide__slide">
-                                <img src="{{ url('assets/images/utileria_14.png') }}" alt="">
-                            </li>
+                            @foreach ($slider_general_seis as $item)
+                                <li class="glide__slide">
+                                    <img src="{{ url($item->image) }}" alt="">
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -200,20 +228,32 @@
         {{-- Contactanos --}}
         <div class="content_contacto_doble">
             <div class="box_contacto">
-                <div class="h1_contacto">Contáctanos</div>
-                <input type="text" placeholder="Nombre">
-                <input type="email" name="" id="" placeholder="Correo">
-                <input type="tel" name="" id="" placeholder="Teléfono">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <button type="submit">Enviar</button>
+                <form action="{{ route('contact.store') }}" method="post">
+                    @method('POST')
+                    @csrf
+                    <div class="h1_contacto">{{ $traslateContact[0]->title }}</div>
+                    <input type="text" name="name" placeholder="{{ $traslateContact[1]->title }}"
+                        value="{{ old('name') }}">
+                    <input type="email" name="email" id="" placeholder="{{ $traslateContact[2]->title }}"
+                        value="{{ old('email') }}">
+                    <input type="tel" name="phone" id="" placeholder="{{ $traslateContact[3]->title }}"
+                        value="{{ old('phone') }}">
+                    <textarea name="message" id="" cols="30" rows="10"
+                        placeholder="{{ $traslateContact[4]->title }}">
+                        {{ old('message') }}
+                    </textarea>
+                    <button type="submit">{{ $traslateContact[5]->title }}</button>
+                </form>
             </div>
             <div class="glide_slider_big">
                 <div class="glide" id="contacto">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
-                            <li class="glide__slide">
-                                <img src="{{ url('assets/images/rolex.png') }}" class="zoom" alt="">
-                            </li>
+                            @foreach ($slider_general_siete as $item)
+                                <li class="glide__slide">
+                                    <img src="{{ url($item->image) }}" class="zoom" alt="">
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>

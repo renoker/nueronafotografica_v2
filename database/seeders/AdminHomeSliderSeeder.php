@@ -72,5 +72,17 @@ class AdminHomeSliderSeeder extends Seeder
             'en_button'         => 'Learn more',
             'href'              => 'publicitaria.index'
         ]);
+
+        AdminHomeSlider::create([
+            'key'               => 'acerca_de',
+            'image'             => "assets/home/slider/acercade.png",
+            'es_title'          => "Frase o línea de impacto",
+            'es_description'    => 'Nosotros',
+            'es_button'         => 'Conocer más',
+            'en_title'          => "Phrase or line of impact",
+            'en_description'    => 'Us',
+            'en_button'         => 'Learn more',
+            'href'              => 'acerca_de.index'
+        ]);
     }
 }

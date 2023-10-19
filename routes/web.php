@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AcercaDeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdminHomeDespegableController;
 use App\Http\Controllers\AdminHomeSliderController;
@@ -36,11 +37,8 @@ Route::get('/construccion', [ConstruccionController::class, 'index'])->name('con
 Route::get('/corporativa', [CorporativaController::class, 'index'])->name('corporativa.index');
 // Corporativa
 Route::get('/publicitaria', [PublicitariaController::class, 'index'])->name('publicitaria.index');
-
-
-Route::get('/acerca_de', function () {
-    return view('pages.acerca_de');
-});
+// Acerca de
+Route::get('/acerca_de', [AcercaDeController::class, 'index'])->name('acerca_de.index');
 
 Route::get('/contacto', function () {
     return view('pages.contacto');
