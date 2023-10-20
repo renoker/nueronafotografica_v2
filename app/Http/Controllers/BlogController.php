@@ -17,15 +17,19 @@ class BlogController extends Controller
         }
 
         if ($language == 'es') {
+            $blog = Blog::select(['id', 'miniatura', 'es_title AS title', 'es_description_small AS descripcion_small', 'es_button AS button'])->get();
             $traslate = Translation::select(['translate_es AS title'])->where('key', 'blog')->where('page', 'Blog')->get();
         } elseif ($language == 'en') {
+            $blog = Blog::select(['id', 'miniatura', 'en_title AS title', 'en_description_small AS descripcion_small', 'en_button AS button'])->get();
             $traslate = Translation::select(['translate_en AS title'])->where('key', 'blog')->where('page', 'Blog')->get();
         } else {
+            $blog = Blog::select(['id', 'miniatura', 'es_title AS title', 'es_description_small AS descripcion_small', 'es_button AS button'])->get();
             $traslate = Translation::select(['translate_es AS title'])->where('key', 'blog')->where('page', 'Blog')->get();
         }
 
         return view('pages.blog', [
-            'traslate'              => $traslate,
+            'traslate'  => $traslate,
+            'list'      => $blog
         ]);
     }
 
@@ -50,7 +54,7 @@ class BlogController extends Controller
      */
     public function show(Blog $blog)
     {
-        //
+        dd($blog);
     }
 
     /**

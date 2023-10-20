@@ -44,6 +44,7 @@ Route::get('/acerca_de', [AcercaDeController::class, 'index'])->name('acerca_de.
 Route::get('/contacto', [ContactController::class, 'index'])->name('contact.index');
 // Contacto
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
+Route::get('/detalle/{blog}', [BlogController::class, 'show'])->name('blog.show');
 
 Route::get('/detalle', function () {
     return view('pages.detalle');

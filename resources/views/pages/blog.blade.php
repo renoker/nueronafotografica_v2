@@ -6,21 +6,16 @@
         <div class="content_slider_nosotros">
             <div class="content_nosotros">
                 <div class="box">
-                    <h6 class="h6">Nosotros</h6>
+                    <h6 class="h6"> {!! $traslate[0]->title !!}</h6>
                     <div class="txt_wp">
-                        <h1 class="h1">Neurona Fotográfica</h1>
+                        <h1 class="h1">{!! $traslate[1]->title !!}</h1>
                         <img src="{{ url('assets/icons/Mosca.svg') }}" alt="">
                     </div>
                     <p class="descripcion">
-                        Es una empresa enfocada en medios audiovisuales profesionales con más de 7 años de experiencia en el
-                        mercado Mexicano, Canadá y Estados Unidos.
-                        <br><br>
-                        Impactamos a tus clientes con la innovación y calidad, a través de imágenes únicas que quedarán
-                        guardadas en su mente ayudándote a lograr tus objetivos personales, de negocio, Corporativos o
-                        Empresariales.
+                        {!! $traslate[2]->title !!}
                     </p>
                     <div class="conocer_mas">
-                        <p class="button_conoce_mas">Conocer más</p>
+                        <p class="button_conoce_mas">{!! $traslate[3]->title !!}</p>
                         <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
                     </div>
                 </div>
@@ -30,59 +25,24 @@
             </div>
         </div>
         {{-- Listado de notas --}}
-        <div class="content_nota">
-            <div class="img_blog">
-                <img src="{{ url('assets/images/blog_1.jpeg') }}" alt="">
-            </div>
-            <div class="content_info">
-                <h1 class="h1">Explora el fascinante mundo de la fotografía: Inspiración y consejos para llevar tu
-                    pasión al siguiente nivel</h1>
-                <div class="txt">
-                    La fotografía es un lenguaje universal que nos permite contar historias, capturar emociones y congelar
-                    momentos en el tiempo. En nuestro blog, te sumergirás en un mundo de inspiración fotográfica.
-                    Exploraremos técnicas...
+        @foreach ($list as $item)
+            <div class="content_nota">
+                <div class="img_blog">
+                    <img src="{{ url($item->miniatura) }}" alt="">
                 </div>
-                <div class="conocer_mas">
-                    <p class="button_conoce_mas">Conocer más</p>
-                    <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="content_nota">
-            <div class="img_blog">
-                <img src="{{ url('assets/images/blog_1.jpeg') }}" alt="">
-            </div>
-            <div class="content_info">
-                <h1 class="h1">Explora el fascinante mundo de la fotografía: Inspiración y consejos para llevar tu
-                    pasión al siguiente nivel</h1>
-                <div class="txt">
-                    La fotografía es un lenguaje universal que nos permite contar historias, capturar emociones y congelar
-                    momentos en el tiempo. En nuestro blog, te sumergirás en un mundo de inspiración fotográfica.
-                    Exploraremos técnicas...
-                </div>
-                <div class="conocer_mas">
-                    <p class="button_conoce_mas">Conocer más</p>
-                    <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
+                <div class="content_info">
+                    <h1 class="h1">{!! $item->title !!}</h1>
+                    <div class="txt">
+                        {!! $item->descripcion_small !!}
+                    </div>
+                    <a href="{{ route('blog.show', [$item->id]) }}">
+                        <div class="conocer_mas">
+                            <p class="button_conoce_mas">{!! $item->button !!}</p>
+                            <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
+                        </div>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="content_nota">
-            <div class="img_blog">
-                <img src="{{ url('assets/images/blog_1.jpeg') }}" alt="">
-            </div>
-            <div class="content_info">
-                <h1 class="h1">Explora el fascinante mundo de la fotografía: Inspiración y consejos para llevar tu
-                    pasión al siguiente nivel</h1>
-                <div class="txt">
-                    La fotografía es un lenguaje universal que nos permite contar historias, capturar emociones y congelar
-                    momentos en el tiempo. En nuestro blog, te sumergirás en un mundo de inspiración fotográfica.
-                    Exploraremos técnicas...
-                </div>
-                <div class="conocer_mas">
-                    <p class="button_conoce_mas">Conocer más</p>
-                    <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
 @endsection

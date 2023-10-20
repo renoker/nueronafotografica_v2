@@ -1024,5 +1024,37 @@ class TranslationSeeder extends Seeder
             'translate_es'   => 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.',
             'translate_en'   => 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.',
         ]);
+        // ------------------------------------------------------------------------------------------ BLOG ------------------------------------------------------------------------------------------ 
+        Translation::create([
+            'key'           => "blog",
+            'page'          => "Blog",
+            'section'       => "Banner",
+            'translate_es'   => 'Nosotros',
+            'translate_en'   => 'Us',
+        ]);
+
+        Translation::create([
+            'key'           => "blog",
+            'page'          => "Blog",
+            'section'       => "Banner",
+            'translate_es'   => 'Neurona Fotográfica',
+            'translate_en'   => 'Neurona Fotográfica',
+        ]);
+
+        Translation::create([
+            'key'           => "blog",
+            'page'          => "Blog",
+            'section'       => "Banner",
+            'translate_es'   => 'Es una empresa enfocada en medios audiovisuales profesionales con más de 7 años de experiencia en el mercado Mexicano, Canadá y Estados Unidos. Impactamos a tus clientes con la innovación y calidad, a través de imágenes únicas que quedarán guardadas en su mente ayudándote a lograr tus objetivos personales, de negocio, Corporativos o Empresariales.',
+            'translate_en'   => 'It is a company focused on professional audiovisual media with more than 7 years of experience in the Mexican market, Canada and the United States. We impact your clients with innovation and quality, through unique images that will remain stored in your mind helping you achieve your personal, business, corporate or Business.',
+        ]);
+
+        Translation::create([
+            'key'           => "blog",
+            'page'          => "Blog",
+            'section'       => "Banner",
+            'translate_es'   => 'Conocer más',
+            'translate_en'   => 'Learn more',
+        ]);
     }
 }
