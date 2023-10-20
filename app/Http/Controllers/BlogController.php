@@ -5,15 +5,28 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreBlogRequest;
 use App\Http\Requests\UpdateBlogRequest;
 use App\Models\Blog;
+use App\Models\Translation;
+use Illuminate\Support\Facades\App;
 
 class BlogController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
+    public function index($language = null)
     {
-        //
+        if ($language == null) {
+            $language = App::getLocale();
+        }
+
+        if ($language == 'es') {
+            $traslate = Translation::select(['translate_es AS title'])->where('key', 'blog')->where('page', 'Blog')->get();
+        } elseif ($language == 'en') {
+            $traslate = Translation::select(['translate_en AS title'])->where('key', 'blog')->where('page', 'Blog')->get();
+        } else {
+            $traslate = Translation::select(['translate_es AS title'])->where('key', 'blog')->where('page', 'Blog')->get();
+        }
+
+        return view('pages.blog', [
+            'traslate'              => $traslate,
+        ]);
     }
 
     /**

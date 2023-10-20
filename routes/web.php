@@ -6,6 +6,7 @@ use App\Http\Controllers\AdminHomeDespegableController;
 use App\Http\Controllers\AdminHomeSliderController;
 use App\Http\Controllers\AdminSliderGeneralController;
 use App\Http\Controllers\ArquitecturaController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ConstruccionController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CorporativaController;
@@ -41,12 +42,8 @@ Route::get('/publicitaria', [PublicitariaController::class, 'index'])->name('pub
 Route::get('/acerca_de', [AcercaDeController::class, 'index'])->name('acerca_de.index');
 // Contacto
 Route::get('/contacto', [ContactController::class, 'index'])->name('contact.index');
-
-
-
-Route::get('/blog', function () {
-    return view('pages.blog');
-});
+// Contacto
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 
 Route::get('/detalle', function () {
     return view('pages.detalle');
@@ -354,11 +351,11 @@ Route::prefix('gallery')->group(function () {
     Route::view('gallery-hover', 'cms.admin.gallery.gallery-hover')->name('gallery-hover');
 });
 
-Route::prefix('blog')->group(function () {
-    Route::view('/', 'cms.admin.miscellaneous.blog')->name('blog');
-    Route::view('blog-single', 'cms.admin.miscellaneous.blog-single')->name('blog-single');
-    Route::view('add-post', 'cms.admin.miscellaneous.add-post')->name('add-post');
-});
+// Route::prefix('blog')->group(function () {
+//     Route::view('/', 'cms.admin.miscellaneous.blog')->name('blog');
+//     Route::view('blog-single', 'cms.admin.miscellaneous.blog-single')->name('blog-single');
+//     Route::view('add-post', 'cms.admin.miscellaneous.add-post')->name('add-post');
+// });
 
 Route::view('faq', 'cms.admin.miscellaneous.faq')->name('faq');
 

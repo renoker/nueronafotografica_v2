@@ -612,18 +612,7 @@
                                     class="{{ routeActive('gallery-hover') }}">Hover Effects</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('/blog') }}" href="javascript:void(0)"><i
-                                data-feather="edit"></i><span>Blog</span></a>
-                        <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('/blog') }};">
-                            <li><a href="{{ route('blog') }}" class="{{ routeActive('blog') }}">Blog Details</a>
-                            </li>
-                            <li><a href="{{ route('blog-single') }}" class="{{ routeActive('blog-single') }}">Blog
-                                    Single</a></li>
-                            <li><a href="{{ route('add-post') }}" class="{{ routeActive('add-post') }}">Add
-                                    Post</a></li>
-                        </ul>
-                    </li>
+
                     <li>
                         <a class="nav-link menu-title link-nav {{ routeActive('faq') }}"
                             href="{{ route('faq') }}"><i data-feather="help-circle"></i><span>FAQ</span></a>
