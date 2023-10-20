@@ -13,15 +13,18 @@ return new class extends Migration
     {
         Schema::create('blogs', function (Blueprint $table) {
             $table->id();
+            $table->foreign('categorie_id')->references('id')->on('categories');
+            $table->unsignedBigInteger('categorie_id');
             $table->string('miniatura')->nullable();
             $table->string('image')->nullable();
             $table->string('es_title')->nullable();
-            $table->string('es_description')->nullable();
+            $table->string('es_description_small')->nullable();
+            $table->text('es_description')->nullable();
             $table->string('es_button')->nullable();
             $table->string('en_title')->nullable();
-            $table->string('en_description')->nullable();
+            $table->string('en_description_small')->nullable();
+            $table->text('en_description')->nullable();
             $table->string('en_button')->nullable();
-            $table->string('href')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

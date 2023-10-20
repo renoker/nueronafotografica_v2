@@ -18,7 +18,9 @@ class DatabaseSeeder extends Seeder
             AdminHomeSliderSeeder::class,
             AdminHomeDespegableSeeder::class,
             AdminHomePartnersSeeder::class,
-            AdminSliderGeneralSeeder::class
+            AdminSliderGeneralSeeder::class,
+            CategorySeeder::class,
+            BlogSeeder::class
         ]);
     }
 }
