@@ -38,6 +38,19 @@
                         </ul>
                     </li>
                     {{-- END HOME --}}
+                    {{-- BLOG --}}
+                    <li class="dropdown">
+                        <a class="nav-link menu-title {{ prefixActive('/home') }}" href="javascript:void(0)"><i
+                                data-feather="home"></i><span>Blog</span></a>
+                        <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('/home/blog') }};">
+                            <li><a href="{{ route('adminNotas.index') }}"
+                                    class="{{ routeActive('adminNotas.index') }}">Notas</a>
+                            </li>
+                            <li><a href="{{ route('translateBlog.index') }}"
+                                    class="{{ routeActive('translateBlog.index') }}">Traducción</a></li>
+                        </ul>
+                    </li>
+                    {{-- END BLOG --}}
                     <li class="dropdown">
                         <a class="nav-link menu-title {{ prefixActive('/dashboard') }}" href="javascript:void(0)"><i
                                 data-feather="home"></i><span>Dashboard</span></a>
@@ -137,7 +150,8 @@
                                     class="{{ routeActive('range-slider') }}">Range Slider</a></li>
                             <li><a href="{{ route('image-cropper') }}"
                                     class="{{ routeActive('image-cropper') }}">Image cropper</a></li>
-                            <li><a href="{{ route('sticky') }}" class="{{ routeActive('sticky') }}">Sticky </a></li>
+                            <li><a href="{{ route('sticky') }}" class="{{ routeActive('sticky') }}">Sticky </a>
+                            </li>
                             <li><a href="{{ route('basic-card') }}" class="{{ routeActive('basic-card') }}">Basic
                                     Card</a></li>
                             <li><a href="{{ route('creative-card') }}"

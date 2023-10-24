@@ -87,6 +87,18 @@ Route::group(['middleware' => ['auth:admin']], function () {
             Route::post('home_slider_general/store',        [AdminSliderGeneralController::class, 'storeHome'])->name('admin_slider_general.storeHome');
         });
         // END HOME
+        // BLOG
+        Route::prefix('blog')->group(function () {
+            // Notas
+            Route::get('notas',                             [BlogController::class, 'adminNotasIndex'])->name('adminNotas.index');
+            Route::get('notas/create',                      [BlogController::class, 'adminNotascreate'])->name('adminNotas.create');
+            Route::get('notas/edit/{blog}',                 [BlogController::class, 'adminNotasedit'])->name('adminNotas.edit');
+            // Translate
+            Route::get('translate',                         [TranslationController::class, 'indexBlog'])->name('translateBlog.index');
+            Route::get('translate/edit/{translation}',      [TranslationController::class, 'editBlog'])->name('translateBlog.edit');
+            Route::put('/translate/{translation}',          [TranslationController::class, 'updateBlog'])->name('translateBlog.update');
+        });
+        // END BLOG        
         Route::post('move_row_slider',                      [AdminSliderGeneralController::class, 'moveRowSlider']);
     });
 });
