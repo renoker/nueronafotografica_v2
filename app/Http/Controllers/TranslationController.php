@@ -61,6 +61,35 @@ class TranslationController extends Controller
         $translation->save();
         return back()->withInput();
     }
+    // CONSTRACCION
+    public function indexConstruccion()
+    {
+        $list = Translation::where('key', 'construccion')->get();
+        return view('backoffice.construccion.traduccion.index', [
+            'list' => $list,
+            'page' => 'Traducción',
+            'rutaIndex'  => 'translateConstruccion.index',
+            'rutaEdit'  => 'translateConstruccion.edit'
+        ]);
+    }
+
+    public function editConstruccion(Translation $translation)
+    {
+        return view('backoffice.construccion.traduccion.show', [
+            'row' => $translation,
+            'page' => 'Traducción',
+            'rutaIndex'  => 'translateConstruccion.index',
+            'rutaEdit'  => 'translateConstruccion.edit'
+        ]);
+    }
+
+    public function updateConstruccion(UpdateTranslationRequest $request, Translation $translation)
+    {
+        $translation->translate_es = $request->translate_es;
+        $translation->translate_en = $request->translate_en;
+        $translation->save();
+        return back()->withInput();
+    }
     // BLOG
     public function indexBlog()
     {

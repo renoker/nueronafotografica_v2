@@ -56,6 +56,24 @@
                         </ul>
                     </li>
                     {{-- END ARQUITECTURA --}}
+                    {{-- CONSTRUCCION --}}
+                    <li class="dropdown">
+                        <a class="nav-link menu-title {{ prefixActive('/construccion') }}" href="javascript:void(0)"><i
+                                data-feather="home"></i><span>Construcción</span></a>
+                        <ul class="nav-submenu menu-content"
+                            style="display: {{ prefixBlock('/construccion/slider') }};">
+                            <li><a href="{{ route('sliderConstruccion.index') }}"
+                                    class="{{ routeActive('sliderConstruccion.index') }}">Banner
+                                    principal</a></li>
+                            <li><a href="{{ route('construccion_slider_general.index') }}"
+                                    class="{{ routeActive('construccion_slider_general.index') }}">Sliders
+                                    generales</a>
+                            </li>
+                            <li><a href="{{ route('translateConstruccion.index') }}"
+                                    class="{{ routeActive('translateConstruccion.index') }}">Traducción</a></li>
+                        </ul>
+                    </li>
+                    {{-- END CONSTRUCCION --}}
                     {{-- BLOG --}}
                     <li class="dropdown">
                         <a class="nav-link menu-title {{ prefixActive('/home') }}" href="javascript:void(0)"><i
@@ -69,25 +87,6 @@
                         </ul>
                     </li>
                     {{-- END BLOG --}}
-                    <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('/dashboard') }}" href="javascript:void(0)"><i
-                                data-feather="home"></i><span>Dashboard</span></a>
-                        <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('/dashboard') }};">
-                            <li><a href="{{ route('index') }}" class="{{ routeActive('index') }}">Default</a></li>
-                            <li><a href="{{ route('dashboard-02') }}"
-                                    class="{{ routeActive('dashboard-02') }}">Ecommerce</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('/widgets') }}" href="javascript:void(0)"><i
-                                data-feather="airplay"></i><span>Widgets</span></a>
-                        <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('/widgets') }};">
-                            <li><a href="{{ route('general-widget') }}"
-                                    class="{{ routeActive('general-widget') }}">General</a></li>
-                            <li><a href="{{ route('chart-widget') }}"
-                                    class="{{ routeActive('chart-widget') }}">Chart</a></li>
-                        </ul>
-                    </li>
                     <li class="sidebar-main-title">
                         <div>
                             <h6>Components</h6>
@@ -101,7 +100,8 @@
                                     color</a></li>
                             <li><a href="{{ route('typography') }}"
                                     class="{{ routeActive('typography') }}">Typography</a></li>
-                            <li><a href="{{ route('avatars') }}" class="{{ routeActive('avatars') }}">Avatars</a></li>
+                            <li><a href="{{ route('avatars') }}" class="{{ routeActive('avatars') }}">Avatars</a>
+                            </li>
                             <li><a href="{{ route('helper-classes') }}"
                                     class="{{ routeActive('helper-classes') }}">helper classes</a></li>
                             <li><a href="{{ route('grid') }}" class="{{ routeActive('grid') }}">Grid</a></li>

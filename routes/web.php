@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AcercaDeController;
 use App\Http\Controllers\AdminArquitecturaSliderController;
+use App\Http\Controllers\AdminConstruccionSliderController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdminHomeDespegableController;
 use App\Http\Controllers\AdminHomeSliderController;
@@ -109,20 +110,39 @@ Route::group(['middleware' => ['auth:admin']], function () {
             Route::put('arquitectura_slider_general/update/{admin_slider_general}',    [AdminSliderGeneralController::class, 'updateArq'])->name('arquitectura_slider_general.update');
             Route::delete('arquitectura_slider_general/delete/{admin_slider_general}', [AdminSliderGeneralController::class, 'destroyArq'])->name('arquitectura_slider_general.destroy');
         });
-        // END ARQUITECTURA        
+        // END ARQUITECTURA       
+        // CONSTRUCCIÓN
+        Route::prefix('construccion')->group(function () {
+            // Slider
+            Route::get('slider/create',                                                 [AdminConstruccionSliderController::class, 'create'])->name('sliderConstruccion.create');
+            Route::get('slider/edit/{slider}',                                          [AdminConstruccionSliderController::class, 'edit'])->name('sliderConstruccion.edit');
+            Route::apiResource('sliderConstruccion',                                    AdminConstruccionSliderController::class);
+            // Translate
+            Route::get('translate',                                                     [TranslationController::class, 'indexConstruccion'])->name('translateConstruccion.index');
+            Route::get('translate/edit/{translation}',                                  [TranslationController::class, 'editConstruccion'])->name('translateConstruccion.edit');
+            Route::put('/translate/{translation}',                                      [TranslationController::class, 'updateConstruccion'])->name('translateConstruccion.update');
+            // Sliders
+            Route::get('construccion_slider_general',                                   [AdminSliderGeneralController::class, 'indexConstruccion'])->name('construccion_slider_general.index');
+            Route::get('construccion_slider_general/create',                            [AdminSliderGeneralController::class, 'createConstruccion'])->name('construccion_slider_general.create');
+            Route::post('construccion_slider_general/store',                            [AdminSliderGeneralController::class, 'storeConstruccion'])->name('construccion_slider_general.store');
+            Route::get('construccion_slider_general/edit/{admin_slider_general}',       [AdminSliderGeneralController::class, 'editConstruccion'])->name('construccion_slider_general.edit');
+            Route::put('construccion_slider_general/update/{admin_slider_general}',     [AdminSliderGeneralController::class, 'updateConstruccion'])->name('construccion_slider_general.update');
+            Route::delete('construccion_slider_general/delete/{admin_slider_general}',  [AdminSliderGeneralController::class, 'destroyConstruccion'])->name('construccion_slider_general.destroy');
+        });
+        // END CONSTRUCCIÓN           
         // BLOG
         Route::prefix('blog')->group(function () {
             // Notas
-            Route::get('notas',                             [BlogController::class, 'adminNotasIndex'])->name('adminNotas.index');
-            Route::get('notas/create',                      [BlogController::class, 'adminNotascreate'])->name('adminNotas.create');
-            Route::post('notas/store',                      [BlogController::class, 'adminNotasStore'])->name('adminNotas.store');
-            Route::get('notas/edit/{blog}',                 [BlogController::class, 'adminNotasEdit'])->name('adminNotas.edit');
-            Route::put('notas/update/{blog}',               [BlogController::class, 'adminNotasUpdate'])->name('adminNotas.update');
-            Route::delete('notas/delete/{blog}',            [BlogController::class, 'adminNotasDelete'])->name('adminNotas.delete');
+            Route::get('notas',                                                         [BlogController::class, 'adminNotasIndex'])->name('adminNotas.index');
+            Route::get('notas/create',                                                  [BlogController::class, 'adminNotascreate'])->name('adminNotas.create');
+            Route::post('notas/store',                                                  [BlogController::class, 'adminNotasStore'])->name('adminNotas.store');
+            Route::get('notas/edit/{blog}',                                             [BlogController::class, 'adminNotasEdit'])->name('adminNotas.edit');
+            Route::put('notas/update/{blog}',                                           [BlogController::class, 'adminNotasUpdate'])->name('adminNotas.update');
+            Route::delete('notas/delete/{blog}',                                        [BlogController::class, 'adminNotasDelete'])->name('adminNotas.delete');
             // Translate
-            Route::get('translate',                         [TranslationController::class, 'indexBlog'])->name('translateBlog.index');
-            Route::get('translate/edit/{translation}',      [TranslationController::class, 'editBlog'])->name('translateBlog.edit');
-            Route::put('/translate/{translation}',          [TranslationController::class, 'updateBlog'])->name('translateBlog.update');
+            Route::get('translate',                                                     [TranslationController::class, 'indexBlog'])->name('translateBlog.index');
+            Route::get('translate/edit/{translation}',                                  [TranslationController::class, 'editBlog'])->name('translateBlog.edit');
+            Route::put('/translate/{translation}',                                      [TranslationController::class, 'updateBlog'])->name('translateBlog.update');
         });
         // END BLOG        
         Route::post('move_row_slider',                      [AdminSliderGeneralController::class, 'moveRowSlider']);
