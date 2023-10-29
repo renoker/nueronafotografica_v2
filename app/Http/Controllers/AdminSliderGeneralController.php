@@ -283,6 +283,287 @@ class AdminSliderGeneralController extends Controller
         $admin_slider_general->delete();
         return redirect()->route('construccion_slider_general.index')->with('statusAlta', '¡Fila Borrada con éxito!');
     }
+    // CORPORATIVA
+    public function indexCorporativa()
+    {
+        $row_uno = AdminSliderGeneral::where('position', 1)->where('key', 'corporativa')->orderBy('order', 'asc')->get();
+        $row_dos = AdminSliderGeneral::where('position', 2)->where('key', 'corporativa')->orderBy('order', 'asc')->get();
+        $row_tres = AdminSliderGeneral::where('position', 3)->where('key', 'corporativa')->orderBy('order', 'asc')->get();
+        $row_cuatro = AdminSliderGeneral::where('position', 4)->where('key', 'corporativa')->orderBy('order', 'asc')->get();
+        $row_cinco = AdminSliderGeneral::where('position', 5)->where('key', 'corporativa')->orderBy('order', 'asc')->get();
+        return view('backoffice.corporativa.slider_general.index', [
+            'slider_uno' => $row_uno,
+            'slider_dos' => $row_dos,
+            'slider_tres' => $row_tres,
+            'slider_cuatro' => $row_cuatro,
+            'slider_cinco' => $row_cinco,
+            'rutaCreate'    => 'corporativa_slider_general.create',
+            'rutaEdit'    => 'corporativa_slider_general.edit',
+            'rutaIndex'    => 'corporativa_slider_general.index',
+            'rutaDestroy'    => 'corporativa_slider_general.destroy',
+            'page' => 'Slider Generales'
+        ]);
+    }
+
+    public function createCorporativa()
+    {
+        return view('backoffice.corporativa.slider_general.create', [
+            'page' => 'Slider Generales',
+            'rutaIndex'    => 'corporativa_slider_general.index',
+            'rutaStore'    => 'corporativa_slider_general.store',
+        ]);
+    }
+
+    public function storeCorporativa(StoreAdminSliderGeneralRequest $request)
+    {
+        $sliders = AdminSliderGeneral::where('position', $request->position)->where('key', 'corporativa')->get();
+        $row = new AdminSliderGeneral;
+        $row->key = 'corporativa';
+        if ($request->hasFile('image')) {
+            if ($request->file('image')->isValid()) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                    $imageName = time() . '.' . $request->image->extension();
+                    $request->image->move(public_path('assets/sliders_generales'), $imageName);
+                    $row->image = 'assets/sliders_generales/' . $imageName;
+                } else {
+                    return redirect()->route('corporativa_slider_general.create')->with('statusError', '¡Imagen no cumple con el formato!');
+                }
+            } else {
+                return redirect()->route('corporativa_slider_general.create')->with('statusError', '¡Imagen no valida!');
+            }
+        }
+        $row->position = $request->position;
+        $row->order = count($sliders) + 1;
+
+        $row->save();
+
+        return redirect()->route('corporativa_slider_general.index')->with('statusAlta', '¡Fila creada de manera exitosa!');
+    }
+
+    public function editCorporativa(AdminSliderGeneral $admin_slider_general)
+    {
+        return view('backoffice.corporativa.slider_general.show', [
+            'row'   => $admin_slider_general,
+            'page' => 'Slider Generales',
+            'rutaIndex'    => 'corporativa_slider_general.index',
+            'rutaUpdate'    => 'corporativa_slider_general.update',
+        ]);
+    }
+
+    public function updateCorporativa(UpdateAdminSliderGeneralRequest $request, AdminSliderGeneral $admin_slider_general)
+    {
+        if ($request->hasFile('image')) {
+            if ($request->file('image')->isValid()) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                    $imageName = time() . '.' . $request->image->extension();
+                    $request->image->move(public_path('assets/sliders_generales'), $imageName);
+                    $admin_slider_general->image = 'assets/sliders_generales/' . $imageName;
+                } else {
+                    return redirect()->route('corporativa_slider_general.create')->with('statusError', '¡Imagen no cumple con el formato!');
+                }
+            } else {
+                return redirect()->route('corporativa_slider_general.create')->with('statusError', '¡Imagen no valida!');
+            }
+        }
+        $admin_slider_general->position = $request->position;
+
+        $admin_slider_general->save();
+
+        return redirect()->route('corporativa_slider_general.index')->with('statusAlta', '¡Fila creada de manera exitosa!');
+    }
+
+    public function destroyCorporativa(AdminSliderGeneral $admin_slider_general)
+    {
+        $admin_slider_general->delete();
+        return redirect()->route('corporativa_slider_general.index')->with('statusAlta', '¡Fila Borrada con éxito!');
+    }
+    // PUBLICITARIA
+    public function indexPublicitaria()
+    {
+        $row_uno = AdminSliderGeneral::where('position', 1)->where('key', 'publicitaria')->orderBy('order', 'asc')->get();
+        $row_dos = AdminSliderGeneral::where('position', 2)->where('key', 'publicitaria')->orderBy('order', 'asc')->get();
+        $row_tres = AdminSliderGeneral::where('position', 3)->where('key', 'publicitaria')->orderBy('order', 'asc')->get();
+        $row_cuatro = AdminSliderGeneral::where('position', 4)->where('key', 'publicitaria')->orderBy('order', 'asc')->get();
+        $row_cinco = AdminSliderGeneral::where('position', 5)->where('key', 'publicitaria')->orderBy('order', 'asc')->get();
+        return view('backoffice.publicitaria.slider_general.index', [
+            'slider_uno' => $row_uno,
+            'slider_dos' => $row_dos,
+            'slider_tres' => $row_tres,
+            'slider_cuatro' => $row_cuatro,
+            'slider_cinco' => $row_cinco,
+            'rutaCreate'    => 'publicitaria_slider_general.create',
+            'rutaEdit'    => 'publicitaria_slider_general.edit',
+            'rutaIndex'    => 'publicitaria_slider_general.index',
+            'rutaDestroy'    => 'publicitaria_slider_general.destroy',
+            'page' => 'Slider Generales'
+        ]);
+    }
+
+    public function createPublicitaria()
+    {
+        return view('backoffice.publicitaria.slider_general.create', [
+            'page' => 'Slider Generales',
+            'rutaIndex'    => 'publicitaria_slider_general.index',
+            'rutaStore'    => 'publicitaria_slider_general.store',
+        ]);
+    }
+
+    public function storePublicitaria(StoreAdminSliderGeneralRequest $request)
+    {
+        $sliders = AdminSliderGeneral::where('position', $request->position)->where('key', 'publicitaria')->get();
+        $row = new AdminSliderGeneral;
+        $row->key = 'publicitaria';
+        if ($request->hasFile('image')) {
+            if ($request->file('image')->isValid()) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                    $imageName = time() . '.' . $request->image->extension();
+                    $request->image->move(public_path('assets/sliders_generales'), $imageName);
+                    $row->image = 'assets/sliders_generales/' . $imageName;
+                } else {
+                    return redirect()->route('publicitaria_slider_general.create')->with('statusError', '¡Imagen no cumple con el formato!');
+                }
+            } else {
+                return redirect()->route('publicitaria_slider_general.create')->with('statusError', '¡Imagen no valida!');
+            }
+        }
+        $row->position = $request->position;
+        $row->order = count($sliders) + 1;
+
+        $row->save();
+
+        return redirect()->route('publicitaria_slider_general.index')->with('statusAlta', '¡Fila creada de manera exitosa!');
+    }
+
+    public function editPublicitaria(AdminSliderGeneral $admin_slider_general)
+    {
+        return view('backoffice.publicitaria.slider_general.show', [
+            'row'   => $admin_slider_general,
+            'page' => 'Slider Generales',
+            'rutaIndex'    => 'publicitaria_slider_general.index',
+            'rutaUpdate'    => 'publicitaria_slider_general.update',
+        ]);
+    }
+
+    public function updatePublicitaria(UpdateAdminSliderGeneralRequest $request, AdminSliderGeneral $admin_slider_general)
+    {
+        if ($request->hasFile('image')) {
+            if ($request->file('image')->isValid()) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                    $imageName = time() . '.' . $request->image->extension();
+                    $request->image->move(public_path('assets/sliders_generales'), $imageName);
+                    $admin_slider_general->image = 'assets/sliders_generales/' . $imageName;
+                } else {
+                    return redirect()->route('publicitaria_slider_general.create')->with('statusError', '¡Imagen no cumple con el formato!');
+                }
+            } else {
+                return redirect()->route('publicitaria_slider_general.create')->with('statusError', '¡Imagen no valida!');
+            }
+        }
+        $admin_slider_general->position = $request->position;
+
+        $admin_slider_general->save();
+
+        return redirect()->route('publicitaria_slider_general.index')->with('statusAlta', '¡Fila creada de manera exitosa!');
+    }
+
+    public function destroyPublicitaria(AdminSliderGeneral $admin_slider_general)
+    {
+        $admin_slider_general->delete();
+        return redirect()->route('publicitaria_slider_general.index')->with('statusAlta', '¡Fila Borrada con éxito!');
+    }
+    // CONTACTO
+    public function indexContacto()
+    {
+        $row_uno = AdminSliderGeneral::where('position', 1)->where('key', 'contacto')->orderBy('order', 'asc')->get();
+        $row_dos = AdminSliderGeneral::where('position', 2)->where('key', 'contacto')->orderBy('order', 'asc')->get();
+        $row_tres = AdminSliderGeneral::where('position', 3)->where('key', 'contacto')->orderBy('order', 'asc')->get();
+        $row_cuatro = AdminSliderGeneral::where('position', 4)->where('key', 'contacto')->orderBy('order', 'asc')->get();
+        return view('backoffice.contacto.slider_general.index', [
+            'slider_uno' => $row_uno,
+            'slider_dos' => $row_dos,
+            'slider_tres' => $row_tres,
+            'slider_cuatro' => $row_cuatro,
+            'rutaCreate'    => 'contacto_slider_general.create',
+            'rutaEdit'    => 'contacto_slider_general.edit',
+            'rutaIndex'    => 'contacto_slider_general.index',
+            'rutaDestroy'    => 'contacto_slider_general.destroy',
+            'page' => 'Slider Generales'
+        ]);
+    }
+
+    public function createContacto()
+    {
+        return view('backoffice.contacto.slider_general.create', [
+            'page' => 'Slider Generales',
+            'rutaIndex'    => 'contacto_slider_general.index',
+            'rutaStore'    => 'contacto_slider_general.store',
+        ]);
+    }
+
+    public function storeContacto(StoreAdminSliderGeneralRequest $request)
+    {
+        $sliders = AdminSliderGeneral::where('position', $request->position)->where('key', 'contacto')->get();
+        $row = new AdminSliderGeneral;
+        $row->key = 'contacto';
+        if ($request->hasFile('image')) {
+            if ($request->file('image')->isValid()) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                    $imageName = time() . '.' . $request->image->extension();
+                    $request->image->move(public_path('assets/sliders_generales'), $imageName);
+                    $row->image = 'assets/sliders_generales/' . $imageName;
+                } else {
+                    return redirect()->route('contacto_slider_general.create')->with('statusError', '¡Imagen no cumple con el formato!');
+                }
+            } else {
+                return redirect()->route('contacto_slider_general.create')->with('statusError', '¡Imagen no valida!');
+            }
+        }
+        $row->position = $request->position;
+        $row->order = count($sliders) + 1;
+
+        $row->save();
+
+        return redirect()->route('contacto_slider_general.index')->with('statusAlta', '¡Fila creada de manera exitosa!');
+    }
+
+    public function editContacto(AdminSliderGeneral $admin_slider_general)
+    {
+        return view('backoffice.contacto.slider_general.show', [
+            'row'   => $admin_slider_general,
+            'page' => 'Slider Generales',
+            'rutaIndex'    => 'contacto_slider_general.index',
+            'rutaUpdate'    => 'contacto_slider_general.update',
+        ]);
+    }
+
+    public function updateContacto(UpdateAdminSliderGeneralRequest $request, AdminSliderGeneral $admin_slider_general)
+    {
+        if ($request->hasFile('image')) {
+            if ($request->file('image')->isValid()) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                    $imageName = time() . '.' . $request->image->extension();
+                    $request->image->move(public_path('assets/sliders_generales'), $imageName);
+                    $admin_slider_general->image = 'assets/sliders_generales/' . $imageName;
+                } else {
+                    return redirect()->route('contacto_slider_general.create')->with('statusError', '¡Imagen no cumple con el formato!');
+                }
+            } else {
+                return redirect()->route('contacto_slider_general.create')->with('statusError', '¡Imagen no valida!');
+            }
+        }
+        $admin_slider_general->position = $request->position;
+
+        $admin_slider_general->save();
+
+        return redirect()->route('contacto_slider_general.index')->with('statusAlta', '¡Fila creada de manera exitosa!');
+    }
+
+    public function destroyContacto(AdminSliderGeneral $admin_slider_general)
+    {
+        $admin_slider_general->delete();
+        return redirect()->route('contacto_slider_general.index')->with('statusAlta', '¡Fila Borrada con éxito!');
+    }
+
 
     public function moveRowSlider(Request $request)
     {

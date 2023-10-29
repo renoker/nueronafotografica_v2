@@ -74,10 +74,60 @@
                         </ul>
                     </li>
                     {{-- END CONSTRUCCION --}}
+                    {{-- CORPORATIVA --}}
+                    <li class="dropdown">
+                        <a class="nav-link menu-title {{ prefixActive('/corporativa') }}" href="javascript:void(0)"><i
+                                data-feather="home"></i><span>Corporativa</span></a>
+                        <ul class="nav-submenu menu-content"
+                            style="display: {{ prefixBlock('/corporativa/slider') }};">
+                            <li><a href="{{ route('sliderCorporativa.index') }}"
+                                    class="{{ routeActive('sliderCorporativa.index') }}">Banner
+                                    principal</a></li>
+                            <li><a href="{{ route('corporativa_slider_general.index') }}"
+                                    class="{{ routeActive('corporativa_slider_general.index') }}">Sliders
+                                    generales</a>
+                            </li>
+                            <li><a href="{{ route('translateCorporativa.index') }}"
+                                    class="{{ routeActive('translateCorporativa.index') }}">Traducción</a></li>
+                        </ul>
+                    </li>
+                    {{-- END CORPORATIVA --}}
+                    {{-- PUBLICITARIA --}}
+                    <li class="dropdown">
+                        <a class="nav-link menu-title {{ prefixActive('/publicitaria') }}" href="javascript:void(0)"><i
+                                data-feather="home"></i><span>Publicitaria</span></a>
+                        <ul class="nav-submenu menu-content"
+                            style="display: {{ prefixBlock('/publicitaria/slider') }};">
+                            <li><a href="{{ route('sliderPublicitaria.index') }}"
+                                    class="{{ routeActive('sliderPublicitaria.index') }}">Banner
+                                    principal</a></li>
+                            <li><a href="{{ route('publicitaria_slider_general.index') }}"
+                                    class="{{ routeActive('publicitaria_slider_general.index') }}">Sliders
+                                    generales</a>
+                            </li>
+                            <li><a href="{{ route('translatePublicitaria.index') }}"
+                                    class="{{ routeActive('translatePublicitaria.index') }}">Traducción</a></li>
+                        </ul>
+                    </li>
+                    {{-- END PUBLICITARIA --}}
+                    {{-- PUBLICITARIA --}}
+                    <li class="dropdown">
+                        <a class="nav-link menu-title {{ prefixActive('/contacto') }}" href="javascript:void(0)"><i
+                                data-feather="users"></i><span>Contacto</span></a>
+                        <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('/contacto/slider') }};">
+                            <li><a href="{{ route('contacto_slider_general.index') }}"
+                                    class="{{ routeActive('contacto_slider_general.index') }}">Sliders
+                                    generales</a>
+                            </li>
+                            <li><a href="{{ route('translateContacto.index') }}"
+                                    class="{{ routeActive('translateContacto.index') }}">Traducción</a></li>
+                        </ul>
+                    </li>
+                    {{-- END PUBLICITARIA --}}
                     {{-- BLOG --}}
                     <li class="dropdown">
                         <a class="nav-link menu-title {{ prefixActive('/home') }}" href="javascript:void(0)"><i
-                                data-feather="home"></i><span>Blog</span></a>
+                                data-feather="file"></i><span>Blog</span></a>
                         <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('/home/blog') }};">
                             <li><a href="{{ route('adminNotas.index') }}"
                                     class="{{ routeActive('adminNotas.index') }}">Notas</a>
@@ -150,15 +200,18 @@
                             <li><a href="{{ route('tree') }}" class="{{ routeActive('tree') }}">Tree view</a></li>
                             <li><a href="{{ route('bootstrap-notify') }}"
                                     class="{{ routeActive('bootstrap-notify') }}">Bootstrap Notify</a></li>
-                            <li><a href="{{ route('rating') }}" class="{{ routeActive('rating') }}">Rating</a></li>
-                            <li><a href="{{ route('dropzone') }}" class="{{ routeActive('dropzone') }}">dropzone</a>
+                            <li><a href="{{ route('rating') }}" class="{{ routeActive('rating') }}">Rating</a>
+                            </li>
+                            <li><a href="{{ route('dropzone') }}"
+                                    class="{{ routeActive('dropzone') }}">dropzone</a>
                             </li>
                             <li><a href="{{ route('tour') }}" class="{{ routeActive('tour') }}">Tour</a></li>
                             <li><a href="{{ route('sweet-alert2') }}"
                                     class="{{ routeActive('sweet-alert2') }}">SweetAlert2</a></li>
                             <li><a href="{{ route('modal-animated') }}"
                                     class="{{ routeActive('modal-animated') }}">Animated Modal</a></li>
-                            <li><a href="{{ route('owl-carousel') }}" class="{{ routeActive('owl-carousel') }}">Owl
+                            <li><a href="{{ route('owl-carousel') }}"
+                                    class="{{ routeActive('owl-carousel') }}">Owl
                                     Carousel</a></li>
                             <li><a href="{{ route('ribbons') }}" class="{{ routeActive('ribbons') }}">Ribbons</a>
                             </li>

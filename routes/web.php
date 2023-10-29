@@ -4,8 +4,10 @@ use App\Http\Controllers\AcercaDeController;
 use App\Http\Controllers\AdminArquitecturaSliderController;
 use App\Http\Controllers\AdminConstruccionSliderController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminCorporativaSliderController;
 use App\Http\Controllers\AdminHomeDespegableController;
 use App\Http\Controllers\AdminHomeSliderController;
+use App\Http\Controllers\AdminPublicitariaSliderController;
 use App\Http\Controllers\AdminSliderGeneralController;
 use App\Http\Controllers\ArquitecturaController;
 use App\Http\Controllers\BlogController;
@@ -129,7 +131,60 @@ Route::group(['middleware' => ['auth:admin']], function () {
             Route::put('construccion_slider_general/update/{admin_slider_general}',     [AdminSliderGeneralController::class, 'updateConstruccion'])->name('construccion_slider_general.update');
             Route::delete('construccion_slider_general/delete/{admin_slider_general}',  [AdminSliderGeneralController::class, 'destroyConstruccion'])->name('construccion_slider_general.destroy');
         });
-        // END CONSTRUCCIÓN           
+        // END CONSTRUCCIÓN   
+        // CORPORATIVA
+        Route::prefix('corporativa')->group(function () {
+            // Slider
+            Route::get('slider/create',                                                 [AdminCorporativaSliderController::class, 'create'])->name('sliderCorporativa.create');
+            Route::get('slider/edit/{slider}',                                          [AdminCorporativaSliderController::class, 'edit'])->name('sliderCorporativa.edit');
+            Route::apiResource('sliderCorporativa',                                    AdminCorporativaSliderController::class);
+            // Translate
+            Route::get('translate',                                                     [TranslationController::class, 'indexCorporativa'])->name('translateCorporativa.index');
+            Route::get('translate/edit/{translation}',                                  [TranslationController::class, 'editCorporativa'])->name('translateCorporativa.edit');
+            Route::put('/translate/{translation}',                                      [TranslationController::class, 'updateCorporativa'])->name('translateCorporativa.update');
+            // Sliders
+            Route::get('corporativa_slider_general',                                   [AdminSliderGeneralController::class, 'indexCorporativa'])->name('corporativa_slider_general.index');
+            Route::get('corporativa_slider_general/create',                            [AdminSliderGeneralController::class, 'createCorporativa'])->name('corporativa_slider_general.create');
+            Route::post('corporativa_slider_general/store',                            [AdminSliderGeneralController::class, 'storeCorporativa'])->name('corporativa_slider_general.store');
+            Route::get('corporativa_slider_general/edit/{admin_slider_general}',       [AdminSliderGeneralController::class, 'editCorporativa'])->name('corporativa_slider_general.edit');
+            Route::put('corporativa_slider_general/update/{admin_slider_general}',     [AdminSliderGeneralController::class, 'updateCorporativa'])->name('corporativa_slider_general.update');
+            Route::delete('corporativa_slider_general/delete/{admin_slider_general}',  [AdminSliderGeneralController::class, 'destroyCorporativa'])->name('corporativa_slider_general.destroy');
+        });
+        // END CORPORATIVA         
+        // PUBLICITARIA
+        Route::prefix('publicitaria')->group(function () {
+            // Slider
+            Route::get('slider/create',                                                 [AdminPublicitariaSliderController::class, 'create'])->name('sliderPublicitaria.create');
+            Route::get('slider/edit/{slider}',                                          [AdminPublicitariaSliderController::class, 'edit'])->name('sliderPublicitaria.edit');
+            Route::apiResource('sliderPublicitaria',                                    AdminPublicitariaSliderController::class);
+            // Translate
+            Route::get('translate',                                                     [TranslationController::class, 'indexPublicitaria'])->name('translatePublicitaria.index');
+            Route::get('translate/edit/{translation}',                                  [TranslationController::class, 'editPublicitaria'])->name('translatePublicitaria.edit');
+            Route::put('/translate/{translation}',                                      [TranslationController::class, 'updatePublicitaria'])->name('translatePublicitaria.update');
+            // Sliders
+            Route::get('publicitaria_slider_general',                                   [AdminSliderGeneralController::class, 'indexPublicitaria'])->name('publicitaria_slider_general.index');
+            Route::get('publicitaria_slider_general/create',                            [AdminSliderGeneralController::class, 'createPublicitaria'])->name('publicitaria_slider_general.create');
+            Route::post('publicitaria_slider_general/store',                            [AdminSliderGeneralController::class, 'storePublicitaria'])->name('publicitaria_slider_general.store');
+            Route::get('publicitaria_slider_general/edit/{admin_slider_general}',       [AdminSliderGeneralController::class, 'editPublicitaria'])->name('publicitaria_slider_general.edit');
+            Route::put('publicitaria_slider_general/update/{admin_slider_general}',     [AdminSliderGeneralController::class, 'updatePublicitaria'])->name('publicitaria_slider_general.update');
+            Route::delete('publicitaria_slider_general/delete/{admin_slider_general}',  [AdminSliderGeneralController::class, 'destroyPublicitaria'])->name('publicitaria_slider_general.destroy');
+        });
+        // END PUBLICITARIA   
+        // CONTACTO
+        Route::prefix('contacto')->group(function () {
+            // Translate
+            Route::get('translate',                                                     [TranslationController::class, 'indexContacto'])->name('translateContacto.index');
+            Route::get('translate/edit/{translation}',                                  [TranslationController::class, 'editContacto'])->name('translateContacto.edit');
+            Route::put('/translate/{translation}',                                      [TranslationController::class, 'updateContacto'])->name('translateContacto.update');
+            // Sliders
+            Route::get('contacto_slider_general',                                   [AdminSliderGeneralController::class, 'indexContacto'])->name('contacto_slider_general.index');
+            Route::get('contacto_slider_general/create',                            [AdminSliderGeneralController::class, 'createContacto'])->name('contacto_slider_general.create');
+            Route::post('contacto_slider_general/store',                            [AdminSliderGeneralController::class, 'storeContacto'])->name('contacto_slider_general.store');
+            Route::get('contacto_slider_general/edit/{admin_slider_general}',       [AdminSliderGeneralController::class, 'editContacto'])->name('contacto_slider_general.edit');
+            Route::put('contacto_slider_general/update/{admin_slider_general}',     [AdminSliderGeneralController::class, 'updateContacto'])->name('contacto_slider_general.update');
+            Route::delete('contacto_slider_general/delete/{admin_slider_general}',  [AdminSliderGeneralController::class, 'destroyContacto'])->name('contacto_slider_general.destroy');
+        });
+        // END CONTACTO                        
         // BLOG
         Route::prefix('blog')->group(function () {
             // Notas

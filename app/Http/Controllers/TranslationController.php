@@ -82,8 +82,84 @@ class TranslationController extends Controller
             'rutaEdit'  => 'translateConstruccion.edit'
         ]);
     }
+    // CORPORATIVA
+    public function indexCorporativa()
+    {
+        $list = Translation::where('key', 'corporativa')->get();
+        return view('backoffice.corporativa.traduccion.index', [
+            'list' => $list,
+            'page' => 'Traducción',
+            'rutaIndex'  => 'translateCorporativa.index',
+            'rutaEdit'  => 'translateCorporativa.edit'
+        ]);
+    }
 
-    public function updateConstruccion(UpdateTranslationRequest $request, Translation $translation)
+    public function editCorporativa(Translation $translation)
+    {
+        return view('backoffice.corporativa.traduccion.show', [
+            'row' => $translation,
+            'page' => 'Traducción',
+            'rutaIndex'  => 'translateCorporativa.index',
+            'rutaEdit'  => 'translateCorporativa.edit'
+        ]);
+    }
+    public function updateCorporativa(UpdateTranslationRequest $request, Translation $translation)
+    {
+        $translation->translate_es = $request->translate_es;
+        $translation->translate_en = $request->translate_en;
+        $translation->save();
+        return back()->withInput();
+    }
+    // PUBLICITARIA
+    public function indexPublicitaria()
+    {
+        $list = Translation::where('key', 'publicitaria')->get();
+        return view('backoffice.publicitaria.traduccion.index', [
+            'list' => $list,
+            'page' => 'Traducción',
+            'rutaIndex'  => 'translatePublicitaria.index',
+            'rutaEdit'  => 'translatePublicitaria.edit'
+        ]);
+    }
+
+    public function editPublicitaria(Translation $translation)
+    {
+        return view('backoffice.publicitaria.traduccion.show', [
+            'row' => $translation,
+            'page' => 'Traducción',
+            'rutaIndex'  => 'translatePublicitaria.index',
+            'rutaEdit'  => 'translatePublicitaria.edit'
+        ]);
+    }
+    public function updatePublicitaria(UpdateTranslationRequest $request, Translation $translation)
+    {
+        $translation->translate_es = $request->translate_es;
+        $translation->translate_en = $request->translate_en;
+        $translation->save();
+        return back()->withInput();
+    }
+    // CONTACTO
+    public function indexContacto()
+    {
+        $list = Translation::where('key', 'contacto')->get();
+        return view('backoffice.contacto.traduccion.index', [
+            'list' => $list,
+            'page' => 'Traducción',
+            'rutaIndex'  => 'translateContacto.index',
+            'rutaEdit'  => 'translateContacto.edit'
+        ]);
+    }
+
+    public function editContacto(Translation $translation)
+    {
+        return view('backoffice.contacto.traduccion.show', [
+            'row' => $translation,
+            'page' => 'Traducción',
+            'rutaIndex'  => 'translateContacto.index',
+            'rutaEdit'  => 'translateContacto.edit'
+        ]);
+    }
+    public function updateContacto(UpdateTranslationRequest $request, Translation $translation)
     {
         $translation->translate_es = $request->translate_es;
         $translation->translate_en = $request->translate_en;

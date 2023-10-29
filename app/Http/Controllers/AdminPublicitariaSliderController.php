@@ -5,27 +5,26 @@ namespace App\Http\Controllers;
 use App\Models\AdminHomeSlider;
 use Illuminate\Http\Request;
 
-class AdminConstruccionSliderController extends Controller
+class AdminPublicitariaSliderController extends Controller
 {
-
     public function index()
     {
-        $row = AdminHomeSlider::where('key', 'construccion')->get();
-        return view('backoffice.construccion.slider.index', [
+        $row = AdminHomeSlider::where('key', 'publicitaria')->get();
+        return view('backoffice.publicitaria.slider.index', [
             'list'  => $row,
             'page'  => 'Slider',
-            'rutaCreate'    => 'sliderConstruccion.create',
-            'rutaDestroy'    => 'sliderConstruccion.destroy',
-            'rutaEdit'    => 'sliderConstruccion.edit',
+            'rutaCreate'    => 'sliderPublicitaria.create',
+            'rutaDestroy'    => 'sliderPublicitaria.destroy',
+            'rutaEdit'    => 'sliderPublicitaria.edit',
         ]);
     }
 
     public function create()
     {
-        return view('backoffice.construccion.slider.create', [
+        return view('backoffice.publicitaria.slider.create', [
             'page'  => 'Slider',
-            'rutaIndex'    => 'sliderConstruccion.index',
-            'rutaStore'    => 'sliderConstruccion.store',
+            'rutaIndex'    => 'sliderPublicitaria.index',
+            'rutaStore'    => 'sliderPublicitaria.store',
         ]);
     }
 
@@ -40,10 +39,10 @@ class AdminConstruccionSliderController extends Controller
                     $request->image->move(public_path('assets/home/slider'), $imageName);
                     $row->image = 'assets/home/slider/' . $imageName;
                 } else {
-                    return redirect()->route('sliderConstruccion.create')->with('statusError', '¡Imagen no cumple con el formato!');
+                    return redirect()->route('sliderPublicitaria.create')->with('statusError', '¡Imagen no cumple con el formato!');
                 }
             } else {
-                return redirect()->route('sliderConstruccion.create')->with('statusError', '¡Imagen no valida!');
+                return redirect()->route('sliderPublicitaria.create')->with('statusError', '¡Imagen no valida!');
             }
         }
         $row->es_title = $request->es_title;
@@ -55,16 +54,16 @@ class AdminConstruccionSliderController extends Controller
 
         $row->save();
 
-        return redirect()->route('sliderConstruccion.index')->with('statusAlta', '¡Fila creada de manera exitosa!');
+        return redirect()->route('sliderPublicitaria.index')->with('statusAlta', '¡Fila creada de manera exitosa!');
     }
 
     public function edit(AdminHomeSlider $slider)
     {
-        return view('backoffice.construccion.slider.show', [
+        return view('backoffice.publicitaria.slider.show', [
             'row' => $slider,
             'page'  => 'Slider',
-            'rutaIndex'    => 'sliderConstruccion.index',
-            'rutaUpdate'    => 'sliderConstruccion.update',
+            'rutaIndex'    => 'sliderPublicitaria.index',
+            'rutaUpdate'    => 'sliderPublicitaria.update',
         ]);
     }
 
@@ -77,10 +76,10 @@ class AdminConstruccionSliderController extends Controller
                     $request->image->move(public_path('assets/home/slider'), $imageName);
                     $slider->image = 'assets/home/slider/' . $imageName;
                 } else {
-                    return redirect()->route('sliderConstruccion.show')->with('statusError', '¡Imagen no cumple con el formato!');
+                    return redirect()->route('sliderPublicitaria.show')->with('statusError', '¡Imagen no cumple con el formato!');
                 }
             } else {
-                return redirect()->route('sliderConstruccion.show')->with('statusError', '¡Imagen no valida!');
+                return redirect()->route('sliderPublicitaria.show')->with('statusError', '¡Imagen no valida!');
             }
         }
         $slider->es_title = $request->es_title;
@@ -92,12 +91,12 @@ class AdminConstruccionSliderController extends Controller
 
         $slider->save();
 
-        return redirect()->route('sliderConstruccion.index')->with('statusAlta', '¡Fila actualizada de manera exitosa!');
+        return redirect()->route('sliderPublicitaria.index')->with('statusAlta', '¡Fila actualizada de manera exitosa!');
     }
 
     public function destroy(AdminHomeSlider $slider)
     {
         $slider->delete();
-        return redirect()->route('sliderConstruccion.index')->with('statusAlta', '¡Fila Borrada con éxito!');
+        return redirect()->route('sliderPublicitaria.index')->with('statusAlta', '¡Fila Borrada con éxito!');
     }
 }
