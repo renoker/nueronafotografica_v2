@@ -53,10 +53,10 @@
                                             <td>
                                                 <div class="d-grid gap-2">
                                                     <button class="btn btn-success" type="button"
-                                                        onclick="upRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'corporativa')"><i
+                                                        onclick="upRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'acerca_de')"><i
                                                             class="icon-arrow-up"></i></button>
                                                     <button class="btn btn-success" type="button"
-                                                        onclick="downRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'corporativa')"><i
+                                                        onclick="downRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'acerca_de')"><i
                                                             class="icon-arrow-down"></i></button>
                                                 </div>
                                             </td>
@@ -120,10 +120,10 @@
                                             <td>
                                                 <div class="d-grid gap-2">
                                                     <button class="btn btn-success" type="button"
-                                                        onclick="upRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'corporativa')"><i
+                                                        onclick="upRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'acerca_de')"><i
                                                             class="icon-arrow-up"></i></button>
                                                     <button class="btn btn-success" type="button"
-                                                        onclick="downRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'corporativa')"><i
+                                                        onclick="downRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'acerca_de')"><i
                                                             class="icon-arrow-down"></i></button>
                                                 </div>
                                             </td>
@@ -188,10 +188,10 @@
                                             <td>
                                                 <div class="d-grid gap-2">
                                                     <button class="btn btn-success" type="button"
-                                                        onclick="upRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'corporativa')"><i
+                                                        onclick="upRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'acerca_de')"><i
                                                             class="icon-arrow-up"></i></button>
                                                     <button class="btn btn-success" type="button"
-                                                        onclick="downRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'corporativa')"><i
+                                                        onclick="downRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'acerca_de')"><i
                                                             class="icon-arrow-down"></i></button>
                                                 </div>
                                             </td>
@@ -256,10 +256,10 @@
                                             <td>
                                                 <div class="d-grid gap-2">
                                                     <button class="btn btn-success" type="button"
-                                                        onclick="upRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'corporativa')"><i
+                                                        onclick="upRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'acerca_de')"><i
                                                             class="icon-arrow-up"></i></button>
                                                     <button class="btn btn-success" type="button"
-                                                        onclick="downRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'corporativa')"><i
+                                                        onclick="downRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'acerca_de')"><i
                                                             class="icon-arrow-down"></i></button>
                                                 </div>
                                             </td>
@@ -324,10 +324,146 @@
                                             <td>
                                                 <div class="d-grid gap-2">
                                                     <button class="btn btn-success" type="button"
-                                                        onclick="upRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'corporativa')"><i
+                                                        onclick="upRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'acerca_de')"><i
                                                             class="icon-arrow-up"></i></button>
                                                     <button class="btn btn-success" type="button"
-                                                        onclick="downRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'corporativa')"><i
+                                                        onclick="downRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'acerca_de')"><i
+                                                            class="icon-arrow-down"></i></button>
+                                                </div>
+                                            </td>
+                                            <td class="d-flex justify-content-between">
+                                                <form action="{{ route('admin_slider_general.destroy', $item) }}"
+                                                    method="post">
+                                                    @method('DELETE')
+                                                    @csrf
+                                                    <button class="btn btn-danger btn-xs" type="submit"
+                                                        data-original-title="btn btn-danger btn-xs"
+                                                        title="">Borrar</button>
+                                                </form>
+                                                <a href="{{ route('admin_slider_general.edit', $item) }}">
+                                                    <button class="btn btn-primary btn-xs" type="button"
+                                                        data-original-title="btn btn-danger btn-xs"
+                                                        title="">Editar</button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Individual column searching (text inputs) Ends-->
+        </div>
+    </div>
+
+    <div class="container-fluid list-products">
+        <div class="row">
+            <!-- Individual column searching (text inputs) Starts-->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header pb-0">
+                        <h5>Slider 6</h5>
+                        <span>
+                            Home
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive product-table">
+                            <table class="display" id="basic-6">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Orden</th>
+                                        <th>Mover</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($slider_seis as $item)
+                                        <tr>
+                                            <td>
+                                                <img src="{{ asset($item->image) }}" alt="" />
+                                            </td>
+                                            <td>
+                                                <span>{{ $item->order }}</span>
+                                            </td>
+                                            <td>
+                                                <div class="d-grid gap-2">
+                                                    <button class="btn btn-success" type="button"
+                                                        onclick="upRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'acerca_de')"><i
+                                                            class="icon-arrow-up"></i></button>
+                                                    <button class="btn btn-success" type="button"
+                                                        onclick="downRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'acerca_de')"><i
+                                                            class="icon-arrow-down"></i></button>
+                                                </div>
+                                            </td>
+                                            <td class="d-flex justify-content-between">
+                                                <form action="{{ route('admin_slider_general.destroy', $item) }}"
+                                                    method="post">
+                                                    @method('DELETE')
+                                                    @csrf
+                                                    <button class="btn btn-danger btn-xs" type="submit"
+                                                        data-original-title="btn btn-danger btn-xs"
+                                                        title="">Borrar</button>
+                                                </form>
+                                                <a href="{{ route('admin_slider_general.edit', $item) }}">
+                                                    <button class="btn btn-primary btn-xs" type="button"
+                                                        data-original-title="btn btn-danger btn-xs"
+                                                        title="">Editar</button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Individual column searching (text inputs) Ends-->
+        </div>
+    </div>
+
+    <div class="container-fluid list-products">
+        <div class="row">
+            <!-- Individual column searching (text inputs) Starts-->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header pb-0">
+                        <h5>Slider 7</h5>
+                        <span>
+                            Home
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive product-table">
+                            <table class="display" id="basic-7">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Orden</th>
+                                        <th>Mover</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($slider_siete as $item)
+                                        <tr>
+                                            <td>
+                                                <img src="{{ asset($item->image) }}" alt="" />
+                                            </td>
+                                            <td>
+                                                <span>{{ $item->order }}</span>
+                                            </td>
+                                            <td>
+                                                <div class="d-grid gap-2">
+                                                    <button class="btn btn-success" type="button"
+                                                        onclick="upRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'acerca_de')"><i
+                                                            class="icon-arrow-up"></i></button>
+                                                    <button class="btn btn-success" type="button"
+                                                        onclick="downRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'acerca_de')"><i
                                                             class="icon-arrow-down"></i></button>
                                                 </div>
                                             </td>

@@ -28,3 +28,8 @@ $('#basic-5').DataTable();
     "use strict";
 $('#basic-6').DataTable();
 })(jQuery);
+
+(function($) {
+    "use strict";
+$('#basic-7').DataTable();
+})(jQuery);

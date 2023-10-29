@@ -138,6 +138,34 @@ class TranslationController extends Controller
         $translation->save();
         return back()->withInput();
     }
+    // ACERCA DE
+    public function indexAcercaDe()
+    {
+        $list = Translation::where('key', 'acerca_de')->get();
+        return view('backoffice.acerca_de.traduccion.index', [
+            'list' => $list,
+            'page' => 'Traducción',
+            'rutaIndex'  => 'translateAcercaDe.index',
+            'rutaEdit'  => 'translateAcercaDe.edit'
+        ]);
+    }
+
+    public function editAcercaDe(Translation $translation)
+    {
+        return view('backoffice.acerca_de.traduccion.show', [
+            'row' => $translation,
+            'page' => 'Traducción',
+            'rutaIndex'  => 'translateAcercaDe.index',
+            'rutaEdit'  => 'translateAcercaDe.edit'
+        ]);
+    }
+    public function updateAcercaDe(UpdateTranslationRequest $request, Translation $translation)
+    {
+        $translation->translate_es = $request->translate_es;
+        $translation->translate_en = $request->translate_en;
+        $translation->save();
+        return back()->withInput();
+    }
     // CONTACTO
     public function indexContacto()
     {

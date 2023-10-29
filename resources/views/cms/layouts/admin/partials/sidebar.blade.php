@@ -110,6 +110,23 @@
                         </ul>
                     </li>
                     {{-- END PUBLICITARIA --}}
+                    {{-- ACERCA DE --}}
+                    <li class="dropdown">
+                        <a class="nav-link menu-title {{ prefixActive('/acerca_de') }}" href="javascript:void(0)"><i
+                                data-feather="home"></i><span>Acerca De</span></a>
+                        <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('/acerca_de/slider') }};">
+                            <li><a href="{{ route('sliderAcercaDe.index') }}"
+                                    class="{{ routeActive('sliderAcercaDe.index') }}">Banner
+                                    principal</a></li>
+                            <li><a href="{{ route('acerca_de_slider_general.index') }}"
+                                    class="{{ routeActive('acerca_de_slider_general.index') }}">Sliders
+                                    generales</a>
+                            </li>
+                            <li><a href="{{ route('translateAcercaDe.index') }}"
+                                    class="{{ routeActive('translateAcercaDe.index') }}">Traducción</a></li>
+                        </ul>
+                    </li>
+                    {{-- END ACERCA DE --}}
                     {{-- PUBLICITARIA --}}
                     <li class="dropdown">
                         <a class="nav-link menu-title {{ prefixActive('/contacto') }}" href="javascript:void(0)"><i

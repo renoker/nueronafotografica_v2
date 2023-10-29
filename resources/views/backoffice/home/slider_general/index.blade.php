@@ -53,10 +53,10 @@
                                             <td>
                                                 <div class="d-grid gap-2">
                                                     <button class="btn btn-success" type="button"
-                                                        onclick="upRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }})"><i
+                                                        onclick="upRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'home')"><i
                                                             class="icon-arrow-up"></i></button>
                                                     <button class="btn btn-success" type="button"
-                                                        onclick="downRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }})"><i
+                                                        onclick="downRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'home')"><i
                                                             class="icon-arrow-down"></i></button>
                                                 </div>
                                             </td>
@@ -121,10 +121,10 @@
                                             <td>
                                                 <div class="d-grid gap-2">
                                                     <button class="btn btn-success" type="button"
-                                                        onclick="upRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }})"><i
+                                                        onclick="upRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'home')"><i
                                                             class="icon-arrow-up"></i></button>
                                                     <button class="btn btn-success" type="button"
-                                                        onclick="downRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }})"><i
+                                                        onclick="downRow({{ $item->id }}, {{ $item->order }}, {{ $item->position }}, 'home')"><i
                                                             class="icon-arrow-down"></i></button>
                                                 </div>
                                             </td>

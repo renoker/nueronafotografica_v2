@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AcercaDeController;
+use App\Http\Controllers\AdminAcercaDeSliderController;
 use App\Http\Controllers\AdminArquitecturaSliderController;
 use App\Http\Controllers\AdminConstruccionSliderController;
 use App\Http\Controllers\AdminController;
@@ -170,6 +171,25 @@ Route::group(['middleware' => ['auth:admin']], function () {
             Route::delete('publicitaria_slider_general/delete/{admin_slider_general}',  [AdminSliderGeneralController::class, 'destroyPublicitaria'])->name('publicitaria_slider_general.destroy');
         });
         // END PUBLICITARIA   
+        // ACERCA DE
+        Route::prefix('acerca_de')->group(function () {
+            // Slider
+            Route::get('slider/create',                                                 [AdminAcercaDeSliderController::class, 'create'])->name('sliderAcercaDe.create');
+            Route::get('slider/edit/{slider}',                                          [AdminAcercaDeSliderController::class, 'edit'])->name('sliderAcercaDe.edit');
+            Route::apiResource('sliderAcercaDe',                                        AdminAcercaDeSliderController::class);
+            // Translate
+            Route::get('translate',                                                     [TranslationController::class, 'indexAcercaDe'])->name('translateAcercaDe.index');
+            Route::get('translate/edit/{translation}',                                  [TranslationController::class, 'editAcercaDe'])->name('translateAcercaDe.edit');
+            Route::put('/translate/{translation}',                                      [TranslationController::class, 'updateAcercaDe'])->name('translateAcercaDe.update');
+            // Sliders
+            Route::get('acerca_de_slider_general',                                   [AdminSliderGeneralController::class, 'indexAcercaDe'])->name('acerca_de_slider_general.index');
+            Route::get('acerca_de_slider_general/create',                            [AdminSliderGeneralController::class, 'createAcercaDe'])->name('acerca_de_slider_general.create');
+            Route::post('acerca_de_slider_general/store',                            [AdminSliderGeneralController::class, 'storeAcercaDe'])->name('acerca_de_slider_general.store');
+            Route::get('acerca_de_slider_general/edit/{admin_slider_general}',       [AdminSliderGeneralController::class, 'editAcercaDe'])->name('acerca_de_slider_general.edit');
+            Route::put('acerca_de_slider_general/update/{admin_slider_general}',     [AdminSliderGeneralController::class, 'updateAcercaDe'])->name('acerca_de_slider_general.update');
+            Route::delete('acerca_de_slider_general/delete/{admin_slider_general}',  [AdminSliderGeneralController::class, 'destroyAcercaDe'])->name('acerca_de_slider_general.destroy');
+        });
+        // END ACERCA DE         
         // CONTACTO
         Route::prefix('contacto')->group(function () {
             // Translate
