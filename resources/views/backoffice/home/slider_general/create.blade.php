@@ -1,8 +1,7 @@
 @extends('cms.layouts.admin.master')
 
 @section('title')
-    Base inputs
-    Nuerona
+    {{ $page }} - Agregar
 @endsection
 
 @push('css')
@@ -11,10 +10,10 @@
 @section('content')
     @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
-            <h3>Sliders generales - Agregar</h3>
+            <h3>{{ $page }} - Agregar</h3>
         @endslot
         <li class="breadcrumb-item"><a href="">Home</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('admin_slider_general.indexHome') }}">Sliders generales</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('admin_slider_general.indexHome') }}">{{ $page }}</a></li>
         <li class="breadcrumb-item active">Agregar</li>
     @endcomponent
 
@@ -22,9 +21,6 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
-                    <div class="card-header pb-0">
-                        <h5>Imagen</h5>
-                    </div>
                     <form class="form theme-form" action="{{ route('admin_slider_general.storeHome') }}" method="POST"
                         enctype="multipart/form-data">
                         @method('POST')
@@ -38,9 +34,9 @@
                                         <div class="col-sm-9">
                                             <select class="form-select digits" id="exampleFormControlSelect7"
                                                 name="position">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
                                             </select>
                                         </div>
                                     </div>

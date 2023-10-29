@@ -32,37 +32,56 @@ class TranslationController extends Controller
         $translation->save();
         return back()->withInput();
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    // ARQUITECTURA
+    public function indexArquitectura()
     {
-        //
+        $list = Translation::where('key', 'arquitectura')->get();
+        return view('backoffice.arquitectura.traduccion.index', [
+            'list' => $list,
+            'page' => 'Traducción',
+            'rutaIndex'  => 'translateArquitectura.index',
+            'rutaEdit'  => 'translateArquitectura.edit'
+        ]);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(StoreTranslationRequest $request)
+    public function editArquitectura(Translation $translation)
     {
-        //
+        return view('backoffice.arquitectura.traduccion.show', [
+            'row' => $translation,
+            'page' => 'Traducción',
+            'rutaIndex'  => 'translateArquitectura.index',
+            'rutaEdit'  => 'translateArquitectura.edit'
+        ]);
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Translation $translation)
+    public function updateArquitectura(UpdateTranslationRequest $request, Translation $translation)
     {
-        //
+        $translation->translate_es = $request->translate_es;
+        $translation->translate_en = $request->translate_en;
+        $translation->save();
+        return back()->withInput();
+    }
+    // BLOG
+    public function indexBlog()
+    {
+        $list = Translation::where('key', 'blog')->get();
+        return view('backoffice.blog.traduccion.index', [
+            'list' => $list
+        ]);
     }
 
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Translation $translation)
+    public function editBlog(Translation $translation)
     {
-        //
+        return view('backoffice.blog.traduccion.show', [
+            'row' => $translation
+        ]);
+    }
+
+    public function updateBlog(UpdateTranslationRequest $request, Translation $translation)
+    {
+        $translation->translate_es = $request->translate_es;
+        $translation->translate_en = $request->translate_en;
+        $translation->save();
+        return back()->withInput();
     }
 }

@@ -38,6 +38,24 @@
                         </ul>
                     </li>
                     {{-- END HOME --}}
+                    {{-- ARQUITECTURA --}}
+                    <li class="dropdown">
+                        <a class="nav-link menu-title {{ prefixActive('/arquitectura') }}" href="javascript:void(0)"><i
+                                data-feather="home"></i><span>Arquitectura</span></a>
+                        <ul class="nav-submenu menu-content"
+                            style="display: {{ prefixBlock('/arquitectura/slider') }};">
+                            <li><a href="{{ route('sliderArquitectura.index') }}"
+                                    class="{{ routeActive('sliderArquitectura.index') }}">Banner
+                                    principal</a></li>
+                            <li><a href="{{ route('arquitectura_slider_general.index') }}"
+                                    class="{{ routeActive('arquitectura_slider_general.index') }}">Sliders
+                                    generales</a>
+                            </li>
+                            <li><a href="{{ route('translateArquitectura.index') }}"
+                                    class="{{ routeActive('translateArquitectura.index') }}">Traducción</a></li>
+                        </ul>
+                    </li>
+                    {{-- END ARQUITECTURA --}}
                     {{-- BLOG --}}
                     <li class="dropdown">
                         <a class="nav-link menu-title {{ prefixActive('/home') }}" href="javascript:void(0)"><i
@@ -93,9 +111,12 @@
                                     class="{{ routeActive('progress-bar') }}">Progress</a></li>
                             <li><a href="{{ route('modal') }}" class="{{ routeActive('modal') }}">Modal</a></li>
                             <li><a href="{{ route('alert') }}" class="{{ routeActive('alert') }}">Alert</a></li>
-                            <li><a href="{{ route('popover') }}" class="{{ routeActive('popover') }}">Popover</a></li>
-                            <li><a href="{{ route('tooltip') }}" class="{{ routeActive('tooltip') }}">Tooltip</a></li>
-                            <li><a href="{{ route('loader') }}" class="{{ routeActive('loader') }}">Spinners</a></li>
+                            <li><a href="{{ route('popover') }}" class="{{ routeActive('popover') }}">Popover</a>
+                            </li>
+                            <li><a href="{{ route('tooltip') }}" class="{{ routeActive('tooltip') }}">Tooltip</a>
+                            </li>
+                            <li><a href="{{ route('loader') }}" class="{{ routeActive('loader') }}">Spinners</a>
+                            </li>
                             <li><a href="{{ route('dropdown') }}" class="{{ routeActive('dropdown') }}">Dropdown</a>
                             </li>
                             <li><a href="{{ route('according') }}"

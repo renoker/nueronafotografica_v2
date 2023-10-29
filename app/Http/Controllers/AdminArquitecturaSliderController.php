@@ -2,20 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreAdminHomeSliderRequest;
-use App\Http\Requests\UpdateAdminHomeSliderRequest;
 use App\Models\AdminHomeSlider;
+use Illuminate\Http\Request;
 
-class AdminHomeSliderController extends Controller
+class AdminArquitecturaSliderController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $row = AdminHomeSlider::where('key', 'home')->get();
-        return view('backoffice.home.slider.index', [
-            'list' => $row
+        $row = AdminHomeSlider::where('key', 'arquitectura')->get();
+        return view('backoffice.arquitectura.slider.index', [
+            'list'  => $row,
+            'page'  => 'Slider',
+            'rutaCreate'    => 'sliderArquitectura.create',
+            'rutaDestroy'    => 'sliderArquitectura.destroy',
+            'rutaEdit'    => 'sliderArquitectura.edit',
         ]);
     }
 
@@ -24,13 +27,17 @@ class AdminHomeSliderController extends Controller
      */
     public function create()
     {
-        return view('backoffice.home.slider.create');
+        return view('backoffice.arquitectura.slider.create', [
+            'page'  => 'Slider',
+            'rutaIndex'    => 'sliderArquitectura.index',
+            'rutaStore'    => 'sliderArquitectura.store',
+        ]);
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreAdminHomeSliderRequest $request)
+    public function store(Request $request)
     {
         $row = new AdminHomeSlider;
 
@@ -41,10 +48,10 @@ class AdminHomeSliderController extends Controller
                     $request->image->move(public_path('assets/home/slider'), $imageName);
                     $row->image = 'assets/home/slider/' . $imageName;
                 } else {
-                    return redirect()->route('slider.create')->with('statusError', '¡Imagen no cumple con el formato!');
+                    return redirect()->route('sliderArquitectura.create')->with('statusError', '¡Imagen no cumple con el formato!');
                 }
             } else {
-                return redirect()->route('slider.create')->with('statusError', '¡Imagen no valida!');
+                return redirect()->route('sliderArquitectura.create')->with('statusError', '¡Imagen no valida!');
             }
         }
         $row->es_title = $request->es_title;
@@ -56,7 +63,7 @@ class AdminHomeSliderController extends Controller
 
         $row->save();
 
-        return redirect()->route('slider.index')->with('statusAlta', '¡Fila creada de manera exitosa!');
+        return redirect()->route('sliderArquitectura.index')->with('statusAlta', '¡Fila creada de manera exitosa!');
     }
 
     /**
@@ -71,15 +78,18 @@ class AdminHomeSliderController extends Controller
      */
     public function edit(AdminHomeSlider $slider)
     {
-        return view('backoffice.home.slider.show', [
-            'row' => $slider
+        return view('backoffice.arquitectura.slider.show', [
+            'row' => $slider,
+            'page'  => 'Slider',
+            'rutaIndex'    => 'sliderArquitectura.index',
+            'rutaUpdate'    => 'sliderArquitectura.update',
         ]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateAdminHomeSliderRequest $request, AdminHomeSlider $slider)
+    public function update(Request $request, AdminHomeSlider $slider)
     {
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
@@ -88,10 +98,10 @@ class AdminHomeSliderController extends Controller
                     $request->image->move(public_path('assets/home/slider'), $imageName);
                     $slider->image = 'assets/home/slider/' . $imageName;
                 } else {
-                    return redirect()->route('slider.show')->with('statusError', '¡Imagen no cumple con el formato!');
+                    return redirect()->route('sliderArquitectura.show')->with('statusError', '¡Imagen no cumple con el formato!');
                 }
             } else {
-                return redirect()->route('slider.show')->with('statusError', '¡Imagen no valida!');
+                return redirect()->route('sliderArquitectura.show')->with('statusError', '¡Imagen no valida!');
             }
         }
         $slider->es_title = $request->es_title;
@@ -103,7 +113,7 @@ class AdminHomeSliderController extends Controller
 
         $slider->save();
 
-        return redirect()->route('slider.index')->with('statusAlta', '¡Fila actualizada de manera exitosa!');
+        return redirect()->route('sliderArquitectura.index')->with('statusAlta', '¡Fila actualizada de manera exitosa!');
     }
 
     /**
@@ -112,6 +122,6 @@ class AdminHomeSliderController extends Controller
     public function destroy(AdminHomeSlider $slider)
     {
         $slider->delete();
-        return redirect()->route('slider.index')->with('statusAlta', '¡Fila Borrada con éxito!');
+        return redirect()->route('sliderArquitectura.index')->with('statusAlta', '¡Fila Borrada con éxito!');
     }
 }

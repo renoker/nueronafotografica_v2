@@ -1,8 +1,7 @@
 @extends('cms.layouts.admin.master')
 
 @section('title')
-    Base inputs
-    Nuerona
+    {{ $page }} - Agregar
 @endsection
 
 @push('css')
@@ -11,41 +10,45 @@
 @section('content')
     @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
-            <h3>Banner desplegable - Actualizar</h3>
+            <h3>{{ $page }} - Agregar</h3>
         @endslot
         <li class="breadcrumb-item"><a href="">Home</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('slider.index') }}">Banner desplegable</a></li>
-        <li class="breadcrumb-item active">Actualizar</li>
+        <li class="breadcrumb-item"><a href="{{ route($rutaIndex) }}">{{ $page }}</a></li>
+        <li class="breadcrumb-item active">Agregar</li>
     @endcomponent
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
-                    <div class="card-header pb-0">
-                        <h5>Imagen</h5>
-                    </div>
-                    <form class="form theme-form" action="{{ route('despregable.update', $row) }}" method="POST"
+                    <form class="form theme-form" action="{{ route($rutaStore) }}" method="POST"
                         enctype="multipart/form-data">
-                        @method('PUT')
+                        @method('POST')
                         @csrf
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
                                     <div class="mb-3 row">
-                                        <label class="col-sm-3 col-form-label">Imagen actual</label>
+                                        <label class="col-sm-3 col-form-label" for="exampleFormControlSelect7">No.
+                                            Slider</label>
                                         <div class="col-sm-9">
-                                            <img src="{{ asset($row->image) }}" style="width: 400px" alt="">
+                                            <select class="form-select digits" id="exampleFormControlSelect7"
+                                                name="position">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card-body">
                             <div class="row">
                                 <div class="col">
                                     <div class="mb-3 row">
-                                        <label class="col-sm-3 col-form-label">Imagen</label>
+                                        <label class="col-sm-3 col-form-label">Imagen banner</label>
                                         <div class="col-sm-9">
                                             <input class="form-control" type="file" name="image" />
                                         </div>
@@ -55,8 +58,8 @@
                         </div>
                         <div class="card-footer text-end">
                             <div class="col-sm-9 offset-sm-3">
-                                <button class="btn btn-primary" type="submit">Actualizar</button>
-                                <a href="{{ route('slider.index') }}"><input class="btn btn-light" type="button"
+                                <button class="btn btn-primary" type="submit">Crear</button>
+                                <a href="{{ route($rutaIndex) }}"><input class="btn btn-light" type="button"
                                         value="Cancelar" /></a>
                             </div>
                         </div>

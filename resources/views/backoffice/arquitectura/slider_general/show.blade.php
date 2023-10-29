@@ -1,8 +1,7 @@
 @extends('cms.layouts.admin.master')
 
 @section('title')
-    Base inputs
-    Nuerona
+    {{ $page }}
 @endsection
 
 @push('css')
@@ -11,10 +10,10 @@
 @section('content')
     @component('cms.components.breadcrumb')
         @slot('breadcrumb_title')
-            <h3>Banner desplegable - Actualizar</h3>
+            <h3>{{ $page }} - Actualizar</h3>
         @endslot
         <li class="breadcrumb-item"><a href="">Home</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('slider.index') }}">Banner desplegable</a></li>
+        <li class="breadcrumb-item"><a href="{{ route($rutaIndex) }}">{{ $page }} </a></li>
         <li class="breadcrumb-item active">Actualizar</li>
     @endcomponent
 
@@ -22,10 +21,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
-                    <div class="card-header pb-0">
-                        <h5>Imagen</h5>
-                    </div>
-                    <form class="form theme-form" action="{{ route('despregable.update', $row) }}" method="POST"
+                    <form class="form theme-form" action="{{ route($rutaUpdate, $row) }}" method="POST"
                         enctype="multipart/form-data">
                         @method('PUT')
                         @csrf
@@ -56,7 +52,7 @@
                         <div class="card-footer text-end">
                             <div class="col-sm-9 offset-sm-3">
                                 <button class="btn btn-primary" type="submit">Actualizar</button>
-                                <a href="{{ route('slider.index') }}"><input class="btn btn-light" type="button"
+                                <a href="{{ route($rutaIndex) }}"><input class="btn btn-light" type="button"
                                         value="Cancelar" /></a>
                             </div>
                         </div>
