@@ -36,10 +36,10 @@
                                             for="exampleFormControlSelect7">Categorias</label>
                                         <div class="col-sm-9">
                                             <select class="form-select digits" id="exampleFormControlSelect7"
-                                                name="categorie_id">
+                                                name="category_id">
                                                 @foreach ($categorias as $item)
                                                     <option value="{{ $item->id }}"
-                                                        @if ($item->id == $row->categorie_id) selected="selected" @endif>
+                                                        @if ($item->id == $row->category_id) selected="selected" @endif>
                                                         {{ $item->name }}</option>
                                                 @endforeach
                                             </select>

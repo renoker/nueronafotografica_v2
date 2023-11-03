@@ -126,7 +126,7 @@ class BlogController extends Controller
     public function adminNotasStore(Request $request)
     {
         $row = new Blog();
-        $row->categorie_id = $request->categorie_id;
+        $row->category_id = $request->category_id;
         if ($request->hasFile('miniatura')) {
             if ($request->file('miniatura')->isValid()) {
                 if (in_array($request->file('miniatura')->extension(), ['jpg', 'jpeg', 'png'])) {
@@ -179,7 +179,7 @@ class BlogController extends Controller
 
     public function adminNotasUpdate(Request $request, Blog $blog)
     {
-        $blog->categorie_id = $request->categorie_id;
+        $blog->category_id = $request->category_id;
         if ($request->hasFile('miniatura')) {
             if ($request->file('miniatura')->isValid()) {
                 if (in_array($request->file('miniatura')->extension(), ['jpg', 'jpeg', 'png'])) {

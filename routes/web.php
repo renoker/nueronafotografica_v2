@@ -15,10 +15,12 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ConstruccionController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CorporativaController;
+use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LangController;
 use App\Http\Controllers\PublicitariaController;
 use App\Http\Controllers\TranslationController;
+use App\Models\Gallery;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -50,15 +52,8 @@ Route::get('/contacto', [ContactController::class, 'index'])->name('contact.inde
 // Contacto
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/detalle/{blog}', [BlogController::class, 'show'])->name('blog.show');
-
-Route::get('/detalle', function () {
-    return view('pages.detalle');
-});
-
-Route::get('/galeria', function () {
-    return view('pages.galeria');
-});
-
+// Galeria
+Route::get('/galeria', [GalleryController::class, 'index'])->name('gallery.index');
 
 // Contactanos
 Route::post('/contactanos/store',  [ContactController::class, 'store'])->name('contact.store');
@@ -72,6 +67,16 @@ Route::post('/backoffice/login', [AdminController::class, 'login'])->name('admin
 Route::group(['middleware' => ['auth:admin']], function () {
     Route::get('/backoffice/logout',    [AdminController::class, 'logout'])->name('admin.logout');
     Route::prefix('backoffice')->group(function () {
+        // GALERIA
+        Route::prefix('galeria')->group(function () {
+            Route::get('/',                                 [GalleryController::class, 'backofficeIndex'])->name('backoffice_gallery.index');
+            Route::get('/create',                           [GalleryController::class, 'backofficeCreate'])->name('backoffice_gallery.create');
+            Route::post('/store',                           [GalleryController::class, 'backofficeStore'])->name('backoffice_gallery.store');
+            Route::get('/edit/{gallery}',                   [GalleryController::class, 'backofficeEdit'])->name('backoffice_gallery.edit');
+            Route::put('/update/{gallery}',                 [GalleryController::class, 'backofficeUpdate'])->name('backoffice_gallery.update');
+            Route::delete('/delete/{gallery}',              [GalleryController::class, 'backofficeDestroy'])->name('backoffice_gallery.destroy');
+        });
+        // END GALERIA
         // HOME
         Route::prefix('home')->group(function () {
             // Slider
@@ -221,6 +226,7 @@ Route::group(['middleware' => ['auth:admin']], function () {
         });
         // END BLOG        
         Route::post('move_row_slider',                      [AdminSliderGeneralController::class, 'moveRowSlider']);
+        Route::post('move_row_gallery',                     [GalleryController::class, 'moveRowGallery']);
     });
 });
 

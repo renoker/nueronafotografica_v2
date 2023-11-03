@@ -774,12 +774,14 @@
         border-radius: 28.636px;
         background: #2B272B;      
         margin-bottom: 25px;  
-        img {
+        .img {
             width: 400px;
             height: 400px;
             flex-shrink: 0;
             border-radius: 20.014px;
-            background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+            background: url(<path-to-image>), lightgray 50% / cover no-repeat;   
+            overflow: hidden;   
+            background-size: cover;                
         }
          h1 {
             color: var(--Blanco-F5EDED);

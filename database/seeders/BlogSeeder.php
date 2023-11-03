@@ -14,11 +14,11 @@ class BlogSeeder extends Seeder
     public function run(): void
     {
         Blog::create([
-            'categorie_id'          => 1,
+            'category_id'          => 1,
             'miniatura'             => "assets/blog/blog_1.png",
             'image'                 => "assets/blog/blog_big.png",
             'es_title'              => "Explora el fascinante mundo de la fotografía: Inspiración y consejos para llevar tu pasión al siguiente nivel",
-            'es_description_small'  => 'La fotografía es un lenguaje universal que nos permite contar historias, capturar  emociones y congelar momentos en el tiempo. En nuestro blog, te sumergirás en un  mundo de inspiración fotográfica. Exploraremos técnicas...',
+            'es_description_small'  => 'La fotografía es un lenguaje universal que nos permite contar historias, capturar emociones y congelar momentos en el tiempo. En nuestro blog, te sumergirás en un mundo de inspiración fotográfica. Exploraremos técnicas...',
             'es_description'        => 'Todos queremos mejorar en lo que hacemos, y más cuando se trata de algo que nos apasiona; en este caso, la fotografía. Es por eso que te presentamos una serie de consejos que te servirán para llevar tu pasión al siguiente nivel. Queremos que todos nuestros usuarios tengan el potencial de convertirse en la mejor versión de sí mismos dentro del mundo de la fotografía. </br></br> Primero lo primero: siempre lleva la cámara contigo. Las mejores fotos se buscan, pero también suceden cuando no lo esperamos. Como dicen por ahí, que la inspiración te agarre trabajando.Piensa en lo que quieres decir y pregúntate por qué: ¿por qué esa foto? ¿Por qué esa foto? ¿Por qué ese momento? ¿Por qué esa iluminación o por qué ese sujeto? Todas esas preguntas son indispensables para saber qué es lo que quieres capturar y qué quieres generar en los espectadores.',
             'es_button'             => 'Conocer más',
             'en_title'              => "Explore the fascinating world of photography: Inspiration and tips to take your passion to the next level",

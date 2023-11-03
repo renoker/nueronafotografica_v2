@@ -36,7 +36,7 @@
                                             for="exampleFormControlSelect7">Categorias</label>
                                         <div class="col-sm-9">
                                             <select class="form-select digits" id="exampleFormControlSelect7"
-                                                name="categorie_id">
+                                                name="category_id">
                                                 @foreach ($categorias as $item)
                                                     <option value="{{ $item->id }}">{{ $item->name }}</option>
                                                 @endforeach

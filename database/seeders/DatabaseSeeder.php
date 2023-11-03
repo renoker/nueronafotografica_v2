@@ -20,7 +20,11 @@ class DatabaseSeeder extends Seeder
             AdminHomePartnersSeeder::class,
             AdminSliderGeneralSeeder::class,
             CategorySeeder::class,
-            BlogSeeder::class
+            BlogSeeder::class,
+            FinishSeeder::class,
+            SizeSeeder::class,
+            PaperSeeder::class,
+            GallerySeeder::class,
         ]);
     }
 }

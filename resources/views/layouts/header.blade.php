@@ -36,7 +36,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="{{ route('gallery.index') }}">
                             <p>galeria</p>
                         </a>
                     </li>

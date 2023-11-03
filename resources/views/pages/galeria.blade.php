@@ -6,21 +6,16 @@
         <div class="content_slider_nosotros">
             <div class="content_nosotros">
                 <div class="box">
-                    <h6 class="h6">Nosotros</h6>
+                    <h6 class="h6">{{ $traslate[0]->title }}</h6>
                     <div class="txt_wp">
-                        <h1 class="h1">Neurona Fotográfica</h1>
+                        <h1 class="h1">{{ $traslate[1]->title }}</h1>
                         <img src="{{ url('assets/icons/Mosca.svg') }}" alt="">
                     </div>
                     <p class="descripcion">
-                        Es una empresa enfocada en medios audiovisuales profesionales con más de 7 años de experiencia en el
-                        mercado Mexicano, Canadá y Estados Unidos.
-                        <br><br>
-                        Impactamos a tus clientes con la innovación y calidad, a través de imágenes únicas que quedarán
-                        guardadas en su mente ayudándote a lograr tus objetivos personales, de negocio, Corporativos o
-                        Empresariales.
+                        {{ $traslate[2]->title }}
                     </p>
                     <div class="conocer_mas">
-                        <p class="button_conoce_mas">Conocer más</p>
+                        <p class="button_conoce_mas">{{ $traslate[3]->title }}</p>
                         <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
                     </div>
                 </div>
@@ -31,23 +26,24 @@
         </div>
         {{--  --}}
         <div class="box_galeria">
-            @for ($i = 0; $i < 15; $i++)
+            @foreach ($list as $item)
                 <div class="content_galeria">
-                    <img src="{{ url('assets/images/flores.jpeg') }}" alt="">
-                    <h1>Nombre de la obra</h1>
+                    <div class="img" style="background-image: url({{ url($item->image) }})">
+                    </div>
+                    <h1>{{ $item->name }}</h1>
                     <div class="content_categoria">
                         <div class="cat">
-                            <span>Categoría</span>
+                            <span>{{ $item->category->name }}</span>
                         </div>
                         <div class="cat">
-                            <span>Categoría</span>
+                            <span>Tamaño</span>
                         </div>
                         <div class="cat">
-                            <span>Categoría</span>
+                            <span>Papel</span>
                         </div>
                     </div>
                 </div>
-            @endfor
+            @endforeach
         </div>
     </div>
 @endsection
