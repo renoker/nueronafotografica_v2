@@ -1,0 +1,22 @@
+{
+  "resources/js/campanias_externas.js": {
+    "file": "assets/campanias_externas-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/js/campanias_externas.js"
+  },
+  "resources/js/global.js": {
+    "file": "assets/global-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/js/global.js"
+  },
+  "resources/js/home.js": {
+    "file": "assets/home-df8f7e94.js",
+    "isEntry": true,
+    "src": "resources/js/home.js"
+  },
+  "resources/sass/main.scss": {
+    "file": "assets/main-de76e68f.css",
+    "isEntry": true,
+    "src": "resources/sass/main.scss"
+  }
+}
