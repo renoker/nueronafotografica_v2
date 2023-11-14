@@ -2,43 +2,6 @@
 @section('title', 'Neuronafotografica - Cotizador')
 @section('scripts')
     @vite('resources/js/cotizador.js')
-    <script>
-        window.addEventListener("load", function(event) {
-            size()
-        });
-        const size = () => {
-            var myHeaders = new Headers();
-            myHeaders.append("Accept", "application/json");
-            myHeaders.append("X-CSRF-TOKEN", document.querySelector('meta[name="csrf-token"]').getAttribute('content'));
-            var requestOptions = {
-                headers: myHeaders,
-            };
-
-            fetch("/size", requestOptions)
-                .then(response => response.text())
-                .then(result => {
-                    const obj = JSON.parse(result);
-                    var box = document.getElementById('boxSize')
-                    obj.response.forEach(function(r) {
-                        console.log(r);
-                        const div = document.createElement("div")
-                        div.classList.add('punto')
-                        div.setAttribute('id', 'size_' + r.id);
-                        div.addEventListener("click", function() {
-                            selectSize(r.id, r.size, r.count);
-                        }, false);
-
-                        box.appendChild(div)
-                    });
-                })
-                .catch(error => console.log('error', error));
-        }
-
-        const selectSize = (id, size, num) => {
-            var punto = document.getElementById('size_' + id)
-            punto.classList.add('active')
-        }
-    </script>
 @endsection
 @section('meta')
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -91,7 +54,9 @@
         </div>
         {{-- Mecanica Cotizador --}}
         <div class="content_cotizador_user">
-            <div class="content_presentacion" style="background-image: url({{ url('assets/cotizador/back.png') }})"></div>
+            <div class="content_presentacion" style="background-image: url({{ url('assets/cotizador/back.png') }})">
+                <div class="imagen_a_vender"></div>
+            </div>
             <div class="content_filtros">
                 <div class="filtro">
                     <h6 class="encab">Tamaño</h6>
@@ -99,13 +64,66 @@
                         <div class="slider">
                             <img src="{{ url('assets/icons/size.png') }}" alt="">
                         </div>
-                        <div class="points" id="boxSize">
+                        <div class="points">
+                            <div class="punto active"></div>
+                        </div>
+                    </div>
+                    <h6 class="medida">50 X 40 cm</h6>
+                </div>
+                <div class="filtro">
+                    <h6 class="encab">Material</h6>
+                    <div class="box_slider_points">
+                        <div class="slider">
+                            <img src="{{ url('assets/icons/size.png') }}" alt="">
+                        </div>
+                        <div class="points">
+                            <div class="punto active"></div>
+                        </div>
+                    </div>
+                    <h6 class="medida">50 X 40 cm</h6>
+                </div>
+                <div class="filtro">
+                    <h6 class="encab">Papel</h6>
+                    <div class="box_slider_points">
+                        <div class="slider">
+                            <img src="{{ url('assets/icons/size.png') }}" alt="">
+                        </div>
+                        <div class="points">
+                            <div class="punto active"></div>
                         </div>
                     </div>
                     <h6 class="medida">50 X 40 cm</h6>
                 </div>
             </div>
         </div>
+        {{-- FORM --}}
+        <div class="content_form_cotizador">
+            <form action="" method="post">
+                <div class="box">
+                    <ul>
+                        <li>
+                            <p class="txt">Tamaño - 60 x 40 cm</p>
+                        </li>
+                        <li>
+                            <p class="txt">Material - 60 x 40 cm</p>
+                        </li>
+                        <li>
+                            <p class="txt">Papel - 60 x 40 cm</p>
+                        </li>
+                        <li>
+                            <input type="text" name="" id="" placeholder="Nombre" class="input">
+                        </li>
+                        <li>
+                            <input type="email" name="" id="" placeholder="Email" class="input">
+                        </li>
+                        <li>
+                            <button type="button" class="button_cotizar">Cotizar</button>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+        {{-- END FORM --}}
         {{-- Comentarios --}}
         <div class="content_comentarios">
             <div class="comentarios_box">
