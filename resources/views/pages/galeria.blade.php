@@ -27,22 +27,24 @@
         {{--  --}}
         <div class="box_galeria">
             @foreach ($list as $item)
-                <div class="content_galeria">
-                    <div class="img" style="background-image: url({{ url($item->image) }})">
+                <a href="{{ route('gallery.cotizador', $item) }}">
+                    <div class="content_galeria">
+                        <div class="img" style="background-image: url({{ url($item->image) }})">
+                        </div>
+                        <h1>{{ $item->name }}</h1>
+                        <div class="content_categoria">
+                            <div class="cat">
+                                <span>{{ $item->category->name }}</span>
+                            </div>
+                            <div class="cat">
+                                <span>Tamaño</span>
+                            </div>
+                            <div class="cat">
+                                <span>Papel</span>
+                            </div>
+                        </div>
                     </div>
-                    <h1>{{ $item->name }}</h1>
-                    <div class="content_categoria">
-                        <div class="cat">
-                            <span>{{ $item->category->name }}</span>
-                        </div>
-                        <div class="cat">
-                            <span>Tamaño</span>
-                        </div>
-                        <div class="cat">
-                            <span>Papel</span>
-                        </div>
-                    </div>
-                </div>
+                </a>
             @endforeach
         </div>
     </div>

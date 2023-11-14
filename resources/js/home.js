@@ -40,3 +40,4 @@ new glide('#empresas', {
     600: { perView: 1 },
   }
 }).mount()
+

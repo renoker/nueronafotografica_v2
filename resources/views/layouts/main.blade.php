@@ -13,7 +13,7 @@
         rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="{{ url('/images/favicon.png') }}" />
     <meta name="theme-color" content="#1EA24D">
-
+    @yield('meta')
     @yield('head')
     @vite('resources/sass/main.scss')
 </head>

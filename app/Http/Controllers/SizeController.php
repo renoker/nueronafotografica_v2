@@ -13,7 +13,8 @@ class SizeController extends Controller
      */
     public function index()
     {
-        //
+        $size = Size::all();
+        return Response(['response' => $size, 'count' => count($size)], 200);
     }
 
     /**

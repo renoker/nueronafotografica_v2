@@ -84,5 +84,17 @@ class AdminHomeSliderSeeder extends Seeder
             'en_button'         => 'Learn more',
             'href'              => 'acerca_de.index'
         ]);
+
+        AdminHomeSlider::create([
+            'key'               => 'cotizador',
+            'image'             => "assets/home/slider/cotizador.png",
+            'es_title'          => "Frase o línea de impacto",
+            'es_description'    => 'Galería',
+            'es_button'         => 'Conocer más',
+            'en_title'          => "Phrase or line of impact",
+            'en_description'    => 'Us',
+            'en_button'         => 'Learn more',
+            'href'              => 'cotizador.index'
+        ]);
     }
 }

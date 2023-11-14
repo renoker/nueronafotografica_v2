@@ -1088,5 +1088,69 @@ class TranslationSeeder extends Seeder
             'translate_es'   => 'Conocer más',
             'translate_en'   => 'Learn more',
         ]);
+        // ------------------------------------------------------------------------------------------ COTIZADOR ------------------------------------------------------------------------------------------ 
+        Translation::create([
+            'key'           => "cotizador",
+            'page'          => "Cotizador",
+            'section'       => "Banner",
+            'translate_es'   => 'Galería',
+            'translate_en'   => 'Gallery',
+        ]);
+
+        Translation::create([
+            'key'           => "cotizador",
+            'page'          => "Cotizador",
+            'section'       => "Banner",
+            'translate_es'   => '¿Te gustaría tener alguna de nuestra fotos en tu casa u oficina?',
+            'translate_en'   => 'Would you like to have any of our photos in your home or office?',
+        ]);
+
+        Translation::create([
+            'key'           => "cotizador",
+            'page'          => "Cotizador",
+            'section'       => "Banner",
+            'translate_es'   => 'Es muy sencillo:',
+            'translate_en'   => 'It is very simple:',
+        ]);
+
+        Translation::create([
+            'key'           => "cotizador",
+            'page'          => "Cotizador",
+            'section'       => "Banner",
+            'translate_es'   => '<span>1</span>.  Selecciona una foto',
+            'translate_en'   => '<span>1</span>. Select a photo',
+        ]);
+
+        Translation::create([
+            'key'           => "cotizador",
+            'page'          => "Cotizador",
+            'section'       => "Banner",
+            'translate_es'   => '<span>2</span>. Selecciona el tamaño',
+            'translate_en'   => '<span>2</span>. Select the size',
+        ]);
+
+        Translation::create([
+            'key'           => "cotizador",
+            'page'          => "Cotizador",
+            'section'       => "Banner",
+            'translate_es'   => '<span>3</span>. Selecciona el tipo de marco',
+            'translate_en'   => '<span>3</span>. Select the type of frame',
+        ]);
+
+        Translation::create([
+            'key'           => "cotizador",
+            'page'          => "Cotizador",
+            'section'       => "Banner",
+            'translate_es'   => '<span>4</span>. Mándanos un correo y listo.',
+            'translate_en'   => '<span>4</span>. Send us an email and that"s it.',
+        ]);
+
+        Translation::create([
+            'key'           => "cotizador",
+            'page'          => "Cotizador",
+            'section'       => "Banner",
+            'translate_es'   => 'Cotizar',
+            'translate_en'   => 'Quote',
+        ]);
     }
 }

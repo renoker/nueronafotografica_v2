@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreGalleryRequest;
 use App\Http\Requests\UpdateGalleryRequest;
+use App\Models\AdminHomeSlider;
 use App\Models\Category;
 use App\Models\Gallery;
+use App\Models\Size;
 use App\Models\Translation;
 use Illuminate\Support\Facades\App;
 use Illuminate\Http\Request;
@@ -55,9 +57,31 @@ class GalleryController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Gallery $gallery)
+    public function cotizador(Gallery $gallery, $language = null)
     {
-        //
+        if ($language == null) {
+            $language = App::getLocale();
+        }
+
+        if ($language == 'es') {
+            $slider_top = AdminHomeSlider::select(['id', 'href', 'image', 'es_title AS title', 'es_description AS description', 'es_button AS button',])->where('key', 'cotizador')->get();
+            $traslate = Translation::select(['translate_es AS title'])->where('key', 'cotizador')->where('page', 'Cotizador')->get();
+        } elseif ($language == 'en') {
+            $slider_top = AdminHomeSlider::select(['id', 'href', 'image', 'en_title AS title', 'en_description AS description', 'en_button AS button',])->where('key', 'cotizador')->get();
+            $traslate = Translation::select(['translate_en AS title'])->where('key', 'cotizador')->where('page', 'Cotizador')->get();
+        } else {
+            $slider_top = AdminHomeSlider::select(['id', 'href', 'image', 'es_title AS title', 'es_description AS description', 'es_button AS button',])->where('key', 'cotizador')->get();
+            $traslate = Translation::select(['translate_es AS title'])->where('key', 'cotizador')->where('page', 'Cotizador')->get();
+        }
+
+        $size = Size::all();
+
+        return view('pages.cotizador', [
+            'slider_top'    => $slider_top,
+            'row'           => $gallery,
+            'traslate'      => $traslate,
+            'size'          => $size,
+        ]);
     }
 
     /**
