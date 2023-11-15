@@ -31,7 +31,7 @@ class AdminController extends Controller
 
         if ($admin) {
             Auth::guard('admin')->login($admin, true);
-            return redirect()->route('dashboard-02');
+            return redirect()->route('slider.store');
         } else {
             return redirect()->back()->with('fail', 'Credentials doesn\'t match.');
         }
