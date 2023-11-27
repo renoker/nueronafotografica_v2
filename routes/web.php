@@ -36,8 +36,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('lang/change', [LangController::class, 'change'])->name('changeLang');
-
-Route::get('/', [HomeController::class, 'index'])->name('home.index');
+Route::get('/', [HomeController::class, 'preview'])->name('home.index');
+Route::get('/home', [HomeController::class, 'index'])->name('home.index');
 // Arquitectura
 Route::get('/arquitectura', [ArquitecturaController::class, 'index'])->name('arquitectura.index');
 // Construccion

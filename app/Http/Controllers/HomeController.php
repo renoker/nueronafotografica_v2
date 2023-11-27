@@ -12,6 +12,10 @@ use Illuminate\Support\Facades\App;
 
 class HomeController extends Controller
 {
+    public function preview()
+    {
+        return view('pages.preview');
+    }
     public function index($language = null)
     {
         if ($language == null) {
