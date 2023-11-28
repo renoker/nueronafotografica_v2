@@ -1,8 +1,59 @@
 {
+  "_glide.esm-4bd3ed45.js": {
+    "file": "assets/glide.esm-4bd3ed45.js"
+  },
+  "resources/js/acerca_de.js": {
+    "file": "assets/acerca_de-c5e0d2af.js",
+    "imports": [
+      "_glide.esm-4bd3ed45.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/acerca_de.js"
+  },
+  "resources/js/arquitectura.js": {
+    "file": "assets/arquitectura-f8915160.js",
+    "imports": [
+      "_glide.esm-4bd3ed45.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/arquitectura.js"
+  },
   "resources/js/campanias_externas.js": {
     "file": "assets/campanias_externas-4ed993c7.js",
     "isEntry": true,
     "src": "resources/js/campanias_externas.js"
+  },
+  "resources/js/construccion.js": {
+    "file": "assets/construccion-f8915160.js",
+    "imports": [
+      "_glide.esm-4bd3ed45.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/construccion.js"
+  },
+  "resources/js/contacto.js": {
+    "file": "assets/contacto-77866e31.js",
+    "imports": [
+      "_glide.esm-4bd3ed45.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/contacto.js"
+  },
+  "resources/js/corporativa.js": {
+    "file": "assets/corporativa-c2a040c3.js",
+    "imports": [
+      "_glide.esm-4bd3ed45.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/corporativa.js"
+  },
+  "resources/js/cotizador.js": {
+    "file": "assets/cotizador-e09d9f21.js",
+    "imports": [
+      "_glide.esm-4bd3ed45.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/cotizador.js"
   },
   "resources/js/global.js": {
     "file": "assets/global-4ed993c7.js",
@@ -10,9 +61,20 @@
     "src": "resources/js/global.js"
   },
   "resources/js/home.js": {
-    "file": "assets/home-df8f7e94.js",
+    "file": "assets/home-96bd0305.js",
+    "imports": [
+      "_glide.esm-4bd3ed45.js"
+    ],
     "isEntry": true,
     "src": "resources/js/home.js"
+  },
+  "resources/js/publicitaria.js": {
+    "file": "assets/publicitaria-c2a040c3.js",
+    "imports": [
+      "_glide.esm-4bd3ed45.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/publicitaria.js"
   },
   "resources/sass/main.scss": {
     "file": "assets/main-de76e68f.css",

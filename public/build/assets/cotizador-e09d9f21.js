@@ -1,0 +1,1 @@
+import{G as e}from"./glide.esm-4bd3ed45.js";new e("#coments",{type:"carousel",gap:24,startAt:0,hoverpause:!0,autoplay:6e3,animationduration:1e4,direction:"ltr",breakpoints:{600:{perView:1}}}).mount();new e("#relacionadas",{type:"carousel",startAt:0,perView:1,peek:{before:190,after:120}}).mount();
