@@ -145,7 +145,7 @@ class GalleryController extends Controller
 
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/galeria'), $imageName);
                     $gallery->image = 'assets/galeria/' . $imageName;
@@ -183,7 +183,7 @@ class GalleryController extends Controller
 
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/galeria'), $imageName);
                     $row->image = 'assets/galeria/' . $imageName;

@@ -36,7 +36,7 @@ class AdminHomeDespegableController extends Controller
 
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/home/desplegable'), $imageName);
                     $row->image = 'assets/home/desplegable/' . $imageName;
@@ -82,7 +82,7 @@ class AdminHomeDespegableController extends Controller
     {
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/home/desplegable'), $imageName);
                     $despregable->image = 'assets/home/desplegable/' . $imageName;

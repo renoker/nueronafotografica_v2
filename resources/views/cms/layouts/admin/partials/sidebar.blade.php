@@ -23,9 +23,9 @@
                     </li>
                     {{-- HOME --}}
                     <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('/home') }}" href="javascript:void(0)"><i
-                                data-feather="home"></i><span>Home</span></a>
-                        <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('/home/slider') }};">
+                        <a class="nav-link menu-title {{ prefixActive('backoffice/home') }}"
+                            href="javascript:void(0)"><i data-feather="home"></i><span>Home</span></a>
+                        <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('backoffice/home') }};">
                             <li><a href="{{ route('slider.index') }}" class="{{ routeActive('slider.index') }}">Banner
                                     principal</a></li>
                             <li><a href="{{ route('despregable.index') }}"
@@ -40,10 +40,10 @@
                     {{-- END HOME --}}
                     {{-- ARQUITECTURA --}}
                     <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('/arquitectura') }}" href="javascript:void(0)"><i
-                                data-feather="home"></i><span>Arquitectura</span></a>
+                        <a class="nav-link menu-title {{ prefixActive('backoffice/arquitectura') }}"
+                            href="javascript:void(0)"><i data-feather="home"></i><span>Arquitectura</span></a>
                         <ul class="nav-submenu menu-content"
-                            style="display: {{ prefixBlock('/arquitectura/slider') }};">
+                            style="display: {{ prefixBlock('backoffice/arquitectura') }};">
                             <li><a href="{{ route('sliderArquitectura.index') }}"
                                     class="{{ routeActive('sliderArquitectura.index') }}">Banner
                                     principal</a></li>
@@ -58,10 +58,10 @@
                     {{-- END ARQUITECTURA --}}
                     {{-- CONSTRUCCION --}}
                     <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('/construccion') }}" href="javascript:void(0)"><i
-                                data-feather="home"></i><span>Construcción</span></a>
+                        <a class="nav-link menu-title {{ prefixActive('backoffice/construccion') }}"
+                            href="javascript:void(0)"><i data-feather="home"></i><span>Construcción</span></a>
                         <ul class="nav-submenu menu-content"
-                            style="display: {{ prefixBlock('/construccion/slider') }};">
+                            style="display: {{ prefixBlock('backoffice/construccion') }};">
                             <li><a href="{{ route('sliderConstruccion.index') }}"
                                     class="{{ routeActive('sliderConstruccion.index') }}">Banner
                                     principal</a></li>
@@ -76,10 +76,10 @@
                     {{-- END CONSTRUCCION --}}
                     {{-- CORPORATIVA --}}
                     <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('/corporativa') }}" href="javascript:void(0)"><i
-                                data-feather="home"></i><span>Corporativa</span></a>
+                        <a class="nav-link menu-title {{ prefixActive('backoffice/corporativa') }}"
+                            href="javascript:void(0)"><i data-feather="home"></i><span>Corporativa</span></a>
                         <ul class="nav-submenu menu-content"
-                            style="display: {{ prefixBlock('/corporativa/slider') }};">
+                            style="display: {{ prefixBlock('backoffice/corporativa') }};">
                             <li><a href="{{ route('sliderCorporativa.index') }}"
                                     class="{{ routeActive('sliderCorporativa.index') }}">Banner
                                     principal</a></li>
@@ -94,10 +94,10 @@
                     {{-- END CORPORATIVA --}}
                     {{-- PUBLICITARIA --}}
                     <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('/publicitaria') }}" href="javascript:void(0)"><i
-                                data-feather="home"></i><span>Publicitaria</span></a>
+                        <a class="nav-link menu-title {{ prefixActive('backoffice/publicitaria') }}"
+                            href="javascript:void(0)"><i data-feather="home"></i><span>Publicitaria</span></a>
                         <ul class="nav-submenu menu-content"
-                            style="display: {{ prefixBlock('/publicitaria/slider') }};">
+                            style="display: {{ prefixBlock('backoffice/publicitaria') }};">
                             <li><a href="{{ route('sliderPublicitaria.index') }}"
                                     class="{{ routeActive('sliderPublicitaria.index') }}">Banner
                                     principal</a></li>
@@ -112,9 +112,10 @@
                     {{-- END PUBLICITARIA --}}
                     {{-- ACERCA DE --}}
                     <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('/acerca_de') }}" href="javascript:void(0)"><i
-                                data-feather="home"></i><span>Acerca De</span></a>
-                        <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('/acerca_de/slider') }};">
+                        <a class="nav-link menu-title {{ prefixActive('backoffice/acerca_de') }}"
+                            href="javascript:void(0)"><i data-feather="home"></i><span>Acerca De</span></a>
+                        <ul class="nav-submenu menu-content"
+                            style="display: {{ prefixBlock('backoffice/acerca_de') }};">
                             <li><a href="{{ route('sliderAcercaDe.index') }}"
                                     class="{{ routeActive('sliderAcercaDe.index') }}">Banner
                                     principal</a></li>
@@ -129,9 +130,10 @@
                     {{-- END ACERCA DE --}}
                     {{-- PUBLICITARIA --}}
                     <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('/contacto') }}" href="javascript:void(0)"><i
-                                data-feather="users"></i><span>Contacto</span></a>
-                        <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('/contacto/slider') }};">
+                        <a class="nav-link menu-title {{ prefixActive('backoffice/contacto') }}"
+                            href="javascript:void(0)"><i data-feather="users"></i><span>Contacto</span></a>
+                        <ul class="nav-submenu menu-content"
+                            style="display: {{ prefixBlock('backoffice/contacto') }};">
                             <li><a href="{{ route('contacto_slider_general.index') }}"
                                     class="{{ routeActive('contacto_slider_general.index') }}">Sliders
                                     generales</a>
@@ -143,9 +145,9 @@
                     {{-- END PUBLICITARIA --}}
                     {{-- BLOG --}}
                     <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('/home') }}" href="javascript:void(0)"><i
-                                data-feather="file"></i><span>Blog</span></a>
-                        <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('/home/blog') }};">
+                        <a class="nav-link menu-title {{ prefixActive('backoffice/blog') }}"
+                            href="javascript:void(0)"><i data-feather="file"></i><span>Blog</span></a>
+                        <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('backoffice/blog') }};">
                             <li><a href="{{ route('adminNotas.index') }}"
                                     class="{{ routeActive('adminNotas.index') }}">Notas</a>
                             </li>
@@ -156,10 +158,10 @@
                     {{-- END BLOG --}}
                     {{-- GALERIA --}}
                     <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('/backoffice/galeria') }}"
+                        <a class="nav-link menu-title {{ prefixActive('backoffice/galeria') }}"
                             href="javascript:void(0)"><i data-feather="file"></i><span>Galería</span></a>
                         <ul class="nav-submenu menu-content"
-                            style="display: {{ prefixBlock('/backoffice/galeria') }};">
+                            style="display: {{ prefixBlock('backoffice/galeria') }};">
                             <li><a href="{{ route('backoffice_gallery.index') }}"
                                     class="{{ routeActive('backoffice_gallery.index') }}">Notas</a>
                             </li>

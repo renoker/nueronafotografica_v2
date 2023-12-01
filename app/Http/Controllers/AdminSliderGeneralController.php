@@ -38,7 +38,7 @@ class AdminSliderGeneralController extends Controller
         $row->key = 'home';
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/sliders_generales'), $imageName);
                     $row->image = 'assets/sliders_generales/' . $imageName;
@@ -69,7 +69,7 @@ class AdminSliderGeneralController extends Controller
     {
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/sliders_generales'), $imageName);
                     $admin_slider_general->image = 'assets/sliders_generales/' . $imageName;
@@ -132,7 +132,7 @@ class AdminSliderGeneralController extends Controller
         $row->key = 'arquitectura';
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/sliders_generales'), $imageName);
                     $row->image = 'assets/sliders_generales/' . $imageName;
@@ -165,7 +165,7 @@ class AdminSliderGeneralController extends Controller
     {
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/sliders_generales'), $imageName);
                     $admin_slider_general->image = 'assets/sliders_generales/' . $imageName;
@@ -227,7 +227,7 @@ class AdminSliderGeneralController extends Controller
         $row->key = 'construccion';
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/sliders_generales'), $imageName);
                     $row->image = 'assets/sliders_generales/' . $imageName;
@@ -260,7 +260,7 @@ class AdminSliderGeneralController extends Controller
     {
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/sliders_generales'), $imageName);
                     $admin_slider_general->image = 'assets/sliders_generales/' . $imageName;
@@ -321,7 +321,7 @@ class AdminSliderGeneralController extends Controller
         $row->key = 'corporativa';
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/sliders_generales'), $imageName);
                     $row->image = 'assets/sliders_generales/' . $imageName;
@@ -354,7 +354,7 @@ class AdminSliderGeneralController extends Controller
     {
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/sliders_generales'), $imageName);
                     $admin_slider_general->image = 'assets/sliders_generales/' . $imageName;
@@ -415,7 +415,7 @@ class AdminSliderGeneralController extends Controller
         $row->key = 'publicitaria';
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/sliders_generales'), $imageName);
                     $row->image = 'assets/sliders_generales/' . $imageName;
@@ -448,7 +448,7 @@ class AdminSliderGeneralController extends Controller
     {
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/sliders_generales'), $imageName);
                     $admin_slider_general->image = 'assets/sliders_generales/' . $imageName;
@@ -507,7 +507,7 @@ class AdminSliderGeneralController extends Controller
         $row->key = 'contacto';
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/sliders_generales'), $imageName);
                     $row->image = 'assets/sliders_generales/' . $imageName;
@@ -540,7 +540,7 @@ class AdminSliderGeneralController extends Controller
     {
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/sliders_generales'), $imageName);
                     $admin_slider_general->image = 'assets/sliders_generales/' . $imageName;
@@ -605,7 +605,7 @@ class AdminSliderGeneralController extends Controller
         $row->key = 'acerca_de';
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/sliders_generales'), $imageName);
                     $row->image = 'assets/sliders_generales/' . $imageName;
@@ -638,7 +638,7 @@ class AdminSliderGeneralController extends Controller
     {
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/sliders_generales'), $imageName);
                     $admin_slider_general->image = 'assets/sliders_generales/' . $imageName;

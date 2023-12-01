@@ -34,7 +34,7 @@ class AdminCorporativaSliderController extends Controller
 
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/home/slider'), $imageName);
                     $row->image = 'assets/home/slider/' . $imageName;
@@ -45,6 +45,8 @@ class AdminCorporativaSliderController extends Controller
                 return redirect()->route('sliderCorporativa.create')->with('statusError', '¡Imagen no valida!');
             }
         }
+        $row->key = 'corporativa';
+        $row->href = 'corporativa.index';
         $row->es_title = $request->es_title;
         $row->es_description = $request->es_description;
         $row->es_button = $request->es_button;
@@ -71,7 +73,7 @@ class AdminCorporativaSliderController extends Controller
     {
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
-                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/home/slider'), $imageName);
                     $slider->image = 'assets/home/slider/' . $imageName;
