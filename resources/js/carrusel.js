@@ -1,11 +1,3 @@
-// var w = document.getElementById('mobile_banner_size').clientWidth
-// document.getElementById("size_mobile").style.width = w + 'px';
-
-// var elements = document.getElementsByClassName("img_mobile_banner")
-// for (var i = 0; i < elements.length; i++) {
-//     elements[i].style.width = w + 'px';
-// }
-
 var move = 0
 
 // In your JS file
