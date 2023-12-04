@@ -35,63 +35,66 @@
                 }      
             }
         }
-        .item_slider {            
+        .custom_slide {
             width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-end;
-            position: relative;
-            z-index: 2;
-            &::before {
-                content: "";
-                position: absolute;
-                top: 0px;
-                right: 0px;
-                bottom: 0px;
-                left: 0px;
-                background-color: rgba(0,0,0,0.5);
-            }
-            .contenedor_informacion_banner {
-                width: 95%;
-                margin: 0 auto;
-                margin-bottom: 3rem;
+            .item_slider {            
+                width: 100%;
+                height: 645px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
                 position: relative;
-                z-index: 10;
-                .encabezado_banner {
-                    color: var(--Blanco-F5EDED);
-                    font-family: $font-family;
-                    font-size: 26px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 95%; /* 24.7px */
-                    letter-spacing: -1.04px;                    
+                z-index: 2;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    left: 0px;
+                    background-color: rgba(0,0,0,0.5);
                 }
-                .box_slider_text {
-                    width: 100%;
-                    @include flex(flex, space-between, flex-end, 0px);
-                    .texto_principal {
+                .contenedor_informacion_banner {
+                    width: 95%;
+                    margin: 0 auto;
+                    margin-bottom: 3rem;
+                    position: relative;
+                    z-index: 10;
+                    .encabezado_banner {
                         color: var(--Blanco-F5EDED);
                         font-family: $font-family;
-                        font-size: 105px;
+                        font-size: 26px;
                         font-style: normal;
-                        font-weight: 500;
-                        line-height: 95%; /* 99.75px */
-                        letter-spacing: -4.2px;   
+                        font-weight: 400;
+                        line-height: 95%; /* 24.7px */
+                        letter-spacing: -1.04px;                    
                     }
-                    .conocer_mas {
-                        width: 230px;
-                        @include flex(flex, center, center, 20px);
-                        .button_conoce_mas {
+                    .box_slider_text {
+                        width: 100%;
+                        @include flex(flex, space-between, flex-end, 0px);
+                        .texto_principal {
                             color: var(--Blanco-F5EDED);
                             font-family: $font-family;
-                            font-size: 17.477px;
+                            font-size: 105px;
                             font-style: normal;
-                            font-weight: 400;
-                            line-height: normal;                            
+                            font-weight: 500;
+                            line-height: 95%; /* 99.75px */
+                            letter-spacing: -4.2px;   
+                        }
+                        .conocer_mas {
+                            width: 230px;
+                            @include flex(flex, center, center, 20px);
+                            .button_conoce_mas {
+                                color: var(--Blanco-F5EDED);
+                                font-family: $font-family;
+                                font-size: 17.477px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;                            
+                            }
                         }
                     }
                 }

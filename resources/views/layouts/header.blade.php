@@ -1,7 +1,8 @@
 <header id="header">
+    <input type="hidden" id="url" value="{{ url('') }}">
     <div class="container-header">
         <div class="logo">
-            <a href="">
+            <a href="{{ url('/home') }}">
                 <img src="{{ url('assets/icons/logo.png') }}" alt="">
             </a>
         </div>
@@ -31,37 +32,61 @@
             <div class="content-menu-header">
                 <ul>
                     <li>
-                        <a href="">
-                            <p>videos</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ route('gallery.index') }}">
-                            <p>galeria</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="drop_header">
-                                <p>servicios</p>
-                                <img src="{{ url('assets/icons/icon-park-outline_down.svg') }}" class="arrow_down"
-                                    alt="">
+                        <a>
+                            <div class="drop_header" id="menu-button">
+                                <p class="p">servicios</p>
+                                <img src="{{ url('assets/icons/icon-park-outline_down.svg') }}" id="arrow"
+                                    class="arrow_down" alt="">
                             </div>
                         </a>
+                        <div class="menu_desplegable" id="header_menu">
+                            <ul>
+                                <li class="li_menu_header">
+                                    <a href="{{ route('arquitectura.index') }}">
+                                        <p>Arquitectura</p>
+                                    </a>
+                                </li>
+                                <li class="li_menu_header">
+                                    <a href="{{ route('construccion.index') }}">
+                                        <p>Construcción</p>
+                                    </a>
+                                </li>
+                                <li class="li_menu_header">
+                                    <a href="{{ route('corporativa.index') }}">
+                                        <p>Corporativa</p>
+                                    </a>
+                                </li>
+                                <li class="li_menu_header">
+                                    <a href="{{ route('publicitaria.index') }}">
+                                        <p>Publicitaria</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
-                    <li>
+                    <li class="@if (Route::currentRouteName() == 'videos') active @endif">
+                        <a href="">
+                            <p class="p">videos</p>
+                        </a>
+                    </li>
+                    <li class="@if (Route::currentRouteName() == 'gallery.index') active @endif">
+                        <a href="{{ route('gallery.index') }}">
+                            <p class="p">galeria</p>
+                        </a>
+                    </li>
+                    <li class="@if (Route::currentRouteName() == 'acerca_de.index') active @endif">
                         <a href="{{ route('acerca_de.index') }}">
-                            <p>acerca de</p>
+                            <p class="p">acerca de</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="@if (Route::currentRouteName() == 'contact.index') active @endif">
                         <a href="{{ route('contact.index') }}">
-                            <p>contacto</p>
+                            <p class="p">contacto</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="@if (Route::currentRouteName() == 'blog.index') active @endif">
                         <a href="{{ route('blog.index') }}">
-                            <p>blog</p>
+                            <p class="p">blog</p>
                         </a>
                     </li>
                 </ul>

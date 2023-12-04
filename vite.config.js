@@ -16,6 +16,7 @@ export default defineConfig({
                 'resources/js/publicitaria.js',
                 'resources/js/arquitectura.js',
                 'resources/js/cotizador.js',
+                'resources/js/carrusel.js',
             ],
             refresh: true,
         }),
