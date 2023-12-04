@@ -2,8 +2,8 @@ var move = 0
 
 // In your JS file
 window.changePunto = function(name, size, position) {
-    let bullet = document.getElementsByClassName('bullet')
-    bullet.forEach(element => {
+    const boxes = document.querySelectorAll('.bullet');
+    boxes.forEach(element => {
         element.classList.remove('active')            
     });
     // for (let index = 0; index <= position; index++) {
