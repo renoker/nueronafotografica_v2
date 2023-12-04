@@ -29,7 +29,7 @@
             <div class="bullets_slider">
                 @foreach ($slider_top as $key => $value)
                     <div class="bullet @if ($key == 0) active @endif" id="punto_{{ $key }}"
-                        onclick="changePunto({{ $value->id }}, {{ $slider_top->count() }}, 'custom_slider', 645, {{ $key }})">
+                        onclick="changePunto('custom_slider', 645, {{ $key }})">
                     </div>
                 @endforeach
             </div>
