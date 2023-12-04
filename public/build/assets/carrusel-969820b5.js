@@ -1,0 +1,1 @@
+var n=0;window.changePunto=function(c,d,r,a,o){for(let t=0;t<d;t++){var e=document.getElementById("punto_"+t);e.classList.remove("active")}var e=document.getElementById("punto_"+c);e.classList.add("active");var l=document.getElementById(r);a==375?n=-w*o:n=-a*o,l.style.transition="all 1s",l.style.marginTop=n+"px"};
