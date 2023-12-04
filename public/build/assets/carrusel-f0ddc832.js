@@ -1,0 +1,1 @@
+var t=0;window.changePunto=function(n,l,e){document.getElementsByClassName("bullet").forEach(c=>{c.classList.remove("active")});var s=document.getElementById("punto_"+e);s.classList.add("active");var a=document.getElementById(n);l==375?t=-w*e:t=-l*e,a.style.transition="all 1s",a.style.marginTop=t+"px"};
