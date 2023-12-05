@@ -52,29 +52,22 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="mb-3 row">
-                                    <label class="col-sm-3 col-form-label" for="exampleFormControlSelect7">No.
-                                        Slider</label>
-                                    <div class="col-sm-9">
-                                        <select class="form-select digits" id="exampleFormControlSelect7" name="position">
-                                            <option value="1" @if ($row->position == 1) active @endif>1
-                                            </option>
-                                            <option value="2" @if ($row->position == 2) active @endif>2
-                                            </option>
-                                            <option value="3" @if ($row->position == 3) active @endif>3
-                                            </option>
-                                            <option value="4" @if ($row->position == 4) active @endif>4
-                                            </option>
-                                            <option value="5" @if ($row->position == 5) active @endif>5
-                                            </option>
-                                            <option value="6" @if ($row->position == 6) active @endif>6
-                                            </option>
-                                            <option value="7" @if ($row->position == 7) active @endif>7
-                                            </option>
-                                        </select>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label" for="exampleFormControlSelect7">No.
+                                            Slider</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-select digits" id="exampleFormControlSelect7"
+                                                name="position">
+                                                <option value="1" @if ($row->position == 1) selected @endif>1
+                                                </option>
+                                                <option value="2" @if ($row->position == 2) selected @endif>2
+                                                </option>
+                                                <option value="3" @if ($row->position == 3) selected @endif>3
+                                                </option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
