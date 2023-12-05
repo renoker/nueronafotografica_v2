@@ -66,6 +66,7 @@
             </footer>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- latest jquery-->
     @includeIf('cms.layouts.admin.partials.js')
 </body>

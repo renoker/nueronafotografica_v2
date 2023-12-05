@@ -58,10 +58,12 @@
                                             <td>{{ $item->es_button }}</td>
                                             <td>{{ $item->created_at }}</td>
                                             <td class="d-flex justify-content-between">
-                                                <form action="{{ route('despregable.destroy', $item) }}" method="post">
+                                                <form action="{{ route('despregable.destroy', $item) }}" method="post"
+                                                    id="delete_{{ $item->id }}">
                                                     @method('DELETE')
                                                     @csrf
-                                                    <button class="btn btn-danger btn-xs" type="submit"
+                                                    <button class="btn btn-danger btn-xs" type="button"
+                                                        onclick="deleteRow({{ $item->id }})"
                                                         data-original-title="btn btn-danger btn-xs"
                                                         title="">Borrar</button>
                                                 </form>
@@ -82,6 +84,24 @@
             <!-- Individual column searching (text inputs) Ends-->
         </div>
     </div>
+
+    <script>
+        const deleteRow = (id) => {
+            Swal.fire({
+                title: '¿Quieres eliminar esta fila?',
+                text: "Todos los movimientos realizados son irreversibles!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Si, borrar'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    document.getElementById("delete_" + id).submit();
+                }
+            })
+        }
+    </script>
 
     @push('scripts')
         <script src="{{ asset('cms_assets/js/datatable/datatables/jquery.dataTables.min.js') }}"></script>

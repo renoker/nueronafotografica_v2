@@ -17,6 +17,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CorporativaController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\IntagramFeedConroller;
 use App\Http\Controllers\LangController;
 use App\Http\Controllers\PublicitariaController;
 use App\Http\Controllers\SizeController;
@@ -37,6 +38,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('lang/change', [LangController::class, 'change'])->name('changeLang');
 Route::get('/', [HomeController::class, 'preview'])->name('home.index');
+Route::get('/instagra_feed', [IntagramFeedConroller::class, 'index'])->name('instagra_feed.index');
 Route::get('/home', [HomeController::class, 'index'])->name('home.index');
 // Arquitectura
 Route::get('/arquitectura', [ArquitecturaController::class, 'index'])->name('arquitectura.index');
