@@ -87,9 +87,10 @@ class AdminSliderGeneralController extends Controller
         return redirect()->route('admin_slider_general.indexHome')->with('statusAlta', '¡Fila creada de manera exitosa!');
     }
 
-    public function destroyHome(AdminSliderGeneral $adminSliderGeneral)
+    public function destroyHome(AdminSliderGeneral $admin_slider_general)
     {
-        //
+        $admin_slider_general->delete();
+        return redirect()->route('admin_slider_general.indexHome')->with('statusAlta', '¡Fila eliminada de manera exitosa!');
     }
 
     // ARQUITECTURA

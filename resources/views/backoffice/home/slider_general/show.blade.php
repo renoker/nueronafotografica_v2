@@ -66,6 +66,14 @@
                                             </option>
                                             <option value="3" @if ($row->position == 3) active @endif>3
                                             </option>
+                                            <option value="4" @if ($row->position == 4) active @endif>4
+                                            </option>
+                                            <option value="5" @if ($row->position == 5) active @endif>5
+                                            </option>
+                                            <option value="6" @if ($row->position == 6) active @endif>6
+                                            </option>
+                                            <option value="7" @if ($row->position == 7) active @endif>7
+                                            </option>
                                         </select>
                                     </div>
                                 </div>
