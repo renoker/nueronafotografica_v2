@@ -99,7 +99,7 @@ Route::group(['middleware' => ['auth:admin']], function () {
             Route::get('home_slider_general/create',        [AdminSliderGeneralController::class, 'createHome'])->name('admin_slider_general.createHome');
             Route::post('home_slider_general/store',        [AdminSliderGeneralController::class, 'storeHome'])->name('admin_slider_general.storeHome');
             Route::get('admin_slider_general/edit/{admin_slider_general}',      [AdminSliderGeneralController::class, 'editHome'])->name('admin_slider_general.edit');
-            Route::put('admin_slider_general/update/{admin_slider_general}',    [AdminSliderGeneralController::class, 'updateHome'])->name('admadmin_slider_generalinNotas.update');
+            Route::put('admin_slider_general/update/{admin_slider_general}',    [AdminSliderGeneralController::class, 'updateHome'])->name('admadmin_slider_general.update');
             Route::delete('admin_slider_general/delete/{admin_slider_general}', [AdminSliderGeneralController::class, 'destroyHome'])->name('admin_slider_general.destroy');
         });
         // END HOME
