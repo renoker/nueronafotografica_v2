@@ -44,7 +44,7 @@
                 </div>
                 <div class="item_footer">
                     <h1 class="h1_encab">LEGAL Y CUMPLIMIENTOS</h1>
-                    <a href="">
+                    <a href="{{ route('terminos_y_condiciones.index') }}">
                         <p class="seccion_p">Términos y condiciones</p>
                     </a>
                 </div>

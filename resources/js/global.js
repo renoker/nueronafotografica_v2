@@ -12,4 +12,30 @@ menuButton.addEventListener('click', () => {
     var imgElement = document.getElementById('arrow');
     imgElement.src = (imgElement.src === img1)? img2 : img1;
     
+    headerMenu.focus();
 })
+
+const plusButton = document.getElementById('plus-button')
+const despliegueBox = document.getElementById('despliegue-box')
+
+plusButton.addEventListener('click', () => {
+    despliegueBox.classList.toggle('active')
+})
+
+window.sinFoco = () => {
+    headerMenu.classList.remove('active')
+    var url = document.getElementById('url').value
+    var img1 = url + "/assets/icons/icon-park-outline_down.svg";
+    var img2 = url + "/assets/icons/down.png";        
+    var imgElement = document.getElementById('arrow');
+    imgElement.src = (imgElement.src === img1)? img2 : img1;
+}
+
+window.conFoco = () => {
+    headerMenu.classList.remove('active')
+    var url = document.getElementById('url').value
+    var img1 = url + "/assets/icons/icon-park-outline_down.svg";
+    var img2 = url + "/assets/icons/down.png";        
+    var imgElement = document.getElementById('arrow');
+    imgElement.src = (imgElement.src === img1)? img2 : img1;    
+}

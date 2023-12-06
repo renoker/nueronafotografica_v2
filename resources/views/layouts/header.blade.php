@@ -3,21 +3,35 @@
     <div class="container-header">
         <div class="logo">
             <a href="{{ url('/home') }}">
-                <img src="{{ url('assets/icons/logo.png') }}" alt="">
+                <img src="{{ url('assets/icons/logo.png') }}" class="logo_header" alt="">
             </a>
         </div>
         <div class="side-right">
             <div class="content-redes-header">
                 <div class="box_redes_header">
-                    <a href="">
+                    <a href="https://www.instagram.com/Neurona.Fotografica/" target="_blank">
                         <img src="{{ url('assets/icons/Instagram.svg') }}" alt="">
                     </a>
-                    <a href="">
+                    <a href="https://www.youtube.com/@neuronafotografica" target="_blank">
                         <img src="{{ url('assets/icons/Youtube.svg') }}" alt="">
                     </a>
-                    <a href="">
-                        <img src="{{ url('assets/icons/bi_plus.svg') }}" alt="">
-                    </a>
+                    <div class="apaga" id="despliegue-box">
+                        <a href="https://www.facebook.com/Neurona.Fotografica" target="_blank">
+                            <img src="{{ url('assets/icons/face_blanco.svg') }}" class="oculto" alt="">
+                        </a>
+                        <a href="https://www.tiktok.com/@neuronafotografica" target="_blank">
+                            <img src="{{ url('assets/icons/tik_blanco.svg') }}" class="oculto" alt="">
+                        </a>
+                        <a href="https://www.behance.net/contacto6936?tracking_source=search_users|neurona%20fotografica"
+                            target="_blank">
+                            <img src="{{ url('assets/icons/b_blanco.svg') }}" class="oculto" alt="">
+                        </a>
+                        <a href="https://www.linkedin.com/in/jorge-reyes-98025914/?originalSubdomain=mx"
+                            target="_blank">
+                            <img src="{{ url('assets/icons/lk_blanco.svg') }}" class="oculto" alt="">
+                        </a>
+                    </div>
+                    <img src="{{ url('assets/icons/bi_plus.svg') }}" id="plus-button" alt="">
                 </div>
                 <div class="idioma_header">
                     <a href="{{ route('changeLang', 'lang=en') }}">

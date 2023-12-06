@@ -1,0 +1,29 @@
+@extends('layouts.main')
+@section('title', 'Neuronafotografica - Blog')
+@section('content')
+    <div class="contente_dad">
+        {{-- Bloque 1 --}}
+        <div class="content_slider_nosotros">
+            <div class="content_nosotros">
+                <div class="box">
+                    <h6 class="h6"> {!! $traslate[0]->title !!}</h6>
+                    <div class="txt_wp">
+                        <h1 class="h1">{!! $traslate[1]->title !!}</h1>
+                        <img src="{{ url('assets/icons/Mosca.svg') }}" alt="">
+                    </div>
+                    <p class="descripcion">
+                        {!! $traslate[2]->title !!}
+                    </p>
+                    <div class="conocer_mas">
+                        <p class="button_conoce_mas">{!! $traslate[3]->title !!}</p>
+                        <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="content_logo_neurona">
+                <img src="{{ url('assets/icons/Tarjeta_Logo.png') }}" alt="">
+            </div>
+        </div>
+
+    </div>
+@endsection

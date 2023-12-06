@@ -7,6 +7,10 @@ header {
         @include flex(flex, space-between, center, 0px);
         .logo {
             width: 20%;
+            .logo_header {
+                padding-top: 10px;
+                width: 210px;
+            }
         }
         .side-right {
             width: 60%;
@@ -16,6 +20,15 @@ header {
                 @include flex(flex, flex-end, center, 28px);
                 .box_redes_header {
                     @include flex(flex, center, center, 15px);
+                    .apaga {
+                        @include flex(none, center, center, 15px);
+                        &.active {
+                            display: flex;
+                        }
+                        .oculto {
+                            width: 20px;
+                        }
+                    }
                 }
                 .idioma_header {
                     @include flex(flex, center, center, 8px);
