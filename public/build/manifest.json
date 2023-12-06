@@ -24,7 +24,7 @@
     "src": "resources/js/campanias_externas.js"
   },
   "resources/js/carrusel.js": {
-    "file": "assets/carrusel-5b847bde.js",
+    "file": "assets/carrusel-1d881445.js",
     "isEntry": true,
     "src": "resources/js/carrusel.js"
   },
@@ -61,7 +61,7 @@
     "src": "resources/js/cotizador.js"
   },
   "resources/js/global.js": {
-    "file": "assets/global-9813bde6.js",
+    "file": "assets/global-528342b2.js",
     "isEntry": true,
     "src": "resources/js/global.js"
   },
@@ -82,7 +82,7 @@
     "src": "resources/js/publicitaria.js"
   },
   "resources/sass/main.scss": {
-    "file": "assets/main-f7cf66b7.css",
+    "file": "assets/main-8c1ae978.css",
     "isEntry": true,
     "src": "resources/sass/main.scss"
   }

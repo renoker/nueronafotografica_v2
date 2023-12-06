@@ -1,1 +1,0 @@
-const s=document.getElementById("menu-button"),c=document.getElementById("header_menu");s.addEventListener("click",()=>{s.classList.toggle("button-open"),c.classList.toggle("active");var e=document.getElementById("url").value,t=e+"/assets/icons/icon-park-outline_down.svg",o=e+"/assets/icons/down.png",n=document.getElementById("arrow");n.src=n.src===t?o:t});
