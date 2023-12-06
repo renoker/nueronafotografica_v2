@@ -86,6 +86,12 @@
                         }
                         .conocer_mas {
                             width: 230px;
+                            height: 50px;
+                            &:hover {
+                                border-radius: 30px;
+                                border: 1px solid #fff;
+                                background-color: rgba($color: #FFF, $alpha: 0.1);                                
+                            }
                             @include flex(flex, center, center, 20px);
                             .button_conoce_mas {
                                 color: var(--Blanco-F5EDED);
@@ -440,6 +446,10 @@
             flex-shrink: 0;      
             border-radius: 30px;  
             background-color: #2B272B;
+            border: 1px solid #2B272B;
+            &:hover {
+                border: 1px solid #D72323;
+            }            
             .h1 {
                 color: var(--Blanco-F5EDED);
                 font-family: $font-family;
@@ -1037,7 +1047,7 @@
             padding-bottom: 2rem;        
         }
         .conocer_mas {
-            width: 100%;
+            width: 100%;            
             @include flex(flex, flex-end, center, 20px);
             .button_conoce_mas {
                 color: var(--Blanco-F5EDED);

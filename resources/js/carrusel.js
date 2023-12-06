@@ -33,7 +33,7 @@ const automatico = () => {
     if(number_slider > 1) {
         var t = setTimeout(function(){
             automatico()
-        },2500);
+        },3500);
         
         if (num < number_slider) {
             console.log(num);    
