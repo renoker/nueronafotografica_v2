@@ -8,6 +8,7 @@
     <div class="contente_dad">
         {{-- Banner Principal --}}
         <div class="contente_slider">
+            <input type="hidden" value="{{ $slider_top->count() }}" id="number_slider">
             <div class="bullets_slider">
                 @foreach ($slider_top as $key => $value)
                     <div class="bullet @if ($key == 0) active @endif" id="punto_{{ $value->id }}"

@@ -55,7 +55,7 @@
                         </a>
                         <div class="menu_desplegable" id="header_menu">
                             <ul>
-                                <li class="li_menu_header">
+                                <li class="li_menu_header" tabindex="1">
                                     <a href="{{ route('arquitectura.index') }}">
                                         <p>Arquitectura</p>
                                     </a>

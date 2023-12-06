@@ -1,3 +1,6 @@
+window.addEventListener("load", (event) => {
+    automatico()
+  });
 var move = 0
 
 // In your JS file
@@ -21,4 +24,24 @@ window.changePunto = function(name, size, position) {
     carrusel.style.transition = "all 1s"
     carrusel.style.marginTop = move + 'px'
    
+}
+
+var num = 0
+
+const automatico = () => {
+    let number_slider = document.getElementById('number_slider').value
+    if(number_slider > 1) {
+        var t = setTimeout(function(){
+            automatico()
+        },2500);
+        
+        if (num < number_slider) {
+            console.log(num);    
+        } else {
+            num = 0
+        }
+
+        changePunto('custom_slider', 645, num)
+        num++
+    }
 }

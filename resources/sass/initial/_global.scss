@@ -111,6 +111,9 @@ button {
   font-weight: 400;
   line-height: normal;  
   background-color: transparent;
+  &:hover {
+    border: 1px solid #D72323;
+  }  
 }
 
 

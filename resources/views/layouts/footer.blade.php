@@ -72,7 +72,7 @@
                     <img src="{{ url('assets/icons/Linkedin.svg') }}" alt="">
                 </a>
             </div>
-            <img src="{{ url('assets/icons/up.svg') }}" alt="">
+            <img src="{{ url('assets/icons/up.svg') }}" alt="" id="flechaTop" style="cursor: pointer;">
         </div>
         <h1 class="aviso_priv">2023 Neurona Fotográfica All Rights Reserved - Terms & Conditions</h1>
     </div>

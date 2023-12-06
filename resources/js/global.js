@@ -10,9 +10,7 @@ menuButton.addEventListener('click', () => {
     var img1 = url + "/assets/icons/icon-park-outline_down.svg";
     var img2 = url + "/assets/icons/down.png";        
     var imgElement = document.getElementById('arrow');
-    imgElement.src = (imgElement.src === img1)? img2 : img1;
-    
-    headerMenu.focus();
+    imgElement.src = (imgElement.src === img1)? img2 : img1;          
 })
 
 const plusButton = document.getElementById('plus-button')
@@ -22,20 +20,10 @@ plusButton.addEventListener('click', () => {
     despliegueBox.classList.toggle('active')
 })
 
-window.sinFoco = () => {
-    headerMenu.classList.remove('active')
-    var url = document.getElementById('url').value
-    var img1 = url + "/assets/icons/icon-park-outline_down.svg";
-    var img2 = url + "/assets/icons/down.png";        
-    var imgElement = document.getElementById('arrow');
-    imgElement.src = (imgElement.src === img1)? img2 : img1;
-}
 
-window.conFoco = () => {
-    headerMenu.classList.remove('active')
-    var url = document.getElementById('url').value
-    var img1 = url + "/assets/icons/icon-park-outline_down.svg";
-    var img2 = url + "/assets/icons/down.png";        
-    var imgElement = document.getElementById('arrow');
-    imgElement.src = (imgElement.src === img1)? img2 : img1;    
-}
+
+
+const upArrow = document.getElementById('flechaTop')
+upArrow.addEventListener('click', () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+})

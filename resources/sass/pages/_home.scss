@@ -134,6 +134,10 @@
             border-radius: 20px;
             overflow: hidden;
             @include flex(flex, center, center, 0px);
+            border: 2px solid #2B272B;
+            &:hover {
+                border: 2px solid #BD2727;
+            }
             .box {
                 width: 86%;
                 margin: 0 auto;
@@ -214,15 +218,19 @@
                     padding-bottom: 2rem;            
                 }
                 .conocer_mas {
+                    cursor: pointer;
                     width: fit-content;
                     display: flex;
                     padding: 10px 30px;
                     justify-content: flex-start;
                     align-items: center;
                     gap: 29px;                    
-                    border-radius: 30px;
-                    border: 1px solid #D72323;
+                    border-radius: 30px;                    
+                    border: 1px solid #2B272B;
                     @include flex(flex, center, center, 20px);
+                    &:hover {
+                        border: 1px solid #D72323;
+                    }
                     .button_conoce_mas {
                         color: var(--Blanco-F5EDED);
                         font-family: $font-family;
