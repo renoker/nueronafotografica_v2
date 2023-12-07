@@ -19,6 +19,7 @@ use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\IntagramFeedConroller;
 use App\Http\Controllers\LangController;
+use App\Http\Controllers\PersonalController;
 use App\Http\Controllers\PublicitariaController;
 use App\Http\Controllers\SizeController;
 use App\Http\Controllers\TerminosConroller;
@@ -185,6 +186,10 @@ Route::group(['middleware' => ['auth:admin']], function () {
         // END PUBLICITARIA   
         // ACERCA DE
         Route::prefix('acerca_de')->group(function () {
+            // Colaborador
+            Route::get('personal/create',                                               [PersonalController::class, 'create'])->name('personal.create');
+            Route::get('personal/edit/{personal}',                                      [PersonalController::class, 'edit'])->name('personal.edit');
+            Route::apiResource('personal',                                              PersonalController::class);
             // Slider
             Route::get('slider/create',                                                 [AdminAcercaDeSliderController::class, 'create'])->name('sliderAcercaDe.create');
             Route::get('slider/edit/{slider}',                                          [AdminAcercaDeSliderController::class, 'edit'])->name('sliderAcercaDe.edit');

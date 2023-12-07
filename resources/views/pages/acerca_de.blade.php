@@ -93,9 +93,20 @@
                 <div class="glide" id="slider_3">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
-                            @foreach ($slider_general_tres as $item)
+                            @foreach ($personalIzquierdo as $item)
                                 <li class="glide__slide">
-                                    <img src="{{ url($item->image) }}" alt="">
+                                    <div class="colaborador">
+                                        <div class="contenedor_interno">
+                                            <div class="box_img_hover">
+                                                <img src="{{ url($item->image) }}" alt="">
+                                            </div>
+                                            <h1 class="nombre_colaborador">{{ $item->name }}</h1>
+                                            <h2 class="trabajo">{{ $item->ocupacion }}</h2>
+                                            <p class="decription">
+                                                {{ $item->description }}
+                                            </p>
+                                        </div>
+                                    </div>
                                 </li>
                             @endforeach
                         </ul>
@@ -106,9 +117,20 @@
                 <div class="glide" id="slider_4">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
-                            @foreach ($slider_general_cuatro as $item)
+                            @foreach ($personalDerecho as $item)
                                 <li class="glide__slide">
-                                    <img src="{{ url($item->image) }}" alt="">
+                                    <div class="colaborador">
+                                        <div class="contenedor_interno">
+                                            <div class="box_img_hover">
+                                                <img src="{{ url($item->image) }}" alt="">
+                                            </div>
+                                            <h1 class="nombre_colaborador">{{ $item->name }}</h1>
+                                            <h2 class="trabajo">{{ $item->ocupacion }}</h2>
+                                            <p class="decription">
+                                                {{ $item->description }}
+                                            </p>
+                                        </div>
+                                    </div>
                                 </li>
                             @endforeach
                         </ul>

@@ -125,6 +125,8 @@
                             </li>
                             <li><a href="{{ route('translateAcercaDe.index') }}"
                                     class="{{ routeActive('translateAcercaDe.index') }}">Traducción</a></li>
+                            <li><a href="{{ route('personal.index') }}"
+                                    class="{{ routeActive('personal.index') }}">Personal</a></li>
                         </ul>
                     </li>
                     {{-- END ACERCA DE --}}
