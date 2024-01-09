@@ -6,6 +6,13 @@
 
 .contente_dad {
     width: 100%;
+    position: relative;
+    .mosca {
+        position: fixed;
+        z-index: 10;
+        right: 16%;
+        bottom: 80px;
+    }    
     // SLIDER
     .contente_slider {
         width: 100%;
@@ -1199,3 +1206,4 @@
         }         
     }       
 }
+

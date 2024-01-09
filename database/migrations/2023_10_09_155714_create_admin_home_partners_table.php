@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('admin_home_partners', function (Blueprint $table) {
             $table->id();
             $table->string('image')->nullable();
+            $table->integer('order')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

@@ -45,7 +45,7 @@ class HomeController extends Controller
         $slider_general_uno = AdminSliderGeneral::where('key', 'home')->where('position', 1)->orderBy('order', 'asc')->get();
         $slider_general_dos = AdminSliderGeneral::where('key', 'home')->where('position', 2)->orderBy('order', 'asc')->get();
         $slider_general_tres = AdminSliderGeneral::where('key', 'home')->where('position', 3)->orderBy('order', 'asc')->get();
-        $partners = AdminHomePartners::all();
+        $partners = AdminHomePartners::orderBy('order', 'asc')->get();
         $countP = count($partners);
         $p = $countP / 6;
 

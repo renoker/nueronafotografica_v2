@@ -2,30 +2,37 @@
 @section('title', 'Neuronafotografica - Cotizador')
 @section('scripts')
     @vite('resources/js/cotizador.js')
+    @vite('resources/js/carrusel.js')
 @endsection
 @section('meta')
     <meta name="csrf-token" content="{{ csrf_token() }}">
 @endsection
 @section('content')
     <div class="contente_dad">
+        <div class="mosca">
+            <a href="https://api.whatsapp.com/send?phone=+525519547280&text=Hola,%20necesito%20ayuda" target="_blank">
+                <img src="{{ url('assets/icons/Mosca.svg') }}" alt="">
+            </a>
+        </div>
         {{-- Banner Principal --}}
         <div class="contente_slider">
+            <input type="hidden" value="{{ $slider_top->count() }}" id="number_slider">
             <div class="bullets_slider">
-                <div class="bullet active"></div>
-                <div class="bullet"></div>
-                <div class="bullet"></div>
-                <div class="bullet"></div>
+                @foreach ($slider_top as $key => $value)
+                    <div class="bullet @if ($key == 0) active @endif" id="punto_{{ $key }}"
+                        onclick="changePunto('custom_slider', 645, {{ $key }})">
+                    </div>
+                @endforeach
             </div>
-            @foreach ($slider_top as $item)
-                <div class="item_slider" style="background-image: url({{ url($item->image) }})">
-                    <div class="contenedor_informacion_banner">
-                        <h6 class="encabezado_banner">{{ $item->title }}</h6>
-                        <div class="box_slider_text">
-                            <h1 class="texto_principal">{{ $item->description }}</h1>
+            <div class="custom_slide" id="custom_slider">
+                @foreach ($slider_top as $item)
+                    <div class="item_slider" style="background-image: url({{ $item->image }})">
+                        <div class="contenedor_informacion_banner">
+                            <h6 class="encabezado_banner">{{ $item->title }}</h6>
                         </div>
                     </div>
-                </div>
-            @endforeach
+                @endforeach
+            </div>
         </div>
         {{-- Bloque 1 --}}
         <div class="content_slider_nosotros">

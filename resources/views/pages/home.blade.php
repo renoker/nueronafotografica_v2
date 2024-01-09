@@ -25,6 +25,11 @@
 @endsection
 @section('content')
     <div class="contente_dad">
+        <div class="mosca">
+            <a href="https://api.whatsapp.com/send?phone=+525519547280&text=Hola,%20necesito%20ayuda" target="_blank">
+                <img src="{{ url('assets/icons/Mosca.svg') }}" alt="">
+            </a>
+        </div>
         <div class="contente_slider">
             <input type="hidden" value="{{ $slider_top->count() }}" id="number_slider">
             <div class="bullets_slider">
@@ -73,7 +78,6 @@
                     <h6 class="h6"> {!! $traslate[0]->title !!}</h6>
                     <div class="txt_wp">
                         <h1 class="h1">{!! $traslate[1]->title !!}</h1>
-                        <img src="{{ url('assets/icons/Mosca.svg') }}" alt="">
                     </div>
                     <p class="descripcion">
                         {!! $traslate[2]->title !!}
@@ -168,10 +172,10 @@
                                 </li>
                                 <li class="glide__slide">
                                     <div class="content_equipo">
-                                        @for ($i = 11; $i < 14; $i++)
+                                        @for ($i = 11; $i < 17; $i++)
                                             <a href="">
-                                                <img src="{{ url($partners[$i]->image) }}" class="logo_company"
-                                                    alt="">
+                                                <img src="{{ url($partners[$i]->image ?? 'assets/vacio.png') }}"
+                                                    class="logo_company" alt="">
                                             </a>
                                         @endfor
                                     </div>
@@ -222,3 +226,5 @@
         </div>
     </div>
 @endsection
+
+{{-- 14,225.45 + IVA --}}

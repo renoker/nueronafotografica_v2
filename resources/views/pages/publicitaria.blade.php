@@ -6,13 +6,18 @@
 @endsection
 @section('content')
     <div class="contente_dad">
+        <div class="mosca">
+            <a href="https://api.whatsapp.com/send?phone=+525519547280&text=Hola,%20necesito%20ayuda" target="_blank">
+                <img src="{{ url('assets/icons/Mosca.svg') }}" alt="">
+            </a>
+        </div>
         {{-- Banner Principal --}}
         <div class="contente_slider">
             <input type="hidden" value="{{ $slider_top->count() }}" id="number_slider">
             <div class="bullets_slider">
                 @foreach ($slider_top as $key => $value)
-                    <div class="bullet @if ($key == 0) active @endif" id="punto_{{ $value->id }}"
-                        onclick="changePunto({{ $value->id }}, {{ $slider_top->count() }}, 'custom_slider', 645, {{ $key }})">
+                    <div class="bullet @if ($key == 0) active @endif" id="punto_{{ $key }}"
+                        onclick="changePunto('custom_slider', 645, {{ $key }})">
                     </div>
                 @endforeach
             </div>
@@ -49,7 +54,6 @@
                     <h6 class="h6">{{ $traslate[0]->title }}</h6>
                     <div class="txt_wp">
                         <h1 class="h1">{{ $traslate[1]->title }}</h1>
-                        <img src="{{ url('assets/icons/Mosca.svg') }}" alt="">
                     </div>
                     <p class="descripcion">
                         {{ $traslate[2]->title }}

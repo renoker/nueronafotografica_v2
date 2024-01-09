@@ -35,6 +35,8 @@
                             </li>
                             <li><a href="{{ route('translateHome.index') }}"
                                     class="{{ routeActive('translateHome.index') }}">Traducción</a></li>
+                            <li><a href="{{ route('partners.index') }}"
+                                    class="{{ routeActive('partners.index') }}">Partners</a></li>
                         </ul>
                     </li>
                     {{-- END HOME --}}

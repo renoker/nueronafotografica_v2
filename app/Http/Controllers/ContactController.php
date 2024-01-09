@@ -7,7 +7,9 @@ use App\Http\Requests\UpdateContactRequest;
 use App\Models\AdminSliderGeneral;
 use App\Models\Contact;
 use App\Models\Translation;
+use Exception;
 use Illuminate\Support\Facades\App;
+use \SendGrid\Mail\Mail;
 
 class ContactController extends Controller
 {
@@ -63,6 +65,41 @@ class ContactController extends Controller
         $row->phone = $request->phone;
         $row->message = $request->message;
         $row->save();
+
+        $email = new Mail();
+        // Replace the email address and name with your verified sender
+        $email->setFrom(
+            'contacto@neuronafotografica.com',
+            'Neurona Fotográfica'
+        );
+        $email->setSubject('Contacto NeuronaFotográfica');
+        // Replace the email address and name with your recipient
+        $email->addTo(
+            'rodolfoulises.ramirez@gmail.com',
+            'Contacto'
+        );
+        $email->addContent(
+            'text/html',
+            '<div>
+                <p>Nombre: <strong>' . $request->name . '</strong></p>
+                <p>Email: <strong>' . $request->email . '</strong></p>
+                <p>Teléfono: <strong>' . $request->phone . '</strong></p>
+                <p>Mensaje: <strong>' . $request->message . '</strong></p>
+            </div>'
+        );
+        $sendgrid = new \SendGrid('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');
+        try {
+            $response = $sendgrid->send($email);
+            printf("Response status: %d\n\n", $response->statusCode());
+
+            $headers = array_filter($response->headers());
+            echo "Response Headers\n\n";
+            foreach ($headers as $header) {
+                echo '- ' . $header . "\n";
+            }
+        } catch (Exception $e) {
+            echo 'Caught exception: ' . $e->getMessage() . "\n";
+        }
 
         return redirect()->back()->with([
             'message' => 'Tus datos se enviaron de forma correcta, nos pondremos en contacto contigo en un lapso no mayor a 24hrs'

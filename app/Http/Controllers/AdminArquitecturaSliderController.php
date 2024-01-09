@@ -91,14 +91,14 @@ class AdminArquitecturaSliderController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, AdminHomeSlider $slider)
+    public function update(Request $request, AdminHomeSlider $sliderArquitectura)
     {
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
                 if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/home/slider'), $imageName);
-                    $slider->image = 'assets/home/slider/' . $imageName;
+                    $sliderArquitectura->image = 'assets/home/slider/' . $imageName;
                 } else {
                     return redirect()->route('sliderArquitectura.show')->with('statusError', '¡Imagen no cumple con el formato!');
                 }
@@ -106,14 +106,14 @@ class AdminArquitecturaSliderController extends Controller
                 return redirect()->route('sliderArquitectura.show')->with('statusError', '¡Imagen no valida!');
             }
         }
-        $slider->es_title = $request->es_title;
-        $slider->es_description = $request->es_description;
-        $slider->es_button = $request->es_button;
-        $slider->en_title = $request->en_title;
-        $slider->en_description = $request->en_description;
-        $slider->en_button = $request->en_button;
+        $sliderArquitectura->es_title = $request->es_title;
+        $sliderArquitectura->es_description = $request->es_description;
+        $sliderArquitectura->es_button = $request->es_button;
+        $sliderArquitectura->en_title = $request->en_title;
+        $sliderArquitectura->en_description = $request->en_description;
+        $sliderArquitectura->en_button = $request->en_button;
 
-        $slider->save();
+        $sliderArquitectura->save();
 
         return redirect()->route('sliderArquitectura.index')->with('statusAlta', '¡Fila actualizada de manera exitosa!');
     }

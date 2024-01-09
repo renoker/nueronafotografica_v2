@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SALÓN DE CLASES MARUCHAN</title>
+    <title>NEURONAFOTOGRAFICA</title>
     <link rel="shortcut icon" type="image/png" href="{{ url('assets/icons/icon.png') }}" />
     <style>
         * {

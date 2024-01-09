@@ -128,15 +128,14 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex justify-content-between">
-                                                <form action="{{ route('admin_slider_general.destroy', $item) }}"
-                                                    method="post">
+                                                <form action="{{ route($rutaDestroy, $item) }}" method="post">
                                                     @method('DELETE')
                                                     @csrf
                                                     <button class="btn btn-danger btn-xs" type="submit"
                                                         data-original-title="btn btn-danger btn-xs"
                                                         title="">Borrar</button>
                                                 </form>
-                                                <a href="{{ route('admin_slider_general.edit', $item) }}">
+                                                <a href="{{ route($rutaEdit, $item) }}">
                                                     <button class="btn btn-primary btn-xs" type="button"
                                                         data-original-title="btn btn-danger btn-xs"
                                                         title="">Editar</button>
@@ -196,15 +195,14 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex justify-content-between">
-                                                <form action="{{ route('admin_slider_general.destroy', $item) }}"
-                                                    method="post">
+                                                <form action="{{ route($rutaDestroy, $item) }}" method="post">
                                                     @method('DELETE')
                                                     @csrf
                                                     <button class="btn btn-danger btn-xs" type="submit"
                                                         data-original-title="btn btn-danger btn-xs"
                                                         title="">Borrar</button>
                                                 </form>
-                                                <a href="{{ route('admin_slider_general.edit', $item) }}">
+                                                <a href="{{ route($rutaEdit, $item) }}">
                                                     <button class="btn btn-primary btn-xs" type="button"
                                                         data-original-title="btn btn-danger btn-xs"
                                                         title="">Editar</button>
@@ -264,15 +262,14 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex justify-content-between">
-                                                <form action="{{ route('admin_slider_general.destroy', $item) }}"
-                                                    method="post">
+                                                <form action="{{ route($rutaDestroy, $item) }}" method="post">
                                                     @method('DELETE')
                                                     @csrf
                                                     <button class="btn btn-danger btn-xs" type="submit"
                                                         data-original-title="btn btn-danger btn-xs"
                                                         title="">Borrar</button>
                                                 </form>
-                                                <a href="{{ route('admin_slider_general.edit', $item) }}">
+                                                <a href="{{ route($rutaEdit, $item) }}">
                                                     <button class="btn btn-primary btn-xs" type="button"
                                                         data-original-title="btn btn-danger btn-xs"
                                                         title="">Editar</button>

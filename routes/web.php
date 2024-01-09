@@ -7,6 +7,7 @@ use App\Http\Controllers\AdminConstruccionSliderController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdminCorporativaSliderController;
 use App\Http\Controllers\AdminHomeDespegableController;
+use App\Http\Controllers\AdminHomePartnersController;
 use App\Http\Controllers\AdminHomeSliderController;
 use App\Http\Controllers\AdminPublicitariaSliderController;
 use App\Http\Controllers\AdminSliderGeneralController;
@@ -24,7 +25,6 @@ use App\Http\Controllers\PublicitariaController;
 use App\Http\Controllers\SizeController;
 use App\Http\Controllers\TerminosConroller;
 use App\Http\Controllers\TranslationController;
-use App\Models\Gallery;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -106,6 +106,13 @@ Route::group(['middleware' => ['auth:admin']], function () {
             Route::get('admin_slider_general/edit/{admin_slider_general}',      [AdminSliderGeneralController::class, 'editHome'])->name('admin_slider_general.edit');
             Route::put('admin_slider_general/update/{admin_slider_general}',    [AdminSliderGeneralController::class, 'updateHome'])->name('admadmin_slider_general.update');
             Route::delete('admin_slider_general/delete/{admin_slider_general}', [AdminSliderGeneralController::class, 'destroyHome'])->name('admin_slider_general.destroy');
+            // Partners
+            Route::get('partners',                          [AdminHomePartnersController::class, 'index'])->name('partners.index');
+            Route::get('partners/create',                   [AdminHomePartnersController::class, 'create'])->name('partners.create');
+            Route::post('partners/store',                   [AdminHomePartnersController::class, 'store'])->name('partners.store');
+            Route::get('partners/edit/{partner}',           [AdminHomePartnersController::class, 'edit'])->name('partners.edit');
+            Route::put('partners/update/{partner}',         [AdminHomePartnersController::class, 'update'])->name('partners.update');
+            Route::delete('partners/delete/{partner}',      [AdminHomePartnersController::class, 'destroy'])->name('partners.destroy');
         });
         // END HOME
         // ARQUITECTURA
@@ -237,8 +244,9 @@ Route::group(['middleware' => ['auth:admin']], function () {
             Route::put('/translate/{translation}',                                      [TranslationController::class, 'updateBlog'])->name('translateBlog.update');
         });
         // END BLOG        
-        Route::post('move_row_slider',                      [AdminSliderGeneralController::class, 'moveRowSlider']);
-        Route::post('move_row_gallery',                     [GalleryController::class, 'moveRowGallery']);
+        Route::post('move_row_slider',                                                  [AdminSliderGeneralController::class, 'moveRowSlider']);
+        Route::post('move_row_gallery',                                                 [GalleryController::class, 'moveRowGallery']);
+        Route::post('move_partners',                                                    [AdminHomePartnersController::class, 'movePartners']);
     });
 });
 

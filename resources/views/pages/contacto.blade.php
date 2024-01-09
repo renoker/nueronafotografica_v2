@@ -5,6 +5,11 @@
 @endsection
 @section('content')
     <div class="contente_dad">
+        <div class="mosca">
+            <a href="https://api.whatsapp.com/send?phone=+525519547280&text=Hola,%20necesito%20ayuda" target="_blank">
+                <img src="{{ url('assets/icons/Mosca.svg') }}" alt="">
+            </a>
+        </div>
         {{-- Bloque 1 --}}
         <div class="content_slider_nosotros">
             <div class="content_nosotros">
@@ -12,7 +17,6 @@
                     <h6 class="h6">{{ $traslate[0]->title }}</h6>
                     <div class="txt_wp">
                         <h1 class="h1">{{ $traslate[1]->title }}</h1>
-                        <img src="{{ url('assets/icons/Mosca.svg') }}" alt="">
                     </div>
                     <p class="descripcion">
                         {{ $traslate[2]->title }}
@@ -151,7 +155,8 @@
                         value="{{ old('email') }}">
                     <input type="tel" name="phone" id="" placeholder="{{ $traslateContact[3]->title }}"
                         value="{{ old('phone') }}">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="{{ $traslateContact[4]->title }}">
+                    <textarea name="message" id="" cols="30" rows="10"
+                        placeholder="{{ $traslateContact[4]->title }}">
                         {{ old('message') }}
                     </textarea>
                     <button type="submit">{{ $traslateContact[5]->title }}</button>
