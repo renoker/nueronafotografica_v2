@@ -43,8 +43,8 @@
                                         <tr>
                                             <td>{{ $item->page }}</td>
                                             <td>{{ $item->section }}</td>
-                                            <td>{{!! $item->translate_es !! }}</td>
-                                            <td>{{!! $item->translate_en !! }}</td>
+                                            <td>{!! $item->translate_es !!}</td>
+                                            <td>{!! $item->translate_en !!}</td>
                                             <td class="d-flex justify-content-between" style="gap: 10px">
                                                 <a href="{{ route('translateHome.edit', $item) }}">
                                                     <button class="btn btn-primary btn-xs" type="button"
