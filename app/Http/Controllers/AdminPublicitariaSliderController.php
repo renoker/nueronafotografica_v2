@@ -69,14 +69,14 @@ class AdminPublicitariaSliderController extends Controller
         ]);
     }
 
-    public function update(Request $request, AdminHomeSlider $slider)
+    public function update(Request $request, AdminHomeSlider $sliderPublicitarium)
     {
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
                 if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/home/slider'), $imageName);
-                    $slider->image = 'assets/home/slider/' . $imageName;
+                    $sliderPublicitarium->image = 'assets/home/slider/' . $imageName;
                 } else {
                     return redirect()->route('sliderPublicitaria.show')->with('statusError', '¡Imagen no cumple con el formato!');
                 }
@@ -84,14 +84,14 @@ class AdminPublicitariaSliderController extends Controller
                 return redirect()->route('sliderPublicitaria.show')->with('statusError', '¡Imagen no valida!');
             }
         }
-        $slider->es_title = $request->es_title;
-        $slider->es_description = $request->es_description;
-        $slider->es_button = $request->es_button;
-        $slider->en_title = $request->en_title;
-        $slider->en_description = $request->en_description;
-        $slider->en_button = $request->en_button;
+        $sliderPublicitarium->es_title = $request->es_title;
+        $sliderPublicitarium->es_description = $request->es_description;
+        $sliderPublicitarium->es_button = $request->es_button;
+        $sliderPublicitarium->en_title = $request->en_title;
+        $sliderPublicitarium->en_description = $request->en_description;
+        $sliderPublicitarium->en_button = $request->en_button;
 
-        $slider->save();
+        $sliderPublicitarium->save();
 
         return redirect()->route('sliderPublicitaria.index')->with('statusAlta', '¡Fila actualizada de manera exitosa!');
     }

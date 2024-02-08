@@ -69,14 +69,14 @@ class AdminAcercaDeSliderController extends Controller
         ]);
     }
 
-    public function update(Request $request, AdminHomeSlider $slider)
+    public function update(Request $request, AdminHomeSlider $sliderAcercaDe)
     {
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
                 if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/home/slider'), $imageName);
-                    $slider->image = 'assets/home/slider/' . $imageName;
+                    $sliderAcercaDe->image = 'assets/home/slider/' . $imageName;
                 } else {
                     return redirect()->route('sliderAcercaDe.show')->with('statusError', '¡Imagen no cumple con el formato!');
                 }
@@ -84,14 +84,14 @@ class AdminAcercaDeSliderController extends Controller
                 return redirect()->route('sliderAcercaDe.show')->with('statusError', '¡Imagen no valida!');
             }
         }
-        $slider->es_title = $request->es_title;
-        $slider->es_description = $request->es_description;
-        $slider->es_button = $request->es_button;
-        $slider->en_title = $request->en_title;
-        $slider->en_description = $request->en_description;
-        $slider->en_button = $request->en_button;
+        $sliderAcercaDe->es_title = $request->es_title;
+        $sliderAcercaDe->es_description = $request->es_description;
+        $sliderAcercaDe->es_button = $request->es_button;
+        $sliderAcercaDe->en_title = $request->en_title;
+        $sliderAcercaDe->en_description = $request->en_description;
+        $sliderAcercaDe->en_button = $request->en_button;
 
-        $slider->save();
+        $sliderAcercaDe->save();
 
         return redirect()->route('sliderAcercaDe.index')->with('statusAlta', '¡Fila actualizada de manera exitosa!');
     }

@@ -16,6 +16,7 @@ class HomeController extends Controller
     {
         return view('pages.preview');
     }
+
     public function index($language = null)
     {
         if ($language == null) {

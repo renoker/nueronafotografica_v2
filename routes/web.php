@@ -25,6 +25,7 @@ use App\Http\Controllers\PublicitariaController;
 use App\Http\Controllers\SizeController;
 use App\Http\Controllers\TerminosConroller;
 use App\Http\Controllers\TranslationController;
+use App\Http\Controllers\VideoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -61,7 +62,8 @@ Route::get('/detalle/{blog}', [BlogController::class, 'show'])->name('blog.show'
 // Galeria
 Route::get('/galeria', [GalleryController::class, 'index'])->name('gallery.index');
 Route::get('/galeria/{gallery}', [GalleryController::class, 'cotizador'])->name('gallery.cotizador');
-
+// Videos
+Route::get('/videos', [VideoController::class, 'index'])->name('video.index');
 // Contactanos
 Route::post('/contactanos/store',  [ContactController::class, 'store'])->name('contact.store');
 
