@@ -70,14 +70,14 @@ class AdminConstruccionSliderController extends Controller
         ]);
     }
 
-    public function update(Request $request, AdminHomeSlider $slider)
+    public function update(Request $request, AdminHomeSlider $sliderConstruccion)
     {
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
                 if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/home/slider'), $imageName);
-                    $slider->image = 'assets/home/slider/' . $imageName;
+                    $sliderConstruccion->image = 'assets/home/slider/' . $imageName;
                 } else {
                     return redirect()->route('sliderConstruccion.show')->with('statusError', '¡Imagen no cumple con el formato!');
                 }
@@ -85,21 +85,21 @@ class AdminConstruccionSliderController extends Controller
                 return redirect()->route('sliderConstruccion.show')->with('statusError', '¡Imagen no valida!');
             }
         }
-        $slider->es_title = $request->es_title;
-        $slider->es_description = $request->es_description;
-        $slider->es_button = $request->es_button;
-        $slider->en_title = $request->en_title;
-        $slider->en_description = $request->en_description;
-        $slider->en_button = $request->en_button;
+        $sliderConstruccion->es_title = $request->es_title;
+        $sliderConstruccion->es_description = $request->es_description;
+        $sliderConstruccion->es_button = $request->es_button;
+        $sliderConstruccion->en_title = $request->en_title;
+        $sliderConstruccion->en_description = $request->en_description;
+        $sliderConstruccion->en_button = $request->en_button;
 
-        $slider->save();
+        $sliderConstruccion->save();
 
         return redirect()->route('sliderConstruccion.index')->with('statusAlta', '¡Fila actualizada de manera exitosa!');
     }
 
-    public function destroy(AdminHomeSlider $slider)
+    public function destroy(AdminHomeSlider $sliderConstruccion)
     {
-        $slider->delete();
+        $sliderConstruccion->delete();
         return redirect()->route('sliderConstruccion.index')->with('statusAlta', '¡Fila Borrada con éxito!');
     }
 }

@@ -42,7 +42,7 @@
                         <ul class="glide__slides">
                             @foreach ($slider_general_uno as $item)
                                 <li class="glide__slide">
-                                    <img src="{{ url($item->image) }}" alt="">
+                                    <img src="{{ url($item->image) }}" alt="" class="border_radio_20">
                                 </li>
                             @endforeach
                         </ul>
@@ -73,7 +73,7 @@
                         <ul class="glide__slides">
                             @foreach ($slider_general_dos as $item)
                                 <li class="glide__slide">
-                                    <img src="{{ url($item->image) }}" alt="">
+                                    <img src="{{ url($item->image) }}" alt="" class="border_radio_20">
                                 </li>
                             @endforeach
                         </ul>
@@ -86,7 +86,7 @@
                         <ul class="glide__slides">
                             @foreach ($slider_general_tres as $item)
                                 <li class="glide__slide">
-                                    <img src="{{ url($item->image) }}" alt="">
+                                    <img src="{{ url($item->image) }}" alt="" class="border_radio_20">
                                 </li>
                             @endforeach
                         </ul>
@@ -120,7 +120,7 @@
                         <ul class="glide__slides">
                             @foreach ($slider_general_cuatro as $item)
                                 <li class="glide__slide">
-                                    <img src="{{ url($item->image) }}" alt="">
+                                    <img src="{{ url($item->image) }}" alt="" class="border_radio_20">
                                 </li>
                             @endforeach
                         </ul>
@@ -136,7 +136,7 @@
                         <ul class="glide__slides">
                             @foreach ($slider_general_cinco as $item)
                                 <li class="glide__slide">
-                                    <img src="{{ url($item->image) }}" alt="">
+                                    <img src="{{ url($item->image) }}" alt="" class="border_radio_20">
                                 </li>
                             @endforeach
                         </ul>
@@ -192,7 +192,7 @@
                         <ul class="glide__slides">
                             @foreach ($slider_general_seis as $item)
                                 <li class="glide__slide">
-                                    <img src="{{ url($item->image) }}" class="zoom" alt="">
+                                    <img src="{{ url($item->image) }}" class="zoom border_radio_20" alt="">
                                 </li>
                             @endforeach
                         </ul>
