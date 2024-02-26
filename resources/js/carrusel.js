@@ -36,7 +36,7 @@ const automatico = () => {
         },3500);
         
         if (num < number_slider) {
-            console.log(num);    
+            
         } else {
             num = 0
         }
