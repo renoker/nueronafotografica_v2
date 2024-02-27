@@ -24,7 +24,7 @@
     "src": "resources/js/campanias_externas.js"
   },
   "resources/js/carrusel.js": {
-    "file": "assets/carrusel-1bb5b89a.js",
+    "file": "assets/carrusel-53b56b31.js",
     "isEntry": true,
     "src": "resources/js/carrusel.js"
   },
@@ -82,7 +82,7 @@
     "src": "resources/js/publicitaria.js"
   },
   "resources/sass/main.scss": {
-    "file": "assets/main-52840a6e.css",
+    "file": "assets/main-fb465229.css",
     "isEntry": true,
     "src": "resources/sass/main.scss"
   }

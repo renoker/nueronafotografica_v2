@@ -1211,4 +1211,7 @@
 .border_radio_20 {
     border-radius: 20px;
     overflow: hidden;
+    img {
+        width: max-content;
+    }
 }

@@ -65,7 +65,7 @@
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
                             @foreach ($slider_general_uno as $item)
-                                <li class="glide__slide">
+                                <li class="glide__slide border_radio_20">
                                     <img src="{{ url($item->image) }}" alt="">
                                 </li>
                             @endforeach
