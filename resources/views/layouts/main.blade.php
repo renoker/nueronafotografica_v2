@@ -19,6 +19,9 @@
 </head>
 
 <body>
+
+    @yield('popups')
+
     @if ($errors->any())
         <script>
             alert("{{ $errors->first() }}");

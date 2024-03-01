@@ -75,9 +75,8 @@
             </div>
             <div class="content_nosotros">
                 <div class="box">
-                    <h6 class="h6"> {!! $traslate[0]->title !!}</h6>
                     <div class="txt_wp">
-                        <h1 class="h1">{!! $traslate[1]->title !!}</h1>
+                        <h1 class="h1">{!! $traslate[0]->title !!}</h1>
                     </div>
                     <p class="descripcion">
                         {!! $traslate[2]->title !!}

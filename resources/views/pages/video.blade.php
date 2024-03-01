@@ -1,5 +1,18 @@
 @extends('layouts.main')
 @section('title', 'Neuronafotografica - Blog')
+@section('popups')
+    <div id="videos" class="">
+        <div class="content_videos_popup">
+            <div class="box_popup">
+                <div class="closePopup" onclick="ocultarVideo('videos')"><img src="{{ url('assets/icons/close.png') }}"
+                        alt=""></div>
+                <iframe src="" id="videoYoutube" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+@endsection
 @section('content')
     <div class="contente_dad">
         <div class="mosca">
@@ -30,27 +43,38 @@
                 @endforeach
             </div>
         </div>
-        <div class="box_galeria">
+        <div class="box_videos">
             @foreach ($list as $item)
-                <a href="{{ route('gallery.cotizador', $item) }}">
-                    <div class="content_galeria">
-                        <div class="img" style="background-image: url({{ url($item->image) }})">
+                <div class="content_videos" onclick="muestraVideo('videos', '{{ $item->url }}')">
+                    <div class="img" style="background-image: url({{ url($item->image) }})">
+                    </div>
+                    <h1>{{ $item->name }}</h1>
+                    <div class="content_categoria">
+                        <div class="cat">
+                            <span>Tamaño</span>
                         </div>
-                        <h1>{{ $item->name }}</h1>
-                        <div class="content_categoria">
-                            <div class="cat">
-                                <span>{{ $item->category->name }}</span>
-                            </div>
-                            <div class="cat">
-                                <span>Tamaño</span>
-                            </div>
-                            <div class="cat">
-                                <span>Papel</span>
-                            </div>
+                        <div class="cat">
+                            <span>Papel</span>
                         </div>
                     </div>
-                </a>
+                </div>
             @endforeach
         </div>
     </div>
+@endsection
+
+@section('scripts')
+    <script>
+        function muestraVideo(id, url) {
+            document.getElementById(id).classList.add("active");
+            var iframe = document.getElementById('videoYoutube');
+            iframe.src = "https://www.youtube.com/embed/" + url;
+        };
+
+        function ocultarVideo(id) {
+            document.getElementById(id).classList.remove("active");
+            var iframe = document.getElementById('videoYoutube');
+            iframe.src = "";
+        };
+    </script>
 @endsection

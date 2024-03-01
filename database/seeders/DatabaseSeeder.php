@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
             SizeSeeder::class,
             PaperSeeder::class,
             GallerySeeder::class,
+            VideoSeeder::class,
         ]);
     }
 }
