@@ -292,12 +292,14 @@ class AdminSliderGeneralController extends Controller
         $row_tres = AdminSliderGeneral::where('position', 3)->where('key', 'corporativa')->orderBy('order', 'asc')->get();
         $row_cuatro = AdminSliderGeneral::where('position', 4)->where('key', 'corporativa')->orderBy('order', 'asc')->get();
         $row_cinco = AdminSliderGeneral::where('position', 5)->where('key', 'corporativa')->orderBy('order', 'asc')->get();
+        $row_seis = AdminSliderGeneral::where('position', 6)->where('key', 'corporativa')->orderBy('order', 'asc')->get();
         return view('backoffice.corporativa.slider_general.index', [
             'slider_uno' => $row_uno,
             'slider_dos' => $row_dos,
             'slider_tres' => $row_tres,
             'slider_cuatro' => $row_cuatro,
             'slider_cinco' => $row_cinco,
+            'slider_seis' => $row_seis,
             'rutaCreate'    => 'corporativa_slider_general.create',
             'rutaEdit'    => 'corporativa_slider_general.edit',
             'rutaIndex'    => 'corporativa_slider_general.index',
@@ -386,12 +388,14 @@ class AdminSliderGeneralController extends Controller
         $row_tres = AdminSliderGeneral::where('position', 3)->where('key', 'publicitaria')->orderBy('order', 'asc')->get();
         $row_cuatro = AdminSliderGeneral::where('position', 4)->where('key', 'publicitaria')->orderBy('order', 'asc')->get();
         $row_cinco = AdminSliderGeneral::where('position', 5)->where('key', 'publicitaria')->orderBy('order', 'asc')->get();
+        $row_seis = AdminSliderGeneral::where('position', 6)->where('key', 'publicitaria')->orderBy('order', 'asc')->get();
         return view('backoffice.publicitaria.slider_general.index', [
             'slider_uno' => $row_uno,
             'slider_dos' => $row_dos,
             'slider_tres' => $row_tres,
             'slider_cuatro' => $row_cuatro,
             'slider_cinco' => $row_cinco,
+            'slider_seis' => $row_seis,
             'rutaCreate'    => 'publicitaria_slider_general.create',
             'rutaEdit'    => 'publicitaria_slider_general.edit',
             'rutaIndex'    => 'publicitaria_slider_general.index',

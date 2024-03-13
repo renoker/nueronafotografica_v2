@@ -49,18 +49,16 @@
                     </div>
                 </div>
             </div>
-            <div class="content_nosotros">
-                <div class="box">
-                    <h6 class="h6">{{ $traslate[0]->title }}</h6>
-                    <div class="txt_wp">
-                        <h1 class="h1">{{ $traslate[1]->title }}</h1>
-                    </div>
-                    <p class="descripcion">
-                        {{ $traslate[2]->title }}
-                    </p>
-                    <div class="conocer_mas">
-                        <p class="button_conoce_mas">{{ $traslate[3]->title }}</p>
-                        <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
+            <div class="glide_slider">
+                <div class="glide" id="slider_2">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            @foreach ($slider_general_dos as $item)
+                                <li class="glide__slide">
+                                    <img src="{{ url($item->image) }}" alt="">
+                                </li>
+                            @endforeach
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -68,12 +66,12 @@
 
         {{-- Imagen grander - Faqs y Slider --}}
         <div class="content_slider_fq">
-            <div class="parte_dos">
-                <div class="glide_slider">
+            <div class="parte_imagen">
+                <div class="glide_slider_full">
                     <div class="glide" id="slider_3">
                         <div class="glide__track" data-glide-el="track">
                             <ul class="glide__slides">
-                                @foreach ($slider_general_dos as $item)
+                                @foreach ($slider_general_tres as $item)
                                     <li class="glide__slide">
                                         <img src="{{ url($item->image) }}" alt="">
                                     </li>
@@ -82,31 +80,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="faqs_home_content">
-                    <div class="item_faqs">
-                        <h1 class="h1">{{ $traslate[4]->title }}</h1>
-                        <p class="txt">{{ $traslate[5]->title }}</p>
-                    </div>
-                    <div class="item_faqs">
-                        <h1 class="h1">{{ $traslate[6]->title }}</h1>
-                        <p class="txt">{{ $traslate[7]->title }}</p>
-                    </div>
-                    <div class="item_faqs">
-                        <h1 class="h1">{{ $traslate[8]->title }}</h1>
-                        <p class="txt">{{ $traslate[9]->title }}</p>
-                    </div>
-                    <div class="item_faqs">
-                        <h1 class="h1">{{ $traslate[10]->title }}</h1>
-                        <p class="txt">{{ $traslate[11]->title }}</p>
-                    </div>
-                </div>
             </div>
             <div class="parte_imagen">
                 <div class="glide_slider_full">
-                    <div class="glide" id="slider_2">
+                    <div class="glide" id="slider_4">
                         <div class="glide__track" data-glide-el="track">
                             <ul class="glide__slides">
-                                @foreach ($slider_general_tres as $item)
+                                @foreach ($slider_general_cuatro as $item)
                                     <li class="glide__slide">
                                         <img src="{{ url($item->image) }}" alt="">
                                     </li>
@@ -120,10 +100,10 @@
         {{-- Preguntas y Slider --}}
         <div class="content_slider_nosotros">
             <div class="glide_slider_big">
-                <div class="glide" id="slider_4">
+                <div class="glide" id="slider_5">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
-                            @foreach ($slider_general_cuatro as $item)
+                            @foreach ($slider_general_cinco as $item)
                                 <li class="glide__slide">
                                     <img src="{{ url($item->image) }}" alt="">
                                 </li>
@@ -179,7 +159,7 @@
                 <div class="glide" id="contacto">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
-                            @foreach ($slider_general_cinco as $item)
+                            @foreach ($slider_general_seis as $item)
                                 <li class="glide__slide">
                                     <img src="{{ url($item->image) }}" class="zoom" alt="">
                                 </li>

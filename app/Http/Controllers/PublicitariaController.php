@@ -35,6 +35,7 @@ class PublicitariaController extends Controller
         $slider_general_tres = AdminSliderGeneral::where('key', 'publicitaria')->where('position', 3)->orderBy('order', 'asc')->get();
         $slider_general_cuatro = AdminSliderGeneral::where('key', 'publicitaria')->where('position', 4)->orderBy('order', 'asc')->get();
         $slider_general_cinco = AdminSliderGeneral::where('key', 'publicitaria')->where('position', 5)->orderBy('order', 'asc')->get();
+        $slider_general_seis = AdminSliderGeneral::where('key', 'publicitaria')->where('position', 6)->orderBy('order', 'asc')->get();
 
         return view('pages.publicitaria', [
             'slider_top'            => $slider_top,
@@ -43,6 +44,7 @@ class PublicitariaController extends Controller
             'slider_general_tres'   => $slider_general_tres,
             'slider_general_cuatro' => $slider_general_cuatro,
             'slider_general_cinco'  => $slider_general_cinco,
+            'slider_general_seis'  => $slider_general_seis,
             'traslate'              => $traslate,
             'traslateContact'       => $traslateContact,
         ]);

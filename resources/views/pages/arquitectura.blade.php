@@ -51,15 +51,14 @@
             </div>
             <div class="content_nosotros">
                 <div class="box">
-                    <h6 class="h6">{{ $traslate[0]->title }}</h6>
                     <div class="txt_wp">
-                        <h1 class="h1">{{ $traslate[1]->title }}</h1>
+                        <h1 class="h1">{!! $traslate[0]->title !!}</h1>
                     </div>
                     <p class="descripcion">
-                        {{ $traslate[2]->title }}
+                        {!! $traslate[2]->title !!}
                     </p>
                     <div class="conocer_mas">
-                        <p class="button_conoce_mas">{{ $traslate[3]->title }}</p>
+                        <p class="button_conoce_mas">{!! $traslate[3]->title !!}</p>
                         <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
                     </div>
                 </div>

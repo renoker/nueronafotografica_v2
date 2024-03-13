@@ -79,7 +79,7 @@
                         </div>
                     </li>
                     <li class="@if (Route::currentRouteName() == 'videos') active @endif">
-                        <a href="">
+                        <a href="{{ route('video.index') }}">
                             <p class="p">videos</p>
                         </a>
                     </li>
