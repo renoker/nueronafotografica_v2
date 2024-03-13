@@ -74,7 +74,7 @@
     "src": "resources/js/home.js"
   },
   "resources/js/publicitaria.js": {
-    "file": "assets/publicitaria-c2a040c3.js",
+    "file": "assets/publicitaria-77866e31.js",
     "imports": [
       "_glide.esm-4bd3ed45.js"
     ],
@@ -82,7 +82,7 @@
     "src": "resources/js/publicitaria.js"
   },
   "resources/sass/main.scss": {
-    "file": "assets/main-fb465229.css",
+    "file": "assets/main-545929bf.css",
     "isEntry": true,
     "src": "resources/sass/main.scss"
   }
