@@ -11,6 +11,7 @@ use App\Http\Controllers\AdminHomePartnersController;
 use App\Http\Controllers\AdminHomeSliderController;
 use App\Http\Controllers\AdminPublicitariaSliderController;
 use App\Http\Controllers\AdminSliderGeneralController;
+use App\Http\Controllers\AdminVideosSliderController;
 use App\Http\Controllers\ArquitecturaController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ConstruccionController;
@@ -246,6 +247,22 @@ Route::group(['middleware' => ['auth:admin']], function () {
             Route::put('/translate/{translation}',                                      [TranslationController::class, 'updateBlog'])->name('translateBlog.update');
         });
         // END BLOG        
+        // VIDEOS
+        Route::prefix('videos')->group(function () {
+            // Slider
+            Route::get('slider/create',                                                 [AdminVideosSliderController::class, 'create'])->name('sliderVideos.create');
+            Route::get('slider/edit/{slider}',                                          [AdminVideosSliderController::class, 'edit'])->name('sliderVideos.edit');
+            Route::apiResource('sliderVideos',                                          AdminVideosSliderController::class);
+            // Video
+            Route::get('video',                                                         [VideoController::class, 'adminVideoIndex'])->name('adminVideo.index');
+            Route::get('video/create',                                                  [VideoController::class, 'adminVideocreate'])->name('adminVideo.create');
+            Route::post('video/store',                                                  [VideoController::class, 'adminVideoStore'])->name('adminVideo.store');
+            Route::get('video/edit/{video}',                                             [VideoController::class, 'adminVideoEdit'])->name('adminVideo.edit');
+            Route::put('video/update/{video}',                                           [VideoController::class, 'adminVideoUpdate'])->name('adminVideo.update');
+            Route::delete('video/delete/{video}',                                        [VideoController::class, 'adminVideoDelete'])->name('adminVideo.delete');
+            Route::post('move_row_video',                                                 [VideoController::class, 'moveRowVideo']);
+        });
+        // END VIDEOS          
         Route::post('move_row_slider',                                                  [AdminSliderGeneralController::class, 'moveRowSlider']);
         Route::post('move_row_gallery',                                                 [GalleryController::class, 'moveRowGallery']);
         Route::post('move_partners',                                                    [AdminHomePartnersController::class, 'movePartners']);

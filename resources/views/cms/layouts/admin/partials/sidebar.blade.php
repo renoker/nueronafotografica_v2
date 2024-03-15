@@ -40,138 +40,148 @@
                         </ul>
                     </li>
                     {{-- END HOME --}}
-                    {{-- ARQUITECTURA --}}
+                    {{-- VIDEOS --}}
                     <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('backoffice/arquitectura') }}"
-                            href="javascript:void(0)"><i data-feather="home"></i><span>Arquitectura</span></a>
-                        <ul class="nav-submenu menu-content"
-                            style="display: {{ prefixBlock('backoffice/arquitectura') }};">
-                            <li><a href="{{ route('sliderArquitectura.index') }}"
-                                    class="{{ routeActive('sliderArquitectura.index') }}">Banner
+                        <a class="nav-link menu-title {{ prefixActive('backoffice/videos') }}"
+                            href="javascript:void(0)"><i data-feather="home"></i><span>Videos</span></a>
+                        <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('backoffice/videos') }};">
+                            <li><a href="{{ route('sliderVideos.index') }}"
+                                    class="{{ routeActive('sliderVideos.index') }}">Banner
                                     principal</a></li>
-                            <li><a href="{{ route('arquitectura_slider_general.index') }}"
-                                    class="{{ routeActive('arquitectura_slider_general.index') }}">Sliders
-                                    generales</a>
-                            </li>
-                            <li><a href="{{ route('translateArquitectura.index') }}"
-                                    class="{{ routeActive('translateArquitectura.index') }}">Traducción</a></li>
-                        </ul>
                     </li>
-                    {{-- END ARQUITECTURA --}}
-                    {{-- CONSTRUCCION --}}
-                    <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('backoffice/construccion') }}"
-                            href="javascript:void(0)"><i data-feather="home"></i><span>Construcción</span></a>
-                        <ul class="nav-submenu menu-content"
-                            style="display: {{ prefixBlock('backoffice/construccion') }};">
-                            <li><a href="{{ route('sliderConstruccion.index') }}"
-                                    class="{{ routeActive('sliderConstruccion.index') }}">Banner
-                                    principal</a></li>
-                            <li><a href="{{ route('construccion_slider_general.index') }}"
-                                    class="{{ routeActive('construccion_slider_general.index') }}">Sliders
-                                    generales</a>
-                            </li>
-                            <li><a href="{{ route('translateConstruccion.index') }}"
-                                    class="{{ routeActive('translateConstruccion.index') }}">Traducción</a></li>
-                        </ul>
-                    </li>
-                    {{-- END CONSTRUCCION --}}
-                    {{-- CORPORATIVA --}}
-                    <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('backoffice/corporativa') }}"
-                            href="javascript:void(0)"><i data-feather="home"></i><span>Corporativa</span></a>
-                        <ul class="nav-submenu menu-content"
-                            style="display: {{ prefixBlock('backoffice/corporativa') }};">
-                            <li><a href="{{ route('sliderCorporativa.index') }}"
-                                    class="{{ routeActive('sliderCorporativa.index') }}">Banner
-                                    principal</a></li>
-                            <li><a href="{{ route('corporativa_slider_general.index') }}"
-                                    class="{{ routeActive('corporativa_slider_general.index') }}">Sliders
-                                    generales</a>
-                            </li>
-                            <li><a href="{{ route('translateCorporativa.index') }}"
-                                    class="{{ routeActive('translateCorporativa.index') }}">Traducción</a></li>
-                        </ul>
-                    </li>
-                    {{-- END CORPORATIVA --}}
-                    {{-- PUBLICITARIA --}}
-                    <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('backoffice/publicitaria') }}"
-                            href="javascript:void(0)"><i data-feather="home"></i><span>Publicitaria</span></a>
-                        <ul class="nav-submenu menu-content"
-                            style="display: {{ prefixBlock('backoffice/publicitaria') }};">
-                            <li><a href="{{ route('sliderPublicitaria.index') }}"
-                                    class="{{ routeActive('sliderPublicitaria.index') }}">Banner
-                                    principal</a></li>
-                            <li><a href="{{ route('publicitaria_slider_general.index') }}"
-                                    class="{{ routeActive('publicitaria_slider_general.index') }}">Sliders
-                                    generales</a>
-                            </li>
-                            <li><a href="{{ route('translatePublicitaria.index') }}"
-                                    class="{{ routeActive('translatePublicitaria.index') }}">Traducción</a></li>
-                        </ul>
-                    </li>
-                    {{-- END PUBLICITARIA --}}
-                    {{-- ACERCA DE --}}
-                    <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('backoffice/acerca_de') }}"
-                            href="javascript:void(0)"><i data-feather="home"></i><span>Acerca De</span></a>
-                        <ul class="nav-submenu menu-content"
-                            style="display: {{ prefixBlock('backoffice/acerca_de') }};">
-                            <li><a href="{{ route('sliderAcercaDe.index') }}"
-                                    class="{{ routeActive('sliderAcercaDe.index') }}">Banner
-                                    principal</a></li>
-                            <li><a href="{{ route('acerca_de_slider_general.index') }}"
-                                    class="{{ routeActive('acerca_de_slider_general.index') }}">Sliders
-                                    generales</a>
-                            </li>
-                            <li><a href="{{ route('translateAcercaDe.index') }}"
-                                    class="{{ routeActive('translateAcercaDe.index') }}">Traducción</a></li>
-                            <li><a href="{{ route('personal.index') }}"
-                                    class="{{ routeActive('personal.index') }}">Personal</a></li>
-                        </ul>
-                    </li>
-                    {{-- END ACERCA DE --}}
-                    {{-- PUBLICITARIA --}}
-                    <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('backoffice/contacto') }}"
-                            href="javascript:void(0)"><i data-feather="users"></i><span>Contacto</span></a>
-                        <ul class="nav-submenu menu-content"
-                            style="display: {{ prefixBlock('backoffice/contacto') }};">
-                            <li><a href="{{ route('contacto_slider_general.index') }}"
-                                    class="{{ routeActive('contacto_slider_general.index') }}">Sliders
-                                    generales</a>
-                            </li>
-                            <li><a href="{{ route('translateContacto.index') }}"
-                                    class="{{ routeActive('translateContacto.index') }}">Traducción</a></li>
-                        </ul>
-                    </li>
-                    {{-- END PUBLICITARIA --}}
-                    {{-- BLOG --}}
-                    <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('backoffice/blog') }}"
-                            href="javascript:void(0)"><i data-feather="file"></i><span>Blog</span></a>
-                        <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('backoffice/blog') }};">
-                            <li><a href="{{ route('adminNotas.index') }}"
-                                    class="{{ routeActive('adminNotas.index') }}">Notas</a>
-                            </li>
-                            <li><a href="{{ route('translateBlog.index') }}"
-                                    class="{{ routeActive('translateBlog.index') }}">Traducción</a></li>
-                        </ul>
-                    </li>
-                    {{-- END BLOG --}}
-                    {{-- GALERIA --}}
-                    <li class="dropdown">
-                        <a class="nav-link menu-title {{ prefixActive('backoffice/galeria') }}"
-                            href="javascript:void(0)"><i data-feather="file"></i><span>Galería</span></a>
-                        <ul class="nav-submenu menu-content"
-                            style="display: {{ prefixBlock('backoffice/galeria') }};">
-                            <li><a href="{{ route('backoffice_gallery.index') }}"
-                                    class="{{ routeActive('backoffice_gallery.index') }}">Notas</a>
-                            </li>
-                        </ul>
-                    </li>
-                    {{-- END GALERIA --}}
+                    <li><a href="{{ route('adminVideo.index') }}"
+                            class="{{ routeActive('adminVideo.index') }}">Videos</a></li>
+                </ul>
+                </li>
+                {{-- END VIDEOS --}}
+                {{-- ARQUITECTURA --}}
+                <li class="dropdown">
+                    <a class="nav-link menu-title {{ prefixActive('backoffice/arquitectura') }}"
+                        href="javascript:void(0)"><i data-feather="home"></i><span>Arquitectura</span></a>
+                    <ul class="nav-submenu menu-content"
+                        style="display: {{ prefixBlock('backoffice/arquitectura') }};">
+                        <li><a href="{{ route('sliderArquitectura.index') }}"
+                                class="{{ routeActive('sliderArquitectura.index') }}">Banner
+                                principal</a></li>
+                        <li><a href="{{ route('arquitectura_slider_general.index') }}"
+                                class="{{ routeActive('arquitectura_slider_general.index') }}">Sliders
+                                generales</a>
+                        </li>
+                        <li><a href="{{ route('translateArquitectura.index') }}"
+                                class="{{ routeActive('translateArquitectura.index') }}">Traducción</a></li>
+                    </ul>
+                </li>
+                {{-- END ARQUITECTURA --}}
+                {{-- CONSTRUCCION --}}
+                <li class="dropdown">
+                    <a class="nav-link menu-title {{ prefixActive('backoffice/construccion') }}"
+                        href="javascript:void(0)"><i data-feather="home"></i><span>Construcción</span></a>
+                    <ul class="nav-submenu menu-content"
+                        style="display: {{ prefixBlock('backoffice/construccion') }};">
+                        <li><a href="{{ route('sliderConstruccion.index') }}"
+                                class="{{ routeActive('sliderConstruccion.index') }}">Banner
+                                principal</a></li>
+                        <li><a href="{{ route('construccion_slider_general.index') }}"
+                                class="{{ routeActive('construccion_slider_general.index') }}">Sliders
+                                generales</a>
+                        </li>
+                        <li><a href="{{ route('translateConstruccion.index') }}"
+                                class="{{ routeActive('translateConstruccion.index') }}">Traducción</a></li>
+                    </ul>
+                </li>
+                {{-- END CONSTRUCCION --}}
+                {{-- CORPORATIVA --}}
+                <li class="dropdown">
+                    <a class="nav-link menu-title {{ prefixActive('backoffice/corporativa') }}"
+                        href="javascript:void(0)"><i data-feather="home"></i><span>Corporativa</span></a>
+                    <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('backoffice/corporativa') }};">
+                        <li><a href="{{ route('sliderCorporativa.index') }}"
+                                class="{{ routeActive('sliderCorporativa.index') }}">Banner
+                                principal</a></li>
+                        <li><a href="{{ route('corporativa_slider_general.index') }}"
+                                class="{{ routeActive('corporativa_slider_general.index') }}">Sliders
+                                generales</a>
+                        </li>
+                        <li><a href="{{ route('translateCorporativa.index') }}"
+                                class="{{ routeActive('translateCorporativa.index') }}">Traducción</a></li>
+                    </ul>
+                </li>
+                {{-- END CORPORATIVA --}}
+                {{-- PUBLICITARIA --}}
+                <li class="dropdown">
+                    <a class="nav-link menu-title {{ prefixActive('backoffice/publicitaria') }}"
+                        href="javascript:void(0)"><i data-feather="home"></i><span>Publicitaria</span></a>
+                    <ul class="nav-submenu menu-content"
+                        style="display: {{ prefixBlock('backoffice/publicitaria') }};">
+                        <li><a href="{{ route('sliderPublicitaria.index') }}"
+                                class="{{ routeActive('sliderPublicitaria.index') }}">Banner
+                                principal</a></li>
+                        <li><a href="{{ route('publicitaria_slider_general.index') }}"
+                                class="{{ routeActive('publicitaria_slider_general.index') }}">Sliders
+                                generales</a>
+                        </li>
+                        <li><a href="{{ route('translatePublicitaria.index') }}"
+                                class="{{ routeActive('translatePublicitaria.index') }}">Traducción</a></li>
+                    </ul>
+                </li>
+                {{-- END PUBLICITARIA --}}
+                {{-- ACERCA DE --}}
+                <li class="dropdown">
+                    <a class="nav-link menu-title {{ prefixActive('backoffice/acerca_de') }}"
+                        href="javascript:void(0)"><i data-feather="home"></i><span>Acerca De</span></a>
+                    <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('backoffice/acerca_de') }};">
+                        <li><a href="{{ route('sliderAcercaDe.index') }}"
+                                class="{{ routeActive('sliderAcercaDe.index') }}">Banner
+                                principal</a></li>
+                        <li><a href="{{ route('acerca_de_slider_general.index') }}"
+                                class="{{ routeActive('acerca_de_slider_general.index') }}">Sliders
+                                generales</a>
+                        </li>
+                        <li><a href="{{ route('translateAcercaDe.index') }}"
+                                class="{{ routeActive('translateAcercaDe.index') }}">Traducción</a></li>
+                        <li><a href="{{ route('personal.index') }}"
+                                class="{{ routeActive('personal.index') }}">Personal</a></li>
+                    </ul>
+                </li>
+                {{-- END ACERCA DE --}}
+                {{-- PUBLICITARIA --}}
+                <li class="dropdown">
+                    <a class="nav-link menu-title {{ prefixActive('backoffice/contacto') }}"
+                        href="javascript:void(0)"><i data-feather="users"></i><span>Contacto</span></a>
+                    <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('backoffice/contacto') }};">
+                        <li><a href="{{ route('contacto_slider_general.index') }}"
+                                class="{{ routeActive('contacto_slider_general.index') }}">Sliders
+                                generales</a>
+                        </li>
+                        <li><a href="{{ route('translateContacto.index') }}"
+                                class="{{ routeActive('translateContacto.index') }}">Traducción</a></li>
+                    </ul>
+                </li>
+                {{-- END PUBLICITARIA --}}
+                {{-- BLOG --}}
+                <li class="dropdown">
+                    <a class="nav-link menu-title {{ prefixActive('backoffice/blog') }}" href="javascript:void(0)"><i
+                            data-feather="file"></i><span>Blog</span></a>
+                    <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('backoffice/blog') }};">
+                        <li><a href="{{ route('adminNotas.index') }}"
+                                class="{{ routeActive('adminNotas.index') }}">Notas</a>
+                        </li>
+                        <li><a href="{{ route('translateBlog.index') }}"
+                                class="{{ routeActive('translateBlog.index') }}">Traducción</a></li>
+                    </ul>
+                </li>
+                {{-- END BLOG --}}
+                {{-- GALERIA --}}
+                <li class="dropdown">
+                    <a class="nav-link menu-title {{ prefixActive('backoffice/galeria') }}"
+                        href="javascript:void(0)"><i data-feather="file"></i><span>Galería</span></a>
+                    <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('backoffice/galeria') }};">
+                        <li><a href="{{ route('backoffice_gallery.index') }}"
+                                class="{{ routeActive('backoffice_gallery.index') }}">Notas</a>
+                        </li>
+                    </ul>
+                </li>
+                {{-- END GALERIA --}}
                 </ul>
             </div>
             <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
