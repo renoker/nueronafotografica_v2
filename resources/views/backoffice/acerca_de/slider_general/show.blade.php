@@ -70,6 +70,8 @@
                                                 </option>
                                                 <option value="6" @if ($row->position == 6) selected @endif>6
                                                 </option>
+                                                <option value="7" @if ($row->position == 7) selected @endif>7
+                                                </option>
                                             </select>
                                         </div>
                                     </div>

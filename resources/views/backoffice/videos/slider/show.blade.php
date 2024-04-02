@@ -14,7 +14,7 @@
             <h3>Slider - Actualizar</h3>
         @endslot
         <li class="breadcrumb-item"><a href="">Home</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('slider.index') }}">Slider</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('sliderVideos.index') }}">Slider</a></li>
         <li class="breadcrumb-item active">Actualizar</li>
     @endcomponent
 
@@ -25,7 +25,7 @@
                     <div class="card-header pb-0">
                         <h5>Imagen</h5>
                     </div>
-                    <form class="form theme-form" action="{{ route('slider.update', $row) }}" method="POST"
+                    <form class="form theme-form" action="{{ route('sliderVideos.update', $row) }}" method="POST"
                         enctype="multipart/form-data">
                         @method('PUT')
                         @csrf
@@ -126,7 +126,7 @@
                         <div class="card-footer text-end">
                             <div class="col-sm-9 offset-sm-3">
                                 <button class="btn btn-primary" type="submit">Actualizar</button>
-                                <a href="{{ route('slider.index') }}"><input class="btn btn-light" type="button"
+                                <a href="{{ route('sliderVideos.index') }}"><input class="btn btn-light" type="button"
                                         value="Cancelar" /></a>
                             </div>
                         </div>

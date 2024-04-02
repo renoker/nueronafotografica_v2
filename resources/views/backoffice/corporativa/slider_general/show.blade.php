@@ -68,6 +68,8 @@
                                                 </option>
                                                 <option value="5" @if ($row->position == 5) selected @endif>5
                                                 </option>
+                                                <option value="6" @if ($row->position == 6) selected @endif>6
+                                                </option>
                                             </select>
                                         </div>
                                     </div>

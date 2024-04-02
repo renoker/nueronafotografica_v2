@@ -18,7 +18,7 @@
         <li class="breadcrumb-item"><a href="">Home</a></li>
         <li class="breadcrumb-item active">Slider</li>
         @slot('add_row')
-            <li><a href="{{ route('slider.create') }}" data-container="body" data-bs-toggle="popover" data-placement="top"
+            <li><a href="{{ route('sliderVideos.create') }}" data-container="body" data-bs-toggle="popover" data-placement="top"
                     title="" data-original-title="Tables"><i data-feather="plus"></i></a></li>
         @endslot
     @endcomponent
@@ -60,7 +60,7 @@
                                             <td>{{ $item->es_button }}</td>
                                             <td>{{ $item->created_at }}</td>
                                             <td class="d-flex justify-content-between">
-                                                <form action="{{ route('slider.destroy', $item) }}" method="post"
+                                                <form action="{{ route('sliderVideos.destroy', $item) }}" method="post"
                                                     id="delete_{{ $item->id }}">
                                                     @method('DELETE')
                                                     @csrf
@@ -69,7 +69,7 @@
                                                         data-original-title="btn btn-danger btn-xs"
                                                         title="">Borrar</button>
                                                 </form>
-                                                <a href="{{ route('slider.edit', $item) }}">
+                                                <a href="{{ route('sliderVideos.edit', $item) }}">
                                                     <button class="btn btn-primary btn-xs" type="button"
                                                         data-original-title="btn btn-danger btn-xs"
                                                         title="">Editar</button>

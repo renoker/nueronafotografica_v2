@@ -42,10 +42,10 @@ class AdminVideosSliderController extends Controller
                     $request->image->move(public_path('assets/home/slider'), $imageName);
                     $row->image = 'assets/home/slider/' . $imageName;
                 } else {
-                    return redirect()->route('slider.create')->with('statusError', '¡Imagen no cumple con el formato!');
+                    return redirect()->route('sliderVideos.create')->with('statusError', '¡Imagen no cumple con el formato!');
                 }
             } else {
-                return redirect()->route('slider.create')->with('statusError', '¡Imagen no valida!');
+                return redirect()->route('sliderVideos.create')->with('statusError', '¡Imagen no valida!');
             }
         }
         $row->key = 'videos';
@@ -59,7 +59,7 @@ class AdminVideosSliderController extends Controller
 
         $row->save();
 
-        return redirect()->route('slider.index')->with('statusAlta', '¡Fila creada de manera exitosa!');
+        return redirect()->route('sliderVideos.index')->with('statusAlta', '¡Fila creada de manera exitosa!');
     }
 
     /**
@@ -91,10 +91,10 @@ class AdminVideosSliderController extends Controller
                     $request->image->move(public_path('assets/home/slider'), $imageName);
                     $sliderVideo->image = 'assets/home/slider/' . $imageName;
                 } else {
-                    return redirect()->route('slider.show')->with('statusError', '¡Imagen no cumple con el formato!');
+                    return redirect()->route('sliderVideos.show')->with('statusError', '¡Imagen no cumple con el formato!');
                 }
             } else {
-                return redirect()->route('slider.show')->with('statusError', '¡Imagen no valida!');
+                return redirect()->route('sliderVideos.show')->with('statusError', '¡Imagen no valida!');
             }
         }
         $sliderVideo->es_title = $request->es_title;
@@ -106,7 +106,7 @@ class AdminVideosSliderController extends Controller
 
         $sliderVideo->save();
 
-        return redirect()->route('slider.index')->with('statusAlta', '¡Fila actualizada de manera exitosa!');
+        return redirect()->route('sliderVideos.index')->with('statusAlta', '¡Fila actualizada de manera exitosa!');
     }
 
     /**
@@ -115,6 +115,6 @@ class AdminVideosSliderController extends Controller
     public function destroy(AdminHomeSlider $sliderVideo)
     {
         $sliderVideo->delete();
-        return redirect()->route('slider.index')->with('statusAlta', '¡Fila Borrada con éxito!');
+        return redirect()->route('sliderVideos.index')->with('statusAlta', '¡Fila Borrada con éxito!');
     }
 }

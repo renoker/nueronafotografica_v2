@@ -68,7 +68,7 @@
         <div class="content_slider_fq">
             <div class="parte_imagen">
                 <div class="glide_slider_full">
-                    <div class="glide" id="slider_2">
+                    <div class="glide" id="slider_3">
                         <div class="glide__track" data-glide-el="track">
                             <ul class="glide__slides">
                                 @foreach ($slider_general_tres as $item)
@@ -83,7 +83,7 @@
             </div>
             <div class="parte_imagen">
                 <div class="glide_slider_full">
-                    <div class="glide" id="slider_2">
+                    <div class="glide" id="slider_4">
                         <div class="glide__track" data-glide-el="track">
                             <ul class="glide__slides">
                                 @foreach ($slider_general_cuatro as $item)
@@ -122,7 +122,7 @@
                 </div>
             </div>
             <div class="glide_slider_big">
-                <div class="glide" id="slider_4">
+                <div class="glide" id="slider_5">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
                             @foreach ($slider_general_cinco as $item)
