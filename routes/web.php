@@ -14,6 +14,7 @@ use App\Http\Controllers\AdminSliderGeneralController;
 use App\Http\Controllers\AdminVideosSliderController;
 use App\Http\Controllers\ArquitecturaController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\CardTextAcercaDeController;
 use App\Http\Controllers\ConstruccionController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CorporativaController;
@@ -209,12 +210,16 @@ Route::group(['middleware' => ['auth:admin']], function () {
             Route::get('translate/edit/{translation}',                                  [TranslationController::class, 'editAcercaDe'])->name('translateAcercaDe.edit');
             Route::put('/translate/{translation}',                                      [TranslationController::class, 'updateAcercaDe'])->name('translateAcercaDe.update');
             // Sliders
-            Route::get('acerca_de_slider_general',                                   [AdminSliderGeneralController::class, 'indexAcercaDe'])->name('acerca_de_slider_general.index');
-            Route::get('acerca_de_slider_general/create',                            [AdminSliderGeneralController::class, 'createAcercaDe'])->name('acerca_de_slider_general.create');
-            Route::post('acerca_de_slider_general/store',                            [AdminSliderGeneralController::class, 'storeAcercaDe'])->name('acerca_de_slider_general.store');
-            Route::get('acerca_de_slider_general/edit/{admin_slider_general}',       [AdminSliderGeneralController::class, 'editAcercaDe'])->name('acerca_de_slider_general.edit');
-            Route::put('acerca_de_slider_general/update/{admin_slider_general}',     [AdminSliderGeneralController::class, 'updateAcercaDe'])->name('acerca_de_slider_general.update');
-            Route::delete('acerca_de_slider_general/delete/{admin_slider_general}',  [AdminSliderGeneralController::class, 'destroyAcercaDe'])->name('acerca_de_slider_general.destroy');
+            Route::get('acerca_de_slider_general',                                      [AdminSliderGeneralController::class, 'indexAcercaDe'])->name('acerca_de_slider_general.index');
+            Route::get('acerca_de_slider_general/create',                               [AdminSliderGeneralController::class, 'createAcercaDe'])->name('acerca_de_slider_general.create');
+            Route::post('acerca_de_slider_general/store',                               [AdminSliderGeneralController::class, 'storeAcercaDe'])->name('acerca_de_slider_general.store');
+            Route::get('acerca_de_slider_general/edit/{admin_slider_general}',          [AdminSliderGeneralController::class, 'editAcercaDe'])->name('acerca_de_slider_general.edit');
+            Route::put('acerca_de_slider_general/update/{admin_slider_general}',        [AdminSliderGeneralController::class, 'updateAcercaDe'])->name('acerca_de_slider_general.update');
+            Route::delete('acerca_de_slider_general/delete/{admin_slider_general}',     [AdminSliderGeneralController::class, 'destroyAcercaDe'])->name('acerca_de_slider_general.destroy');
+            // Tarjeta de texto            
+            Route::get('card_text/create',                                              [CardTextAcercaDeController::class, 'create'])->name('card_text.create');
+            Route::get('card_text/edit/{card_text}',                                    [CardTextAcercaDeController::class, 'edit'])->name('card_text.edit');
+            Route::apiResource('card_text',                                             CardTextAcercaDeController::class);
         });
         // END ACERCA DE         
         // CONTACTO
@@ -263,6 +268,7 @@ Route::group(['middleware' => ['auth:admin']], function () {
             Route::post('move_row_video',                                                 [VideoController::class, 'moveRowVideo']);
         });
         // END VIDEOS          
+        Route::post('move_row_card_text',                                               [CardTextAcercaDeController::class, 'moveCardText']);
         Route::post('move_row_slider',                                                  [AdminSliderGeneralController::class, 'moveRowSlider']);
         Route::post('move_row_gallery',                                                 [GalleryController::class, 'moveRowGallery']);
         Route::post('move_partners',                                                    [AdminHomePartnersController::class, 'movePartners']);

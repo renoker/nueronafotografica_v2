@@ -1152,5 +1152,116 @@ class TranslationSeeder extends Seeder
             'translate_es'   => 'Cotizar',
             'translate_en'   => 'Quote',
         ]);
+        // ------------------------------------------------------------------------------------------ ACERCA DE ------------------------------------------------------------------------------------------ 
+        Translation::create([
+            'key'           => "acerca_de",
+            'page'          => "Acerca_de",
+            'section'       => "Banner",
+            'translate_es'   => 'Nosotros',
+            'translate_en'   => 'Us',
+        ]);
+
+        Translation::create([
+            'key'           => "acerca_de",
+            'page'          => "Acerca_de",
+            'section'       => "Banner",
+            'translate_es'   => 'Neurona Fotográfica',
+            'translate_en'   => 'Neurona Fotográfica',
+        ]);
+
+        Translation::create([
+            'key'           => "acerca_de",
+            'page'          => "Acerca_de",
+            'section'       => "Banner",
+            'translate_es'   => 'Es una empresa enfocada en medios audiovisuales profesionales con más de 7 años de experiencia en el mercado Mexicano, Canadá y Estados Unidos. Impactamos a tus clientes con la innovación y calidad, a través de imágenes únicas que quedarán guardadas en su mente ayudándote a lograr tus objetivos personales, de negocio, Corporativos o Empresariales.',
+            'translate_en'   => 'It is a company focused on professional audiovisual media with more than 7 years of experience in the Mexican market, Canada and the United States. We impact your clients with innovation and quality, through unique images that will remain stored in your mind helping you achieve your personal, business, corporate or Business.',
+        ]);
+
+        Translation::create([
+            'key'           => "acerca_de",
+            'page'          => "Acerca_de",
+            'section'       => "Banner",
+            'translate_es'   => 'Conocer más',
+            'translate_en'   => 'Learn more',
+        ]);
+        Translation::create([
+            'key'           => "acerca_de",
+            'page'          => "Acerca_de",
+            'section'       => "Preguntas",
+            'translate_es'   => '1. ¿Qué proyectos abarcamos dentro de Fotografía de Arquitectura?',
+            'translate_en'   => '1. What projects do we cover within Architectural Photography?',
+        ]);
+
+        Translation::create([
+            'key'           => "acerca_de",
+            'page'          => "Acerca_de",
+            'section'       => "Preguntas",
+            'translate_es'   => 'Fotografía y video orientado a proyectos habitacionales, lugares recreativos, hoteles, centros comerciales, que requieran mostrar sus espacios para promoción, venta o renta y hospedaje.',
+            'translate_en'   => 'Photography and video aimed at housing projects, recreational places, hotels, shopping centers, that require showing their spaces to promotion, sale or rental and lodging.',
+        ]);
+
+        Translation::create([
+            'key'           => "acerca_de",
+            'page'          => "Acerca_de",
+            'section'       => "Preguntas",
+            'translate_es'   => '2. ¿Qué servicios visuales manejamos?',
+            'translate_en'   => '2. What visual services do we handle?',
+        ]);
+
+        Translation::create([
+            'key'           => "acerca_de",
+            'page'          => "Acerca_de",
+            'section'       => "Preguntas",
+            'translate_es'   => 'Fotografía y video con diferentes tecnologías como cámara convencional, drone, drone FPV, cámara 360 o nuestra cámara propia NeuroCam.',
+            'translate_en'   => 'Photography and video with different technologies such as conventional camera, drone, drone FPV, 360 camera or our own NeuroCam camera.',
+        ]);
+
+        Translation::create([
+            'key'           => "acerca_de",
+            'page'          => "Acerca_de",
+            'section'       => "Preguntas",
+            'translate_es'   => '3. ¿Cómo hago una cotización?',
+            'translate_en'   => '3. How do I make a quote?',
+        ]);
+
+        Translation::create([
+            'key'           => "acerca_de",
+            'page'          => "Acerca_de",
+            'section'       => "Preguntas",
+            'translate_es'   => 'Envíanos tus datos y una breve descripción del proyecto que tienes y te asesoramos con el proceso a seguir',
+            'translate_en'   => 'Send us your information and a brief description of the project you have and we will advise you with the process to follow',
+        ]);
+
+        Translation::create([
+            'key'           => "acerca_de",
+            'page'          => "Acerca_de",
+            'section'       => "Preguntas",
+            'translate_es'   => '4. ¿Qué formas de pago aceptamos?',
+            'translate_en'   => '4. What payment methods do we accept?',
+        ]);
+
+        Translation::create([
+            'key'           => "acerca_de",
+            'page'          => "Acerca_de",
+            'section'       => "Preguntas",
+            'translate_es'   => 'Aceptamos Transferencias bancarias, Tarjetas de Crédito y Débito, efectivo.',
+            'translate_en'   => 'We accept bank transfers, credit and debit cards, cash.',
+        ]);
+
+        Translation::create([
+            'key'           => "acerca_de",
+            'page'          => "Acerca_de",
+            'section'       => "Preguntas",
+            'translate_es'   => '5. ¿Cuáles son nuestros tiempos de respuesta?',
+            'translate_en'   => '5. What are our response times?',
+        ]);
+
+        Translation::create([
+            'key'           => "acerca_de",
+            'page'          => "Acerca_de",
+            'section'       => "Preguntas",
+            'translate_es'   => 'Estará en función de tu proyecto considerando pre-producción, producción y post-producción. Será un “traje a la medida” para tí o tu empresa.',
+            'translate_en'   => 'It will depend on your project considering pre-production, production and post-production. It will be a “tailored suit” for you or your company.',
+        ]);
     }
 }

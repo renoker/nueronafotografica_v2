@@ -141,6 +141,8 @@
                                 class="{{ routeActive('translateAcercaDe.index') }}">Traducción</a></li>
                         <li><a href="{{ route('personal.index') }}"
                                 class="{{ routeActive('personal.index') }}">Personal</a></li>
+                        <li><a href="{{ route('card_text.index') }}"
+                                class="{{ routeActive('card_text.index') }}">Tarjeta de texto</a></li>
                     </ul>
                 </li>
                 {{-- END ACERCA DE --}}

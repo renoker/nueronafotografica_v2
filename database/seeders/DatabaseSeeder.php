@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
             PaperSeeder::class,
             GallerySeeder::class,
             VideoSeeder::class,
+            CardTextAcercaDeSeeder::class,
         ]);
     }
 }

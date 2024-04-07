@@ -38,20 +38,15 @@
         <div class="content_slider_nosotros">
             <div class="content_nosotros">
                 <div class="box">
-                    <h6 class="h6">Nosotros</h6>
+                    <h6 class="h6">{{ $traslate[0]->title }}</h6>
                     <div class="txt_wp">
-                        <h1 class="h1">Neurona Fotográfica</h1>
+                        <h1 class="h1">{{ $traslate[1]->title }}</h1>
                     </div>
                     <p class="descripcion">
-                        Es una empresa enfocada en medios audiovisuales profesionales con más de 7 años de experiencia en el
-                        mercado Mexicano, Canadá y Estados Unidos.
-                        <br><br>
-                        Impactamos a tus clientes con la innovación y calidad, a través de imágenes únicas que quedarán
-                        guardadas en su mente ayudándote a lograr tus objetivos personales, de negocio, Corporativos o
-                        Empresariales.
+                        {{ $traslate[2]->title }}
                     </p>
                     <div class="conocer_mas">
-                        <p class="button_conoce_mas">Conocer más</p>
+                        <p class="button_conoce_mas">{{ $traslate[3]->title }}</p>
                         <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
                     </div>
                 </div>
@@ -160,29 +155,24 @@
             </div>
             <div class="faqs_home_content_big">
                 <div class="item_faqs">
-                    <h1 class="h1">1. ¿Qué proyectos abarcamos dentro de Fotografía de Arquitectura?</h1>
-                    <p class="txt">Fotografía y video orientado a proyectos habitacionales, lugares recreativos,
-                        hoteles, centros comerciales, que requieran mostrar sus espacios para
-                        promoción, venta o renta y hospedaje.</p>
+                    <h1 class="h1">{{ $traslate[8]->title }}</h1>
+                    <p class="txt">{{ $traslate[9]->title }}</p>
                 </div>
                 <div class="item_faqs">
-                    <h1 class="h1">2. ¿Qué servicios visuales manejamos?</h1>
-                    <p class="txt">Fotografía y video con diferentes tecnologías como cámara convencional, drone, drone
-                        FPV, cámara 360 o nuestra cámara propia NeuroCam.</p>
+                    <h1 class="h1">{{ $traslate[10]->title }}</h1>
+                    <p class="txt">{{ $traslate[11]->title }}</p>
                 </div>
                 <div class="item_faqs">
-                    <h1 class="h1">3. ¿Cómo hago una cotización?</h1>
-                    <p class="txt">Envíanos tus datos y una breve descripción del proyecto que tienes y te asesoramos
-                        con el proceso a seguir</p>
+                    <h1 class="h1">{{ $traslate[12]->title }}</h1>
+                    <p class="txt">{{ $traslate[13]->title }}</p>
                 </div>
                 <div class="item_faqs">
-                    <h1 class="h1">4. ¿Qué formas de pago aceptamos?</h1>
-                    <p class="txt">Aceptamos Transferencias bancarias, Tarjetas de Crédito y Débito, efectivo.</p>
+                    <h1 class="h1">{{ $traslate[14]->title }}</h1>
+                    <p class="txt">{{ $traslate[15]->title }}</p>
                 </div>
                 <div class="item_faqs">
-                    <h1 class="h1">5. ¿Cuáles son nuestros tiempos de respuesta?</h1>
-                    <p class="txt">Estará en función de tu proyecto considerando pre-producción, producción y
-                        post-producción. Será un “traje a la medida” para tí o tu empresa.</p>
+                    <h1 class="h1">{{ $traslate[16]->title }}</h1>
+                    <p class="txt">{{ $traslate[17]->title }}</p>
                 </div>
             </div>
         </div>
@@ -190,60 +180,33 @@
         <div class="content_slider_bullets">
             <div class="slider_bullets">
                 <div class="box_slider">
-                    <div class="glide" id="slider_4">
+                    <div class="glide" id="slider_6">
                         <div class="glide__track" data-glide-el="track">
                             <ul class="glide__slides">
-                                <li class="glide__slide">
-                                    <div class="content_info">
-                                        <p>"Soy consultor de negocios, es esencial transmitir confianza, experiencia; El
-                                            fotógrafo capturó la esencia de mi trabajo como consultor de negocios. Sus
-                                            imágenes reflejan profesionalismo y dedicación. Recomendaría sus servicios sin
-                                            ninguna duda."</p>
-                                        <br>
-                                        <p>
-                                            <span>Alejandro Torres</span> <br>
-                                            Puesto, Compañía
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="content_info">
-                                        <p>"Soy consultor de negocios, es esencial transmitir confianza, experiencia; El
-                                            fotógrafo capturó la esencia de mi trabajo como consultor de negocios. Sus
-                                            imágenes reflejan profesionalismo y dedicación. Recomendaría sus servicios sin
-                                            ninguna duda."</p>
-                                        <br>
-                                        <p>
-                                            <span>Alejandro Torres</span> <br>
-                                            Puesto, Compañía
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="content_info">
-                                        <p>"Soy consultor de negocios, es esencial transmitir confianza, experiencia; El
-                                            fotógrafo capturó la esencia de mi trabajo como consultor de negocios. Sus
-                                            imágenes reflejan profesionalismo y dedicación. Recomendaría sus servicios sin
-                                            ninguna duda."</p>
-                                        <br>
-                                        <p>
-                                            <span>Alejandro Torres</span> <br>
-                                            Puesto, Compañía
-                                        </p>
-                                    </div>
-                                </li>
+                                @foreach ($cardText as $item)
+                                    <li class="glide__slide">
+                                        <div class="content_info">
+                                            <p>{{ $item->descripcion }}</p>
+                                            <br>
+                                            <p>
+                                                <span>{{ $item->name }}</span> <br>
+                                                {{ $item->ocupacion }}
+                                            </p>
+                                        </div>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                         <div class="glide__bullets" data-glide-el="controls[nav]">
-                            <button class="glide__bullet" data-glide-dir="=0"></button>
-                            <button class="glide__bullet" data-glide-dir="=1"></button>
-                            <button class="glide__bullet" data-glide-dir="=2"></button>
+                            @foreach ($cardText as $key => $item)
+                                <button class="glide__bullet" data-glide-dir="={{ $key }}"></button>
+                            @endforeach
                         </div>
                     </div>
                 </div>
             </div>
             <div class="glide_slider">
-                <div class="glide" id="slider_6">
+                <div class="glide" id="slider_7">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
                             @foreach ($slider_general_seis as $item)

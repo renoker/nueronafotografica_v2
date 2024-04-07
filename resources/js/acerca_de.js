@@ -79,6 +79,19 @@ new glide('#slider_6', {
   }
 }).mount()
 
+new glide('#slider_7', {
+  type: 'carousel',
+  gap: 24,
+  startAt: 0,
+  hoverpause: true,
+  autoplay: 6000,
+  animationduration: 10000,
+  direction: 'ltr',
+  breakpoints: {
+    600: { perView: 1 },
+  }
+}).mount()
+
 
 new glide('#contacto', {
   type: 'carousel',
