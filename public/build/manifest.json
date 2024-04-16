@@ -3,7 +3,7 @@
     "file": "assets/glide.esm-4bd3ed45.js"
   },
   "resources/js/acerca_de.js": {
-    "file": "assets/acerca_de-c5e0d2af.js",
+    "file": "assets/acerca_de-7937de35.js",
     "imports": [
       "_glide.esm-4bd3ed45.js"
     ],
@@ -82,7 +82,7 @@
     "src": "resources/js/publicitaria.js"
   },
   "resources/sass/main.scss": {
-    "file": "assets/main-545929bf.css",
+    "file": "assets/main-52ac8eb6.css",
     "isEntry": true,
     "src": "resources/sass/main.scss"
   }

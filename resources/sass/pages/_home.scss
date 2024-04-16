@@ -55,15 +55,6 @@
                 align-items: flex-end;
                 position: relative;
                 z-index: 2;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    top: 0px;
-                    right: 0px;
-                    bottom: 0px;
-                    left: 0px;
-                    background-color: rgba(0,0,0,0.5);
-                }
                 .contenedor_informacion_banner {
                     width: 95%;
                     margin: 0 auto;
@@ -127,18 +118,26 @@
         }
         .glide_slider {
             width: 630px;
-            height: 445px;
+            height: 443px;
             justify-content: center;
             align-items: center;
             flex-shrink: 0;
             overflow: hidden;
-            border-radius: 8px;
+            border-radius: 20px;
+            img {
+                height: 443px;
+            }
         }
         .glide_slider_big {
-            width: 49%;
+            width: 630px;
             height: 635px;  
             overflow: hidden;          
             border-radius: 20px;
+            img {
+                width: 630px;
+                height: 635px;  
+                border-radius: 20px;
+            }
         }
         .content_nosotros {
             width: 49%;
@@ -839,6 +838,10 @@
         width: 630px;
         height: 445px;
         flex-shrink: 0;
+        img {
+            border-radius: 20px;
+            height: 445px;
+        }
     }    
 }
 
@@ -994,6 +997,11 @@
         width: 630px;
         height: 600px;
         flex-shrink: 0;
+        img {
+            width: 630px;
+            height: 600px;
+            border-radius: 20px;
+        }
     }    
 }
 
@@ -1115,6 +1123,7 @@
     @include flex(flex, space-between, flex-start, 0px);
     flex-wrap: wrap;
     .content_galeria {
+        width: 420px;
         display: flex;
         padding: 10px 10px 15px 10px;
         flex-direction: column;
@@ -1135,10 +1144,10 @@
          h1 {
             color: var(--Blanco-F5EDED);
             font-family: $font-family;
-            font-size: 28.636px;
+            font-size: 27px;
             font-style: normal;
             font-weight: 500;
-            line-height: 95%; /* 27.205px */
+            line-height: 30px; /* 27.205px */
             letter-spacing: -1.145px;            
          }
          .content_categoria {
