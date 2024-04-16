@@ -28,9 +28,9 @@
                             <h5>Español</h5>
                         </div>
                         <div class="card-body">
-                            <textarea id="editor1" name="translate_es" cols="30" rows="10">
-                                {{ $row->translate_es }}
-                            </textarea>
+                            <div class="col-sm-9">
+                                <textarea class="form-control" name="translate_es" rows="5" cols="5" placeholder="Descripción">{{ $row->translate_es }}</textarea>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -40,9 +40,9 @@
                             <h5>Ingles</h5>
                         </div>
                         <div class="card-body">
-                            <textarea id="editor2" name="translate_en" cols="30" rows="10">
-                                {{ $row->translate_en }}
-                            </textarea>
+                            <div class="col-sm-9">
+                                <textarea class="form-control" name="translate_en" rows="5" cols="5" placeholder="Descripción">{{ $row->translate_en }}</textarea>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,6 @@
                     </div>
                 </div>
             </div>
-
         </form>
     </div>
 
