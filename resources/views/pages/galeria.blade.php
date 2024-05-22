@@ -38,13 +38,13 @@
                         <h1>{{ $item->name }}</h1>
                         <div class="content_categoria">
                             <div class="cat">
-                                <span>{{ $item->galeria_blog->category_es }}</span>
+                                <span>{{ $item->galeria_blog->categoria_idioma }}</span>
                             </div>
                             <div class="cat">
                                 <span>{{ $item->size->size }}</span>
                             </div>
                             <div class="cat">
-                                <span>{{ $item->finish->finish }}</span>
+                                <span>{{ $item->finish->finish_idioma }}</span>
                             </div>
                         </div>
                     </div>

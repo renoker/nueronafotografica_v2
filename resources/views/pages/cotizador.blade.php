@@ -44,148 +44,32 @@
             <div class="content_presentacion" style="background-image: url({{ url($row->fondo) }})">
                 <div class="imagen_a_vender"></div>
             </div>
-            <div class="content_filtros">
-                <div class="filtro">
-                    <h6 class="encab">Tamaño</h6>
-                    <div class="box_slider_points">
-                        <div class="slider">
-                            <img src="{{ url('assets/icons/size.png') }}" alt="">
-                        </div>
-                        <div class="points">
-                            <div class="punto active"></div>
-                        </div>
-                    </div>
-                    <h6 class="medida">{{ $row->galeria_blog->category_es }}</h6>
-                </div>
-                <div class="filtro">
-                    <h6 class="encab">Material</h6>
-                    <div class="box_slider_points">
-                        <div class="slider">
-                            <img src="{{ url('assets/icons/size.png') }}" alt="">
-                        </div>
-                        <div class="points">
-                            <div class="punto active"></div>
-                        </div>
-                    </div>
-                    <h6 class="medida">50 X 40 cm</h6>
-                </div>
-                <div class="filtro">
-                    <h6 class="encab">Papel</h6>
-                    <div class="box_slider_points">
-                        <div class="slider">
-                            <img src="{{ url('assets/icons/size.png') }}" alt="">
-                        </div>
-                        <div class="points">
-                            <div class="punto active"></div>
-                        </div>
-                    </div>
-                    <h6 class="medida">50 X 40 cm</h6>
-                </div>
-            </div>
         </div>
-        {{-- FORM --}}
-        <div class="content_form_cotizador">
-            <form action="" method="post">
-                <div class="box">
-                    <ul>
-                        <li>
-                            <p class="txt">Tamaño - 60 x 40 cm</p>
-                        </li>
-                        <li>
-                            <p class="txt">Material - 60 x 40 cm</p>
-                        </li>
-                        <li>
-                            <p class="txt">Papel - 60 x 40 cm</p>
-                        </li>
-                        <li>
-                            <input type="text" name="" id="" placeholder="Nombre" class="input">
-                        </li>
-                        <li>
-                            <input type="email" name="" id="" placeholder="Email" class="input">
-                        </li>
-                        <li>
-                            <button type="button" class="button_cotizar">Cotizar</button>
-                        </li>
-                    </ul>
-                </div>
-            </form>
-        </div>
-        {{-- END FORM --}}
+
         {{-- Comentarios --}}
         <div class="content_comentarios">
-            <div class="comentarios_box">
-                <div class="box_glide">
-                    <div class="glide" id="coments">
-                        <div class="glide__track" data-glide-el="track">
-                            <ul class="glide__slides">
-                                <li class="glide__slide">
-                                    <div class="coment">
-                                        <div class="img_content"></div>
-                                        <div class="txt_content">
-                                            <h1 class="h1">Andrea Torres</h1>
-                                            <p class="name">Retrato</p>
-                                            <p class="description">
-                                                Sus imágenes transmiten emociones y reflejan mi personalidad de manera
-                                                excepcional. ¡Estoy encantada con su talento y profesionalismo!
-                                            </p>
-                                            <div class="starts">
-                                                <img src="{{ url('assets/icons/star-fill.png') }}" alt="">
-                                                <img src="{{ url('assets/icons/star-fill.png') }}" alt="">
-                                                <img src="{{ url('assets/icons/star-fill.png') }}" alt="">
-                                                <img src="{{ url('assets/icons/star-fill.png') }}" alt="">
-                                                <img src="{{ url('assets/icons/star-fill.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="coment">
-                                        <div class="img_content"></div>
-                                        <div class="txt_content">
-                                            <h1 class="h1">Andrea Torres</h1>
-                                            <p class="name">Retrato</p>
-                                            <p class="description">
-                                                Sus imágenes transmiten emociones y reflejan mi personalidad de manera
-                                                excepcional. ¡Estoy encantada con su talento y profesionalismo!
-                                            </p>
-                                            <div class="starts">
-                                                <img src="{{ url('assets/icons/star-fill.png') }}" alt="">
-                                                <img src="{{ url('assets/icons/star-fill.png') }}" alt="">
-                                                <img src="{{ url('assets/icons/star-fill.png') }}" alt="">
-                                                <img src="{{ url('assets/icons/star-fill.png') }}" alt="">
-                                                <img src="{{ url('assets/icons/star-fill.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="coment">
-                                        <div class="img_content"></div>
-                                        <div class="txt_content">
-                                            <h1 class="h1">Andrea Torres</h1>
-                                            <p class="name">Retrato</p>
-                                            <p class="description">
-                                                Sus imágenes transmiten emociones y reflejan mi personalidad de manera
-                                                excepcional. ¡Estoy encantada con su talento y profesionalismo!
-                                            </p>
-                                            <div class="starts">
-                                                <img src="{{ url('assets/icons/star-fill.png') }}" alt="">
-                                                <img src="{{ url('assets/icons/star-fill.png') }}" alt="">
-                                                <img src="{{ url('assets/icons/star-fill.png') }}" alt="">
-                                                <img src="{{ url('assets/icons/star-fill.png') }}" alt="">
-                                                <img src="{{ url('assets/icons/star-fill.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+            <div class="detalle_foto_venta">
+                <h1 class="txt_e">Nombre de la foto</h1>
+                <p class="txt">{{ $row->name }}</p>
+                <h1 class="txt_e mt">Tamaño</h1>
+                <p class="txt">{{ $row->size->size }}</p>
+                <h1 class="txt_e mt">Material</h1>
+                <p class="txt">{{ $row->finish->finish_idioma }}</p>
+                <h1 class="txt_e mt">Papel</h1>
+                <p class="txt">{{ $row->paper->paper_idioma }}</p>
+                <h1 class="txt_e mt">Precio</h1>
+                <p class="txt">${{ number_format($row->precio, 2, '.', ',') }}</p>
+                <h1 class="txt_e mt">Datos cliente</h1>
+                <div class="content_form_cotizador">
+                    <form action="" method="post">
+                        <div class="box">
+                            <div class="w">
+                                <input type="text" name="" id="" placeholder="Nombre" class="input">
+                                <input type="email" name="" id="" placeholder="Email" class="input">
+                            </div>
+                            <button type="button" class="button_cotizar">Cotizar</button>
                         </div>
-                        <div class="glide__bullets" data-glide-el="controls[nav]">
-                            <button class="glide__bullet" data-glide-dir="=0"></button>
-                            <button class="glide__bullet" data-glide-dir="=1"></button>
-                            <button class="glide__bullet" data-glide-dir="=2"></button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div class="imagenes_relacionadas">
