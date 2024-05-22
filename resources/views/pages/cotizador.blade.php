@@ -14,26 +14,6 @@
                 <img src="{{ url('assets/icons/Mosca.svg') }}" alt="">
             </a>
         </div>
-        {{-- Banner Principal --}}
-        <div class="contente_slider">
-            <input type="hidden" value="{{ $slider_top->count() }}" id="number_slider">
-            <div class="bullets_slider">
-                @foreach ($slider_top as $key => $value)
-                    <div class="bullet @if ($key == 0) active @endif" id="punto_{{ $key }}"
-                        onclick="changePunto('custom_slider', 645, {{ $key }})">
-                    </div>
-                @endforeach
-            </div>
-            <div class="custom_slide" id="custom_slider">
-                @foreach ($slider_top as $item)
-                    <div class="item_slider" style="background-image: url({{ $item->image }})">
-                        <div class="contenedor_informacion_banner">
-                            <h6 class="encabezado_banner">{{ $item->title }}</h6>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        </div>
         {{-- Bloque 1 --}}
         <div class="content_slider_nosotros">
             <div class="content_nosotros">
@@ -61,7 +41,7 @@
         </div>
         {{-- Mecanica Cotizador --}}
         <div class="content_cotizador_user">
-            <div class="content_presentacion" style="background-image: url({{ url('assets/cotizador/back.png') }})">
+            <div class="content_presentacion" style="background-image: url({{ url($row->fondo) }})">
                 <div class="imagen_a_vender"></div>
             </div>
             <div class="content_filtros">
@@ -75,7 +55,7 @@
                             <div class="punto active"></div>
                         </div>
                     </div>
-                    <h6 class="medida">50 X 40 cm</h6>
+                    <h6 class="medida">{{ $row->galeria_blog->category_es }}</h6>
                 </div>
                 <div class="filtro">
                     <h6 class="encab">Material</h6>

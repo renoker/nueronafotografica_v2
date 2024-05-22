@@ -13,7 +13,14 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $row = Category::all();
+        return view('backoffice.categorias.index', [
+            'list'  => $row,
+            'page'  => 'Categorías Generales',
+            'rutaCreate'    => 'category.create',
+            'rutaDestroy'    => 'category.destroy',
+            'rutaEdit'    => 'category.edit',
+        ]);
     }
 
     /**
@@ -21,7 +28,11 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('backoffice.categorias.create', [
+            'page'  => 'Categorías Generales',
+            'rutaIndex'    => 'category.index',
+            'rutaStore'    => 'category.store',
+        ]);
     }
 
     /**
@@ -29,7 +40,11 @@ class CategoryController extends Controller
      */
     public function store(StoreCategoryRequest $request)
     {
-        //
+        $row = new Category;
+        $row->name = $request->name;
+        $row->is_active = 1;
+        $row->save();
+        return redirect()->route('category.index')->with('statusAlta', '¡Fila agregada de manera exitosa!');
     }
 
     /**
@@ -45,7 +60,12 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        //
+        return view('backoffice.categorias.show', [
+            'row'  => $category,
+            'page'  => 'Categorías Generales',
+            'rutaIndex'    => 'category.index',
+            'rutaUpdate'    => 'category.update',
+        ]);
     }
 
     /**
@@ -53,7 +73,9 @@ class CategoryController extends Controller
      */
     public function update(UpdateCategoryRequest $request, Category $category)
     {
-        //
+        $category->name = $request->name;
+        $category->save();
+        return redirect()->route('category.index')->with('statusAlta', '¡Fila actualizada de manera exitosa!');
     }
 
     /**
@@ -61,6 +83,7 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        //
+        $category->delete();
+        return redirect()->route('category.index')->with('statusAlta', '¡Fila Borrada con éxito!');
     }
 }

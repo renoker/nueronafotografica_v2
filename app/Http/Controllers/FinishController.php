@@ -13,7 +13,14 @@ class FinishController extends Controller
      */
     public function index()
     {
-        //
+        $row = Finish::all();
+        return view('backoffice.galeria.acabado.index', [
+            'list'  => $row,
+            'page'  => 'Acabados',
+            'rutaCreate'    => 'finish.create',
+            'rutaDestroy'    => 'finish.destroy',
+            'rutaEdit'    => 'finish.edit',
+        ]);
     }
 
     /**
@@ -21,7 +28,11 @@ class FinishController extends Controller
      */
     public function create()
     {
-        //
+        return view('backoffice.galeria.acabado.create', [
+            'page'  => 'Acabados',
+            'rutaIndex'    => 'finish.index',
+            'rutaStore'    => 'finish.store',
+        ]);
     }
 
     /**
@@ -29,7 +40,10 @@ class FinishController extends Controller
      */
     public function store(StoreFinishRequest $request)
     {
-        //
+        $row = new Finish;
+        $row->finish = $request->finish;
+        $row->save();
+        return redirect()->route('finish.index')->with('statusAlta', '¡Fila agregada de manera exitosa!');
     }
 
     /**
@@ -45,7 +59,12 @@ class FinishController extends Controller
      */
     public function edit(Finish $finish)
     {
-        //
+        return view('backoffice.galeria.acabado.show', [
+            'row'  => $finish,
+            'page'  => 'Acabados',
+            'rutaIndex'    => 'finish.index',
+            'rutaUpdate'    => 'finish.update',
+        ]);
     }
 
     /**
@@ -53,7 +72,9 @@ class FinishController extends Controller
      */
     public function update(UpdateFinishRequest $request, Finish $finish)
     {
-        //
+        $finish->finish = $request->finish;
+        $finish->save();
+        return redirect()->route('finish.index')->with('statusAlta', '¡Fila actualizada de manera exitosa!');
     }
 
     /**
@@ -61,6 +82,7 @@ class FinishController extends Controller
      */
     public function destroy(Finish $finish)
     {
-        //
+        $finish->delete();
+        return redirect()->route('finish.index')->with('statusAlta', '¡Fila Borrada con éxito!');
     }
 }

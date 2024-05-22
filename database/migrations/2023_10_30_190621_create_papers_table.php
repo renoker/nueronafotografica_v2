@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('papers', function (Blueprint $table) {
             $table->id();
-            $table->string('paper')->nullable();
+            $table->string('paper_es')->nullable();
+            $table->string('paper_en')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

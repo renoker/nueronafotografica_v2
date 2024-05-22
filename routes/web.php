@@ -15,13 +15,18 @@ use App\Http\Controllers\AdminVideosSliderController;
 use App\Http\Controllers\ArquitecturaController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CardTextAcercaDeController;
+use App\Http\Controllers\CategoriaBlogController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ConstruccionController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CorporativaController;
+use App\Http\Controllers\FinishController;
+use App\Http\Controllers\GaleriaBlogController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\IntagramFeedConroller;
 use App\Http\Controllers\LangController;
+use App\Http\Controllers\PaperController;
 use App\Http\Controllers\PersonalController;
 use App\Http\Controllers\PublicitariaController;
 use App\Http\Controllers\SizeController;
@@ -79,6 +84,16 @@ Route::post('/backoffice/login', [AdminController::class, 'login'])->name('admin
 Route::group(['middleware' => ['auth:admin']], function () {
     Route::get('/backoffice/logout',    [AdminController::class, 'logout'])->name('admin.logout');
     Route::prefix('backoffice')->group(function () {
+        // Category
+        Route::prefix('categoria')->group(function () {
+            Route::get('/',                                 [CategoryController::class, 'index'])->name('category.index');
+            Route::get('/create',                           [CategoryController::class, 'create'])->name('category.create');
+            Route::post('/store',                           [CategoryController::class, 'store'])->name('category.store');
+            Route::get('/edit/{category}',                   [CategoryController::class, 'edit'])->name('category.edit');
+            Route::put('/update/{category}',                 [CategoryController::class, 'update'])->name('category.update');
+            Route::delete('/delete/{category}',              [CategoryController::class, 'destroy'])->name('category.destroy');
+        });
+        // END Category        
         // GALERIA
         Route::prefix('galeria')->group(function () {
             Route::get('/',                                 [GalleryController::class, 'backofficeIndex'])->name('backoffice_gallery.index');
@@ -87,6 +102,38 @@ Route::group(['middleware' => ['auth:admin']], function () {
             Route::get('/edit/{gallery}',                   [GalleryController::class, 'backofficeEdit'])->name('backoffice_gallery.edit');
             Route::put('/update/{gallery}',                 [GalleryController::class, 'backofficeUpdate'])->name('backoffice_gallery.update');
             Route::delete('/delete/{gallery}',              [GalleryController::class, 'backofficeDestroy'])->name('backoffice_gallery.destroy');
+
+            // Categorías
+            Route::get('/category',                             [GaleriaBlogController::class, 'index'])->name('galeria_blog.index');
+            Route::get('/category/create',                       [GaleriaBlogController::class, 'create'])->name('galeria_blog.create');
+            Route::post('/category/store',                       [GaleriaBlogController::class, 'store'])->name('galeria_blog.store');
+            Route::get('/category/edit/{galeria_blog}',          [GaleriaBlogController::class, 'edit'])->name('galeria_blog.edit');
+            Route::put('/category/update/{galeria_blog}',        [GaleriaBlogController::class, 'update'])->name('galeria_blog.update');
+            Route::delete('/category/delete/{galeria_blog}',     [GaleriaBlogController::class, 'destroy'])->name('galeria_blog.destroy');
+
+            // Papel             
+            Route::get('/paper',                             [PaperController::class, 'index'])->name('paper.index');
+            Route::get('/paper/create',                       [PaperController::class, 'create'])->name('paper.create');
+            Route::post('/paper/store',                       [PaperController::class, 'store'])->name('paper.store');
+            Route::get('/paper/edit/{paper}',                 [PaperController::class, 'edit'])->name('paper.edit');
+            Route::put('/paper/update/{paper}',               [PaperController::class, 'update'])->name('paper.update');
+            Route::delete('/paper/delete/{paper}',            [PaperController::class, 'destroy'])->name('paper.destroy');
+
+            // Tamaño 
+            Route::get('/tamanio',                             [SizeController::class, 'index'])->name('size.index');
+            Route::get('/tamanio/create',                       [SizeController::class, 'create'])->name('size.create');
+            Route::post('/tamanio/store',                       [SizeController::class, 'store'])->name('size.store');
+            Route::get('/tamanio/edit/{size}',                  [SizeController::class, 'edit'])->name('size.edit');
+            Route::put('/tamanio/update/{size}',                [SizeController::class, 'update'])->name('size.update');
+            Route::delete('/tamanio/delete/{size}',             [SizeController::class, 'destroy'])->name('size.destroy');
+
+            // Acabado 
+            Route::get('/acabado',                             [FinishController::class, 'index'])->name('finish.index');
+            Route::get('/acabado/create',                       [FinishController::class, 'create'])->name('finish.create');
+            Route::post('/acabado/store',                       [FinishController::class, 'store'])->name('finish.store');
+            Route::get('/acabado/edit/{finish}',                  [FinishController::class, 'edit'])->name('finish.edit');
+            Route::put('/acabado/update/{finish}',                [FinishController::class, 'update'])->name('finish.update');
+            Route::delete('/acabado/delete/{finish}',             [FinishController::class, 'destroy'])->name('finish.destroy');
         });
         // END GALERIA
         // HOME
@@ -250,6 +297,15 @@ Route::group(['middleware' => ['auth:admin']], function () {
             Route::get('translate',                                                     [TranslationController::class, 'indexBlog'])->name('translateBlog.index');
             Route::get('translate/edit/{translation}',                                  [TranslationController::class, 'editBlog'])->name('translateBlog.edit');
             Route::put('/translate/{translation}',                                      [TranslationController::class, 'updateBlog'])->name('translateBlog.update');
+
+            Route::prefix('category')->group(function () {
+                Route::get('/',                                                         [CategoriaBlogController::class, 'index'])->name('category_blog.index');
+                Route::get('/create',                                                   [CategoriaBlogController::class, 'create'])->name('category_blog.create');
+                Route::post('/store',                                                   [CategoriaBlogController::class, 'store'])->name('category_blog.store');
+                Route::get('/edit/{category_blog}',                                     [CategoriaBlogController::class, 'edit'])->name('category_blog.edit');
+                Route::put('/update/{category_blog}',                                   [CategoriaBlogController::class, 'update'])->name('category_blog.update');
+                Route::delete('/delete/{category_blog}',                                [CategoriaBlogController::class, 'destroy'])->name('category_blog.destroy');
+            });
         });
         // END BLOG        
         // VIDEOS

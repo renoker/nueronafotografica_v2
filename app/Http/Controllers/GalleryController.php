@@ -5,8 +5,10 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreGalleryRequest;
 use App\Http\Requests\UpdateGalleryRequest;
 use App\Models\AdminHomeSlider;
-use App\Models\Category;
+use App\Models\Finish;
+use App\Models\GaleriaBlog;
 use App\Models\Gallery;
+use App\Models\Paper;
 use App\Models\Size;
 use App\Models\Translation;
 use Illuminate\Support\Facades\App;
@@ -129,19 +131,25 @@ class GalleryController extends Controller
      */
     public function backofficeEdit(Gallery $gallery)
     {
-        $categorias = Category::all();
+        $categorias = GaleriaBlog::all();
+        $size = Size::all();
+        $finish = Finish::all();
+        $paper = Paper::all();
         return view('backoffice.galeria.list.show', [
             'page'          => 'Galería',
             'rutaIndex'    => 'backoffice_gallery.index',
             'rutaUpdate'   => 'backoffice_gallery.update',
             'row'          => $gallery,
-            'categorias'    => $categorias
+            'categorias'    => $categorias,
+            'tamanios'         => $size,
+            'acabados'         => $finish,
+            'papeles'         => $paper
         ]);
     }
 
     public function backofficeUpdate(Request $request, Gallery $gallery)
     {
-        $gallery->category_id = $request->category_id;
+        $gallery->galeria_blog_id = $request->galeria_blog_id;
 
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
@@ -150,13 +158,31 @@ class GalleryController extends Controller
                     $request->image->move(public_path('assets/galeria'), $imageName);
                     $gallery->image = 'assets/galeria/' . $imageName;
                 } else {
-                    return redirect()->route('backoffice_gallery.create')->with('statusError', '¡Imagen no cumple con el formato!');
+                    return redirect()->route('backoffice_gallery.update')->with('statusError', '¡Imagen no cumple con el formato!');
                 }
             } else {
-                return redirect()->route('backoffice_gallery.create')->with('statusError', '¡Imagen no valida!');
+                return redirect()->route('backoffice_gallery.update')->with('statusError', '¡Imagen no valida!');
             }
         }
 
+        if ($request->hasFile('fondo')) {
+            if ($request->file('fondo')->isValid()) {
+                if (in_array($request->file('fondo')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
+                    $imageFondoo = time() . '.' . $request->fondo->extension();
+                    $request->fondo->move(public_path('assets/galeria'), $imageFondoo);
+                    $gallery->fondo = 'assets/galeria/' . $imageFondoo;
+                } else {
+                    return redirect()->route('backoffice_gallery.update')->with('statusError', '¡Imagen no cumple con el formato!');
+                }
+            } else {
+                return redirect()->route('backoffice_gallery.update')->with('statusError', '¡Imagen no valida!');
+            }
+        }
+
+        $gallery->size_id = $request->size_id;
+        $gallery->finish_id = $request->finish_id;
+        $gallery->paper_id = $request->paper_id;
+        $gallery->precio = $request->precio;
         $gallery->name = $request->name;
 
         $gallery->save();
@@ -166,12 +192,18 @@ class GalleryController extends Controller
 
     public function backofficeCreate()
     {
-        $categorias = Category::all();
+        $categorias = GaleriaBlog::all();
+        $size = Size::all();
+        $finish = Finish::all();
+        $paper = Paper::all();
         return view('backoffice.galeria.list.create', [
             'page'          => 'Galería',
-            'rutaIndex'    => 'backoffice_gallery.index',
-            'rutaStore'   => 'backoffice_gallery.store',
-            'categorias'    => $categorias
+            'rutaIndex'     => 'backoffice_gallery.index',
+            'rutaStore'     => 'backoffice_gallery.store',
+            'categorias'    => $categorias,
+            'tamanios'         => $size,
+            'acabados'         => $finish,
+            'papeles'         => $paper
         ]);
     }
 
@@ -179,7 +211,7 @@ class GalleryController extends Controller
     {
         $count = Gallery::all();
         $row = new Gallery();
-        $row->category_id = $request->category_id;
+        $row->galeria_blog_id = $request->galeria_blog_id;
 
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
@@ -194,8 +226,28 @@ class GalleryController extends Controller
                 return redirect()->route('backoffice_gallery.create')->with('statusError', '¡Imagen no valida!');
             }
         }
-        $row->order = count($count) + 1;
+
+        if ($request->hasFile('fondo')) {
+            if ($request->file('fondo')->isValid()) {
+                if (in_array($request->file('fondo')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
+                    $imageFondoo = time() . '.' . $request->fondo->extension();
+                    $request->fondo->move(public_path('assets/galeria'), $imageFondoo);
+                    $row->fondo = 'assets/galeria/' . $imageFondoo;
+                } else {
+                    return redirect()->route('backoffice_gallery.create')->with('statusError', '¡Imagen no cumple con el formato!');
+                }
+            } else {
+                return redirect()->route('backoffice_gallery.create')->with('statusError', '¡Imagen no valida!');
+            }
+        }
+
+        $row->size_id = $request->size_id;
+        $row->finish_id = $request->finish_id;
+        $row->paper_id = $request->paper_id;
+        $row->precio = $request->precio;
         $row->name = $request->name;
+        $row->order = count($count) + 1;
+
 
         $row->save();
 

@@ -13,7 +13,14 @@ class PaperController extends Controller
      */
     public function index()
     {
-        //
+        $row = Paper::all();
+        return view('backoffice.galeria.papel.index', [
+            'list'  => $row,
+            'page'  => 'Papel',
+            'rutaCreate'    => 'paper.create',
+            'rutaDestroy'    => 'paper.destroy',
+            'rutaEdit'    => 'paper.edit',
+        ]);
     }
 
     /**
@@ -21,7 +28,11 @@ class PaperController extends Controller
      */
     public function create()
     {
-        //
+        return view('backoffice.galeria.papel.create', [
+            'page'  => 'Papel',
+            'rutaIndex'    => 'paper.index',
+            'rutaStore'    => 'paper.store',
+        ]);
     }
 
     /**
@@ -29,7 +40,10 @@ class PaperController extends Controller
      */
     public function store(StorePaperRequest $request)
     {
-        //
+        $row = new Paper;
+        $row->paper = $request->paper;
+        $row->save();
+        return redirect()->route('paper.index')->with('statusAlta', '¡Fila agregada de manera exitosa!');
     }
 
     /**
@@ -45,7 +59,12 @@ class PaperController extends Controller
      */
     public function edit(Paper $paper)
     {
-        //
+        return view('backoffice.galeria.papel.show', [
+            'row'  => $paper,
+            'page'  => 'Papel',
+            'rutaIndex'    => 'paper.index',
+            'rutaUpdate'    => 'paper.update',
+        ]);
     }
 
     /**
@@ -53,7 +72,9 @@ class PaperController extends Controller
      */
     public function update(UpdatePaperRequest $request, Paper $paper)
     {
-        //
+        $paper->paper = $request->paper;
+        $paper->save();
+        return redirect()->route('paper.index')->with('statusAlta', '¡Fila actualizada de manera exitosa!');
     }
 
     /**
@@ -61,6 +82,7 @@ class PaperController extends Controller
      */
     public function destroy(Paper $paper)
     {
-        //
+        $paper->delete();
+        return redirect()->route('paper.index')->with('statusAlta', '¡Fila Borrada con éxito!');
     }
 }

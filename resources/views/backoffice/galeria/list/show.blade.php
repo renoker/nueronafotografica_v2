@@ -29,37 +29,15 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="mb-3 row">
-                                        <label class="col-sm-3 col-form-label">Imagen actual</label>
-                                        <div class="col-sm-9">
-                                            <img src="{{ asset($row->image) }}" style="width: 400px" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="mb-3 row">
-                                        <label class="col-sm-3 col-form-label">Imagen</label>
-                                        <div class="col-sm-9">
-                                            <input class="form-control" type="file" name="image" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label"
-                                            for="exampleFormControlSelect7">Categorias</label>
+                                            for="exampleFormControlSelect7">Categorías</label>
                                         <div class="col-sm-9">
                                             <select class="form-select digits" id="exampleFormControlSelect7"
-                                                name="category_id">
+                                                name="galeria_blog_id">
                                                 @foreach ($categorias as $item)
                                                     <option value="{{ $item->id }}"
-                                                        @if ($item->id == $row->category_id) selected="selected" @endif>
-                                                        {{ $item->name }}</option>
+                                                        @if ($item->id == $row->galeria_blog_id) selected="selected" @endif>
+                                                        {{ $item->category_es }}</option>
                                                 @endforeach
                                             </select>
                                         </div>
@@ -69,10 +47,115 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="mb-3 row">
-                                        <label class="col-sm-3 col-form-label">Nombre</label>
+                                        <label class="col-sm-3 col-form-label"
+                                            for="exampleFormControlSelect7">Tamaños</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-select digits" id="exampleFormControlSelect7"
+                                                name="size_id">
+                                                @foreach ($tamanios as $item)
+                                                    <option value="{{ $item->id }}"
+                                                        @if ($item->id == $row->size_id) selected="selected" @endif>
+                                                        {{ $item->size }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label"
+                                            for="exampleFormControlSelect7">Acabados</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-select digits" id="exampleFormControlSelect7"
+                                                name="finish_id">
+                                                @foreach ($acabados as $item)
+                                                    <option value="{{ $item->id }}"
+                                                        @if ($item->id == $row->finish_id) selected="selected" @endif>
+                                                        {{ $item->finish_en }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label" for="exampleFormControlSelect7">Tipo de
+                                            papel</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-select digits" id="exampleFormControlSelect7"
+                                                name="paper_id">
+                                                @foreach ($papeles as $item)
+                                                    <option value="{{ $item->id }}"
+                                                        @if ($item->id == $row->paper_id) selected="selected" @endif>
+                                                        {{ $item->paper_es }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label">Imagen actual</label>
+                                        <div class="col-sm-9">
+                                            <img src="{{ asset($row->image) }}" style="width: 200px" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label">Imagen (400x400px)</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" type="file" name="image" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label">Fondo actual</label>
+                                        <div class="col-sm-9">
+                                            <img src="{{ asset($row->fondo) }}" style="width: 200px" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label">Fondo (1029x734px)</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" type="file" name="fondo" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label">Nombre de la foto</label>
                                         <div class="col-sm-9">
                                             <input class="form-control" name="name" type="text"
-                                                placeholder="Nombre de la obra" value="{{ $row->name }}" />
+                                                value="{{ $row->name }}" placeholder="Nombre de la obra" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label">Precio de la foto</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" name="precio" type="number"
+                                                value="{{ $row->precio }}" placeholder="Precio de la foto" />
                                         </div>
                                     </div>
                                 </div>

@@ -13,8 +13,16 @@ class SizeController extends Controller
      */
     public function index()
     {
-        $size = Size::all();
-        return Response(['response' => $size, 'count' => count($size)], 200);
+        $row = Size::all();
+        return view('backoffice.galeria.tamanio.index', [
+            'list'  => $row,
+            'page'  => 'Tamaños',
+            'rutaCreate'    => 'size.create',
+            'rutaDestroy'    => 'size.destroy',
+            'rutaEdit'    => 'size.edit',
+        ]);
+        // $size = Size::all();
+        // return Response(['response' => $size, 'count' => count($size)], 200);
     }
 
     /**
@@ -22,7 +30,11 @@ class SizeController extends Controller
      */
     public function create()
     {
-        //
+        return view('backoffice.galeria.tamanio.create', [
+            'page'  => 'Tamaños',
+            'rutaIndex'    => 'size.index',
+            'rutaStore'    => 'size.store',
+        ]);
     }
 
     /**
@@ -30,7 +42,10 @@ class SizeController extends Controller
      */
     public function store(StoreSizeRequest $request)
     {
-        //
+        $row = new Size;
+        $row->size = $request->size;
+        $row->save();
+        return redirect()->route('size.index')->with('statusAlta', '¡Fila agregada de manera exitosa!');
     }
 
     /**
@@ -46,7 +61,12 @@ class SizeController extends Controller
      */
     public function edit(Size $size)
     {
-        //
+        return view('backoffice.galeria.tamanio.show', [
+            'row'  => $size,
+            'page'  => 'Tamaños',
+            'rutaIndex'    => 'size.index',
+            'rutaUpdate'    => 'size.update',
+        ]);
     }
 
     /**
@@ -54,7 +74,9 @@ class SizeController extends Controller
      */
     public function update(UpdateSizeRequest $request, Size $size)
     {
-        //
+        $size->size = $request->size;
+        $size->save();
+        return redirect()->route('size.index')->with('statusAlta', '¡Fila actualizada de manera exitosa!');
     }
 
     /**
@@ -62,6 +84,7 @@ class SizeController extends Controller
      */
     public function destroy(Size $size)
     {
-        //
+        $size->delete();
+        return redirect()->route('size.index')->with('statusAlta', '¡Fila Borrada con éxito!');
     }
 }

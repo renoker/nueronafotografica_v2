@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('finishes', function (Blueprint $table) {
             $table->id();
-            $table->string('finish')->nullable();
+            $table->string('finish_es')->nullable();
+            $table->string('finish_en')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

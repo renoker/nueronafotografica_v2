@@ -52,7 +52,7 @@
                                                 <span>{{ $item->order }}</span>
                                             </td>
                                             <td>
-                                                {{ $item->category->name }}
+                                                {{ $item->galeria_blog->category_es }}
                                             </td>
                                             <td style="width: 30px">
                                                 <div class="d-grid gap-2 col-6 mx-auto">

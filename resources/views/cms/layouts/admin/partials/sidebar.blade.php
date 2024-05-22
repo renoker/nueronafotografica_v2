@@ -170,6 +170,8 @@
                         </li>
                         <li><a href="{{ route('translateBlog.index') }}"
                                 class="{{ routeActive('translateBlog.index') }}">Traducción</a></li>
+                        <li><a href="{{ route('category_blog.index') }}"
+                                class="{{ routeActive('category_blog.index') }}">Categorías</a></li>
                     </ul>
                 </li>
                 {{-- END BLOG --}}
@@ -180,6 +182,31 @@
                     <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('backoffice/galeria') }};">
                         <li><a href="{{ route('backoffice_gallery.index') }}"
                                 class="{{ routeActive('backoffice_gallery.index') }}">Notas</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('galeria_blog.index') }}"
+                                class="{{ routeActive('galeria_blog.index') }}">Categorías</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('paper.index') }}" class="{{ routeActive('paper.index') }}">Papel</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('size.index') }}" class="{{ routeActive('size.index') }}">Tamaños</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('finish.index') }}"
+                                class="{{ routeActive('finish.index') }}">Acabados</a>
+                        </li>
+                    </ul>
+                </li>
+                {{-- END GALERIA --}}
+                {{-- GALERIA --}}
+                <li class="dropdown">
+                    <a class="nav-link menu-title {{ prefixActive('backoffice/categoria') }}"
+                        href="javascript:void(0)"><i data-feather="file"></i><span>Categorias Generales</span></a>
+                    <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('backoffice/categoria') }};">
+                        <li><a href="{{ route('category.index') }}"
+                                class="{{ routeActive('category.index') }}">Lista</a>
                         </li>
                     </ul>
                 </li>

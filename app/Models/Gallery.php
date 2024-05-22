@@ -10,8 +10,23 @@ class Gallery extends Model
 {
     use HasFactory, SoftDeletes;
 
-    public function category()
+    public function galeria_blog()
     {
-        return $this->belongsTo(Category::class);
+        return $this->belongsTo(GaleriaBlog::class);
+    }
+
+    public function size()
+    {
+        return $this->belongsTo(Size::class);
+    }
+
+    public function finish()
+    {
+        return $this->belongsTo(Finish::class);
+    }
+
+    public function paper()
+    {
+        return $this->belongsTo(Paper::class);
     }
 }
