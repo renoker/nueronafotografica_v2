@@ -1,5 +1,14 @@
 @extends('layouts.main')
 @section('title', 'Neuronafotografica - Blog')
+@section('popups')
+    <div id="popup" class="">
+        <div class="opacidad">
+            <div class="content_imagen_galeria">
+                <img src="" id="imgGaleria" alt="" onmouseout="quitaImagen()">
+            </div>
+        </div>
+    </div>
+@endsection
 @section('content')
     <div class="contente_dad">
         <div class="mosca">
@@ -33,6 +42,7 @@
             @foreach ($list as $item)
                 <a href="{{ route('gallery.cotizador', $item) }}">
                     <div class="content_galeria">
+                        {{-- onmouseover="muestraImagen('{{ url($item->image) }}')" --}}
                         <div class="img" style="background-image: url({{ url($item->image) }})">
                         </div>
                         <h1>{{ $item->name }}</h1>
@@ -52,4 +62,20 @@
             @endforeach
         </div>
     </div>
+@endsection
+
+@section('scripts')
+    <script>
+        function muestraImagen(imagenUrl) {
+            document.getElementById('popup').classList.add("active")
+            var imagen = document.getElementById('imgGaleria')
+            imagen.src = imagenUrl
+        };
+
+        function quitaImagen() {
+            document.getElementById('popup').classList.remove("active")
+            var imagen = document.getElementById('imgGaleria')
+            imagen.src = ''
+        };
+    </script>
 @endsection

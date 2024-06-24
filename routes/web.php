@@ -73,6 +73,7 @@ Route::get('/galeria/{gallery}', [GalleryController::class, 'cotizador'])->name(
 Route::get('/videos', [VideoController::class, 'index'])->name('video.index');
 // Contactanos
 Route::post('/contactanos/store',  [ContactController::class, 'store'])->name('contact.store');
+Route::post('/send_cotizacion',  [GalleryController::class, 'sendCotizacion'])->name('gallery.send_cotizacion');
 
 Route::get('size', [SizeController::class, 'index'])->name('size.index');
 
@@ -134,6 +135,11 @@ Route::group(['middleware' => ['auth:admin']], function () {
             Route::get('/acabado/edit/{finish}',                  [FinishController::class, 'edit'])->name('finish.edit');
             Route::put('/acabado/update/{finish}',                [FinishController::class, 'update'])->name('finish.update');
             Route::delete('/acabado/delete/{finish}',             [FinishController::class, 'destroy'])->name('finish.destroy');
+
+            // Translate
+            Route::get('translate',                               [GalleryController::class, 'indexGaleria'])->name('translateGaleria.index');
+            Route::get('translate/edit/{translation}',            [GalleryController::class, 'editGaleria'])->name('translateGaleria.edit');
+            Route::put('/translate/{translation}',                [GalleryController::class, 'updateGaleria'])->name('translateGaleria.update');
         });
         // END GALERIA
         // HOME

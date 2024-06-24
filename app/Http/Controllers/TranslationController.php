@@ -217,4 +217,34 @@ class TranslationController extends Controller
         $translation->save();
         return back()->withInput();
     }
+
+    // BLOG
+    public function indexGaleria()
+    {
+        $list = Translation::where('key', 'galeria')->get();
+        return view('backoffice.galeria.traduccion.index', [
+            'list' => $list,
+            'page' => 'Traducción',
+            'rutaIndex'  => 'translateGaleria.index',
+            'rutaEdit'  => 'translateGaleria.edit'
+        ]);
+    }
+
+    public function editGaleria(Translation $translation)
+    {
+        return view('backoffice.galeria.traduccion.show', [
+            'row' => $translation,
+            'page' => 'Traducción',
+            'rutaIndex'  => 'translateGaleria.index',
+            'rutaEdit'  => 'translateGaleria.edit'
+        ]);
+    }
+
+    public function updateGaleria(UpdateTranslationRequest $request, Translation $translation)
+    {
+        $translation->translate_es = $request->translate_es;
+        $translation->translate_en = $request->translate_en;
+        $translation->save();
+        return back()->withInput();
+    }
 }

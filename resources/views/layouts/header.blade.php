@@ -35,11 +35,11 @@
                 </div>
                 <div class="idioma_header">
                     <a href="{{ route('changeLang', 'lang=en') }}">
-                        <p class="txt_idioma">En</p>
+                        <img src="{{ url('assets/images/usa.png') }}" class="img_idioma" alt="">
                     </a>
                     <p class="txt_idioma">|</p>
                     <a href="{{ route('changeLang', 'lang=es') }}">
-                        <p class="txt_idioma">Es</p>
+                        <img src="{{ url('assets/images/mexico.png') }}" class="img_idioma" alt="">
                     </a>
                 </div>
             </div>

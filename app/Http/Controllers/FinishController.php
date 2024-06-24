@@ -41,7 +41,8 @@ class FinishController extends Controller
     public function store(StoreFinishRequest $request)
     {
         $row = new Finish;
-        $row->finish = $request->finish;
+        $row->finish_es = $request->finish_es;
+        $row->finish_en = $request->finish_en;
         $row->save();
         return redirect()->route('finish.index')->with('statusAlta', '¡Fila agregada de manera exitosa!');
     }
@@ -72,7 +73,8 @@ class FinishController extends Controller
      */
     public function update(UpdateFinishRequest $request, Finish $finish)
     {
-        $finish->finish = $request->finish;
+        $finish->finish_es = $request->finish_es;
+        $finish->finish_en = $request->finish_en;
         $finish->save();
         return redirect()->route('finish.index')->with('statusAlta', '¡Fila actualizada de manera exitosa!');
     }

@@ -11,8 +11,10 @@ use App\Models\Gallery;
 use App\Models\Paper;
 use App\Models\Size;
 use App\Models\Translation;
+use Exception;
 use Illuminate\Support\Facades\App;
 use Illuminate\Http\Request;
+use SendGrid\Mail\Mail;
 
 class GalleryController extends Controller
 {
@@ -280,5 +282,52 @@ class GalleryController extends Controller
             $row->save();
         }
         return Response(['response' => $changePosition], 200);
+    }
+
+    public function sendCotizacion(Request $request)
+    {
+        $galeria = Gallery::where('id', $request->id)->first();
+        $email = new Mail();
+        // Replace the email address and name with your verified sender
+        $email->setFrom(
+            'contacto@neuronafotografica.com',
+            'Neurona Fotográfica'
+        );
+        $email->setSubject('Contacto NeuronaFotográfica');
+        // Replace the email address and name with your recipient
+        $email->addTo(
+            'rodolfoulises.ramirez@gmail.com',
+            'Contacto'
+        );
+        $email->addContent(
+            'text/html',
+            '<div>
+                <p>Nombre de la foto: <strong>' . $galeria->name . '</strong></p>
+                <p>Tamaño: <strong>' . $galeria->size->size . '</strong></p>
+                <p>Material: <strong>' . $galeria->finish->finish_es . '</strong></p>
+                <p>Papel: <strong>' . $galeria->paper->paper_es . '</strong></p>
+                <p>Precio mostrado al cliente: <strong>$' .  number_format($galeria->precio, 2, '.', ',') . '</strong></p>
+                <h1>Datos cliente</h1>
+                <p>Nombre: <strong>' . $request->name_cliente . '</strong></p>
+                <p>Email: <strong>' . $request->email_cliente . '</strong></p>
+            </div>'
+        );
+        $sendgrid = new \SendGrid('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');
+        try {
+            $response = $sendgrid->send($email);
+            printf("Response status: %d\n\n", $response->statusCode());
+
+            $headers = array_filter($response->headers());
+            echo "Response Headers\n\n";
+            foreach ($headers as $header) {
+                echo '- ' . $header . "\n";
+            }
+        } catch (Exception $e) {
+            echo 'Caught exception: ' . $e->getMessage() . "\n";
+        }
+
+        return redirect()->back()->with([
+            'message' => 'Tus datos se enviaron de forma correcta, nos pondremos en contacto contigo en un lapso no mayor a 24hrs'
+        ]);
     }
 }

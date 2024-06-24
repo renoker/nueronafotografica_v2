@@ -61,13 +61,18 @@
                 <p class="txt">${{ number_format($row->precio, 2, '.', ',') }}</p>
                 <h1 class="txt_e mt">Datos cliente</h1>
                 <div class="content_form_cotizador">
-                    <form action="" method="post">
+                    <form action="{{ route('gallery.send_cotizacion') }}" method="post">
+                        @method('POST')
+                        @csrf
                         <div class="box">
                             <div class="w">
-                                <input type="text" name="" id="" placeholder="Nombre" class="input">
-                                <input type="email" name="" id="" placeholder="Email" class="input">
+                                <input type="hidden" name="id" value="{{ $row->id }}">
+                                <input type="text" name="name_cliente" id="" placeholder="Nombre"
+                                    class="input">
+                                <input type="email" name="email_cliente" id="" placeholder="Email"
+                                    class="input">
                             </div>
-                            <button type="button" class="button_cotizar">Cotizar</button>
+                            <button type="submit" class="button_cotizar">Cotizar</button>
                         </div>
                     </form>
                 </div>

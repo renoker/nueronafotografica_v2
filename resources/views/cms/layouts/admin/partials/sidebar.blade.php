@@ -197,6 +197,8 @@
                             <a href="{{ route('finish.index') }}"
                                 class="{{ routeActive('finish.index') }}">Acabados</a>
                         </li>
+                        <li><a href="{{ route('translateGaleria.index') }}"
+                                class="{{ routeActive('translateGaleria.index') }}">Traducción</a></li>
                     </ul>
                 </li>
                 {{-- END GALERIA --}}

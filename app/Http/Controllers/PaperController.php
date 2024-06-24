@@ -41,7 +41,8 @@ class PaperController extends Controller
     public function store(StorePaperRequest $request)
     {
         $row = new Paper;
-        $row->paper = $request->paper;
+        $row->paper_es = $request->paper_es;
+        $row->paper_en = $request->paper_en;
         $row->save();
         return redirect()->route('paper.index')->with('statusAlta', '¡Fila agregada de manera exitosa!');
     }
@@ -72,7 +73,8 @@ class PaperController extends Controller
      */
     public function update(UpdatePaperRequest $request, Paper $paper)
     {
-        $paper->paper = $request->paper;
+        $paper->paper_es = $request->paper_es;
+        $paper->paper_en = $request->paper_en;
         $paper->save();
         return redirect()->route('paper.index')->with('statusAlta', '¡Fila actualizada de manera exitosa!');
     }
