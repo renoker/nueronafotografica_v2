@@ -215,7 +215,7 @@ Route::group(['middleware' => ['auth:admin']], function () {
             // Slider
             Route::get('slider/create',                                                 [AdminCorporativaSliderController::class, 'create'])->name('sliderCorporativa.create');
             Route::get('slider/edit/{slider}',                                          [AdminCorporativaSliderController::class, 'edit'])->name('sliderCorporativa.edit');
-            Route::apiResource('sliderCorporativa',                                    AdminCorporativaSliderController::class);
+            Route::apiResource('sliderCorporativa',                                     AdminCorporativaSliderController::class);
             // Translate
             Route::get('translate',                                                     [TranslationController::class, 'indexCorporativa'])->name('translateCorporativa.index');
             Route::get('translate/edit/{translation}',                                  [TranslationController::class, 'editCorporativa'])->name('translateCorporativa.edit');

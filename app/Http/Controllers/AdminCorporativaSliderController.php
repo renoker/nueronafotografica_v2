@@ -28,6 +28,8 @@ class AdminCorporativaSliderController extends Controller
         ]);
     }
 
+    // 34.227.28.196
+
     public function store(Request $request)
     {
         $row = new AdminHomeSlider;
