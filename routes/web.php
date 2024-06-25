@@ -137,9 +137,9 @@ Route::group(['middleware' => ['auth:admin']], function () {
             Route::delete('/acabado/delete/{finish}',             [FinishController::class, 'destroy'])->name('finish.destroy');
 
             // Translate
-            Route::get('translate',                               [GalleryController::class, 'indexGaleria'])->name('translateGaleria.index');
-            Route::get('translate/edit/{translation}',            [GalleryController::class, 'editGaleria'])->name('translateGaleria.edit');
-            Route::put('/translate/{translation}',                [GalleryController::class, 'updateGaleria'])->name('translateGaleria.update');
+            Route::get('translate',                               [TranslationController::class, 'indexGaleria'])->name('translateGaleria.index');
+            Route::get('translate/edit/{translation}',            [TranslationController::class, 'editGaleria'])->name('translateGaleria.edit');
+            Route::put('/translate/{translation}',                [TranslationController::class, 'updateGaleria'])->name('translateGaleria.update');
         });
         // END GALERIA
         // HOME

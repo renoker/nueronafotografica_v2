@@ -35,7 +35,7 @@
                 </div>
                 <div class="idioma_header">
                     <a href="{{ route('changeLang', 'lang=en') }}">
-                        <img src="{{ url('assets/images/usa.png') }}" class="img_idioma" alt="">
+                        <img src="{{ url('assets/images/canada.png') }}" class="img_idioma" alt="">
                     </a>
                     <p class="txt_idioma">|</p>
                     <a href="{{ route('changeLang', 'lang=es') }}">

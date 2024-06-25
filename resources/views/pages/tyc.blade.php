@@ -3,7 +3,7 @@
 @section('content')
     <div class="contente_dad">
         <div class="mosca">
-            <a href="https://api.whatsapp.com/send?phone=+525519547280&text=Hola,%20necesito%20ayuda" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=+525513581985&text=Hola,%20necesito%20ayuda" target="_blank">
                 <img src="{{ url('assets/icons/Mosca.svg') }}" alt="">
             </a>
         </div>
@@ -18,10 +18,12 @@
                     <p class="descripcion">
                         {!! $traslate[2]->title !!}
                     </p>
-                    <div class="conocer_mas">
-                        <p class="button_conoce_mas">{!! $traslate[3]->title !!}</p>
-                        <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
-                    </div>
+                    <a href="{{ route('acerca_de.index') }}">
+                        <div class="conocer_mas">
+                            <p class="button_conoce_mas">{!! $traslate[3]->title !!}</p>
+                            <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="content_logo_neurona">
