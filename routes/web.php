@@ -47,10 +47,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('lang/change', [LangController::class, 'change'])->name('changeLang');
-Route::get('/', [HomeController::class, 'preview'])->name('home.index');
+// Route::get('/', [HomeController::class, 'preview'])->name('home.index');
 Route::get('/instagra_feed', [IntagramFeedConroller::class, 'index'])->name('instagra_feed.index');
 Route::get('/terminos_y_condiciones', [TerminosConroller::class, 'index'])->name('terminos_y_condiciones.index');
-Route::get('/home', [HomeController::class, 'index'])->name('home.index');
+Route::get('/', [HomeController::class, 'index'])->name('home.index');
 // Arquitectura
 Route::get('/arquitectura', [ArquitecturaController::class, 'index'])->name('arquitectura.index');
 // Construccion
