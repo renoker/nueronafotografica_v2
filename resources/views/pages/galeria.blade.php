@@ -43,8 +43,9 @@
         <div class="box_galeria">
             @foreach ($list as $item)
                 <a href="{{ route('gallery.cotizador', $item) }}">
-                    <div class="content_galeria" onmouseover="muestraImagen('{{ url($item->image) }}')">
-                        <div class="img" style="background-image: url({{ url($item->image) }})">
+                    <div class="content_galeria">
+                        <div class="img" style="background-image: url({{ url($item->image) }})"
+                            onmouseover="muestraImagen('{{ url($item->image) }}')">
                         </div>
                         <h1>{{ $item->name }}</h1>
                         <div class="content_categoria">
