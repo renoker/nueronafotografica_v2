@@ -2,7 +2,7 @@
     <input type="hidden" id="url" value="{{ url('') }}">
     <div class="container-header">
         <div class="logo">
-            <a href="{{ url('/home') }}">
+            <a href="{{ url('/') }}">
                 <img src="{{ url('assets/icons/logo.png') }}" class="logo_header" alt="">
             </a>
         </div>
