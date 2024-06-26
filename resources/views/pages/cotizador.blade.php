@@ -41,8 +41,8 @@
         </div>
         {{-- Mecanica Cotizador --}}
         <div class="content_cotizador_user">
-            <div class="content_presentacion" style="background-image: url({{ url($row->fondo) }})">
-                <div class="imagen_a_vender"></div>
+            <div class="content_presentacion">
+                <img src="{{ url($row->fondo) }}" alt="">
             </div>
         </div>
 

@@ -508,10 +508,9 @@
         margin-bottom: 2rem;
         .content_presentacion {
             width: 100%;
-            height: 734px;
-            flex-shrink: 0;        
-            background-size: cover;
-            background-repeat: no-repeat;
+            img {
+                width: 100%;
+            }
         }
     }
     // FORMULARIO COTIZADOR
