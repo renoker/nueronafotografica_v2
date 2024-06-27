@@ -4,7 +4,8 @@
     <div id="popup" class="">
         <div class="opacidad">
             <div class="content_imagen_galeria">
-                <img src="" id="imgGaleria" alt="" onmouseout="quitaImagen()">
+                <div class="cerrar" onclick="quitaImagen()">X</div>
+                <img src="" id="imgGaleria" alt="">
             </div>
         </div>
     </div>

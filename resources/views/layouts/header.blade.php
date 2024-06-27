@@ -3,7 +3,7 @@
     <div class="container-header">
         <div class="logo">
             <a href="{{ url('/') }}">
-                <img src="{{ url('assets/icons/logo.png') }}" class="logo_header" alt="">
+                <img src="{{ url('assets/images/logo_c.png') }}" class="logo_header" alt="">
             </a>
         </div>
         <div class="side-right">
