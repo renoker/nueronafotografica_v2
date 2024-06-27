@@ -79,12 +79,14 @@ class GalleryController extends Controller
         }
 
         $size = Size::all();
+        $relacionadas = Gallery::where('galeria_blog_id', $gallery->galeria_blog_id)->get();
 
         return view('pages.cotizador', [
             'slider_top'    => $slider_top,
             'row'           => $gallery,
             'traslate'      => $traslate,
             'size'          => $size,
+            'relacionadas'  => $relacionadas,
         ]);
     }
 

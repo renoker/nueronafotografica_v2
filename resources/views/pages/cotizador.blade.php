@@ -82,20 +82,21 @@
                     <div class="glide" id="relacionadas">
                         <div class="glide__track" data-glide-el="track">
                             <ul class="glide__slides">
-                                @for ($i = 0; $i < 5; $i++)
+                                @foreach ($relacionadas as $item)
                                     <li class="glide__slide">
-                                        <div class="content_imagen_relacionada">
-                                            <img src="{{ url('assets/galeria/img3.jpeg') }}" alt="">
-                                        </div>
+                                        <a href="{{ route('gallery.cotizador', $item) }}">
+                                            <div class="content_imagen_relacionada">
+                                                <img src="{{ url($item->image) }}" alt="">
+                                            </div>
+                                        </a>
                                     </li>
-                                @endfor
+                                @endforeach
                             </ul>
                         </div>
                         <div class="glide__bullets" data-glide-el="controls[nav]">
-                            <button class="glide__bullet" data-glide-dir="=0"></button>
-                            <button class="glide__bullet" data-glide-dir="=1"></button>
-                            <button class="glide__bullet" data-glide-dir="=2"></button>
-                            <button class="glide__bullet" data-glide-dir="=3"></button>
+                            @foreach ($relacionadas as $key => $item)
+                                <button class="glide__bullet" data-glide-dir="={{ $key }}"></button>
+                            @endforeach
                         </div>
                     </div>
                 </div>
