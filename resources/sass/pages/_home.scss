@@ -7,6 +7,10 @@
 .contente_dad {
     width: 100%;
     position: relative;
+    @media only screen and (max-width: 600px) {
+        width: 90%;
+        margin: 0 auto;
+    }
     .mosca {
         position: fixed;
         z-index: 10;
@@ -22,6 +26,9 @@
         overflow-y: hidden;
         position: relative;
         margin-bottom: 2rem;
+        @media only screen and (max-width: 600px) {
+            height: 445px;
+        }
         .bullets_slider {
             position: absolute;
             right: 20px;
@@ -61,6 +68,9 @@
                     margin-bottom: 3rem;
                     position: relative;
                     z-index: 10;
+                    @media only screen and (max-width: 600px) {
+                        margin-bottom: 14rem;
+                    }
                     .encabezado_banner {
                         color: var(--Blanco-F5EDED);
                         font-family: $font-family;
@@ -68,9 +78,13 @@
                         font-style: normal;
                         font-weight: 400;
                         line-height: 95%; /* 24.7px */
-                        letter-spacing: -1.04px;                    
+                        letter-spacing: -1.04px;     
+                        @media only screen and (max-width: 600px) {
+                            font-size: 15px;
+                            padding-bottom: 10px;
+                        }               
                     }
-                    .box_slider_text {
+                    .box_slider_text {  
                         width: 100%;
                         @include flex(flex, space-between, flex-end, 0px);
                         .texto_principal {
@@ -81,23 +95,41 @@
                             font-weight: 500;
                             line-height: 95%; /* 99.75px */
                             letter-spacing: -4.2px;   
+                            @media only screen and (max-width: 600px) {
+                                font-size: 20px;
+                                letter-spacing: 0px; 
+                                line-height: 20px; 
+                            }                             
                         }
                         .conocer_mas {
                             width: 230px;
                             height: 50px;
+                            @media only screen and (max-width: 600px) {
+                                width: 100px;
+                                height: 10px;
+                                img {
+                                    width: 15px;
+                                }
+                            }
                             &:hover {
                                 border-radius: 30px;
                                 border: 1px solid #fff;
                                 background-color: rgba($color: #FFF, $alpha: 0.1);                                
                             }
                             @include flex(flex, center, center, 20px);
+                            @media only screen and (max-width: 600px) {
+                                gap: 5px;
+                            }
                             .button_conoce_mas {
                                 color: var(--Blanco-F5EDED);
                                 font-family: $font-family;
                                 font-size: 17.477px;
                                 font-style: normal;
                                 font-weight: 400;
-                                line-height: normal;                            
+                                line-height: normal;     
+                                @media only screen and (max-width: 600px) {
+                                    font-size: 8px;
+                                }                       
                             }
                         }
                     }
@@ -109,12 +141,19 @@
         width: 100%;
         margin-bottom: 20px;
         @include flex(flex, space-between, flex-start, 0px);
+        @media only screen and (max-width: 600px) {
+            flex-direction: column;
+            gap: 30px;
+        }          
         .content_logo_neurona {
             width: 630px;
             height: 444.481px;
             flex-shrink: 0;       
             border-radius: 20.984px;
-            background: var(--Negro-Thunder-NF, #2B272B);                 
+            background: var(--Negro-Thunder-NF, #2B272B);    
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+            }             
         }
         .glide_slider {
             width: 630px;
@@ -124,8 +163,15 @@
             flex-shrink: 0;
             overflow: hidden;
             border-radius: 20px;
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+                height: 343px;
+            }            
             img {
                 height: 443px;
+                @media only screen and (max-width: 600px) {
+                    height: 343px;
+                }
             }
         }
         .glide_slider_big {
@@ -147,6 +193,9 @@
             overflow: hidden;
             @include flex(flex, center, center, 0px);
             border: 2px solid #2B272B;
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+            }               
             &:hover {
                 border: 2px solid #BD2727;
             }
@@ -255,7 +304,6 @@
             }
         }
         .faqs_home_content {
-            width: 49%;
             display: flex;
             width: 630px;
             height: 445px;
@@ -263,6 +311,9 @@
             justify-content: space-between;
             align-items: flex-start;
             flex-shrink: 2;
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+            }               
             .item_faqs {
                 width: 100%;
                 display: flex;
@@ -386,7 +437,10 @@
                         font-style: normal;
                         font-weight: 500;
                         line-height: 95%; /* 60.8px */
-                        letter-spacing: -2.56px;                    
+                        letter-spacing: -2.56px;  
+                        @media only screen and (max-width: 600px) {
+                            font-size: 40px;
+                        }                                          
                     }
                     .conocer_mas { 
                         display: flex;
@@ -412,7 +466,10 @@
                     -webkit-transition: font-size 1s ease-in;
                     -moz-transition: font-size 1s ease-in;
                     -o-transition: font-size 1s ease-in;
-                    transition: font-size 1s ease-in;                    
+                    transition: font-size 1s ease-in;     
+                    @media only screen and (max-width: 600px) {
+                        font-size: 25px;
+                    }                                     
                 }
                 .conocer_mas {                    
                     width: fit-content;                    
@@ -439,6 +496,10 @@
         width: 100%;
         @include flex(flex, space-between, center, 0px);
         margin-bottom: 25px;
+        @media only screen and (max-width: 600px) {
+            flex-direction: column;
+            gap: 30px;
+        }           
         .small_nosotros {
             display: flex;
             width: 630px;
@@ -452,6 +513,11 @@
             border-radius: 30px;  
             background-color: #2B272B;
             border: 1px solid #2B272B;
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+                height: 300px;
+                padding: 0px 20px 0px 20px;
+            }              
             &:hover {
                 border: 1px solid #D72323;
             }            
@@ -461,7 +527,10 @@
                 font-size: 52.461px;
                 font-style: normal;
                 font-weight: 300;
-                line-height: 101.5%; /* 53.248px */                
+                line-height: 101.5%; /* 53.248px */    
+                @media only screen and (max-width: 600px) {
+                    font-size: 30px;
+                }            
             }
             .p {
                 color:#DFDFDF;
@@ -477,7 +546,10 @@
             height: 350px;
             background-color: #DFDFDF;     
             border-radius: 30px;
-            @include flex(flex, center, center, 0px);              
+            @include flex(flex, center, center, 0px);   
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+            }                        
             .box_slider {
                 width: 430px;
                 margin: 0 auto;

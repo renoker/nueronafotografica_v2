@@ -16,7 +16,11 @@ main{
   max-width: 1280px;
   min-width: 1280px;
   margin: 0 auto;
-  position: relative;
+  position: relative; 
+  @media only screen and (max-width: 600px) {
+      max-width: 100%;
+      min-width: 100%;
+  }   
 }
 
 a, button, img, input, span {
@@ -95,6 +99,9 @@ textarea {
   line-height: 200%; /* 28px */
   letter-spacing: 0.07px;  
   margin-bottom: 1.3em;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }   
   &::placeholder {
     color: var(--Gris-3E3636);
   }  
@@ -122,6 +129,9 @@ button {
 .content_contacto_doble {
   width: 100%;
   @include flex(flex, space-between, flex-start, 0px);
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }   
   margin-bottom: 25px;
   .box_contacto {
     display: flex;
@@ -131,6 +141,9 @@ button {
     flex-direction: column;
     border-radius: 20px;
     background: #DFDFDF;    
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }       
     .h1_contacto {
       color: #3E3636;
       font-family: $font-family;
@@ -149,6 +162,9 @@ button {
     flex-shrink: 0;
     overflow: hidden;          
     border-radius: 20px;
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }      
     .zoom {
       width: 100%;
       transform: scale(1);
@@ -211,3 +227,5 @@ button {
     }
 }  
 }
+
+
