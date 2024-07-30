@@ -10,7 +10,8 @@
 @section('content')
     <div class="contente_dad">
         <div class="mosca">
-            <a href="https://api.whatsapp.com/send?phone=+525541330509&text=Hola,%20necesito%20ayuda" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=+525541330509&text=Hola!%20podrían%20darme%20más%20información%20de%20sus%20servicios?"
+                target="_blank">
                 <img src="{{ url('assets/icons/Mosca.svg') }}" alt="">
             </a>
         </div>
