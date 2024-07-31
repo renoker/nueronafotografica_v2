@@ -2,6 +2,9 @@ footer {
     width: 100%;
     border-radius: 20.812px;
     background: #DFDFDF;  
+    @media only screen and (max-width: 600px) {
+        border-radius: 0px;
+    }
     .box_footer {
         width: 90%;
         margin: 0 auto;
@@ -9,6 +12,11 @@ footer {
             width: 100%;
             @include flex(flex, space-between, center, 0px);
             padding: 2rem 0;
+            @media only screen and (max-width: 600px) {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1rem 0;
+            }
             .encabezado {
                 color: var(--Gris);
                 font-family: $font-family;
@@ -16,21 +24,45 @@ footer {
                 font-style: normal;
                 font-weight: 300;
                 line-height: 118%;
+                @media only screen and (max-width: 600px) {
+                    font-size: 25px;
+                    padding-bottom: 10px;
+                }                
+            }
+            @media only screen and (max-width: 600px) {
+                .logo_footer {
+                    padding-bottom: 5px;
+                }
             }
         }
         .formulario_secciones {
             width: 100%;
             @include flex(flex, flex-start, flex-start, 160px);
+            @media only screen and (max-width: 600px) {
+                flex-direction: column;
+                gap: 30px;
+            }
             .form_footer {
                 width:350px;
+                @media only screen and (max-width: 600px) {
+                    width: 100%;
+                }
                 form {
                     input {
                         width: 317px;
+                        @media only screen and (max-width: 600px) {
+                            width: 100%;
+                        }
                     }
                 }
             }
             .secciones_footer {
                 @include flex(flex, flex-start, flex-start, 90px);
+                @media only screen and (max-width: 600px) {
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    gap: inherit;
+                }
                 .item_footer {
                     .h1_encab {
                         color: var(--Gris);
@@ -40,7 +72,10 @@ footer {
                         font-weight: 600;
                         line-height: normal;       
                         text-transform: uppercase;      
-                        padding-bottom: 7px;           
+                        padding-bottom: 7px;     
+                        @media only screen and (max-width: 600px) {
+                            font-size: 10px;
+                        }      
                     }
                     .seccion_p {
                         color: var(--Gris);
@@ -50,7 +85,10 @@ footer {
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;        
-                        padding-bottom: 10px;                
+                        padding-bottom: 10px;     
+                        @media only screen and (max-width: 600px) {
+                            font-size: 10px;
+                        }           
                     }
                 }
             }
@@ -61,6 +99,11 @@ footer {
             padding: 2rem 0;
             .redes_footer {
                 @include flex(flex, flex-start, center, 20px);
+            }
+            @media only screen and (max-width: 600px) {
+                #flechaTop {
+                    width: 30px;
+                }
             }
         }      
         .aviso_priv {

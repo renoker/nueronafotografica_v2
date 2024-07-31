@@ -34,9 +34,9 @@
                 @foreach ($slider_top as $item)
                     <div class="item_slider" style="background-image: url({{ $item->image }})">
                         <div class="contenedor_informacion_banner">
-                            <h6 class="encabezado_banner">{{ $item->title }}</h6>
+                            <h6 class="encabezado_banner">{{ $item->description }}</h6>
                             <div class="box_slider_text">
-                                <h1 class="texto_principal">{{ $item->description }}</h1>
+                                <h1 class="texto_principal">{{ $item->title }}</h1>
 
                             </div>
                         </div>

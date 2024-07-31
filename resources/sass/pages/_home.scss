@@ -16,6 +16,12 @@
         z-index: 10;
         right: 16%;
         bottom: 80px;
+        @media only screen and (max-width: 600px) {
+            bottom: 0;
+            img {
+                width: 50px;
+            }
+        }
     }    
     // SLIDER
     .contente_slider {
@@ -153,6 +159,7 @@
             background: var(--Negro-Thunder-NF, #2B272B);    
             @media only screen and (max-width: 600px) {
                 width: 100%;
+                border-radius: 10px;
             }             
         }
         .glide_slider {
@@ -165,12 +172,13 @@
             border-radius: 20px;
             @media only screen and (max-width: 600px) {
                 width: 100%;
-                height: 343px;
+                height: 226px;
+                border-radius: 10px;
             }            
             img {
                 height: 443px;
                 @media only screen and (max-width: 600px) {
-                    height: 343px;
+                    height: auto;
                 }
             }
         }
@@ -195,6 +203,8 @@
             border: 2px solid #2B272B;
             @media only screen and (max-width: 600px) {
                 width: 100%;
+                height: auto;
+                padding: 2rem 0;
             }               
             &:hover {
                 border: 2px solid #BD2727;
@@ -221,7 +231,10 @@
                         font-size: 52px;
                         font-style: normal;
                         font-weight: 300;
-                        line-height: 100%; /* 52px */                        
+                        line-height: 100%; /* 52px */        
+                        @media only screen and (max-width: 600px) {
+                            font-size: 25px;
+                        }                
                     }
                 }
                 .txt_sinwp {
@@ -313,6 +326,7 @@
             flex-shrink: 2;
             @media only screen and (max-width: 600px) {
                 width: 100%;
+                height: 500px;
             }               
             .item_faqs {
                 width: 100%;
@@ -325,7 +339,7 @@
                 flex-shrink: 0;
                 align-self: stretch;        
                 border-radius: 20px;
-                background: #2B272B;     
+                background: #2B272B;      
                 &:hover {
                     .txt {
                         display: block;
@@ -338,7 +352,10 @@
                     font-size: 28px;
                     font-style: normal;
                     font-weight: 300;
-                    line-height: 101.5%; /* 28.42px */                    
+                    line-height: 101.5%; /* 28.42px */          
+                    @media only screen and (max-width: 600px) {
+                        font-size: 20px;
+                    }          
                 }
                 .txt {
                     color: var(--Blanco-F5EDED);
@@ -420,6 +437,9 @@
             position: relative;
             z-index: 2;
             transition: min-height 1s ease-in;
+            @media only screen and (max-width: 600px) {
+                border-radius: 10px;
+            }
             &::before {
                 content: "";
                 position: absolute;
@@ -439,13 +459,18 @@
                         line-height: 95%; /* 60.8px */
                         letter-spacing: -2.56px;  
                         @media only screen and (max-width: 600px) {
-                            font-size: 40px;
+                            font-size: 25px;
                         }                                          
                     }
                     .conocer_mas { 
                         display: flex;
                         margin-top: 25px;
                         animation: slideaway 1s;
+                        @media only screen and (max-width: 600px) {
+                            .arrow_conocer_mas {
+                                width: 20px;
+                            }
+                        }
                     }
                 }        
             }
@@ -468,7 +493,7 @@
                     -o-transition: font-size 1s ease-in;
                     transition: font-size 1s ease-in;     
                     @media only screen and (max-width: 600px) {
-                        font-size: 25px;
+                        font-size: 22px;
                     }                                     
                 }
                 .conocer_mas {                    
@@ -480,6 +505,9 @@
                     background: rgba(22, 22, 22, 0.30);
                     @include flex(none, center, center, 20px);
                     animation: bk 6s;
+                    @media only screen and (max-width: 600px) {
+                        padding: 7px 18px;
+                    }
                     .button_conoce_mas {
                         color: var(--Blanco-F5EDED);
                         font-family: $font-family;
@@ -487,6 +515,9 @@
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;                            
+                        @media only screen and (max-width: 600px) {
+                            font-size: 12px;
+                        }
                     }
                 }                 
             }
@@ -549,21 +580,36 @@
             @include flex(flex, center, center, 0px);   
             @media only screen and (max-width: 600px) {
                 width: 100%;
+                height: 300px;
             }                        
             .box_slider {
                 width: 430px;
                 margin: 0 auto;
-                padding: 20px 0;                
+                padding: 20px 0;    
+                @media only screen and (max-width: 600px) {
+                    width: 100%;
+                }     
+                .glide__bullets {
+                    bottom: -2em;
+                }       
                 .content_equipo {
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     flex-wrap: wrap;
+                    @media only screen and (max-width: 600px) {
+                        width: 95%;
+                        margin: 0 auto;
+                    }
                     .logo_company {
                         width: 123.717px;
                         height: 123.717px;
-                        flex-shrink: 0;                        
+                        flex-shrink: 0;           
+                        @media only screen and (max-width: 600px) {
+                            width: 90px;
+                            height: 90px;                            
+                        }             
                     }
                     div {
                         width: 123.717px;

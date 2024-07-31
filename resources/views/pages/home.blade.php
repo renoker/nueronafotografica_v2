@@ -51,7 +51,8 @@
                                 <a href="{{ route('acerca_de.index') }}">
                                     <div class="conocer_mas">
                                         <p class="button_conoce_mas">{{ $item->button }}</p>
-                                        <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
+                                        <img src="{{ url('assets/icons/arrowright.svg') }}" class="arrow_conocer_mas"
+                                            alt="">
                                     </div>
                                 </a>
                             </div>
@@ -85,7 +86,7 @@
                     </p>
                     <div class="conocer_mas">
                         <p class="button_conoce_mas">{!! $traslate[3]->title !!}</p>
-                        <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
+                        <img src="{{ url('assets/icons/arrowright.svg') }}" class="arrow_conocer_mas" alt="">
                     </div>
                 </div>
             </div>
@@ -133,7 +134,8 @@
                         <a href="{{ route($item->href) }}">
                             <div class="conocer_mas">
                                 <p class="button_conoce_mas">{{ $item->button }}</p>
-                                <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
+                                <img src="{{ url('assets/icons/arrowright.svg') }}" class="arrow_conocer_mas"
+                                    alt="">
                             </div>
                         </a>
                     </div>

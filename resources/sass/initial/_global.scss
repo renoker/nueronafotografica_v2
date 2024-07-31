@@ -143,6 +143,8 @@ button {
     background: #DFDFDF;    
     @media only screen and (max-width: 600px) {
       width: 100%;
+      height: 430px;
+      padding: 20px;
     }       
     .h1_contacto {
       color: #3E3636;
@@ -151,9 +153,16 @@ button {
       font-style: normal;
       font-weight: 300;
       line-height: 101.5%; /* 50.75px */      
+      @media only screen and (max-width: 600px) {
+        font-size: 25px;
+        padding-bottom: 10px;
+      }
     } 
     input {
       height: 60px;
+      @media only screen and (max-width: 600px) {
+        height: 40px;
+      }
     }
   }
   .glide_slider_big {

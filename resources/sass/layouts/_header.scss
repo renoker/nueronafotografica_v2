@@ -6,7 +6,7 @@ header {
         margin: 0 auto;
         @include flex(flex, space-between, center, 0px);
         .logo {
-            width: 20%;
+            width: 16%;
             .logo_header {
                 padding-top: 10px;
                 width: 100%;
@@ -43,9 +43,13 @@ header {
                         letter-spacing: 0.07px;                        
                     }
                     .img_idioma {
-                        width: 22px;
+                        width: 29px;
                         cursor: pointer;
                     }
+                    .img_idioma_mex {
+                        width: 26px;
+                        cursor: pointer;
+                    }                    
                 }
             }
             .content-menu-header {
