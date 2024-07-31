@@ -242,3 +242,21 @@ button {
 }
 
 
+.desk {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .desk {
+      display: none;
+  }
+  
+  .mobile {
+      display: block;
+      overflow: hidden;
+  }
+}

@@ -135,3 +135,197 @@ header {
         }
     }
 }
+
+@media (max-width: 600px) {
+    .header__menu {
+        right: -900px;
+        position: fixed;
+        top: 0;
+        height: calc(100% - 0px);
+        width: 100%;
+        z-index: 100;
+        background: #161616;
+        padding-top: 30px;
+        transition: right 0.5s;
+        display: block;
+        text-align: center;
+        &.active {
+            right: 0px;
+        }
+        li {
+            list-style: none;
+            padding-bottom: 16px;
+            &.mt {
+                margin-top: 6rem;
+            }
+            .side-right {
+                width: 100%;
+                .content-redes-header {
+                    width: 100%;
+                    padding: 15px 0;
+                    @include flex(flex, center, center, 28px);
+                    flex-direction: column;
+                    .box_redes_header {
+                        @include flex(flex, center, center, 15px);
+                        .apaga {
+                            @include flex(none, center, center, 15px);
+                            &.active {
+                                display: flex;
+                            }
+                            .oculto {
+                                width: 20px;
+                            }
+                        }
+                    }
+                    .idioma_header {
+                        @include flex(flex, flex-end, center, 8px);
+                        .txt_idioma {
+                            color: #F5EDED;
+                            text-align: center;
+                            font-family: $font-DM;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 200%;
+                            letter-spacing: 0.07px;                        
+                        }
+                        .img_idioma {
+                            width: 39px;
+                            cursor: pointer;
+                        }
+                        .img_idioma_mex {
+                            width: 36px;
+                            cursor: pointer;
+                        }                    
+                    }
+                }           
+            }            
+            a {
+                .p {
+                    color: #F5EDED;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-family: $font-family;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                .drop_header {
+                    @include flex(flex, center, flex-start, 5px);
+                    .arrow_down {
+                        width: 23px;
+                        height: 23px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .menu_desplegable {
+                width: 100%;
+                background-color: #2A272B;
+                display: none;
+                &.active {
+                    display: block;
+                }
+                ul {
+                    width: 100%;
+                    text-align: center;
+                    flex-direction: column;
+                    gap: 0;
+                    .li_menu_header {
+                        list-style: none;    
+                        padding: 10px 0;     
+                        a {
+                            p {
+                                font-size: 20px;
+                                color: #F5EDED;
+                                text-decoration: none;
+                                &:hover {
+                                    opacity: 0.6;                                                
+                                }
+                            }
+                        }                           
+                    }
+                }
+            }            
+        }
+    }    
+    .header_mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        z-index: 200;
+        position: fixed;     
+        background: #161616;   
+        .logo {
+            width: 60%;
+            text-align: center;
+            a {
+                img {
+                    padding-top: 20px;
+                    width: 150px;
+                }                
+            }
+        }
+        .item {
+            width: 18%;
+            .toggle-button {
+                width: 30px;
+                height: 30px;
+                padding: 4px;
+                transition: 0.25s;
+                z-index: 15;
+                display: block;
+                position: relative;
+                top: -15px;
+                cursor: pointer;
+                .menu-bar {
+                    position: absolute;
+                    border-radius: 2px;
+                    width: 80%;
+                    transition: 0.5s;
+                } 
+                .menu-bar-top {
+                    border: 4px solid rgb(215, 35, 35);
+                    border-bottom: none;
+                    top: 0;
+                    width: 32px;
+                }                
+                .menu-bar-middle {
+                    height: 4px;
+                    background-color: rgb(215, 35, 35);
+                    margin-top: 7px;
+                    margin-bottom: 7px;
+                    top: 4px;
+                }  
+                .menu-bar-bottom {
+                    border: 4px solid rgb(215, 35, 35);
+                    border-top: none;
+                    top: 22px;
+                    width: 32px;
+                }    
+                
+                &.button-open {
+                    .menu-bar-top {
+                        transform: rotate(45deg) translate(8px, 8px);
+                        transition: 0.5s;
+                    }
+                    .menu-bar-middle {
+                        background-color: #fff;
+                        transform: translate(230px);
+                        transition: 0.1s ease-in;
+                        opacity: 0;
+                    }      
+                    .menu-bar-bottom {
+                        transform: rotate(-45deg) translate(7px, -7px);
+                        transition: 0.5s;
+                    } 
+                }         
+            }                    
+        }
+    }
+    .space_header {
+        height: 60px;
+    }    
+}
