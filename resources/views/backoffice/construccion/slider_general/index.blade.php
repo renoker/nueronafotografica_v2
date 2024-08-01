@@ -367,7 +367,7 @@
                     </div>
                     <div class="card-body">
                         <div class="table-responsive product-table">
-                            <table class="display" id="basic-5">
+                            <table class="display" id="basic-6">
                                 <thead>
                                     <tr>
                                         <th>Imagen</th>

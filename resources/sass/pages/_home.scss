@@ -143,7 +143,7 @@
                 }
             }
         }
-    }
+    }  
     .content_slider_nosotros {
         width: 100%;
         margin-bottom: 20px;
@@ -209,6 +209,7 @@
                 width: 100%;
                 height: auto;
                 padding: 2rem 0;
+                border: 2px solid #BD2727;
             }               
             &:hover {
                 border: 2px solid #BD2727;
@@ -240,6 +241,17 @@
                             font-size: 25px;
                         }                
                     }
+                    .h_acerca_de {
+                        color: var(--Blanco-F5EDED);
+                        font-family: $font-family;
+                        font-size: 40px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 100%; /* 52px */        
+                        @media only screen and (max-width: 600px) {
+                            font-size: 25px;
+                        }                
+                    }                    
                 }
                 .txt_sinwp {
                     width: 100%;
@@ -251,6 +263,10 @@
                         font-style: normal;
                         font-weight: 400;
                         line-height: 125%; /* 32.5px */                        
+                        @media only screen and (max-width: 600px) {
+                            font-size: 16px;
+                            line-height: 136%;
+                        }                                        
                     }
                 }                
                 .txt_bold {
@@ -261,12 +277,19 @@
                     font-weight: 700;
                     line-height: 100%; /* 22px */
                     padding-bottom: 40px;
+                    @media only screen and (max-width: 600px) {
+                        font-size: 18px;
+                        padding-bottom: 20px;
+                    }
                 }
                 .ul {
                     width: 100%;
                     @include flex(flex, space-between, flex-start, 0px);
                     flex-wrap: wrap;
                     padding-bottom: 20px;
+                    @media only screen and (max-width: 600px) {
+                        flex-direction: column;
+                    }
                     li {
                         width: 49%;
                         color: var(--Blanco-F5EDED);
@@ -276,6 +299,10 @@
                         font-weight: 400;
                         line-height: normal;     
                         padding-bottom: 20px;
+                        @media only screen and (max-width: 600px) {
+                            width: 100%;
+                            font-size: 16px;
+                        }
                         span {
                             color: var(--Blanco-F5EDED);
                             font-family: $font-family;
@@ -289,12 +316,21 @@
                 .descripcion {
                     color: var(--Blanco-F5EDED);
                     font-family: $font-family;
-                    font-size: 14px;
+                    font-size: 18px;
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;        
                     padding-bottom: 2rem;            
                 }
+                .descripcion_acerca_de {
+                    color: var(--Blanco-F5EDED);
+                    font-family: $font-family;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;        
+                    padding-bottom: 2rem;            
+                }                
                 .conocer_mas {
                     cursor: pointer;
                     width: fit-content;
@@ -306,6 +342,13 @@
                     border-radius: 30px;                    
                     border: 1px solid #2B272B;
                     @include flex(flex, center, center, 20px);
+                    @media only screen and (max-width: 600px) {
+                        border: 1px solid #D72323;
+                        padding: 10px 20px;
+                        img {
+                            width: 25px;
+                        }
+                    }
                     &:hover {
                         border: 1px solid #D72323;
                     }
@@ -315,7 +358,10 @@
                         font-size: 17.477px;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: normal;                            
+                        line-height: normal;                   
+                        @media only screen and (max-width: 600px) {
+                            font-size: 15px;
+                        }         
                     }
                 }                
             }
@@ -676,11 +722,18 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        @media only screen and (max-width: 600px) {
+            flex-direction: column;
+            gap: 30px;
+        }
         .detalle_foto_venta {
             width: 630px;
             border-radius: 30px;
             background: #2B272B;             
             padding: 20px;
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+            }
             .txt_e {
                 color: #D9D9D9;
                 font-size: 1rem;
@@ -709,10 +762,17 @@
                     .w {
                         width: 100%;
                         display: flex;
-                        justify-content: space-between;                        
+                        justify-content: space-between;     
+                        @media only screen and (max-width: 600px) {
+                            flex-direction: column;
+                            gap: 10px;
+                        }                   
                         .input {
                             width: 49%;
                             margin-bottom: 0;
+                            @media only screen and (max-width: 600px) {
+                                width: 100%;
+                            }
                         }                        
                     }                    
                     .button_cotizar {
@@ -733,6 +793,9 @@
             align-items: center;
             padding-top: 6rem;
             padding-bottom: 3.6rem;
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+            }
             .box_glide {
                 width: 100%;
                 
@@ -1404,9 +1467,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media only screen and (max-width: 600px) {
+            z-index: 300;
+        }
         .content_imagen_galeria {
             width: 800px;
             position: relative;
+            text-align: center;
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+            }
             .cerrar {
                 border-radius: 50%;
                 border: 1px solid var(--primario-rojo);
@@ -1417,9 +1487,17 @@
                 font-size: 30px;
                 padding: 0px 13px;
                 cursor: pointer;
+                @media only screen and (max-width: 600px) {
+                    right: 20px;
+                    font-size: 20px;
+                    padding: 0px 9px;                    
+                }                
             }
             img {
-                width: 100%;
+                width: 60%;
+                @media only screen and (max-width: 600px) {
+                    width: 80%;
+                }
             }
         }
     }    

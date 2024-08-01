@@ -203,7 +203,7 @@
                 </li>
                 {{-- END GALERIA --}}
                 {{-- GALERIA --}}
-                <li class="dropdown">
+                {{-- <li class="dropdown">
                     <a class="nav-link menu-title {{ prefixActive('backoffice/categoria') }}"
                         href="javascript:void(0)"><i data-feather="file"></i><span>Categorias Generales</span></a>
                     <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('backoffice/categoria') }};">
@@ -211,7 +211,7 @@
                                 class="{{ routeActive('category.index') }}">Lista</a>
                         </li>
                     </ul>
-                </li>
+                </li> --}}
                 {{-- END GALERIA --}}
                 </ul>
             </div>

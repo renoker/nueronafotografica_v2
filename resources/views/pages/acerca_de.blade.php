@@ -39,19 +39,12 @@
         <div class="content_slider_nosotros">
             <div class="content_nosotros">
                 <div class="box">
-                    <h6 class="h6">{{ $traslate[0]->title }}</h6>
                     <div class="txt_wp">
-                        <h1 class="h1">{{ $traslate[1]->title }}</h1>
+                        <h1 class="h_acerca_de">{{ $traslate[1]->title }}</h1>
                     </div>
-                    <p class="descripcion">
+                    <p class="descripcion_acerca_de">
                         {{ $traslate[2]->title }}
                     </p>
-                    <a href="{{ route('acerca_de.index') }}">
-                        <div class="conocer_mas">
-                            <p class="button_conoce_mas">{{ $traslate[3]->title }}</p>
-                            <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
-                        </div>
-                    </a>
                 </div>
             </div>
             <div class="content_logo_neurona">

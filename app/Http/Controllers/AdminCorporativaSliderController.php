@@ -71,14 +71,14 @@ class AdminCorporativaSliderController extends Controller
         ]);
     }
 
-    public function update(Request $request, AdminHomeSlider $slider)
+    public function update(Request $request, AdminHomeSlider $sliderCorporativa)
     {
         if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
                 if (in_array($request->file('image')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->image->extension();
                     $request->image->move(public_path('assets/home/slider'), $imageName);
-                    $slider->image = 'assets/home/slider/' . $imageName;
+                    $sliderCorporativa->image = 'assets/home/slider/' . $imageName;
                 } else {
                     return redirect()->route('sliderCorporativa.show')->with('statusError', '¡Imagen no cumple con el formato!');
                 }
@@ -86,14 +86,14 @@ class AdminCorporativaSliderController extends Controller
                 return redirect()->route('sliderCorporativa.show')->with('statusError', '¡Imagen no valida!');
             }
         }
-        $slider->es_title = $request->es_title;
-        $slider->es_description = $request->es_description;
-        $slider->es_button = $request->es_button;
-        $slider->en_title = $request->en_title;
-        $slider->en_description = $request->en_description;
-        $slider->en_button = $request->en_button;
+        $sliderCorporativa->es_title = $request->es_title;
+        $sliderCorporativa->es_description = $request->es_description;
+        $sliderCorporativa->es_button = $request->es_button;
+        $sliderCorporativa->en_title = $request->en_title;
+        $sliderCorporativa->en_description = $request->en_description;
+        $sliderCorporativa->en_button = $request->en_button;
 
-        $slider->save();
+        $sliderCorporativa->save();
 
         return redirect()->route('sliderCorporativa.index')->with('statusAlta', '¡Fila actualizada de manera exitosa!');
     }
