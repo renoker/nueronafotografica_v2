@@ -8248,7 +8248,7 @@ table tbody .border-bottom-warning td {
     .nav-menu
     > li
     .nav-link {
-    border-radius: 10px;
+    border-radius: 20px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
@@ -12945,12 +12945,12 @@ table tbody .border-bottom-warning td {
 }
 .chat-box .chat-right-aside .chat .chat-msg-box .my-message {
     border: 1px solid #e6edef;
-    border-radius: 10px;
+    border-radius: 20px;
     border-top-left-radius: 0;
 }
 .chat-box .chat-right-aside .chat .chat-msg-box .other-message {
     border: 1px solid #e6edef;
-    border-radius: 10px;
+    border-radius: 20px;
     border-top-right-radius: 0;
 }
 
@@ -19760,7 +19760,7 @@ body {
     background-color: rgba(102, 94, 213, 0.05);
     padding: 40px 10px;
     margin-bottom: 30px;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 1px solid #e6edef;
     margin: 10px;
     height: 185px;
@@ -20851,7 +20851,7 @@ th {
     z-index: 8;
 }
 .morris-hover.morris-default-style {
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 6px;
     color: #898989;
     background: #fff;
@@ -23887,7 +23887,7 @@ footer p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
     border: 1px solid #665ed5;
     border: none;
@@ -42537,7 +42537,7 @@ body.dark-sidebar .main-navbar ul.nav-pills .nav-item .nav-link {
     background-color: #fff;
     width: 500px;
     padding: 12px 50px;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 1px solid #e6edef;
     margin-top: 10px;
     position: relative;
@@ -49756,7 +49756,7 @@ span.twitter-typeahead .tt-suggestion:active {
     justify-content: space-between;
 }
 .target-sec .card-header ul.target-list li {
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
