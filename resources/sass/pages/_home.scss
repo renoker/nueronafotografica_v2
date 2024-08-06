@@ -20,6 +20,16 @@
                 padding-bottom: 30px;
             }
         }
+        .text-bold {
+            font-family: $font-family;
+            font-size: 1.5rem;
+            color: #ffffff;
+            font-weight: bold;
+            line-height: 26px;
+            &.pb-5 {
+                padding-bottom: 20px;
+            }
+        }        
         .text-normal {
             font-family: $font-family;
             font-size: 1rem;
@@ -35,34 +45,14 @@
                 font-weight: bold;
             }
         }
-        .table {
-            width: 100%;
-            border-collapse: collapse;
-            th {
-                height: 70px;
+        .ul {
+            width: 95%;
+            margin: 0 0 0 auto;
+            padding-bottom: 15px;
+            li {
                 font-family: $font-family;
                 color: #ffffff;
-            }
-
-            td {
-                font-family: $font-family;
-                .ul {
-                    width: 100%;
-                    list-style: none;
-                    padding: 10px 0;
-                    .list-disc {
-                        list-style: none;
-                        padding-bottom: 10px;
-                    }
-                }
-            }
-
-            th,
-            td {
-                border: 1px solid black;
-                padding: 0 20px;
-                display: table-cell;
-                vertical-align: middle;
+                padding-bottom: 10px;
             }
         }
     }
