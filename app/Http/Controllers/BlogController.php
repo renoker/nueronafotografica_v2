@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreBlogRequest;
 use App\Http\Requests\UpdateBlogRequest;
 use App\Models\Blog;
+use App\Models\CategoriaBlog;
 use App\Models\Category;
 use App\Models\Translation;
 use Illuminate\Http\Request;
@@ -116,7 +117,7 @@ class BlogController extends Controller
 
     public function adminNotascreate()
     {
-        $categorias = Category::all();
+        $categorias = CategoriaBlog::all();
         return view('backoffice.blog.notas.create', [
             'categorias' => $categorias,
             'page' => 'Blog'
@@ -126,7 +127,7 @@ class BlogController extends Controller
     public function adminNotasStore(Request $request)
     {
         $row = new Blog();
-        $row->category_id = $request->category_id;
+        $row->categoria_blog_id = $request->categoria_blog_id;
         if ($request->hasFile('miniatura')) {
             if ($request->file('miniatura')->isValid()) {
                 if (in_array($request->file('miniatura')->extension(), ['jpg', 'jpeg', 'png'])) {
@@ -169,7 +170,7 @@ class BlogController extends Controller
 
     public function adminNotasEdit(Blog $blog)
     {
-        $categorias = Category::all();
+        $categorias = CategoriaBlog::all();
         return view('backoffice.blog.notas.show', [
             'row'           => $blog,
             'categorias'    => $categorias,
@@ -179,7 +180,7 @@ class BlogController extends Controller
 
     public function adminNotasUpdate(Request $request, Blog $blog)
     {
-        $blog->category_id = $request->category_id;
+        $blog->categoria_blog_id = $request->categoria_blog_id;
         if ($request->hasFile('miniatura')) {
             if ($request->file('miniatura')->isValid()) {
                 if (in_array($request->file('miniatura')->extension(), ['jpg', 'jpeg', 'png'])) {

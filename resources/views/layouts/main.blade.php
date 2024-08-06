@@ -44,6 +44,20 @@
 
     @vite('resources/js/global.js')
     @yield('scripts')
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const targetElement = document.getElementById('header');
+
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 0) {
+                    targetElement.classList.add('back_color');
+                } else {
+                    targetElement.classList.remove('back_color');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

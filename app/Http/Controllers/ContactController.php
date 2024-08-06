@@ -74,16 +74,10 @@ class ContactController extends Controller
             'message' => $row->message
         ];
 
-        try {
-            Mail::to('ulises@tquis.com')->send(new ContactoMail($details));
-            return redirect()->back()->with([
-                'message' => 'Tus datos se enviaron de forma correcta, nos pondremos en contacto contigo en un lapso no mayor a 24hrs'
-            ]);
-        } catch (Exception $e) {
-            return redirect()->back()->with([
-                'message' => 'Error al enviar el correo: ' . $e->getMessage()
-            ]);
-        }
+        Mail::to('rodolfoulises.ramirez@gmail.com')->send(new ContactoMail($details));
+        return redirect()->back()->with([
+            'message' => 'Tus datos se enviaron de forma correcta, nos pondremos en contacto contigo en un lapso no mayor a 24hrs'
+        ]);
     }
 
     /**

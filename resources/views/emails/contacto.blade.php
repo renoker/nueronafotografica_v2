@@ -22,11 +22,16 @@
         }
 
         .header {
-            background-color: #4CAF50;
+            background-color: #D72323;
             color: white;
             padding: 10px 0;
             text-align: center;
             border-radius: 5px 5px 0 0;
+        }
+
+        .encabezado {
+            padding-left: 10px;
+            color: #ffffff;
         }
 
         .content {
@@ -49,7 +54,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Contacto Neurona Fotográfica</h1>
+            <h1 class="encabezado">Contacto Neurona Fotográfica</h1>
         </div>
         <div class="content">
             <p><strong>Nombre:</strong> {{ $details['name'] }}</p>

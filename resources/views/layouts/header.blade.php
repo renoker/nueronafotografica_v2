@@ -1,4 +1,4 @@
-<header class="desk" id="header">
+<header class="fixed desk" id="header">
     <input type="hidden" id="url" value="{{ url('') }}">
     <div class="container-header">
         <div class="logo">
