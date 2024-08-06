@@ -48,7 +48,7 @@
                             <h6 class="encabezado_banner">{{ $item->description }}</h6>
                             <div class="box_slider_text">
                                 <h1 class="texto_principal">{{ $item->title }}</h1>
-                                <a href="{{ route('acerca_de.index') }}">
+                                <a href="{{ route($item->href) }}">
                                     <div class="conocer_mas">
                                         <p class="button_conoce_mas">{{ $item->button }}</p>
                                         <img src="{{ url('assets/icons/arrowright.svg') }}" class="arrow_conocer_mas"
@@ -84,10 +84,12 @@
                     <p class="descripcion">
                         {!! $traslate[2]->title !!}
                     </p>
-                    <div class="conocer_mas">
-                        <p class="button_conoce_mas">{!! $traslate[3]->title !!}</p>
-                        <img src="{{ url('assets/icons/arrowright.svg') }}" class="arrow_conocer_mas" alt="">
-                    </div>
+                    <a href="{{ route('acerca_de.index') }}">
+                        <div class="conocer_mas">
+                            <p class="button_conoce_mas">{!! $traslate[3]->title !!}</p>
+                            <img src="{{ url('assets/icons/arrowright.svg') }}" class="arrow_conocer_mas" alt="">
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

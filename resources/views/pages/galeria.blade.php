@@ -29,12 +29,6 @@
                     <p class="descripcion">
                         {{ $traslate[2]->title }}
                     </p>
-                    <a href="{{ route('acerca_de.index') }}">
-                        <div class="conocer_mas">
-                            <p class="button_conoce_mas">{{ $traslate[3]->title }}</p>
-                            <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
-                        </div>
-                    </a>
                 </div>
             </div>
             <div class="content_logo_neurona">
@@ -44,11 +38,11 @@
         {{--  --}}
         <div class="box_galeria">
             @foreach ($list as $item)
-                <a href="{{ route('gallery.cotizador', $item) }}">
-                    <div class="content_galeria">
-                        <div class="img" style="background-image: url({{ url($item->image) }})"
-                            onmouseover="muestraImagen('{{ url($item->image) }}')">
-                        </div>
+                <div class="content_galeria">
+                    <div class="img" style="background-image: url({{ url($item->image) }})"
+                        onclick="muestraImagen('{{ url($item->image) }}')">
+                    </div>
+                    <a href="{{ route('gallery.cotizador', $item) }}">
                         <h1>{{ $item->name }}</h1>
                         <div class="content_categoria">
                             <div class="cat">
@@ -61,8 +55,8 @@
                                 <span>{{ $item->finish->finish_idioma }}</span>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             @endforeach
         </div>
     </div>

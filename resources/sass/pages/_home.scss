@@ -819,6 +819,9 @@
                     display: inline-flex;
                     list-style: none;
                     transform: translateX(-50%);
+                    @media only screen and (max-width: 600px) {
+                        top: inherit;
+                    }
                     .glide__bullet {
                         background-color: #999999;
                         width: 22px;
@@ -845,6 +848,13 @@
                     img {
                         width: fit-content;
                     }
+                    @media only screen and (max-width: 600px) {
+                        width: 100%;
+                        height: auto;
+                        img {
+                            width: 100%;
+                        }
+                    }                    
                  }
             } 
         }        

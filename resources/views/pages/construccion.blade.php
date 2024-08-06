@@ -46,12 +46,6 @@
                     <p class="descripcion">
                         {{ $traslate[2]->title }}
                     </p>
-                    <a href="{{ route('acerca_de.index') }}">
-                        <div class="conocer_mas">
-                            <p class="button_conoce_mas">{{ $traslate[3]->title }}</p>
-                            <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
-                        </div>
-                    </a>
                 </div>
             </div>
             <div class="glide_slider">
