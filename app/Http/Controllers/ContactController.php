@@ -6,6 +6,7 @@ use App\Http\Requests\StoreContactRequest;
 use App\Http\Requests\UpdateContactRequest;
 use App\Mail\ContactoMail;
 use App\Models\AdminSliderGeneral;
+use App\Models\CardTextContact;
 use App\Models\Contact;
 use App\Models\Translation;
 use Exception;
@@ -24,12 +25,15 @@ class ContactController extends Controller
         if ($language == 'es') {
             $traslate = Translation::select(['translate_es AS title'])->where('key', 'contacto')->where('page', 'Contacto')->get();
             $traslateContact = Translation::select(['translate_es AS title'])->where('key', 'contactanos')->get();
+            $cardText = CardTextContact::select(['description_es AS descripcion', 'name_es AS name', 'ocupacion_es AS ocupacion'])->get();
         } elseif ($language == 'en') {
             $traslate = Translation::select(['translate_en AS title'])->where('key', 'contacto')->where('page', 'Contacto')->get();
             $traslateContact = Translation::select(['translate_en AS title'])->where('key', 'contactanos')->get();
+            $cardText = CardTextContact::select(['description_en AS descripcion', 'name_en AS name', 'ocupacion_en AS ocupacion'])->get();
         } else {
             $traslate = Translation::select(['translate_es AS title'])->where('key', 'contacto')->where('page', 'Contacto')->get();
             $traslateContact = Translation::select(['translate_es AS title'])->where('key', 'contactanos')->get();
+            $cardText = CardTextContact::select(['description_es AS descripcion', 'name_es AS name', 'ocupacion_es AS ocupacion'])->get();
         }
 
         $slider_general_uno = AdminSliderGeneral::where('key', 'contacto')->where('position', 1)->orderBy('order', 'asc')->get();
@@ -44,6 +48,7 @@ class ContactController extends Controller
             'slider_general_cuatro' => $slider_general_cuatro,
             'traslate'              => $traslate,
             'traslateContact'       => $traslateContact,
+            'cardText'              => $cardText,
         ]);
     }
 
@@ -109,6 +114,21 @@ class ContactController extends Controller
      */
     public function destroy(Contact $contact)
     {
-        //
+        $contact->delete();
+        return redirect()->route('list_contact.index')->with('statusAlta', '¡Fila Borrada con éxito!');
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function listadoContacto()
+    {
+        $contactos = Contact::all();
+        return view('backoffice.contacto.index', [
+            'list'    => $contactos,
+            'page'  => 'Listado de Contactos',
+        ]);
     }
 }

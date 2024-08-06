@@ -75,51 +75,22 @@
                     <div class="glide" id="slider_4">
                         <div class="glide__track" data-glide-el="track">
                             <ul class="glide__slides">
-                                <li class="glide__slide">
-                                    <div class="content_info">
-                                        <p>"Soy consultor de negocios, es esencial transmitir confianza, experiencia; El
-                                            fotógrafo capturó la esencia de mi trabajo como consultor de negocios. Sus
-                                            imágenes reflejan profesionalismo y dedicación. Recomendaría sus servicios sin
-                                            ninguna duda."</p>
-                                        <br>
-                                        <p>
-                                            <span>Alejandro Torres</span> <br>
-                                            Puesto, Compañía
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="content_info">
-                                        <p>"Soy consultor de negocios, es esencial transmitir confianza, experiencia; El
-                                            fotógrafo capturó la esencia de mi trabajo como consultor de negocios. Sus
-                                            imágenes reflejan profesionalismo y dedicación. Recomendaría sus servicios sin
-                                            ninguna duda."</p>
-                                        <br>
-                                        <p>
-                                            <span>Alejandro Torres</span> <br>
-                                            Puesto, Compañía
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="content_info">
-                                        <p>"Soy consultor de negocios, es esencial transmitir confianza, experiencia; El
-                                            fotógrafo capturó la esencia de mi trabajo como consultor de negocios. Sus
-                                            imágenes reflejan profesionalismo y dedicación. Recomendaría sus servicios sin
-                                            ninguna duda."</p>
-                                        <br>
-                                        <p>
-                                            <span>Alejandro Torres</span> <br>
-                                            Puesto, Compañía
-                                        </p>
-                                    </div>
-                                </li>
+                                @foreach ($cardText as $item)
+                                    <li class="glide__slide">
+                                        <div class="content_info">
+                                            <p>{{ $item->descripcion }}</p>
+                                            <br>
+                                            <p>
+                                                <span>{{ $item->name }}</span> <br>
+                                                {{ $item->ocupacion }}
+                                            </p>
+                                        </div>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                         <div class="glide__bullets" data-glide-el="controls[nav]">
                             <button class="glide__bullet" data-glide-dir="=0"></button>
-                            <button class="glide__bullet" data-glide-dir="=1"></button>
-                            <button class="glide__bullet" data-glide-dir="=2"></button>
                         </div>
                     </div>
                 </div>

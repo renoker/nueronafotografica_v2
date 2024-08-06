@@ -27,12 +27,16 @@ class GlobalDataProvider extends ServiceProvider
             $language = App::getLocale();
             if ($language == 'es') {
                 $header = Translation::select(['translate_es AS title'])->where('key', 'header')->where('page', 'Header')->get();
+                $footer = Translation::select(['translate_es AS title'])->where('key', 'footer')->where('page', 'Footer')->get();
             } elseif ($language == 'en') {
                 $header = Translation::select(['translate_en AS title'])->where('key', 'header')->where('page', 'Header')->get();
+                $footer = Translation::select(['translate_en AS title'])->where('key', 'footer')->where('page', 'Footer')->get();
             } else {
                 $header = Translation::select(['translate_es AS title'])->where('key', 'header')->where('page', 'Header')->get();
+                $footer = Translation::select(['translate_es AS title'])->where('key', 'footer')->where('page', 'Footer')->get();
             }
             $view->with('header', $header);
+            $view->with('footer', $footer);
         });
     }
 }

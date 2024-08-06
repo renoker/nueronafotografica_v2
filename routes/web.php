@@ -15,6 +15,7 @@ use App\Http\Controllers\AdminVideosSliderController;
 use App\Http\Controllers\ArquitecturaController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CardTextAcercaDeController;
+use App\Http\Controllers\CardTextContactController;
 use App\Http\Controllers\CategoriaBlogController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ConstruccionController;
@@ -277,6 +278,9 @@ Route::group(['middleware' => ['auth:admin']], function () {
         // END ACERCA DE         
         // CONTACTO
         Route::prefix('contacto')->group(function () {
+            // Listado
+            Route::get('listado',                                                     [ContactController::class, 'listadoContacto'])->name('list_contact.index');
+            Route::delete('listado/delete/{contact}',                                 [ContactController::class, 'destroy'])->name('contact.destroy');
             // Translate
             Route::get('translate',                                                     [TranslationController::class, 'indexContacto'])->name('translateContacto.index');
             Route::get('translate/edit/{translation}',                                  [TranslationController::class, 'editContacto'])->name('translateContacto.edit');
@@ -288,6 +292,10 @@ Route::group(['middleware' => ['auth:admin']], function () {
             Route::get('contacto_slider_general/edit/{admin_slider_general}',       [AdminSliderGeneralController::class, 'editContacto'])->name('contacto_slider_general.edit');
             Route::put('contacto_slider_general/update/{admin_slider_general}',     [AdminSliderGeneralController::class, 'updateContacto'])->name('contacto_slider_general.update');
             Route::delete('contacto_slider_general/delete/{admin_slider_general}',  [AdminSliderGeneralController::class, 'destroyContacto'])->name('contacto_slider_general.destroy');
+            // Tarjeta de texto            
+            Route::get('card_text_contact/create',                                  [CardTextContactController::class, 'create'])->name('card_text_contact.create');
+            Route::get('card_text_contact/edit/{card_text_contact}',                [CardTextContactController::class, 'edit'])->name('card_text_contact.edit');
+            Route::apiResource('card_text_contact',                                 CardTextContactController::class);
         });
         // END CONTACTO                        
         // BLOG
@@ -330,6 +338,7 @@ Route::group(['middleware' => ['auth:admin']], function () {
             Route::post('move_row_video',                                                 [VideoController::class, 'moveRowVideo']);
         });
         // END VIDEOS          
+        Route::post('move_row_card_text_contact',                                       [CardTextAcercaDeController::class, 'moveCardTextContact']);
         Route::post('move_row_card_text',                                               [CardTextAcercaDeController::class, 'moveCardText']);
         Route::post('move_row_slider',                                                  [AdminSliderGeneralController::class, 'moveRowSlider']);
         Route::post('move_row_gallery',                                                 [GalleryController::class, 'moveRowGallery']);

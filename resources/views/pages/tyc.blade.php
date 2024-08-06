@@ -9,28 +9,23 @@
             </a>
         </div>
         {{-- Bloque 1 --}}
-        <div class="content_slider_nosotros">
-            <div class="content_nosotros">
-                <div class="box">
-                    <h6 class="h6"> {!! $traslate[0]->title !!}</h6>
-                    <div class="txt_wp">
-                        <h1 class="h1">{!! $traslate[1]->title !!}</h1>
-                    </div>
-                    <p class="descripcion">
-                        {!! $traslate[2]->title !!}
-                    </p>
-                    <a href="{{ route('acerca_de.index') }}">
-                        <div class="conocer_mas">
-                            <p class="button_conoce_mas">{!! $traslate[3]->title !!}</p>
-                            <img src="{{ url('assets/icons/arrowright.svg') }}" alt="">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="content_logo_neurona">
-                <img src="{{ url('assets/icons/Tarjeta_Logo.png') }}" alt="">
+        <div class="w-full">
+            <div class="content_bases">
+                <h1 class="h1_encabezado pt">AVISO DE PRIVACIDAD</h1>
+
+                <h1 class="text-normal pb-5">
+                    Estimados clientes de <span class="bold">NEURONA FOTOGRAFICA (NF).</span>
+                </h1>
+
+                <h1 class="text-normal pb-5">
+                    En <span class="bold">NEURONA FOTOGRAFICA</span> entendemos la importancia de hacer un buen uso y
+                    cuidado de los datos personales de nuestros clientes y visitantes (en adelante los <span
+                        class="bold">"Titulares" </span>), por tanto, nos comprometemos a tratar sus datos personales de
+                    <span class="bold"><u>manera legal y confidencial y de acuerdo con las disposiciones legales
+                            vigentes.</u></span>
+                </h1>
+
             </div>
         </div>
-
     </div>
 @endsection

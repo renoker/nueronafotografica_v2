@@ -4,6 +4,70 @@
 // Optional Theme Stylesheet
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
+.w-full {
+    width: 100%;
+    .content_bases {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 2rem;
+        padding-bottom: 6rem;
+        .h1_encabezado {
+            text-align: center;
+            font-family: $font-family;
+            color: #ffffff;
+            &.pt {
+                padding-top: 10px;
+                padding-bottom: 30px;
+            }
+        }
+        .text-normal {
+            font-family: $font-family;
+            font-size: 1rem;
+            color: #ffffff;
+            font-weight: 100;
+            line-height: 26px;
+            &.pb-5 {
+                padding-bottom: 20px;
+            }
+            .bold {
+                font-family: $font-family;
+                color: #ffffff;
+                font-weight: bold;
+            }
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            th {
+                height: 70px;
+                font-family: $font-family;
+                color: #ffffff;
+            }
+
+            td {
+                font-family: $font-family;
+                .ul {
+                    width: 100%;
+                    list-style: none;
+                    padding: 10px 0;
+                    .list-disc {
+                        list-style: none;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+
+            th,
+            td {
+                border: 1px solid black;
+                padding: 0 20px;
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
 .contente_dad {
     width: 100%;
     position: relative;
@@ -240,7 +304,7 @@
                     .h1 {
                         color: var(--Blanco-F5EDED);
                         font-family: $font-family;
-                        font-size: 52px;
+                        font-size: 40px;
                         font-style: normal;
                         font-weight: 300;
                         line-height: 100%; /* 52px */        
@@ -1075,7 +1139,7 @@
             .glide__bullets {
                 position: absolute;
                 z-index: 2;
-                top: -4em;
+                top: -2em;
                 left: 50%;
                 display: inline-flex;
                 list-style: none;

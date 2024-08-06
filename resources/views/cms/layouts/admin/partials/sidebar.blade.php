@@ -146,20 +146,24 @@
                     </ul>
                 </li>
                 {{-- END ACERCA DE --}}
-                {{-- PUBLICITARIA --}}
+                {{-- CONTACTO --}}
                 <li class="dropdown">
                     <a class="nav-link menu-title {{ prefixActive('backoffice/contacto') }}"
                         href="javascript:void(0)"><i data-feather="users"></i><span>Contacto</span></a>
                     <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('backoffice/contacto') }};">
+                        <li><a href="{{ route('list_contact.index') }}"
+                                class="{{ routeActive('list_contact.index') }}">Registros</a></li>
                         <li><a href="{{ route('contacto_slider_general.index') }}"
                                 class="{{ routeActive('contacto_slider_general.index') }}">Sliders
                                 generales</a>
                         </li>
                         <li><a href="{{ route('translateContacto.index') }}"
                                 class="{{ routeActive('translateContacto.index') }}">Traducción</a></li>
+                        <li><a href="{{ route('card_text_contact.index') }}"
+                                class="{{ routeActive('card_text_contact.index') }}">Tarjeta de texto</a></li>
                     </ul>
                 </li>
-                {{-- END PUBLICITARIA --}}
+                {{-- END CONTACTO --}}
                 {{-- BLOG --}}
                 <li class="dropdown">
                     <a class="nav-link menu-title {{ prefixActive('backoffice/blog') }}" href="javascript:void(0)"><i
