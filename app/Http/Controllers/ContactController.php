@@ -75,7 +75,7 @@ class ContactController extends Controller
         ];
 
         try {
-            Mail::to('rodolfoulises.ramirez@gmail.com')->send(new ContactoMail($details));
+            Mail::to('ulises@tquis.com')->send(new ContactoMail($details));
             return redirect()->back()->with([
                 'message' => 'Tus datos se enviaron de forma correcta, nos pondremos en contacto contigo en un lapso no mayor a 24hrs'
             ]);
