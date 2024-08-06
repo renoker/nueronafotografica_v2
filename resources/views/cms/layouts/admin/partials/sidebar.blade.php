@@ -160,7 +160,7 @@
                         <li><a href="{{ route('translateContacto.index') }}"
                                 class="{{ routeActive('translateContacto.index') }}">Traducción</a></li>
                         <li><a href="{{ route('card_text_contact.index') }}"
-                                class="{{ routeActive('card_text_contact.index') }}">Tarjeta de texto</a></li>
+                                class="{{ routeActive('card_text_contact.index') }}">Testimoniales</a></li>
                     </ul>
                 </li>
                 {{-- END CONTACTO --}}

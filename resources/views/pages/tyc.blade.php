@@ -25,6 +25,14 @@
                             vigentes.</u></span>
                 </h1>
 
+                <h1 class="text-normal pb-5">
+                    Informamos a los <span class="bold">“Titulares”</span> que este <span class="bold">Aviso de
+                        Privacidad</span> ha sido elaborado de conformidad con <span class="bold"><u>La Ley
+                            Federal de Protección de Datos Personales en Posesión de los Particulares y su Reglamento, así
+                            como con
+                            los Lineamientos Generales sobre la Protección de Datos Personales.</u></span>
+                </h1>
+
             </div>
         </div>
     </div>
