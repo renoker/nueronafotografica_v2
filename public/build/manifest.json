@@ -53,7 +53,7 @@
     "src": "resources/js/corporativa.js"
   },
   "resources/js/cotizador.js": {
-    "file": "assets/cotizador-1b7de94e.js",
+    "file": "assets/cotizador-f75e5dea.js",
     "imports": [
       "_glide.esm-4bd3ed45.js"
     ],
@@ -82,7 +82,7 @@
     "src": "resources/js/publicitaria.js"
   },
   "resources/sass/main.scss": {
-    "file": "assets/main-e8055cbc.css",
+    "file": "assets/main-a5547f3c.css",
     "isEntry": true,
     "src": "resources/sass/main.scss"
   }
