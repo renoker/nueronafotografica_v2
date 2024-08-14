@@ -12,11 +12,11 @@ use App\Models\Translation;
 use Exception;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Mail;
+
 use Google\Cloud\RecaptchaEnterprise\V1\RecaptchaEnterpriseServiceClient;
 use Google\Cloud\RecaptchaEnterprise\V1\Event;
 use Google\Cloud\RecaptchaEnterprise\V1\Assessment;
-use Google\Cloud\RecaptchaEnterprise\V1\TokenProperties;
-
+use Google\Cloud\RecaptchaEnterprise\V1\TokenProperties\InvalidReason;
 
 class ContactController extends Controller
 {
@@ -74,7 +74,7 @@ class ContactController extends Controller
         $recaptchaToken = $request->input('recaptcha_token');
 
         $client = new RecaptchaEnterpriseServiceClient();
-        $projectID = '716782090777';
+        $projectID = 'neuronafotografi-1723669019139';
         $event = new Event();
         $event->setToken($recaptchaToken);
         $event->setSiteKey('6LfWECcqAAAAAAnEPOJocwUFtNiFre3Rl2TuuZ4T');
