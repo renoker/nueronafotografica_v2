@@ -125,6 +125,10 @@
                     <textarea name="message" id="" cols="30" rows="10" placeholder="{{ $traslateContact[4]->title }}">
                         {{ old('message') }}
                     </textarea>
+
+                    {!! NoCaptcha::renderJs() !!}
+                    {!! NoCaptcha::display() !!}
+
                     <button type="submit">{{ $traslateContact[5]->title }}</button>
                 </form>
             </div>

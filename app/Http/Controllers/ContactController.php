@@ -12,6 +12,7 @@ use App\Models\Translation;
 use Exception;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Mail;
+use Anhskohbo\NoCaptcha\Facades\NoCaptcha;
 
 class ContactController extends Controller
 {
@@ -65,6 +66,10 @@ class ContactController extends Controller
      */
     public function store(StoreContactRequest $request)
     {
+        $request->validate([
+            'g-recaptcha-response' => 'required|captcha',
+        ]);
+
         $row = new Contact;
         $row->name = $request->name;
         $row->email = $request->email;
