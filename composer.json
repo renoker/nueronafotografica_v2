@@ -6,8 +6,8 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
-        "anhskohbo/no-captcha": "^3.6",
         "cviebrock/eloquent-sluggable": "^10.0",
+        "google/cloud-recaptcha-enterprise": "^1.13",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.2",
