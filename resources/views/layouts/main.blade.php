@@ -16,6 +16,7 @@
     @yield('meta')
     @yield('head')
     @vite('resources/sass/main.scss')
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfWECcqAAAAAAnEPOJocwUFtNiFre3Rl2TuuZ4T"></script>
 </head>
 
 <body>
@@ -31,6 +32,12 @@
     @if (\Session::has('message'))
         <script>
             alert("{!! \Session::get('message') !!}");
+        </script>
+    @endif
+
+    @if (\Session::has('recaptcha'))
+        <script>
+            alert("{!! \Session::get('recaptcha') !!}");
         </script>
     @endif
 
