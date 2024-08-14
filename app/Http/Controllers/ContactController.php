@@ -12,7 +12,11 @@ use App\Models\Translation;
 use Exception;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Mail;
-use Anhskohbo\NoCaptcha\Facades\NoCaptcha;
+use Google\Cloud\RecaptchaEnterprise\V1\RecaptchaEnterpriseServiceClient;
+use Google\Cloud\RecaptchaEnterprise\V1\Event;
+use Google\Cloud\RecaptchaEnterprise\V1\Assessment;
+use Google\Cloud\RecaptchaEnterprise\V1\TokenProperties;
+
 
 class ContactController extends Controller
 {
@@ -66,28 +70,45 @@ class ContactController extends Controller
      */
     public function store(StoreContactRequest $request)
     {
-        $request->validate([
-            'g-recaptcha-response' => 'required|captcha',
-        ]);
 
-        $row = new Contact;
-        $row->name = $request->name;
-        $row->email = $request->email;
-        $row->phone = $request->phone;
-        $row->message = $request->message;
-        $row->save();
+        $recaptchaToken = $request->input('recaptcha_token');
 
-        $details = [
-            'name' => $row->name,
-            'email' => $row->email,
-            'phone' => $row->phone,
-            'message' => $row->message
-        ];
+        $client = new RecaptchaEnterpriseServiceClient();
+        $projectID = '716782090777';
+        $event = new Event();
+        $event->setToken($recaptchaToken);
+        $event->setSiteKey('6LfWECcqAAAAAAnEPOJocwUFtNiFre3Rl2TuuZ4T');
 
-        Mail::to('rodolfoulises.ramirez@gmail.com')->send(new ContactoMail($details));
-        return redirect()->back()->with([
-            'message' => 'Tus datos se enviaron de forma correcta, nos pondremos en contacto contigo en un lapso no mayor a 24hrs'
-        ]);
+        $assessment = $client->createAssessment(
+            $client->projectName($projectID),
+            (new Assessment())->setEvent($event)
+        );
+
+        $tokenProperties = $assessment->getTokenProperties();
+
+        if ($tokenProperties->getValid() && $assessment->getRiskAnalysis()->getScore() >= 0.5) {
+            $row = new Contact;
+            $row->name = $request->name;
+            $row->email = $request->email;
+            $row->phone = $request->phone;
+            $row->message = $request->message;
+            $row->save();
+
+            $details = [
+                'name' => $row->name,
+                'email' => $row->email,
+                'phone' => $row->phone,
+                'message' => $row->message
+            ];
+
+            Mail::to('rodolfoulises.ramirez@gmail.com')->send(new ContactoMail($details));
+            return redirect()->back()->with([
+                'message' => 'Tus datos se enviaron de forma correcta, nos pondremos en contacto contigo en un lapso no mayor a 24hrs'
+            ]);
+        } else {
+            // Token no válido o riesgo alto
+            return back()->withErrors(['recaptcha' => 'No se pudo verificar el reCAPTCHA.']);
+        }
     }
 
     /**
