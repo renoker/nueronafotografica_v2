@@ -145,10 +145,6 @@
                     <h1 class="h1">{{ $traslate[8]->title }}</h1>
                     <p class="txt">{{ $traslate[9]->title }}</p>
                 </div>
-                <div class="item_faqs">
-                    <h1 class="h1">{{ $traslate[10]->title }}</h1>
-                    <p class="txt">{{ $traslate[11]->title }}</p>
-                </div>
             </div>
         </div>
     </div>
