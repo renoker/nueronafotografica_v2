@@ -2,6 +2,18 @@
 @section('title', 'Neuronafotografica - Contacto')
 @section('scripts')
     @vite('resources/js/contacto.js')
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfWECcqAAAAAAnEPOJocwUFtNiFre3Rl2TuuZ4T"></script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LfWECcqAAAAAAnEPOJocwUFtNiFre3Rl2TuuZ4T', {
+                action: 'homepage'
+            }).then(function(token) {
+                console.log('token: ' + token);
+
+            });
+        });
+    </script>
+
 @endsection
 @section('content')
     <div class="contente_dad">
