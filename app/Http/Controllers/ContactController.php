@@ -73,6 +73,8 @@ class ContactController extends Controller
 
         $recaptchaToken = $request->input('recaptcha_token');
 
+	putenv('GOOGLE_APPLICATION_CREDENTIALS=' . storage_path('app/google-credentials.json'));
+
         $client = new RecaptchaEnterpriseServiceClient();
         $projectID = 'neuronafotografi-1723669019139';
         $event = new Event();
