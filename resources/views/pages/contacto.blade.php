@@ -16,10 +16,10 @@
             <div class="content_nosotros">
                 <div class="box">
                     <div class="txt_wp">
-                        <h1 class="h_acerca_de">{{ $traslate[1]->title }}</h1>
+                        <h1 class="h_acerca_de">{{ $traslate[0]->title }}</h1>
                     </div>
                     <p class="descripcion_acerca_de">
-                        {{ $traslate[2]->title }}
+                        {{ $traslate[1]->title }}
                     </p>
                 </div>
             </div>
