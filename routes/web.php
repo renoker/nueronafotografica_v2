@@ -281,6 +281,7 @@ Route::group(['middleware' => ['auth:admin']], function () {
             // Listado
             Route::get('listado',                                                     [ContactController::class, 'listadoContacto'])->name('list_contact.index');
             Route::delete('listado/delete/{contact}',                                 [ContactController::class, 'destroy'])->name('contact.destroy');
+            Route::delete('bulk-destroy',                                             [ContactController::class, 'bulkDestroy'])->name('contacts.bulkDestroy');
             // Translate
             Route::get('translate',                                                     [TranslationController::class, 'indexContacto'])->name('translateContacto.index');
             Route::get('translate/edit/{translation}',                                  [TranslationController::class, 'editContacto'])->name('translateContacto.edit');
@@ -359,8 +360,7 @@ Route::view('default-layout', 'cms.multiple.default-layout')->name('default-layo
 Route::view('compact-layout', 'cms.multiple.compact-layout')->name('compact-layout');
 Route::view('modern-layout', 'cms.multiple.modern-layout')->name('modern-layout');
 
-Route::prefix('admin')->group(function () {
-});
+Route::prefix('admin')->group(function () {});
 
 Route::prefix('dashboard')->group(function () {
     Route::view('dashboard-02', 'cms.admin.dashboard.dashboard-02')->name('dashboard-02');

@@ -17,6 +17,7 @@ use Google\Cloud\RecaptchaEnterprise\V1\RecaptchaEnterpriseServiceClient;
 use Google\Cloud\RecaptchaEnterprise\V1\Event;
 use Google\Cloud\RecaptchaEnterprise\V1\Assessment;
 use Google\Cloud\RecaptchaEnterprise\V1\TokenProperties\InvalidReason;
+use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
@@ -73,7 +74,7 @@ class ContactController extends Controller
 
         $recaptchaToken = $request->input('recaptcha_token');
 
-	putenv('GOOGLE_APPLICATION_CREDENTIALS=' . storage_path('app/google-credentials.json'));
+        putenv('GOOGLE_APPLICATION_CREDENTIALS=' . storage_path('app/google-credentials.json'));
 
         $client = new RecaptchaEnterpriseServiceClient();
         $projectID = 'neuronafotografi-1723669019139';
@@ -158,5 +159,15 @@ class ContactController extends Controller
             'list'    => $contactos,
             'page'  => 'Listado de Contactos',
         ]);
+    }
+
+    public function bulkDestroy(Request $request)
+    {
+        $ids = $request->input('selected_ids');
+        if ($ids) {
+            Contact::whereIn('id', $ids)->delete();
+        }
+
+        return redirect()->route('list_contact.index')->with('statusAlta', 'Contactos eliminados correctamente.');
     }
 }

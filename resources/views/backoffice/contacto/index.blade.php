@@ -26,41 +26,52 @@
                 <div class="card">
                     <div class="card-header pb-0">
                         <h5>{{ $page }}</h5>
+                        <button id="delete-selected" class="btn btn-danger btn-xs" type="button">Borrar
+                            Seleccionados</button>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive product-table">
-                            <table class="display" id="basic-1">
-                                <thead>
-                                    <tr>
-                                        <th>Nombre</th>
-                                        <th>Email</th>
-                                        <th>Teléfono</th>
-                                        <th>Mensaje</th>
-                                        <th>Acciones</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach ($list as $item)
+                            <form id="bulk-delete-form" action="{{ route('contacts.bulkDestroy') }}" method="post">
+                                @csrf
+                                @method('DELETE')
+                                <table class="display" id="basic-1">
+                                    <thead>
                                         <tr>
-                                            <td>{{ $item->name }}</td>
-                                            <td>{{ $item->email }}</td>
-                                            <td>{{ $item->phone }}</td>
-                                            <td>{{ $item->message }}</td>
-                                            <td class="d-flex justify-content-between">
-                                                <form action="{{ route('contact.destroy', $item) }}" method="post"
-                                                    id="delete_{{ $item->id }}">
-                                                    @method('DELETE')
-                                                    @csrf
-                                                    <button class="btn btn-danger btn-xs" type="button"
-                                                        onclick="deleteRow({{ $item->id }})"
-                                                        data-original-title="btn btn-danger btn-xs"
-                                                        title="">Borrar</button>
-                                                </form>
-                                            </td>
+                                            <th><input type="checkbox" id="select-all"></th>
+                                            <th>ID</th>
+                                            <th>Nombre</th>
+                                            <th>Email</th>
+                                            <th>Teléfono</th>
+                                            <th>Mensaje</th>
+                                            <th>Acciones</th>
                                         </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
+                                    </thead>
+                                    <tbody>
+                                        @foreach ($list as $item)
+                                            <tr>
+                                                <td><input type="checkbox" name="selected_ids[]"
+                                                        value="{{ $item->id }}"></td>
+                                                <td>{{ $item->id }}</td>
+                                                <td>{{ $item->name }}</td>
+                                                <td>{{ $item->email }}</td>
+                                                <td>{{ $item->phone }}</td>
+                                                <td>{{ $item->message }}</td>
+                                                <td class="d-flex justify-content-between">
+                                                    <form action="{{ route('contact.destroy', $item) }}" method="post"
+                                                        id="delete_{{ $item->id }}">
+                                                        @method('DELETE')
+                                                        @csrf
+                                                        <button class="btn btn-danger btn-xs" type="button"
+                                                            onclick="deleteRow({{ $item->id }})"
+                                                            data-original-title="btn btn-danger btn-xs"
+                                                            title="">Borrar</button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -77,9 +88,16 @@
         <script src="{{ asset('cms_assets/js/ecommerce.js') }}"></script>
         <script src="{{ asset('cms_assets/js/product-list-custom.js') }}"></script>
         <script>
-            const deleteRow = (id) => {
+            document.getElementById('select-all').addEventListener('change', function() {
+                let checkboxes = document.querySelectorAll('input[name="selected_ids[]"]');
+                checkboxes.forEach((checkbox) => {
+                    checkbox.checked = this.checked;
+                });
+            });
+
+            document.getElementById('delete-selected').addEventListener('click', function() {
                 Swal.fire({
-                    title: '¿Quieres eliminar esta fila?',
+                    title: '¿Quieres eliminar las filas seleccionadas?',
                     text: "Todos los movimientos realizados son irreversibles!",
                     icon: 'warning',
                     showCancelButton: true,
@@ -88,10 +106,10 @@
                     confirmButtonText: 'Si, borrar'
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        document.getElementById("delete_" + id).submit();
+                        document.getElementById("bulk-delete-form").submit();
                     }
                 })
-            }
+            });
         </script>
     @endpush
 @endsection
