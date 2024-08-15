@@ -18,4 +18,9 @@ class Contact extends Model
         'phone',
         'message'
     ];
+
+    public function getFormattedCreatedAtAttribute()
+    {
+        return $this->created_at->format('d/m/Y H:i:s'); // Puedes cambiar el formato según tus necesidades
+    }
 }

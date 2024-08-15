@@ -23,8 +23,8 @@ class StoreContactRequest extends FormRequest
     {
         return [
             'name'    => 'required',
-            'email' => 'required|email',
-            'phone'    => 'required',
+            'email'   => 'required|email',
+            'phone'   => ['required', 'regex:/^(\+?\d{1,3}[-.\s]?)?\d{10}$/'],
         ];
     }
 
@@ -32,8 +32,9 @@ class StoreContactRequest extends FormRequest
     {
         return [
             'name.required'   => 'Es necesario que nos des tu nombre',
-            'email.required'   => 'Es necesario que nos des tu Email',
-            'phone.required'   => 'Es necesario que nos des tu Teléfono',
+            'email.required'  => 'Es necesario que nos des tu Email',
+            'phone.required'  => 'Es necesario que nos des tu Teléfono',
+            'phone.regex'     => 'El número de teléfono debe ser un número de celular válido de 10 dígitos.',
         ];
     }
 }

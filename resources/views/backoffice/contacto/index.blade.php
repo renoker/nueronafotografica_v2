@@ -38,7 +38,7 @@
                                     <thead>
                                         <tr>
                                             <th><input type="checkbox" id="select-all"></th>
-                                            <th>ID</th>
+                                            <th>Fecha</th>
                                             <th>Nombre</th>
                                             <th>Email</th>
                                             <th>Teléfono</th>
@@ -51,7 +51,7 @@
                                             <tr>
                                                 <td><input type="checkbox" name="selected_ids[]"
                                                         value="{{ $item->id }}"></td>
-                                                <td>{{ $item->id }}</td>
+                                                <td>{{ $item->formatted_created_at }}</td>
                                                 <td>{{ $item->name }}</td>
                                                 <td>{{ $item->email }}</td>
                                                 <td>{{ $item->phone }}</td>
