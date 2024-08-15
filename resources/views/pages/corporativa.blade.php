@@ -102,24 +102,24 @@
         <div class="content_slider_nosotros">
             <div class="faqs_home_content_big">
                 <div class="item_faqs">
-                    <h1 class="h1">{{ $traslate[12]->title }}</h1>
-                    <p class="txt">{{ $traslate[13]->title }}</p>
+                    <h1 class="h1">{{ $traslate[0]->title }}</h1>
+                    <p class="txt">{{ $traslate[1]->title }}</p>
                 </div>
                 <div class="item_faqs">
-                    <h1 class="h1">{{ $traslate[14]->title }}</h1>
-                    <p class="txt">{{ $traslate[15]->title }}</p>
+                    <h1 class="h1">{{ $traslate[2]->title }}</h1>
+                    <p class="txt">{{ $traslate[3]->title }}</p>
                 </div>
                 <div class="item_faqs">
-                    <h1 class="h1">{{ $traslate[16]->title }}</h1>
-                    <p class="txt">{{ $traslate[17]->title }}</p>
+                    <h1 class="h1">{{ $traslate[4]->title }}</h1>
+                    <p class="txt">{{ $traslate[5]->title }}</p>
                 </div>
                 <div class="item_faqs">
-                    <h1 class="h1">{{ $traslate[18]->title }}</h1>
-                    <p class="txt">{{ $traslate[19]->title }}</p>
+                    <h1 class="h1">{{ $traslate[6]->title }}</h1>
+                    <p class="txt">{{ $traslate[7]->title }}</p>
                 </div>
                 <div class="item_faqs">
-                    <h1 class="h1">{{ $traslate[20]->title }}</h1>
-                    <p class="txt">{{ $traslate[21]->title }}</p>
+                    <h1 class="h1">{{ $traslate[8]->title }}</h1>
+                    <p class="txt">{{ $traslate[9]->title }}</p>
                 </div>
             </div>
             <div class="glide_slider_big">

@@ -1,5 +1,8 @@
 @extends('layouts.main')
 @section('title', 'Neuronafotografica - Blog')
+@section('scripts')
+    @vite('resources/js/carrusel.js')
+@endsection
 @section('popups')
     <div id="videos" class="">
         <div class="content_videos_popup">

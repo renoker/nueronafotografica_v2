@@ -3,6 +3,16 @@
 @section('scripts')
     @vite('resources/js/publicitaria.js')
     @vite('resources/js/carrusel.js')
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfWECcqAAAAAAnEPOJocwUFtNiFre3Rl2TuuZ4T"></script>
+    <script>
+        grecaptcha.enterprise.ready(function() {
+            grecaptcha.enterprise.execute('6LfWECcqAAAAAAnEPOJocwUFtNiFre3Rl2TuuZ4T', {
+                action: 'Contacto'
+            }).then(function(token) {
+                document.getElementById('recaptcha-token').value = token;
+            });
+        });
+    </script>
 @endsection
 @section('content')
     <div class="contente_dad">
@@ -115,24 +125,24 @@
             </div>
             <div class="faqs_home_content_big">
                 <div class="item_faqs">
-                    <h1 class="h1">{{ $traslate[12]->title }}</h1>
-                    <p class="txt">{{ $traslate[13]->title }}</p>
+                    <h1 class="h1">{{ $traslate[0]->title }}</h1>
+                    <p class="txt">{{ $traslate[1]->title }}</p>
                 </div>
                 <div class="item_faqs">
-                    <h1 class="h1">{{ $traslate[14]->title }}</h1>
-                    <p class="txt">{{ $traslate[15]->title }}</p>
+                    <h1 class="h1">{{ $traslate[2]->title }}</h1>
+                    <p class="txt">{{ $traslate[3]->title }}</p>
                 </div>
                 <div class="item_faqs">
-                    <h1 class="h1">{{ $traslate[16]->title }}</h1>
-                    <p class="txt">{{ $traslate[17]->title }}</p>
+                    <h1 class="h1">{{ $traslate[4]->title }}</h1>
+                    <p class="txt">{{ $traslate[5]->title }}</p>
                 </div>
                 <div class="item_faqs">
-                    <h1 class="h1">{{ $traslate[18]->title }}</h1>
-                    <p class="txt">{{ $traslate[19]->title }}</p>
+                    <h1 class="h1">{{ $traslate[6]->title }}</h1>
+                    <p class="txt">{{ $traslate[7]->title }}</p>
                 </div>
                 <div class="item_faqs">
-                    <h1 class="h1">{{ $traslate[20]->title }}</h1>
-                    <p class="txt">{{ $traslate[21]->title }}</p>
+                    <h1 class="h1">{{ $traslate[8]->title }}</h1>
+                    <p class="txt">{{ $traslate[9]->title }}</p>
                 </div>
             </div>
         </div>
@@ -153,6 +163,7 @@
                         placeholder="{{ $traslateContact[4]->title }}">
                         {{ old('message') }}
                     </textarea>
+                    <input type="hidden" name="recaptcha_token" id="recaptcha-token">
                     <button type="submit">{{ $traslateContact[5]->title }}</button>
                 </form>
             </div>

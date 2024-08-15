@@ -3,6 +3,16 @@
 @section('scripts')
     @vite('resources/js/home.js')
     @vite('resources/js/carrusel.js')
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfWECcqAAAAAAnEPOJocwUFtNiFre3Rl2TuuZ4T"></script>
+    <script>
+        grecaptcha.enterprise.ready(function() {
+            grecaptcha.enterprise.execute('6LfWECcqAAAAAAnEPOJocwUFtNiFre3Rl2TuuZ4T', {
+                action: 'Contacto'
+            }).then(function(token) {
+                document.getElementById('recaptcha-token').value = token;
+            });
+        });
+    </script>
     <script>
         const despliegaBanner = (id) => {
             var banner = document.getElementById('img_' + id)
@@ -212,6 +222,7 @@
                     <textarea name="message" id="" cols="30" rows="10" placeholder="{!! $traslateContact[4]->title !!}">
                         {{ old('message') }}
                     </textarea>
+                    <input type="hidden" name="recaptcha_token" id="recaptcha-token">
                     <button type="submit">{!! $traslateContact[5]->title !!}</button>
                 </form>
             </div>
