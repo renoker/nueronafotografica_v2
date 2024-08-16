@@ -61,6 +61,41 @@
                 @endforeach
             </div>
         </div>
+
+        {{-- Contactanos --}}
+        <div class="content_contacto_doble">
+            <div class="box_contacto">
+                <form action="{{ route('contact.store') }}" method="post">
+                    @method('POST')
+                    @csrf
+                    <div class="h1_contacto">{!! $traslateContact[0]->title !!}</div>
+                    <input type="text" name="name" placeholder="{!! $traslateContact[1]->title !!}" value="{{ old('name') }}">
+                    <input type="email" name="email" id="" placeholder="{!! $traslateContact[2]->title !!}"
+                        value="{{ old('email') }}">
+                    <input type="tel" name="phone" id="" placeholder="{!! $traslateContact[3]->title !!}"
+                        value="{{ old('phone') }}">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="{!! $traslateContact[4]->title !!}">
+                        {{ old('message') }}
+                    </textarea>
+                    <input type="hidden" name="recaptcha_token" id="recaptcha-token">
+                    <button type="submit">{!! $traslateContact[5]->title !!}</button>
+                </form>
+            </div>
+            <div class="glide_slider_big">
+                <div class="glide" id="slider_3">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            @foreach ($slider_general_tres as $item)
+                                <li class="glide__slide">
+                                    <img src="{{ url($item->image) }}" class="zoom" alt="">
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         {{-- Bloque 1 --}}
         <div class="content_slider_nosotros">
             <div class="glide_slider">
@@ -130,7 +165,8 @@
         @foreach ($desplegable as $item)
             <div class="contente_banner_desplegables">
                 <div class="banner_desplegable" id="img_{{ $item->id }}"
-                    onclick="despliegaBanner({{ $item->id }})" style="background-image: url({{ url($item->image) }})">
+                    onclick="despliegaBanner({{ $item->id }})"
+                    style="background-image: url({{ url($item->image) }})">
                     <div class="content_text_banner">
                         <h1 class="h1">{{ $item->title }}</h1>
                         <a href="{{ route($item->href) }}">
@@ -192,40 +228,6 @@
                                 <button class="glide__bullet" data-glide-dir="={{ $i }}"></button>
                             @endfor
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {{-- Contactanos --}}
-        <div class="content_contacto_doble">
-            <div class="box_contacto">
-                <form action="{{ route('contact.store') }}" method="post">
-                    @method('POST')
-                    @csrf
-                    <div class="h1_contacto">{!! $traslateContact[0]->title !!}</div>
-                    <input type="text" name="name" placeholder="{!! $traslateContact[1]->title !!}"
-                        value="{{ old('name') }}">
-                    <input type="email" name="email" id="" placeholder="{!! $traslateContact[2]->title !!}"
-                        value="{{ old('email') }}">
-                    <input type="tel" name="phone" id="" placeholder="{!! $traslateContact[3]->title !!}"
-                        value="{{ old('phone') }}">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="{!! $traslateContact[4]->title !!}">
-                        {{ old('message') }}
-                    </textarea>
-                    <input type="hidden" name="recaptcha_token" id="recaptcha-token">
-                    <button type="submit">{!! $traslateContact[5]->title !!}</button>
-                </form>
-            </div>
-            <div class="glide_slider_big">
-                <div class="glide" id="slider_3">
-                    <div class="glide__track" data-glide-el="track">
-                        <ul class="glide__slides">
-                            @foreach ($slider_general_tres as $item)
-                                <li class="glide__slide">
-                                    <img src="{{ url($item->image) }}" class="zoom" alt="">
-                                </li>
-                            @endforeach
-                        </ul>
                     </div>
                 </div>
             </div>
