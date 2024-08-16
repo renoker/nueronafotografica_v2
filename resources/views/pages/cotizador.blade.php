@@ -50,16 +50,28 @@
         {{-- Comentarios --}}
         <div class="content_comentarios">
             <div class="detalle_foto_venta">
-                <h1 class="txt_e">Nombre de la foto</h1>
-                <p class="txt">{{ $row->name }}</p>
-                <h1 class="txt_e mt">Tamaño</h1>
-                <p class="txt">{{ $row->size->size }}</p>
-                <h1 class="txt_e mt">Material</h1>
-                <p class="txt">{{ $row->finish->finish_idioma }}</p>
-                <h1 class="txt_e mt">Papel</h1>
-                <p class="txt">{{ $row->paper->paper_idioma }}</p>
-                <h1 class="txt_e mt">Precio</h1>
-                <p class="txt">${{ number_format($row->precio, 2, '.', ',') }}</p>
+                <div class="cont">
+                    <div class="row">
+                        <h1 class="txt_e">Nombre de la foto</h1>
+                        <p class="txt">{{ $row->name }}</p>
+                    </div>
+                    <div class="row">
+                        <h1 class="txt_e">Tamaño</h1>
+                        <p class="txt">{{ $row->size->size }}</p>
+                    </div>
+                    <div class="row">
+                        <h1 class="txt_e">Material</h1>
+                        <p class="txt">{{ $row->finish->finish_idioma }}</p>
+                    </div>
+                    <div class="row">
+                        <h1 class="txt_e">Papel</h1>
+                        <p class="txt">{{ $row->paper->paper_idioma }}</p>
+                    </div>
+                    <div class="row">
+                        <h1 class="txt_e">Precio</h1>
+                        <p class="txt">${{ number_format($row->precio, 2, '.', ',') }}</p>
+                    </div>
+                </div>
                 <h1 class="txt_e mt">Datos cliente</h1>
                 <div class="content_form_cotizador">
                     <form action="{{ route('gallery.send_cotizacion') }}" method="post">
