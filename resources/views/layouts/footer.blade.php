@@ -6,9 +6,11 @@
         </div>
         <div class="formulario_secciones">
             <div class="form_footer">
-                <form action="" method="post">
-                    <input type="text" placeholder="Input">
-                    <button>{{ $footer[1]->title }}</button>
+                <form action="{{ route('newsletter.store') }}" method="post">
+                    @method('POST')
+                    @csrf
+                    <input type="text" name="email_newsletter" placeholder="Input">
+                    <button type="submit">{{ $footer[1]->title }}</button>
                 </form>
             </div>
             <div class="secciones_footer">

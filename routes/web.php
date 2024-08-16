@@ -27,6 +27,7 @@ use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\IntagramFeedConroller;
 use App\Http\Controllers\LangController;
+use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\PaperController;
 use App\Http\Controllers\PersonalController;
 use App\Http\Controllers\PublicitariaController;
@@ -75,6 +76,8 @@ Route::get('/videos', [VideoController::class, 'index'])->name('video.index');
 // Contactanos
 Route::post('/contactanos/store',  [ContactController::class, 'store'])->name('contact.store');
 Route::post('/send_cotizacion',  [GalleryController::class, 'sendCotizacion'])->name('gallery.send_cotizacion');
+// newsletter
+Route::post('/newsletter/store',  [NewsletterController::class, 'store'])->name('newsletter.store');
 
 Route::get('size', [SizeController::class, 'index'])->name('size.index');
 

@@ -183,7 +183,7 @@
                         value="{{ old('name') }}">
                     <input type="email" name="email" id="" placeholder="{{ $traslateContact[2]->title }}"
                         value="{{ old('email') }}">
-                    <input type="tel" name="phone" id="" placeholder="{{ $traslateContact[3]->title }}"
+                    <input type="number" name="phone" id="" placeholder="{{ $traslateContact[3]->title }}"
                         value="{{ old('phone') }}">
                     <textarea name="message" id="" cols="30" rows="10"
                         placeholder="{{ $traslateContact[4]->title }}">
