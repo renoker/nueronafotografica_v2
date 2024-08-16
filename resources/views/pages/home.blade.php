@@ -3,16 +3,6 @@
 @section('scripts')
     @vite('resources/js/home.js')
     @vite('resources/js/carrusel.js')
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfWECcqAAAAAAnEPOJocwUFtNiFre3Rl2TuuZ4T"></script>
-    <script>
-        grecaptcha.enterprise.ready(function() {
-            grecaptcha.enterprise.execute('6LfWECcqAAAAAAnEPOJocwUFtNiFre3Rl2TuuZ4T', {
-                action: 'Contacto'
-            }).then(function(token) {
-                document.getElementById('recaptcha-token').value = token;
-            });
-        });
-    </script>
     <script>
         const despliegaBanner = (id) => {
             var banner = document.getElementById('img_' + id)

@@ -34,7 +34,7 @@ class NewsletterController extends Controller
      */
     public function store(StoreNewsletterRequest $request)
     {
-        $recaptchaToken = $request->input('recaptcha_token');
+        $recaptchaToken = $request->input('recaptcha_token_newsletter');
 
         putenv('GOOGLE_APPLICATION_CREDENTIALS=' . storage_path('app/google-credentials.json'));
 

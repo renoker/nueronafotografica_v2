@@ -10,6 +10,7 @@
                     @method('POST')
                     @csrf
                     <input type="text" name="email_newsletter" placeholder="Input">
+                    <input type="hidden" name="recaptcha_token_newsletter" id="recaptcha-token-newsletter">
                     <button type="submit">{{ $footer[1]->title }}</button>
                 </form>
             </div>

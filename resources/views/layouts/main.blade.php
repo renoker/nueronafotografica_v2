@@ -17,6 +17,16 @@
     @yield('head')
     @vite('resources/sass/main.scss')
     <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfWECcqAAAAAAnEPOJocwUFtNiFre3Rl2TuuZ4T"></script>
+    <script>
+        grecaptcha.enterprise.ready(function() {
+            grecaptcha.enterprise.execute('6LfWECcqAAAAAAnEPOJocwUFtNiFre3Rl2TuuZ4T', {
+                action: 'Contacto'
+            }).then(function(token) {
+                document.getElementById('recaptcha-token').value = token;
+                document.getElementById('recaptcha-token-newsletter').value = token;
+            });
+        });
+    </script>
 </head>
 
 <body>

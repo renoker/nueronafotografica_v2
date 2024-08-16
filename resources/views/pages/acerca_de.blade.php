@@ -3,16 +3,6 @@
 @section('scripts')
     @vite('resources/js/acerca_de.js')
     @vite('resources/js/carrusel.js')
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfWECcqAAAAAAnEPOJocwUFtNiFre3Rl2TuuZ4T"></script>
-    <script>
-        grecaptcha.enterprise.ready(function() {
-            grecaptcha.enterprise.execute('6LfWECcqAAAAAAnEPOJocwUFtNiFre3Rl2TuuZ4T', {
-                action: 'Contacto'
-            }).then(function(token) {
-                document.getElementById('recaptcha-token').value = token;
-            });
-        });
-    </script>
 @endsection
 @section('content')
     <div class="contente_dad">
