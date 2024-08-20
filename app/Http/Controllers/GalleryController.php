@@ -290,7 +290,7 @@ class GalleryController extends Controller
     public function sendCotizacion(Request $request)
     {
         $galeria = Gallery::where('id', $request->id)->first();
-        Mail::send(new CotizadorMail($galeria, $request));
+        Mail::to('rodolfoulises.ramirez@gmail.com')->send(new CotizadorMail($galeria, $request));
         return redirect()->back()->with([
             'message' => 'Tus datos se enviaron de forma correcta, nos pondremos en contacto contigo en un lapso no mayor a 24hrs'
         ]);
