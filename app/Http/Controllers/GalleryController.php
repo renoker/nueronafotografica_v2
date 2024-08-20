@@ -314,7 +314,7 @@ class GalleryController extends Controller
                 <p>Email: <strong>' . $request->email_cliente . '</strong></p>
             </div>'
         );
-        $sendgrid = new \SendGrid('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');
+        $sendgrid = new \SendGrid(env('SENDGRID_API_KEY'));
         try {
             $response = $sendgrid->send($email);
             printf("Response status: %d\n\n", $response->statusCode());
