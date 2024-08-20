@@ -93,7 +93,7 @@ Route::group(['middleware' => ['auth:admin']], function () {
         Route::prefix('newsletter')->group(function () {
             Route::get('/',                           [NewsletterController::class, 'index'])->name('newsletter.index');
             Route::delete('/delete/{newsletter}',     [NewsletterController::class, 'destroy'])->name('newsletter.destroy');
-            Route::delete('newsletter-destroy',             [ContactController::class, 'bulkDestroy'])->name('newsletter.bulkDestroy');
+            Route::delete('newsletter-destroy',             [NewsletterController::class, 'bulkDestroy'])->name('newsletter.bulkDestroy');
         });
         // END Newsletter   
         // Category
