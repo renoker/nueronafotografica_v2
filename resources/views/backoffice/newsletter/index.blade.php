@@ -51,7 +51,7 @@
                                                 <td>{{ $item->formatted_created_at }}</td>
                                                 <td>{{ $item->email }}</td>
                                                 <td class="d-flex justify-content-between">
-                                                    <form action="{{ route($rutaDestroy, $item) }}" method="post"
+                                                    <form action="{{ route('newsletter.destroy', $item) }}" method="post"
                                                         id="delete_{{ $item->id }}">
                                                         @method('DELETE')
                                                         @csrf
