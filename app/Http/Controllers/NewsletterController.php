@@ -18,7 +18,12 @@ class NewsletterController extends Controller
      */
     public function index()
     {
-        //
+        $row = Newsletter::all();
+        return view('backoffice.newsletter.index', [
+            'list'  => $row,
+            'page'  => 'Newsletter',
+            'rutaDestroy'    => 'newsletter.destroy',
+        ]);
     }
 
     /**
@@ -94,6 +99,17 @@ class NewsletterController extends Controller
      */
     public function destroy(Newsletter $newsletter)
     {
-        //
+        $newsletter->delete();
+        return redirect()->route('newsletter.index')->with('statusAlta', 'Email eliminado correctamente.');
+    }
+
+    public function bulkDestroy(Request $request)
+    {
+        $ids = $request->input('selected_ids');
+        if ($ids) {
+            Newsletter::whereIn('id', $ids)->delete();
+        }
+
+        return redirect()->route('newsletter.index')->with('statusAlta', 'Emails eliminados correctamente.');
     }
 }

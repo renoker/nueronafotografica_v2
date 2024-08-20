@@ -89,6 +89,13 @@ Route::post('/backoffice/login', [AdminController::class, 'login'])->name('admin
 Route::group(['middleware' => ['auth:admin']], function () {
     Route::get('/backoffice/logout',    [AdminController::class, 'logout'])->name('admin.logout');
     Route::prefix('backoffice')->group(function () {
+        // Newsletter
+        Route::prefix('newsletter')->group(function () {
+            Route::get('/',                           [NewsletterController::class, 'index'])->name('newsletter.index');
+            Route::delete('/delete/{newsletter}',     [NewsletterController::class, 'destroy'])->name('newsletter.destroy');
+            Route::delete('newsletter-destroy',             [ContactController::class, 'bulkDestroy'])->name('newsletter.bulkDestroy');
+        });
+        // END Newsletter   
         // Category
         Route::prefix('categoria')->group(function () {
             Route::get('/',                                 [CategoryController::class, 'index'])->name('category.index');

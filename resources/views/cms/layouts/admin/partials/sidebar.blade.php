@@ -207,15 +207,16 @@
                 </li>
                 {{-- END GALERIA --}}
                 {{-- GALERIA --}}
-                {{-- <li class="dropdown">
-                    <a class="nav-link menu-title {{ prefixActive('backoffice/categoria') }}"
-                        href="javascript:void(0)"><i data-feather="file"></i><span>Categorias Generales</span></a>
-                    <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('backoffice/categoria') }};">
-                        <li><a href="{{ route('category.index') }}"
-                                class="{{ routeActive('category.index') }}">Lista</a>
+                <li class="dropdown">
+                    <a class="nav-link menu-title {{ prefixActive('backoffice/newsletter') }}"
+                        href="javascript:void(0)"><i data-feather="file"></i><span>Newsletter</span></a>
+                    <ul class="nav-submenu menu-content"
+                        style="display: {{ prefixBlock('backoffice/newsletter') }};">
+                        <li><a href="{{ route('newsletter.index') }}"
+                                class="{{ routeActive('newsletter.index') }}">Lista</a>
                         </li>
                     </ul>
-                </li> --}}
+                </li>
                 {{-- END GALERIA --}}
                 </ul>
             </div>
