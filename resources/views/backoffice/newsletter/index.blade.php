@@ -38,7 +38,7 @@
                                     <thead>
                                         <tr>
                                             <th><input type="checkbox" id="select-all"></th>
-                                            <th>Fechqewqeqweqweqwa</th>
+                                            <th>Fecha</th>
                                             <th>Email</th>
                                             <th>Acciones</th>
                                         </tr>
