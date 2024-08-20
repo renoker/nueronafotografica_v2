@@ -24,13 +24,13 @@
         }
 
         .email-header {
-            border-bottom: 2px solid #009688;
+            border-bottom: 2px solid #D72323;
             margin-bottom: 20px;
             padding-bottom: 10px;
         }
 
         .email-header h1 {
-            color: #009688;
+            color: #D72323;
             font-size: 24px;
             margin: 0;
         }
