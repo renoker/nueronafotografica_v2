@@ -104,7 +104,7 @@ class ContactController extends Controller
                 'message' => $row->message
             ];
 
-            Mail::to('rodolfoulises.ramirez@gmail.com')->send(new ContactoMail($details));
+            Mail::to('contacto@neuronafotografica.com')->send(new ContactoMail($details));
             return redirect()->back()->with([
                 'message' => 'Tus datos se enviaron de forma correcta, nos pondremos en contacto contigo en un lapso no mayor a 24hrs'
             ]);
