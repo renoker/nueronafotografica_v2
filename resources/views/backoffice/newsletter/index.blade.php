@@ -51,7 +51,7 @@
                                                 <td>{{ $item->formatted_created_at }}</td>
                                                 <td>{{ $item->email }}</td>
                                                 <td class="d-flex justify-content-between">
-                                                    <form action="{{ route('contact.destroy', $item) }}" method="post"
+                                                    <form action="{{ route($rutaDestroy, $item) }}" method="post"
                                                         id="delete_{{ $item->id }}">
                                                         @method('DELETE')
                                                         @csrf
@@ -104,6 +104,21 @@
                     }
                 })
             });
+            const deleteRow = (id) => {
+                Swal.fire({
+                    title: '¿Quieres eliminar esta fila?',
+                    text: "Todos los movimientos realizados son irreversibles!",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Si, borrar'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        document.getElementById("delete_" + id).submit();
+                    }
+                })
+            }
         </script>
     @endpush
 @endsection
