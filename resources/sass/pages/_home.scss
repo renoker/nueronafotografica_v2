@@ -165,6 +165,9 @@
                         .conocer_mas {
                             width: 230px;
                             height: 50px;
+                            border-radius: 30px;
+                            border: 1px solid #fff;
+                            background-color: rgba($color: #D72323, $alpha: 0.4);                              
                             @media only screen and (max-width: 600px) {
                                 width: 100px;
                                 height: 10px;
@@ -174,7 +177,7 @@
                             }
                             &:hover {
                                 border-radius: 30px;
-                                border: 1px solid #fff;
+                                border: 1px solid var(--primario-rojo);
                                 background-color: rgba($color: #FFF, $alpha: 0.1);                                
                             }
                             @include flex(flex, center, center, 20px);
@@ -186,8 +189,8 @@
                                 font-family: $font-family;
                                 font-size: 17.477px;
                                 font-style: normal;
-                                font-weight: 400;
-                                line-height: normal;     
+                                font-weight: bold;
+                                line-height: normal;                                     
                                 @media only screen and (max-width: 600px) {
                                     font-size: 8px;
                                 }                       
@@ -281,7 +284,7 @@
                 .h6 {
                     color: var(--Blanco-F5EDED);
                     font-family: $font-family;
-                    font-size: 14px;
+                    font-size: 20px;
                     font-style: normal;
                     font-weight: 400;
                     line-height: 101.5%; /* 14.21px */      
@@ -891,6 +894,7 @@
                     display: inline-flex;
                     list-style: none;
                     transform: translateX(-50%);
+                    height: 23px;
                     @media only screen and (max-width: 600px) {
                         top: inherit;
                     }
@@ -1674,4 +1678,43 @@
             }
         }
     }    
+}
+
+
+.glide__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .glide__slide img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .glide__arrow {
+    position: absolute;
+    display: block;
+    top: 50%;
+    z-index: 2;
+    color: var(--primario-rojo);
+    text-transform: uppercase;
+    padding: 9px 12px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 4px;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 150ms ease, border 300ms ease-in-out;
+    transform: translateY(-50%);
+    line-height: 1;
+    &:hover {
+        border: 2px solid rgba(255, 255, 255, 0);
+    }
+}
+
+.arrow_r {
+    width: 16px;
 }

@@ -111,6 +111,12 @@
                                 <button class="glide__bullet" data-glide-dir="={{ $key }}"></button>
                             @endforeach
                         </div>
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
+                                    src="{{ url('assets/icons/izquierda.png') }}" class="arrow_r" alt=""></button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
+                                    src="{{ url('assets/icons/derecha.png') }}" class="arrow_r" alt=""></button>
+                        </div>
                     </div>
                 </div>
             </div>
