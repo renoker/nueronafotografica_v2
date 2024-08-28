@@ -1,7 +1,14 @@
 window.addEventListener("load", (event) => {
     automatico()
+    alturaDiv()
   });
 var move = 0
+let altura = 0
+
+const alturaDiv = () => {
+    altura = document.getElementById('alto').offsetHeight    
+}
+
 
 // In your JS file
 window.changePunto = function(name, size, position) {
@@ -15,10 +22,10 @@ window.changePunto = function(name, size, position) {
 
     var carrusel = document.getElementById(name)
 
-    if (size == 375) {
+    if (altura == 375) {
         move = -w * position
     } else {
-        move = -size * position
+        move = -altura * position
     }
 
     carrusel.style.transition = "all 1s"
@@ -41,7 +48,7 @@ const automatico = () => {
             num = 0
         }
 
-        changePunto('custom_slider', 645, num)
+        changePunto('custom_slider', altura, num)
         num++
     }
 }

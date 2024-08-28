@@ -24,7 +24,7 @@
                 <img src="{{ url('assets/icons/Mosca.svg') }}" alt="">
             </a>
         </div>
-        <div class="contente_slider">
+        <div class="contente_slider" id="alto">
             <input type="hidden" value="{{ $slider_top->count() }}" id="number_slider">
             <div class="bullets_slider">
                 @foreach ($slider_top as $key => $value)
