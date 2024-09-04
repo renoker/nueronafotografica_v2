@@ -220,6 +220,7 @@
             background: var(--Negro-Thunder-NF, #2B272B);    
             @media only screen and (max-width: 600px) {
                 width: 100%;
+                height: auto;
                 border-radius: 20px;
             }             
         }
@@ -1018,6 +1019,7 @@
 // Corporativa
 .content_slider_fq {
     width: 100%;
+    background-color: var(--primario-negro);
     @include flex(flex, space-between, flex-start, 0px);     
     margin-bottom: 25px;
     @media only screen and (max-width: 600px) {
@@ -1028,6 +1030,9 @@
         width: 635px;
         @media only screen and (max-width: 600px) {
             width: 100%;
+            height: 536px;
+            overflow: hidden;
+            border-radius: 20px;            
         }        
         .glide_slider_full {
             width: 630px;
@@ -1253,19 +1258,35 @@
     background: #2B272B;  
     @include flex(flex, space-between, flex-start, 40px);  
     margin-bottom: 25px;
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        min-height: auto;
+        gap: 20px;
+    }
     .img_blog {
         width: 450px;
         height: 228px;
         flex-shrink: 0;        
         border-radius: 30px;
         overflow: hidden;
+        @media only screen and (max-width: 600px) {
+            width: 100%;
+            height: auto;
+        }
         img {
             width: fit-content;
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+            }
         }
     }
     .content_info {
         width: 750px;
         padding-top: 20px;
+        @media only screen and (max-width: 600px) {
+            width: 100%;
+            padding-top: 0px;
+        }
         .h1 {
             color: var(--Blanco-F5EDED);
             font-family: $font-family;

@@ -83,6 +83,17 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label">Titulo Ingles</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" name="name_en" value="{{ $row->name_en }}"
+                                                type="text" placeholder="Agregar el titulo" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-footer text-end">
                             <div class="col-sm-9 offset-sm-3">

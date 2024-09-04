@@ -25,18 +25,18 @@ class VideoController extends Controller
             $slider_top = AdminHomeSlider::select(['id', 'href', 'image', 'es_title AS title', 'es_description AS description', 'es_button AS button',])->where('key', 'videos')->get();
             $traslate = Translation::select(['translate_es AS title'])->where('key', 'videos')->where('page', 'Videos')->get();
             $traslateContact = Translation::select(['translate_es AS title'])->where('key', 'contactanos')->get();
+            $list = Video::select(['id', 'name', 'image', 'url', 'order'])->orderBy('order', 'asc')->get();
         } elseif ($language == 'en') {
             $slider_top = AdminHomeSlider::select(['id', 'href', 'image', 'en_title AS title', 'en_description AS description', 'en_button AS button',])->where('key', 'videos')->get();
             $traslate = Translation::select(['translate_en AS title'])->where('key', 'videos')->where('page', 'Videos')->get();
             $traslateContact = Translation::select(['translate_en AS title'])->where('key', 'contactanos')->get();
+            $list = Video::select(['id', 'name_en AS name', 'image', 'url', 'order'])->orderBy('order', 'asc')->get();
         } else {
             $slider_top = AdminHomeSlider::select(['id', 'href', 'image', 'es_title AS title', 'es_description AS description', 'es_button AS button',])->where('key', 'videos')->get();
             $traslate = Translation::select(['translate_es AS title'])->where('key', 'videos')->where('page', 'Videos')->get();
             $traslateContact = Translation::select(['translate_es AS title'])->where('key', 'contactanos')->get();
+            $list = Video::select(['id', 'name', 'image', 'url', 'order'])->orderBy('order', 'asc')->get();
         }
-
-
-        $list = Video::orderBy('order', 'asc')->get();
 
         return view('pages.video', [
             'list'                  => $list,
@@ -144,6 +144,7 @@ class VideoController extends Controller
         }
         $row->url = $request->url;
         $row->name = $request->name;
+        $row->name_en = $request->name_en;
         $row->order = count($count) + 1;
 
         $row->save();
@@ -182,6 +183,7 @@ class VideoController extends Controller
         }
         $video->url = $request->url;
         $video->name = $request->name;
+        $video->name_en = $request->name_en;
 
         $video->save();
 
