@@ -65,9 +65,6 @@
             @endforeach
         </div>
     </div>
-@endsection
-
-@section('scripts')
     <script>
         function muestraVideo(id, url) {
             document.getElementById(id).classList.add("active");
