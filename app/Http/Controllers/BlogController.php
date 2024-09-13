@@ -130,7 +130,7 @@ class BlogController extends Controller
         $row->categoria_blog_id = $request->categoria_blog_id;
         if ($request->hasFile('miniatura')) {
             if ($request->file('miniatura')->isValid()) {
-                if (in_array($request->file('miniatura')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('miniatura')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->miniatura->extension();
                     $request->miniatura->move(public_path('assets/blog'), $imageName);
                     $row->miniatura = 'assets/blog/' . $imageName;
@@ -183,7 +183,7 @@ class BlogController extends Controller
         $blog->categoria_blog_id = $request->categoria_blog_id;
         if ($request->hasFile('miniatura')) {
             if ($request->file('miniatura')->isValid()) {
-                if (in_array($request->file('miniatura')->extension(), ['jpg', 'jpeg', 'png'])) {
+                if (in_array($request->file('miniatura')->extension(), ['jpg', 'jpeg', 'png', 'webp'])) {
                     $imageName = time() . '.' . $request->miniatura->extension();
                     $request->miniatura->move(public_path('assets/blog'), $imageName);
                     $blog->miniatura = 'assets/blog/' . $imageName;
