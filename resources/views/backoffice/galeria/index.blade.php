@@ -55,7 +55,7 @@
                                                 <td>{{ $item->email_cliente }}</td>
                                                 <td>
                                                     <img src="{{ asset($item->gallery->image) }}" alt=""
-                                                        style="width: 200px" />
+                                                        style="width: 200px; height: 170px;" />
                                                 </td>
                                                 <td class="d-flex justify-content-between">
                                                     <form action="{{ route('galeriaData.destroy', $item) }}" method="post"
