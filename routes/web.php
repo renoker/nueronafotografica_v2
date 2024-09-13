@@ -24,6 +24,7 @@ use App\Http\Controllers\CorporativaController;
 use App\Http\Controllers\FinishController;
 use App\Http\Controllers\GaleriaBlogController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\GalleryDataController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\IntagramFeedConroller;
 use App\Http\Controllers\LangController;
@@ -108,6 +109,11 @@ Route::group(['middleware' => ['auth:admin']], function () {
         // END Category        
         // GALERIA
         Route::prefix('galeria')->group(function () {
+            // Listado
+            Route::get('lista',                             [GalleryDataController::class, 'listadoGaleriaData'])->name('galeriaData.index');
+            Route::delete('lista/delete/{gallery_data}',    [GalleryDataController::class, 'destroyGaleriaData'])->name('galeriaData.destroy');
+            Route::delete('bulk-destroy',                   [GalleryDataController::class, 'bulkDestroy'])->name('galeriaData.bulkDestroy');
+
             Route::get('/',                                 [GalleryController::class, 'backofficeIndex'])->name('backoffice_gallery.index');
             Route::get('/create',                           [GalleryController::class, 'backofficeCreate'])->name('backoffice_gallery.create');
             Route::post('/store',                           [GalleryController::class, 'backofficeStore'])->name('backoffice_gallery.store');

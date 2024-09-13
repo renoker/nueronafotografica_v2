@@ -9,6 +9,7 @@ use App\Models\AdminHomeSlider;
 use App\Models\Finish;
 use App\Models\GaleriaBlog;
 use App\Models\Gallery;
+use App\Models\galleryData;
 use App\Models\Paper;
 use App\Models\Size;
 use App\Models\Translation;
@@ -291,6 +292,13 @@ class GalleryController extends Controller
     {
         $galeria = Gallery::where('id', $request->id)->first();
         Mail::to('contacto@neuronafotografica.com')->send(new CotizadorMail($galeria, $request));
+
+        $row = new galleryData;
+        $row->name_cliente = $request->name_cliente;
+        $row->email_cliente = $request->email_cliente;
+        $row->gallery_id = $request->id;
+        $row->save();
+
         return redirect()->back()->with([
             'message' => 'Tus datos se enviaron de forma correcta, nos pondremos en contacto contigo en un lapso no mayor a 24hrs'
         ]);

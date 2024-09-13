@@ -184,6 +184,8 @@
                     <a class="nav-link menu-title {{ prefixActive('backoffice/galeria') }}"
                         href="javascript:void(0)"><i data-feather="file"></i><span>Galería</span></a>
                     <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('backoffice/galeria') }};">
+                        <li><a href="{{ route('galeriaData.index') }}"
+                                class="{{ routeActive('galeriaData.index') }}">Registros</a></li>
                         <li><a href="{{ route('backoffice_gallery.index') }}"
                                 class="{{ routeActive('backoffice_gallery.index') }}">Notas</a>
                         </li>
