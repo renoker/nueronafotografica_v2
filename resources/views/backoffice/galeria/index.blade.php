@@ -54,7 +54,7 @@
                                                 <td>{{ $item->name_cliente }}</td>
                                                 <td>{{ $item->email_cliente }}</td>
                                                 <td>
-                                                    <img src="{{ asset($item->image) }}" alt=""
+                                                    <img src="{{ asset($item->gallery->image) }}" alt=""
                                                         style="width: 200px" />
                                                 </td>
                                                 <td class="d-flex justify-content-between">
